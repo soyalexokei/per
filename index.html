@@ -17,6 +17,11 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
         <!-- favicon -->
@@ -50,61 +55,10 @@
 
 
     <div class="service-content" id="services">
-        <h1 class="titulos-secciones">Mis Viajes</h1>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="left-text">
-                        <h4>More About Vanilla</h4>
-                        <div class="line-dec"></div>
-                        <p>Vanilla is free HTML CSS template with Bootstrap v4.2.1 and you can apply this theme for your sites. 
-                        Please share our <a rel="nofollow" href="https://templatemo.com">website</a> to your friends or collegues. Thank you.</p>
-                        <ul>
-                            <li>-  Praesent porta urna id eros</li>
-                            <li>-  Curabitur consectetur malesuada</li>
-                            <li>-  Nam pretium imperdiet enim</li>
-                            <li>-  Sed viverra arcu non nisi efficitur</li>
-                        </ul>
-                        <div class="primary-button">
-                            <a href="#portfolio">Learn More About Us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <h4>Classic Modern Design</h4>
-                                <div class="line-dec"></div>
-                                <p>Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <h4>Unique &amp; Creative Ideas</h4>
-                                <div class="line-dec"></div>
-                                <p>Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <h4>Effective Team Work</h4>
-                                <div class="line-dec"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <h4>Fast Support 24/7</h4>
-                                <div class="line-dec"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
+        <div class="titulo-viajes">
+            <img width="40" height="40" src="./img/icon-viajes.png" alt="icon-viajes"/>
+            <h1 class="titulos-secciones">Mis Viajes</h1>
+            <img width="40" height="40" src="./img/icon-viajes.png" alt="icon-viajes"/>
         </div>
     </div>
 
@@ -117,7 +71,7 @@
                     <div id="owl-testimonials" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="./img/1st-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion1.png" alt="aficion1"></a>
+                                <a data-toggle="modal" data-target="#aficion1"><img src="./img/aficion1.png" alt="aficion1"/></a>
                                 <div class="text-content">
                                     <h4>Coches</h4>
                                 </div>
@@ -125,7 +79,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/5th-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion2.png" alt="aficion2"></a>
+                                <img src="./img/aficion2.png" alt="aficion2"/>
                                 <div class="text-content">
                                     <h4>Gym</h4>
                                 </div>
@@ -133,7 +87,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/2nd-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion3.png" alt="aficion3"></a>
+                                <img src="./img/aficion3.png" alt="aficion3"/>
                                 <div class="text-content">
                                     <h4>Pádel</h4>
                                 </div>
@@ -141,7 +95,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/4th-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion4.png" alt="aficion4"></a>
+                                <img src="./img/aficion4.png" alt="aficion4"/>
                                 <div class="text-content">
                                     <h4>Socializar con amigos</h4>
                                 </div>
@@ -149,7 +103,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/4th-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion5.png" alt="aficion5"></a>
+                                <img src="./img/aficion5.png" alt="aficion5"/>
                                 <div class="text-content">
                                     <h4>Conocer gente nueva</h4>
                                 </div>
@@ -157,7 +111,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/4th-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion6.png" alt="aficion6"></a>
+                                <img src="./img/aficion6.png" alt="aficion6"/>
                                 <div class="text-content">
                                     <h4>Pasar tiempo con la familia</h4>
                                 </div>
@@ -165,7 +119,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/6th-big-item.jpg" data-lightbox="image-1"><img src="./img/aficion7.png" alt="aficion7"></a>
+                                <img src="./img/aficion7.png" alt="aficion7"/>
                                 <div class="text-content">
                                     <h4>Deportes acuáticos</h4>
                                 </div>
@@ -173,7 +127,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/2nd-big-item.jpg" data-lightbox="image-1"><img src="img/2nd-item.jpg" alt=""></a>
+                                <img src="./img/aficion8.png" alt="aficion8"/>
                                 <div class="text-content">
                                     <h4>Deportes de montaña y escalada</h4>
                                 </div>
@@ -181,7 +135,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/3rd-big-item.jpg" data-lightbox="image-1"><img src="img/3rd-item.jpg" alt=""></a>
+                                <img src="./img/aficion9.png" alt="aficion9"/>
                                 <div class="text-content">
                                     <h4>Deportes de raqueta</h4>
                                 </div>
@@ -189,7 +143,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                                <img src="./img/aficion10.png" alt="aficion10"/>
                                 <div class="text-content">
                                     <h4>Fútbol</h4>
                                 </div>
@@ -197,7 +151,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                                <img src="./img/aficion11.png" alt="aficion11"/>
                                 <div class="text-content">
                                     <h4>Vivir experiencias</h4>
                                 </div>
@@ -205,7 +159,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                                <img src="./img/aficion12.png" alt="aficion12"/>
                                 <div class="text-content">
                                     <h4>Explorar lugares</h4>
                                 </div>
@@ -213,7 +167,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                                <img src="./img/aficion13.png" alt="aficion13"/>
                                 <div class="text-content">
                                     <h4>Conocer otras culturas</h4>
                                 </div>
@@ -221,9 +175,41 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                                <img src="./img/aficion14.png" alt="aficion14"/>
                                 <div class="text-content">
                                     <h4>Aprender idiomas</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="./img/aficion15.png" alt="aficion15"/>
+                                <div class="text-content">
+                                    <h4>Fotografía</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="./img/aficion16.png" alt="aficion16"/>
+                                <div class="text-content">
+                                    <h4>Videoclips</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="./img/aficion17.png" alt="aficion17"/>
+                                <div class="text-content">
+                                    <h4>Postproducción</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="./img/aficion18.png" alt="aficion18"/>
+                                <div class="text-content">
+                                    <h4>Desarrollo Web</h4>
                                 </div>
                             </div>
                         </div>
@@ -288,23 +274,28 @@
         </div>
     </footer>
 
-
+    <!-- Modals -->
+    <div id="aficion1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="imgs-aficion1"></div>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modals -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        function openCity(cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            document.getElementById(cityName).style.display = "block";  
-        }
-    </script>
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
