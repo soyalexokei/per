@@ -60,6 +60,29 @@
             <h1 class="titulos-secciones">Mis Viajes</h1>
             <img width="40" height="40" src="./img/icon-viajes.png" alt="icon-viajes"/>
         </div>
+        <br>
+        <img src="./world.svg" alt="world"/>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-5">
+                <p style="color: white; font-size: large;">País natal:</p>
+                <a href="./spain.html"><img width="50" height="28" src="./img/Paises/spain.png" alt="spain"/></a>
+            </div>
+            <div class="col-md-5">
+                <p style="color: white; font-size: large;">Países visitados:</p>
+                <img width="50" height="28" src="./img/Paises/usa.png" alt="usa"/>
+                <img width="50" height="28" src="./img/Paises/portugal.png" alt="portugal"/>
+                <img width="50" height="28" src="./img/Paises/uk.png" alt="uk"/>
+                <img width="50" height="28" src="./img/Paises/france.png" alt="france"/>
+                <img width="50" height="28" src="./img/Paises/germany.png" alt="germany"/>
+                <img width="50" height="28" src="./img/Paises/hungary.png" alt="hungary"/>
+                <img width="50" height="28" src="./img/Paises/austria.png" alt="austria"/>
+                <img width="50" height="28" src="./img/Paises/serbia.png" alt="serbia"/>
+                <img width="50" height="25" src="./img/Paises/montenegro.png" alt="montenegro"/>
+                <img width="50" height="28" src="./img/Paises/kosovo.png" alt="kosovo"/>
+                <img width="50" height="28" src="./img/Paises/gibraltar.png" alt="gibraltar"/>
+            </div>
+        </div>
+        <br>
     </div>
 
     
@@ -222,8 +245,45 @@
 
     <div class="tabs-content" id="our-story">
         <h1 class="titulos-secciones">Sobre mí</h1>
+        <br>
+        <br>
+        <br>
         <div class="container">
-            
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Soy una persona proactiva que le gusta alcanzar metas, emprender y superar cada bache de la vida. Nací el 30 de marzo de 1997, en Madrid (España)</p>
+                    <br>
+                    <br>
+                    <p> Me encanta viajar, descubrir nuevas culturas, conocer nuevas personas y tener diversas experiencias a lo largo del mundo.
+                        Además de hacer deporte, socializar con amigos y tener una buena alimentación y equilibrada
+                    </p>
+                    <br>
+                    <br>
+                    <p><q><i>
+                        La vida se basa en tener proyectos y objetivos, sin ellos, somos Seres Humanos vacíos
+                    </i></q> - Alejandro, agosto 2023</p> 
+                </div>
+                <div class="col-md-3">
+                    <img width="250" height="245" src="./img/img-sobre-mi.png" alt="img-sobre-mi"/>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="contenido-album">
+                        <div class="parte-img">
+                            <a data-toggle="modal" data-target="#album"><img width="350" height="233" src="./img/album.png" alt="album"/></a>
+                        </div>
+                        <div class="parte-contenido">
+                            <h2>Mi álbum</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
         </div>
     </div>
 
@@ -282,8 +342,23 @@
                     <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
                     <div class="carrusel-voluntariado">
                         <div class="carrusel-voluntariado-contenedor" id="imgs-aficion1"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha">&#10095;</button>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda1">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha1">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="album" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="imgs-album"></div>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda2">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha2">&#10095;</button>
                     </div>
                 </div>
             </div>
@@ -329,5 +404,7 @@
         }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./js/aficion1.js" type="text/javascript" defer></script>
+    <script src="./js/album.js" type="text/javascript" defer></script>
 </body>
 </html>
