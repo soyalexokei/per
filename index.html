@@ -69,7 +69,7 @@
             </div>
             <div class="col-md-5">
                 <p style="color: white; font-size: large;">Países visitados:</p>
-                <img width="50" height="28" src="./img/Paises/usa.png" alt="usa"/>
+                <a data-toggle="modal" data-target="#pais1"><img width="50" height="28" src="./img/Paises/usa.png" alt="usa"/></a>
                 <img width="50" height="28" src="./img/Paises/portugal.png" alt="portugal"/>
                 <img width="50" height="28" src="./img/Paises/uk.png" alt="uk"/>
                 <img width="50" height="28" src="./img/Paises/france.png" alt="france"/>
@@ -367,6 +367,21 @@
             </div>
         </div>
     </div>
+
+    <div id="pais1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais1"></div>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda3">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha3">&#10095;</button>
+                    </div>
+                    <a><img src="./img/icono-video.png" alt="icon-video"/> <h2>Ver vídeos</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end Modals -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -409,5 +424,6 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./js/aficion1.js" type="text/javascript" defer></script>
     <script src="./js/album.js" type="text/javascript" defer></script>
+    <script src="./js/pais1.js" type="text/javascript" defer></script>
 </body>
 </html>
