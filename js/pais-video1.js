@@ -1,17 +1,16 @@
-const pantallaPaisVideo1 = document.getElementById('videos-pais1');
 const flechaIzquierda4 = document.getElementById("flecha-izquierda4");
 const flechaDerecha4 = document.getElementById("flecha-derecha4");
 
 var primerIDpais1 = '6E8OuGFDB8s';
-var player1;
+var player;
 const totalPaisVideo1 = 17;
 let presenteVideo3 = 1;
 
-function playerGo1(kP1) {
-    if(player1) {
-        player1.loadVideoById(kP1);
+function playerGo(kP1) {
+    if(player) {
+        player.loadVideoById(kP1);
     }else {
-        player1 = new YT.Player(pantallaPaisVideo1, {
+        player = new YT.Player('videos-pais1', {
             videoId: kP1, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
             playerVars: {
                 'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
@@ -62,26 +61,26 @@ function obtenerVideoId1(indexP1) {
     }
 }
 
-flechaIzquierda4.addEventListener("click", () => {
-    presente3--;
-    if(presente3 >= 1 && presente3 <= totalPais1-10) {
-      cambiarImagen3(presente3);
-    }else if(presente3 >= 153 && presente3 <= totalPais1) {
-      reproduccionVideos1(presente3);
-    }else if(presente3 < 1) {
-      presente3 = totalPais1;
-      reproduccionVideos1(presente3);
+function reproduccionVideos1(contP1) {
+    if(contP1 < 1) {
+        contP1 = totalPaisVideo1;
+    }else if(contP1 > totalPaisVideo1) {
+        contP1 = 1;
     }
+
+    var videoPaisId = obtenerVideoId1(contP1);
+    playerGo(videoPaisId);
+    presenteVideo3 = contP1;
+}
+
+flechaIzquierda4.addEventListener("click", () => {
+    presenteVideo3--;
+    reproduccionVideos1(presenteVideo3);
 });
 
 flechaDerecha4.addEventListener("click", () => {
-  presente3++;
-  if(presente3 >= 1 && presente3 <= totalPais1-10) {
-    cambiarImagen3(presente3);
-  }else if(presente3 >= 153 && presente3 <= totalPais1) {
-    reproduccionVideos1(presente3);
-  }else if(presente3 > totalPais1) {
-    presente3 = 1;
-    cambiarImagen3(presente3);
-  }
+    presenteVideo3++;
+    reproduccionVideos1(presenteVideo3);
 });
+
+playerGo(primerIDpais1);
