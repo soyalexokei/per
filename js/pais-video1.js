@@ -6,7 +6,7 @@ var player;
 const totalPaisVideo1 = 17;
 let presenteVideo3 = 1;
 
-function playerGo(kP1) {
+function playerVideoOnDemand(kP1) {
     if(player) {
         player.loadVideoById(kP1);
     }else {
@@ -16,7 +16,7 @@ function playerGo(kP1) {
                 'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
                 'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
                 'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
-                'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                'showinfo': 1 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
             }
         });
     }
@@ -69,7 +69,7 @@ function reproduccionVideos1(contP1) {
     }
 
     var videoPaisId = obtenerVideoId1(contP1);
-    playerGo(videoPaisId);
+    playerVideoOnDemand(videoPaisId);
     presenteVideo3 = contP1;
 }
 
@@ -83,4 +83,4 @@ flechaDerecha4.addEventListener("click", () => {
     reproduccionVideos1(presenteVideo3);
 });
 
-playerGo(primerIDpais1);
+playerVideoOnDemand(primerIDpais1);
