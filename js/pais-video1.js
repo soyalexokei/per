@@ -1,22 +1,22 @@
 const flechaIzquierda4 = document.getElementById("flecha-izquierda4");
 const flechaDerecha4 = document.getElementById("flecha-derecha4");
 
-var primerIDpais1 = '6E8OuGFDB8s';
-var player;
+let presenteVideo1 = 1;
 const totalPaisVideo1 = 17;
-let presenteVideo3 = 1;
+var primerVideoPaisId = '6E8OuGFDB8s';
+var player;
 
-function playerVideoOnDemand(kP1) {
+function playerGo(ident) {
     if(player) {
-        player.loadVideoById(kP1);
+        player.loadVideoById(ident);
     }else {
         player = new YT.Player('videos-pais1', {
-            videoId: kP1, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+            videoId: ident, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
             playerVars: {
                 'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
                 'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
                 'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
-                'showinfo': 1 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
             }
         });
     }
@@ -61,7 +61,8 @@ function obtenerVideoId1(indexP1) {
     }
 }
 
-function reproduccionVideos1(contP1) {
+function reproductorVideoPais1(contP1) {
+
     if(contP1 < 1) {
         contP1 = totalPaisVideo1;
     }else if(contP1 > totalPaisVideo1) {
@@ -69,18 +70,18 @@ function reproduccionVideos1(contP1) {
     }
 
     var videoPaisId = obtenerVideoId1(contP1);
-    playerVideoOnDemand(videoPaisId);
-    presenteVideo3 = contP1;
+    playerGo(videoPaisId);
+    presenteVideo1 = contP1;
 }
 
 flechaIzquierda4.addEventListener("click", () => {
-    presenteVideo3--;
-    reproduccionVideos1(presenteVideo3);
+    presenteVideo1--;
+    reproductorVideoPais1(presenteVideo1);
 });
 
 flechaDerecha4.addEventListener("click", () => {
-    presenteVideo3++;
-    reproduccionVideos1(presenteVideo3);
+    presenteVideo1++;
+    reproductorVideoPais1(presenteVideo1);
 });
 
-playerVideoOnDemand(primerIDpais1);
+playerGo(primerVideoPaisId);
