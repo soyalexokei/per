@@ -2,8 +2,8 @@ const flechaIzquierda4 = document.getElementById("flecha-izquierda4");
 const flechaDerecha4 = document.getElementById("flecha-derecha4");
 
 let presenteVideo1 = 1;
-const totalPaisVideo1 = 17;
-var primerVideoPaisId = '6E8OuGFDB8s';
+const totalPaisVideo1 = 18;
+var primerVideoPaisId = 'nf1kb3TSD9w';
 var player;
 
 function playerGo(ident) {
@@ -25,38 +25,40 @@ function playerGo(ident) {
 function obtenerVideoId1(indexP1) {
     switch(indexP1) {
         case 1:
-            return '6E8OuGFDB8s';
+            return 'nf1kb3TSD9w';
         case 2:
-            return 'jA_PeI3VieM';
+            return '6E8OuGFDB8s';
         case 3:
-            return '-X-8jDfjExo';
+            return 'jA_PeI3VieM';
         case 4:
-            return 'zkhfF_SHNjA';
+            return '-X-8jDfjExo';
         case 5:
-            return 'E2e1P1dsUYg';
+            return 'zkhfF_SHNjA';
         case 6:
-            return 'Abq0iuBNCBU';
+            return 'E2e1P1dsUYg';
         case 7:
-            return 'N4dxwAgW_X4';
+            return 'Abq0iuBNCBU';
         case 8:
-            return 'sr1pmvg9KIs';
+            return 'N4dxwAgW_X4';
         case 9:
-            return 'j-K_xTuppJQ';
+            return 'sr1pmvg9KIs';
         case 10:
-            return '50TjMT4zGrc';
+            return 'j-K_xTuppJQ';
         case 11:
-            return 'DW--iP-CleY';
+            return '50TjMT4zGrc';
         case 12:
-            return 'AY6cu8ShCQA';
+            return 'DW--iP-CleY';
         case 13:
-            return 'VMuzCFVrCgQ';
+            return 'AY6cu8ShCQA';
         case 14:
-            return 'MX_iH72HrKE';
+            return 'VMuzCFVrCgQ';
         case 15:
-            return 'r0sSaHApP8w';
+            return 'MX_iH72HrKE';
         case 16:
-            return 'kBAjLuGFMw0';
+            return 'r0sSaHApP8w';
         case 17:
+            return 'kBAjLuGFMw0';
+        case 18:
             return '2ZReINrYpKQ';
     }
 }

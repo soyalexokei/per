@@ -28,19 +28,6 @@
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     </head>
 <body>
-
-    <div class="fixed-side-navbar">
-        <ul class="nav flex-row">
-            <li class="nav-item"><a class="nav-link" href="#home"><span>Portada</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#services"><span>Mis Viajes</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio"><span>Mis aficiones</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#our-story"><span>Sobre mí</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contáctame</span></a></li>
-        </ul>
-        <br>
-        <div id="google_translate_element" class="google"></div>
-    </div>
-
     <div class="parallax-content baner-content" id="home">
         <div class="container">
             <div class="first-content">
@@ -53,6 +40,7 @@
         </div>
     </div>
 
+    <div id="google_translate_element" class="google"></div>
 
     <div class="service-content" id="services">
         <div class="titulo-viajes">
@@ -70,7 +58,7 @@
             <div class="col-md-5">
                 <p style="color: white; font-size: large;">Países visitados (imágenes):</p>
                 <a data-toggle="modal" data-target="#pais-img1"><img width="50" height="28" src="./img/Paises/usa-img.png" alt="usa"/></a>
-                <img width="50" height="28" src="./img/Paises/portugal-img.png" alt="portugal"/>
+                <a data-toggle="modal" data-target="#pais-img2"><img width="50" height="28" src="./img/Paises/portugal-img.png" alt="portugal"/></a>
                 <img width="50" height="28" src="./img/Paises/uk-img.png" alt="uk"/>
                 <img width="50" height="28" src="./img/Paises/france-img.png" alt="france"/>
                 <img width="50" height="28" src="./img/Paises/germany-img.png" alt="germany"/>
@@ -83,7 +71,7 @@
                 <br>
                 <p style="color: white; font-size: large;">Países visitados (vídeos):</p>
                 <a data-toggle="modal" data-target="#pais-video1"><img width="50" height="28" src="./img/Paises/usa-video.png" alt="usa"/></a>
-                <img width="50" height="28" src="./img/Paises/portugal-video.png" alt="portugal"/>
+                <a data-toggle="modal" data-target="#pais-video2"><img width="50" height="28" src="./img/Paises/portugal-video.png" alt="portugal"/></a>
                 <img width="50" height="28" src="./img/Paises/uk-video.png" alt="uk"/>
                 <img width="50" height="28" src="./img/Paises/france-video.png" alt="france"/>
                 <img width="50" height="28" src="./img/Paises/germany-video.png" alt="germany"/>
@@ -353,6 +341,7 @@
     </footer>
 
     <!-- Modals -->
+    <!-- COCHES -->
     <div id="aficion1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -367,6 +356,7 @@
         </div>
     </div>
 
+    <!-- MI ALBUM PERSONAL -->
     <div id="album" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -381,6 +371,7 @@
         </div>
     </div>
 
+    <!-- USA -->
     <div id="pais-img1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -394,7 +385,6 @@
             </div>
         </div>
     </div>
-
     <div id="pais-video1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -408,6 +398,35 @@
             </div>
         </div>
     </div>
+
+    <!-- PORTUGAL -->
+    <div id="pais-img2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais2"></div>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda5">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha5">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pais-video2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="videos-pais2"></div>
+                        <button class="flecha-izquierda-pasar" id="flecha-izquierda6">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="flecha-derecha6">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- end Modals -->
     <script src="https://www.youtube.com/iframe_api"></script>
 
@@ -421,6 +440,8 @@
     <script src="./js/album.js" type="text/javascript" defer></script>
     <script src="./js/pais-img1.js" type="text/javascript" defer></script>
     <script src="./js/pais-video1.js" type="text/javascript" defer></script>
+    <script src="./js/pais-img2.js" type="text/javascript" defer></script>
+    <script src="./js/pais-video2.js" type="text/javascript" defer></script>
 
     <script>
         $(document).ready(function(){
