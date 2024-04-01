@@ -4,13 +4,13 @@ const flechaDerecha6 = document.getElementById("flecha-derecha6");
 let presenteVideo2 = 1;
 const totalPaisVideo2 = 4;
 var primerVideoPaisId2 = 's1YN5d8BUlo';
-var player2;
+var player;
 
 function playerGo2(ident2) {
-    if(player2) {
-        player2.loadVideoById(ident2);
+    if(player) {
+        player.loadVideoById(ident2);
     }else {
-        player2 = new YT.Player('videos-pais2', {
+        player = new YT.Player('videos-pais2', {
             videoId: ident2, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
             playerVars: {
                 'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
