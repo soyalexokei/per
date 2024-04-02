@@ -1,38 +1,17 @@
-const flechaIzquierda6 = document.getElementById("flecha-izquierda6");
-const flechaDerecha6 = document.getElementById("flecha-derecha6");
-
-let presenteVideo2 = 1;
+var videosIDportugal = ["s1YN5d8BUlo", "eiqsB64eVO4", "tq02Cn10p9E", "3gLSZA5vM1o"];
+var indicePortugal = 0;
 const totalPaisVideo2 = 4;
-var primerVideoPaisId2 = 's1YN5d8BUlo';
-var player2;
 
-function playerGo2(ident2) {
-    if(player2) {
-        player2.loadVideoById(ident2);
-    }else {
-        player2 = new YT.Player('videos-pais2', {
-            videoId: ident2, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
-            playerVars: {
-                'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
-                'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
-                'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
-                'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
-            }
-        });
-    }
-}
+// Función para agregar videos al carrusel
+function cargarVideos() {
 
-function obtenerVideoId2(indexP2) {
-    switch(indexP2) {
-        case 1:
-            return 's1YN5d8BUlo';
-        case 2:
-            return 'eiqsB64eVO4';
-        case 3:
-            return 'tq02Cn10p9E';
-        case 4:
-            return '3gLSZA5vM1o';
-    }
+    var videosPortugal = document.getElementById("videos-pais2");
+    videosPortugal.innerHTML = "";
+
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube.com/embed/" + videosIDportugal[indicePortugal];
+    iframe.allowFullscreen = true;
+    videosPortugal.appendChild(iframe);
 }
 
 function reproductorVideoPais2(contP2) {
@@ -48,14 +27,17 @@ function reproductorVideoPais2(contP2) {
     presenteVideo2 = contP2;
 }
 
-flechaIzquierda6.addEventListener("click", () => {
-    presenteVideo2--;
-    reproductorVideoPais2(presenteVideo2);
+document.getElementById("flecha-izquierda6").addEventListener("click", () => {
+    indicePortugal = (indicePortugal - 1 + videosIDportugal.length) % videosIDportugal.length;
+    cargarVideos();
 });
 
-flechaDerecha6.addEventListener("click", () => {
-    presenteVideo2++;
-    reproductorVideoPais2(presenteVideo2);
+document.getElementById("flecha-derecha6").addEventListener("click", () => {
+    indicePortugal = (indicePortugal + 1) % videosIDportugal.length;
+    cargarVideos();
 });
 
-playerGo2(primerVideoPaisId2);
+// Llamar a la función para cargar los videos cuando se muestre el modal
+$('#pais-video2').on('shown.bs.modal', function () {
+    cargarVideos();
+});
