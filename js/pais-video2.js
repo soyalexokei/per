@@ -1,6 +1,5 @@
 var videosIDportugal = ["s1YN5d8BUlo", "eiqsB64eVO4", "tq02Cn10p9E", "3gLSZA5vM1o"];
 var indicePortugal = 0;
-const totalPaisVideo2 = 4;
 
 // Función para agregar videos al carrusel
 function cargarVideos() {
@@ -12,19 +11,6 @@ function cargarVideos() {
     iframe.src = "https://www.youtube.com/embed/" + videosIDportugal[indicePortugal];
     iframe.allowFullscreen = true;
     videosPortugal.appendChild(iframe);
-}
-
-function reproductorVideoPais2(contP2) {
-
-    if(contP2 < 1) {
-        contP2 = totalPaisVideo2;
-    }else if(contP2 > totalPaisVideo2) {
-        contP2 = 1;
-    }
-
-    var videoPaisId = obtenerVideoId2(contP2);
-    playerGo2(videoPaisId);
-    presenteVideo2 = contP2;
 }
 
 document.getElementById("flecha-izquierda6").addEventListener("click", () => {
