@@ -725,6 +725,13 @@ body.lb-disable-scrolling {
   transition: opacity 0.2s;
 }
 
+.provincias-spain {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
 .lb-data .lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);

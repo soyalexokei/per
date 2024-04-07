@@ -27,6 +27,6 @@ flechaDerecha3.addEventListener("click", () => {
 
 for (let i = 1; i <= totalPais1; i++) {
   const marco3 = document.createElement("img");
-  marco3.src = `./img/USA-2019/${i}.jpg`;
+  marco3.src = `./img/USA/${i}.jpg`;
   pantallaPais1.appendChild(marco3);
 }
