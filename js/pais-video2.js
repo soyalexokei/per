@@ -1,4 +1,4 @@
-var videosIDportugal = ["s1YN5d8BUlo", "eiqsB64eVO4", "tq02Cn10p9E", "3gLSZA5vM1o"];
+var videosIDportugal = ["s1YN5d8BUlo", "", "", ""];
 var indicePortugal = 0;
 
 // Función para agregar videos al carrusel
