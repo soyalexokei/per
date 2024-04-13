@@ -12,7 +12,7 @@ function cambiarImagen7(cont7) {
     presente7 = 0;
   }
 
-  pantallaPais5.style.transform = `translateX(-${(presente7 - 1) * 100}%)`;
+  pantallaPais5.style.transform = `translateX(-${presente7 * 100}%)`;
 }
 
 flechaIzquierda11.addEventListener("click", () => {
