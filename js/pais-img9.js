@@ -1,6 +1,6 @@
 const pantallaPais9 = document.getElementById('imgs-pais9');
 
-const totalPais9 = 134;
+const totalPais9 = 215;
 let presente11 = 1;
 
 function cambiarImagen11(cont11) {
