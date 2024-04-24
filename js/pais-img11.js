@@ -1,9 +1,9 @@
 const pantallaPais11 = document.getElementById('imgs-pais11');
 
-const totalPais11 = 47;
+const totalPais11 = 112;
 let presente13 = 1;
 
-function cambiarImagen12(cont13) {
+function cambiarImagen13(cont13) {
   if(presente13 < 1) {
     presente13 = totalPais11;
   }else if(presente13 > totalPais11) {
@@ -15,12 +15,12 @@ function cambiarImagen12(cont13) {
 
 document.getElementById("flecha-izquierda23").addEventListener("click", () => {
     presente13--;
-    cambiarImagen12(presente13);
+    cambiarImagen13(presente13);
 });
 
 document.getElementById("flecha-derecha23").addEventListener("click", () => {
     presente13++;
-    cambiarImagen12(presente13);
+    cambiarImagen13(presente13);
 });
 
 for (let i = 1; i <= totalPais11; i++) {
