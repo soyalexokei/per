@@ -1,4 +1,5 @@
-var videosIDaustria = ["lmi88Z4e_jM"];
+var videosIDaustria = ["lmi88Z4e_jM", "ylvN4v_bjzo", "fGMVDbNio4w", "sAN5jjplVKA", "QHPy_Whx1Zs", "XAGT_qfNxlQ",
+"5LhDPCoeUFk", "l8x3XSBgZI8", "7fAc5ZtVHeE", "6_TcDwA7jHg", "ZkT7xsCizCM"];
 var indiceAustria = 0;
 
 // Función para agregar videos al carrusel
