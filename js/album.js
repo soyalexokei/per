@@ -2,7 +2,7 @@ const pantallaAlbum = document.getElementById('imgs-album');
 const flechaIzquierda2 = document.getElementById("flecha-izquierda2");
 const flechaDerecha2 = document.getElementById("flecha-derecha2");
 
-const cupoImagenes2 = 6;
+const cupoImagenes2 = 17;
 let presente2 = 1;
 
 function cambiarImagen2(cont2) {
@@ -26,6 +26,6 @@ flechaDerecha2.addEventListener("click", () => {
 
 for (let i = 1; i <= cupoImagenes2; i++) {
   const marco2 = document.createElement("img");
-  marco2.src = `./img/Portada/${i}.png`;
+  marco2.src = `./img/Portada/${i}.jpg`;
   pantallaAlbum.appendChild(marco2);
 }
