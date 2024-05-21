@@ -2,7 +2,7 @@ const pantallaAlbum = document.getElementById('imgs-album');
 const flechaIzquierda2 = document.getElementById("flecha-izquierda2");
 const flechaDerecha2 = document.getElementById("flecha-derecha2");
 
-const cupoImagenes2 = 17;
+const cupoImagenes2 = 18;
 let presente2 = 1;
 
 function cambiarImagen2(cont2) {
