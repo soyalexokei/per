@@ -1,4 +1,4 @@
-var videosIDsegovia = ["", "", "", "", "", ""];
+var videosIDsegovia = ["TF-Ah7SBNuM", "AzvB9XmxD-Y", "hDa5qfnoJWY", "foXa2MZnkjA", "1I62ZGMF9uE", "z2cYKgB62dk"];
 var indiceSegovia = 0;
 
 // Función para agregar videos al carrusel
