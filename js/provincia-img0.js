@@ -1,6 +1,6 @@
 const pantallaProvincia0 = document.getElementById('pantalla-img0');
 
-const totalProvincia0 = 102;
+const totalProvincia0 = 163;
 let actual0 = 1;
 
 function goToNextImage0(contar0) {

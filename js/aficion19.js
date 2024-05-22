@@ -1,6 +1,6 @@
 const pantallaAficion19 = document.getElementById("imgs-aficion19");
 
-const loteImagenes19 = 9;
+const loteImagenes19 = 10;
 let estado19 = 1;
 
 function intercalarImagen19(enum19) {
