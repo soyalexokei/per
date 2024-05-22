@@ -1,4 +1,4 @@
-var videosIDbarcelona = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+var videosIDbarcelona = ["11cAiCpb1pw", "lcRxbNxHbVU", "ObJBKtKD66o", "SdWfMZ7Wv0Y", "cWCB7n3YIac", "bEBU-o7_zoA", "T0lEgDiyv3c", "GklhTfphwHs", "ETLANaon-ho", "njJKC2rMyWw", "cnUcrzuuy30", "j68j5hHCUeU", "qnplBUlfELc", "r7IR8AslERI"];
 var indiceBarcelona = 0;
 
 // Función para agregar videos al carrusel
