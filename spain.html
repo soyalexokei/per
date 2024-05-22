@@ -43,11 +43,11 @@
         <div class="row" style="text-align: center;">
             <div class="col-md-5">
                 <p style="color: white; font-size: large;">Provincia natal (imágenes):</p>
-                <a data-toggle="modal" data-target="#provincia-img0"><img width="50" height="28" src="./img/Madrid/bandera.png" alt="madrid"/></a>
+                <a data-toggle="modal" data-target="#provincia-img0"><img width="50" height="28" src="./img/bandera.png" alt="madrid"/></a>
                 <br>
                 <br>
                 <p style="color: white; font-size: large;">Provincia natal (vídeos):</p>
-                <a data-toggle="modal" data-target="#provincia-vid0"><img width="50" height="28" src="./img/Madrid/bandera.png" alt="madrid"/></a>
+                <a data-toggle="modal" data-target="#provincia-vid0"><img width="50" height="28" src="./img/bandera.png" alt="madrid"/></a>
             </div>
             <div class="col-md-5">
                 <p style="color: white; font-size: large;">Provincias visitadas (imágenes):</p>
@@ -137,6 +137,34 @@
     </footer>
 
     <!-- Modals -->
+
+    <!-- 0. MADRID -->
+    <div id="provincia-img0" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="pantalla-img0"></div>
+                        <button class="flecha-izquierda-pasar" id="go-izquierda0">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="go-derecha0">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="provincia-vid0" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="pantalla-vid0"></div>
+                        <button class="flecha-izquierda-pasar" id="go-left0">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="go-right0">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 1. LUGO -->
     <div id="provincia-img1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -591,6 +619,9 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="./js/provincia-img0.js" type="text/javascript"></script>
+    <script src="./js/provincia-vid0.js" type="text/javascript"></script>
 
     <script src="./js/provincia-img1.js" type="text/javascript"></script>
     <script src="./js/provincia-vid1.js" type="text/javascript"></script>
