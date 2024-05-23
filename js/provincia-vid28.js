@@ -1,4 +1,4 @@
-var videosIDmallorca = ["VRRv4QTNIsM"];
+var videosIDmallorca = ["VRRv4QTNIsM", "bROQv2-a-9I", "RnbMGv9okug", "9qsh0pLL41U"];
 var indiceMallorca = 0;
 
 // Función para agregar videos al carrusel
