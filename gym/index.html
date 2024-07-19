@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración base -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>My Fitness Life</title>
+    <meta name="description" content="Personal Development APP">
+    <meta name="author" content="Alejandro Fernández Pérez">
+    <!-- Archivos importados CSS -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="../favicon.ico" rel="icon">
+    <!-- Iconos de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-white">
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4 bg-secondary">
+                    <a href="#panel-control" class="nav-item nav-link">Panel de Control</a>
+                    <a href="#calendario" class="nav-item nav-link">Calendario</a>
+                    <a href="#gym-location" class="nav-item nav-link">Dónde entreno</a>
+                    <a href="../contact.html" class="nav-item nav-link">Contáctame</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/portada.png" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">My Fitness Life</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- GYM Feature Start -->
+    <div id="panel-control" class="container feature pt-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="display-4 font-weight-bold">Panel de control</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/mi-rutina-semanal.png" alt="Image">
+                        <i class="flaticon-training"></i>
+                    </div>
+                    <div class="col-sm-7">
+                        <h4 class="font-weight-bold">Mi Rutina Semanal</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/mi-progresion.png" alt="Image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="col-sm-7">
+                        <h4 class="font-weight-bold">Mi Progresión</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GYM Feature End -->
+
+    <!-- Class Timetable Start -->
+    <div id="calendario" class="container gym-feature py-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="display-4 font-weight-bold">Calendario</h4>
+        </div>
+        <div class="tab-class">
+            <ul class="nav nav-pills justify-content-center mb-4">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#class-cardio">Gym</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#class-crossfit">Otros Deportes</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="class-cardio" class="container tab-pane p-0 active">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-lg m-0">
+                            <thead class="bg-secondary text-white text-center">
+                                <tr>
+                                    <th>Hora</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                    <th>Domingo</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">06:00 - 09:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">09:00 - 12:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">12:00 - 15:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">15:00 - 18:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><h5>Comba + Natación <br> (60 min)</h5></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">18:00 - 21:00</th>
+                                    <td><h5>Espalda + Bíceps <br> (90 min)</h5></td>
+                                    <td></td>
+                                    <td><h5>Pecho + Tríceps <br> (90 min)</h5></td>
+                                    <td></td>
+                                    <td><h5>Pierna + Hombro <br> (90 min)</h5></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">21:00 - 00:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="class-crossfit" class="container tab-pane fade p-0">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-lg m-0">
+                            <thead class="bg-secondary text-white text-center">
+                                <tr>
+                                    <th>Hora</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                    <th>Domingo</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">06:00 - 09:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">09:00 - 12:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">12:00 - 15:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">15:00 - 18:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><h5>Padel Surf</h5></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">18:00 - 21:00</th>
+                                    <td></td>
+                                    <td><h5>Padel Surf</h5></td>
+                                    <td></td>
+                                    <td><h5>Padel Surf</h5></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><h5>Pádel</h5></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary text-white align-middle">21:00 - 00:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Class Timetable End -->
+
+    <!-- Team Start -->
+    <div id="gym-location" class="container pt-5 team">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="display-4 font-weight-bold">Mi último Centro de Entrenamiento:</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card border-0 bg-secondary text-center text-white">
+                    <!-- Mapa de Google maps -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.768372118885!2d-3.894089462876488!3d40.34996380576427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41729c2aaef869%3A0xb2c61472d301a7cd!2s40.3499638%2C%20-3.8940895!5e0!3m2!1ses!2ses!4v1690024400071!5m2!1ses!2ses" 
+                        width="700" 
+                        height="425" 
+                        style="justify-content: center; text-align: center;"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <!-- Fin del Mapa de Google Maps -->
+                    <div class="card-body bg-secondary">
+                        <h4 class="card-title text-primary">Corpore Fit-365 (Villaviciosa de Odón), Madrid, España</h4>
+                        <div style="display: inline-block;">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://x.com/i/flow/login?redirect_after_login=%2F365corpore" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.facebook.com/corporefit365/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.tiktok.com/@corporefit365" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://www.instagram.com/corporefit365/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="https://corporefit365.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"><i class="fas fa-phone"></i></a>
+                            <p style="display: inline-block;">+34 91 616 03 85</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-2 px-md-4 text-white">
+        <div class="container border-top border-dark pt-5">
+            <p class="m-0 text-center text-white">Copyright &copy; 2023-2030 <a rel="nofollow noopener" href="../index.html">My Personal WEB</a> - Todos los derechos reservados</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
