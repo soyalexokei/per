@@ -363,6 +363,76 @@
                                 <td><h5></h5></td>
                             </tr>
                         </tbody>
+                        <thead class="bg-secondary text-white text-center">
+                            <tr>
+                                <th>Días de la Semana</th>
+                                <th>Músculo a ejercitar</th>
+                                <th>Ejercicio</th>
+                                <th>Series</th>
+                                <th>Repeticiones</th>
+                                <th>Peso (Kg)</th>
+                                <th>Vídeo de muestra</th>
+                                <th>Nota (/2)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <th class="bg-secondary text-white align-middle">Domingo</th>
+                                <td><h5>Abdomen</h5></td>
+                                <td><h5>Rueda Abdominal</h5></td>
+                                <td><h5>4</h5></td>
+                                <td><h5>15 seg <br> 15 seg <br> 15 seg <br> 15 seg</h5></td>
+                                <td><h5>0</h5></td>
+                                <td><a style="cursor: pointer;" data-toggle="modal" data-target="#video-abdominales"><h5>Ver Vídeo</h5></a></td>
+                                <td><h5></h5></td>
+                            </tr>
+                        </tbody>
+                        <thead class="bg-secondary text-white text-center">
+                            <tr>
+                                <td></td>
+                                <th>Músculo a ejercitar</th>
+                                <th>Ejercicio</th>
+                                <th>Subejercicio</th>
+                                <th>Series</th>
+                                <th>Largos</th>
+                                <th>Vídeo de muestra</th>
+                                <th>Nota (/2)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td></td>
+                                <td><h5>Full Body</h5></td>
+                                <td><h5>Natación</h5></td>
+                                <td><h5>Alternar Crol y Braza</h5></td>
+                                <td><h5>5</h5></td>
+                                <td><h5>4 <br> 4 <br> 4 <br> 4 <br> 4</h5></td>
+                                <td><a style="cursor: pointer;" data-toggle="modal" data-target="#video-natacion-crol-braza"><h5>Ver Vídeo</h5></a></td>
+                                <td><h5></h5></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><h5>Apnea</h5></td>
+                                <td><h5>1</h5></td>
+                                <td><h5>1 <br> 1</h5></td>
+                                <td><a style="cursor: pointer;" data-toggle="modal" data-target="#video-natacion-apnea"><h5>Ver Vídeo</h5></a></td>
+                                <td><h5></h5></td>
+                            </tr>
+                        </tbody>
+                        <thead class="bg-secondary text-white text-center">
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
                     </table>
                 </div>
             </div>
@@ -656,6 +726,45 @@
         </div>
     </div>
 
+    <!-- Vídeo Abdominales -->
+    <div id="video-abdominales" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="proyeccion-abdominales"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vídeo Natación -->
+    <div id="video-natacion-crol-braza" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="proyeccion-natacion-crol-braza"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vídeo Apnea -->
+    <div id="video-natacion-apnea" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="proyeccion-natacion-apnea"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fin de los Modals -->
 
     <!-- JavaScript Libraries -->
@@ -697,5 +806,8 @@
     <script src="./js/video-hombro-1.js" type="text/javascript"></script>
     <script src="./js/video-hombro-2.js" type="text/javascript"></script>
     <script src="./js/video-hombro-3.js" type="text/javascript"></script>
+    <script src="./js/video-abdominales.js" type="text/javascript"></script>
+    <script src="./js/video-natacion-crol-braza.js" type="text/javascript"></script>
+    <script src="./js/video-natacion-apnea.js" type="text/javascript"></script>
 </body>
 </html>
