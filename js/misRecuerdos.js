@@ -1,6 +1,6 @@
 const pantallaMisRecuerdos = document.getElementById('imgs-mis-recuerdos');
 
-const finalImgs = 18;
+const finalImgs = 12;
 let inicial0 = 1;
 
 function pasarDeImg(aux) {
