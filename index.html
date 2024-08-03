@@ -157,6 +157,7 @@
             <a data-toggle="modal" data-target="#arbol-genealogico"><button><img src="./img/Iconos/Sobre-mi/arbol-genealogico.png"/> <p>Mi Árbol Genealógico</p></button></a>
             <a data-toggle="modal" data-target="#creciendo"><button><img src="./img/Iconos/Sobre-mi/creciendo.png"/> <p>Creciendo...</p></button></a>
             <a data-toggle="modal" data-target="#solidaridad"><button><img src="./img/Iconos/Sobre-mi/solidaridad.png"/> <p>Vídeo de solidaridad</p></button></a>
+            <a data-toggle="modal" data-target="#mis-recuerdos"><button><img src="./img/Iconos/Sobre-mi/mis-recuerdos.png"/> <p>Mis Recuerdos</p></button></a>
         </div>
     </div>
 
@@ -244,6 +245,8 @@
                 <div class="modal-body" style="text-align: center;">
                     <div class="carrusel-voluntariado">
                         <div class="carrusel-voluntariado-contenedor" id="marco-yo-creciendo"></div>
+                        <button class="flecha-izquierda-pasar" id="fase-anterior">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="fase-siguiente">&#10095;</button>
                     </div>
                 </div>
             </div>
@@ -272,6 +275,21 @@
                 <div class="modal-body" style="text-align: center;">
                     <div class="carrusel-voluntariado">
                         <div class="carrusel-voluntariado-contenedor" id="videos-solidaridad"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MIS RECUERDOS -->
+    <div id="mis-recuerdos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <div class="carrusel-voluntariado">
+                        <div class="carrusel-voluntariado-contenedor" id="imgs-mis-recuerdos"></div>
+                        <button class="flecha-izquierda-pasar" id="ve-anterior">&#10094;</button>
+                        <button class="flecha-derecha-pasar" id="ve-siguiente">&#10095;</button>
                     </div>
                 </div>
             </div>
@@ -595,6 +613,7 @@
     <script src="./js/sobre-mi.js" type="text/javascript"></script>
     <script src="./js/genealogico.js" type="text/javascript"></script>
     <script src="./js/yoCreciendo.js" type="text/javascript"></script>
+    <script src="./js/misRecuerdos.js" type="text/javascript"></script>
 
     <script>
         $(document).ready(function(){

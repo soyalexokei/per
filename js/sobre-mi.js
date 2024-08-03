@@ -10,12 +10,12 @@ const descripcionSobreMi =
     <p>tener diversas experiencias a lo largo del mundo. Además de hacer</p>
     <p>deporte, socializar con amigos y tener una buena alimentación</p>
     <p>y equilibrada</p><br><br>
-    
-    <p><q><i>La vida se basa en tener proyectos y objetivos, sin ellos, somos</p>
-    <p>Seres Humanos vacíos </i></q> - Alejandro, agosto 2023</p><br><br>
 
     <p><q><i>Algunas veces se gana, otras</p>
-    <p>se aprende</i></q> - Alejandro, septiembre 2019</p>
+    <p>se aprende</i></q> - Alejandro, septiembre 2019</p><br><br>
+    
+    <p><q><i>La vida se basa en tener proyectos y objetivos, sin ellos, somos</p>
+    <p>Seres Humanos vacíos </i></q> - Alejandro, agosto 2023</p>
 `;
 
 marcoSobreMi.innerHTML = descripcionSobreMi;
