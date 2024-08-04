@@ -30,7 +30,7 @@
     <!-- Estilos CSS exclusivos de mi Árbol Genealógico -->
     <style>
         .fondo-arbol-gen {
-            background-image: url("./img/fondo-arbol-gen.png");
+            background-color: darkblue;
         }
         .tree {
             display: flex;
@@ -51,12 +51,19 @@
             padding: 10px;
             margin: 0 10px;
             text-align: center;
-            width: 150px;
-            border-radius: 50%;
+            width: 160px;
+            border-radius: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: lightgray;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .person img {
+            width: 160px;
+            height: 110px;
         }
 
         .connector {
@@ -73,7 +80,7 @@
         }
 
         .line-horizontal {
-            width: 50px;
+            width: 60px;
             border-top: 2px solid red;
             margin: 0 10px;
         }
@@ -107,77 +114,60 @@
         <!-- Bisabuelos -->
         <div class="generation">
             <div class="person">
-                Bisabuelo Paterno Paterno
-                <br>
-                Fermín Fernández
-                <br>
-                18XX
+                <p>Bisabuelo Paterno Paterno</p>
+                <img src="" alt="Fermin"/>
+                <p>Fermín Fernández</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="person">
-                Bisabuela Paterna Paterna
-                <br>
-                Isabel Mejino
-                <br>
-                18XX
+                <p>Bisabuela Paterna Paterna</p>
+                <img src="" alt="Isabel"/>
+                <p>Isabel Mejino</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="spacer"></div>
             <div class="person">
-                Bisabuelo Paterno Materno
-                <br>
-                Rafael Escalante
-                <br>
-                18XX
+                <p>Bisabuelo Paterno Materno</p>
+                <img src="./img/arbolGenealogico/Bisabuelos/Paternos/Maternos/Rafael.png" alt="Rafael"/>
+                <p>Rafael Escalante</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="person">
-                Bisabuela Paterna Materna
-                <br>
-                Irene Castaño
-                <br>
-                18XX
+                <p>Bisabuela Paterna Materna</p>
+                <img src="./img/arbolGenealogico/Bisabuelos/Paternos/Maternos/Irene.png" alt="Irene"/>
+                <p>Irene Castaño</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="spacer"></div>
             <div class="person">
-                Bisabuelo Materno Paterno
-                <br>
-                Mariano Pérez
-                <br>
-                18XX
+                <p>Bisabuelo Materno Paterno</p>
+                <img src="" alt="Mariano"/>
+                <p>Mariano Pérez</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="person">
-                Bisabuela Materna Paterna
-                <br>
-                Victoria Llanos
-                <br>
-                18XX
+                <p>Bisabuela Materna Paterna</p>
+                <img src="" alt="Victoria"/>
+                <p>Victoria Llanos</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="spacer"></div>
             <div class="person">
-                Bisabuelo Materno Materno
-                <br>
-                Segundo Estébanez
-                <br>
-                18XX
+                <p>Bisabuelo Materno Materno</p>
+                <img src="./img/arbolGenealogico/Bisabuelos/Maternos/Maternos/Segundo.png" alt="Segundo"/>
+                <p>Segundo Estébanez</p>
+                <p>18XX - 19XX</p>
             </div>
             <div class="person">
-                Bisabuela Materna Materna
-                <br>
-                Julia Nieto
-                <br>
-                18XX
+                <p>Bisabuela Materna Materna</p>
+                <img src="./img/arbolGenealogico/Bisabuelos/Maternos/Maternos/Julia.png" alt="Julia"/>
+                <p>Julia Nieto</p>
+                <p>18XX - 19XX</p>
             </div>
         </div>
         <div class="connector">
             <div class="line"></div>
             <div class="line-horizontal"></div>
-            <div class="line"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="line"></div>
             <div class="line-horizontal"></div>
             <div class="line"></div>
             <div class="spacer"></div>
@@ -185,9 +175,8 @@
             <div class="spacer"></div>
             <div class="spacer"></div>
             <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
             <div class="line"></div>
+            <div class="line-horizontal"></div>
             <div class="line-horizontal"></div>
             <div class="line"></div>
             <div class="spacer"></div>
@@ -195,9 +184,17 @@
             <div class="spacer"></div>
             <div class="spacer"></div>
             <div class="spacer"></div>
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
             <div class="spacer"></div>
             <div class="spacer"></div>
             <div class="line"></div>
+            <div class="line-horizontal"></div>
             <div class="line-horizontal"></div>
             <div class="line"></div>
         </div>
@@ -213,35 +210,31 @@
         <!-- Abuelos -->
         <div class="generation">
             <div class="person">
-                Abuelo Paterno
-                <br>
-                Pedro Fernández Mejino
-                <br>
-                1927 - 1999
+                <p>Abuelo Paterno</p>
+                <img src="./img/arbolGenealogico/Abuelos/Paternos/Pedro.png" alt="Pedro"/>
+                <p>Pedro Fernández Mejino</p>
+                <p>1924 - 1999</p>
             </div>
             <div class="espacioAbuelos"></div>
             <div class="person">
-                Abuela Paterna
-                <br>
-                María Dolores Escalante Castaño (Lola)
-                <br>
-                1942 - 2008
+                <p>Abuela Paterna</p>
+                <img src="./img/arbolGenealogico/Abuelos/Paternos/Loli.png" alt="Loli"/>
+                <p>María Dolores Escalante Castaño (Loli)</p>
+                <p>1939 - 2008</p>
             </div>
             <div class="espacioAbuelos"></div>
             <div class="person">
-                Abuelo Materno
-                <br>
-                Fernando Pérez Llanos
-                <br>
-                1931 - 2009
+                <p>Abuelo Materno</p>
+                <img src="./img/arbolGenealogico/Abuelos/Maternos/Fernando.png" alt="Fernando"/>
+                <p>Fernando Pérez Llanos</p>
+                <p>1931 - 2009</p>
             </div>
             <div class="espacioAbuelos"></div>
             <div class="person">
-                Abuela Materna
-                <br>
-                Alejandra Estébanez Nieto
-                <br>
-                1930
+                <p>Abuela Materna</p>
+                <img src="./img/arbolGenealogico/Abuelos/Maternos/Jandri.png" alt="Jandri"/>
+                <p>Alejandra Estébanez Nieto (Jandri)</p>
+                <p>1930</p>
             </div>
         </div>
         <div class="connector">
@@ -266,25 +259,34 @@
         </div>
         <!-- Padres -->
         <div class="generation">
+            <a style="text-decoration: none; color: black;" href="./familiares/tiosPaternos.html"><div class="person">
+                <p>Tíos</p>
+                <p>Hermanos de mi padre</p>
+                <p>4</p>
+            </div></a>
+            <div class="line-horizontal"></div>
             <div class="person">
-                Padre
-                <br>
-                Rafael Fernández Escalante
-                <br>
-                1964
+                <p>Padre</p>
+                <img src="./img/arbolGenealogico/Padres/Rafael.png" alt="Rafael"/>
+                <p>Rafael Fernández Escalante</p>
+                <p>1964</p>
             </div>
             <div class="espacioPadres"></div>
             <div class="person">
-                Madre
-                <br>
-                Luz Fernanda Esther Pérez Estébanez
-                <br>
-                1962
+                <p>Madre</p>
+                <img src="./img/arbolGenealogico/Padres/Esther.png" alt="Esther"/>
+                <p>Luz Fernanda Esther Pérez Estébanez</p>
+                <p>1962</p>
             </div>
+            <div class="line-horizontal"></div>
+            <a style="text-decoration: none; color: black;" href="./familiares/tiosMaternos.html"><div class="person">
+                <p>Tíos</p>
+                <p>Hermanos de mi madre</p>
+                <p>2</p>
+            </div></a>
         </div>
         <div class="connector">
             <div class="line"></div>
-            <div class="line-horizontal"></div>
             <div class="line-horizontal"></div>
             <div class="line-horizontal"></div>
             <div class="line-horizontal"></div>
@@ -302,18 +304,16 @@
         <!-- Hijos -->
         <div class="generation">
             <div class="person">
-                Hermano
-                <br>
-                Alberto Fernández Pérez
-                <br>
-                1993
+                <p>Hermano</p>
+                <img src="./img/arbolGenealogico/Hermanos/Alberto.png" alt="Alberto"/>
+                <p>Alberto Fernández Pérez</p>
+                <p>1993</p>
             </div>
             <div class="person">
-                Yo
-                <br>
-                Alejandro Fernández Pérez
-                <br>
-                1997
+                <p>Yo</p>
+                <img src="./img/arbolGenealogico/Hermanos/Yo.png" alt="Alejandro"/>
+                <p>Alejandro Fernández Pérez</p>
+                <p>1997</p>
             </div>
         </div>
     </div>
