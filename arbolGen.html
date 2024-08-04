@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mi Árbol Genealógico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Development APP">
+    <meta name="author" content="Alejandro Fernández Pérez">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- Estilos CSS exclusivos de mi Árbol Genealógico -->
+    <style>
+        .fondo-arbol-gen {
+            background-image: url("./img/fondo-arbol-gen.png");
+        }
+        .tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .person {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 0 10px;
+            text-align: center;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        .connector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            height: 20px;
+            border-left: 2px solid red;
+            margin: 0 10px;
+        }
+
+        .line-horizontal {
+            width: 50px;
+            border-top: 2px solid red;
+            margin: 0 10px;
+        }
+
+        .spacer {
+            width: 37px;
+            height: 20px;
+        }
+        .espacioLinea {
+            width: 350px;
+            height: 20px;
+        }
+        .espacioLinea2 {
+            width: 700px;
+            height: 20px;
+        }
+        .espacioAbuelos {
+            width: 200px;
+        }
+        .espacioAbuelosPadres {
+            width: 400px;
+        }
+        .espacioPadres {
+            width: 550px;
+        }
+    </style>
+</head>
+<body class="fondo-arbol-gen">
+    <a href="./index.html" style="font-size: x-large; text-decoration: none; color: red;">Atrás</a>
+    <div class="tree">
+        <!-- Bisabuelos -->
+        <div class="generation">
+            <div class="person">
+                Bisabuelo Paterno Paterno
+                <br>
+                Fermín Fernández
+                <br>
+                18XX
+            </div>
+            <div class="person">
+                Bisabuela Paterna Paterna
+                <br>
+                Isabel Mejino
+                <br>
+                18XX
+            </div>
+            <div class="spacer"></div>
+            <div class="person">
+                Bisabuelo Paterno Materno
+                <br>
+                Rafael Escalante
+                <br>
+                18XX
+            </div>
+            <div class="person">
+                Bisabuela Paterna Materna
+                <br>
+                Irene Castaño
+                <br>
+                18XX
+            </div>
+            <div class="spacer"></div>
+            <div class="person">
+                Bisabuelo Materno Paterno
+                <br>
+                Mariano Pérez
+                <br>
+                18XX
+            </div>
+            <div class="person">
+                Bisabuela Materna Paterna
+                <br>
+                Victoria Llanos
+                <br>
+                18XX
+            </div>
+            <div class="spacer"></div>
+            <div class="person">
+                Bisabuelo Materno Materno
+                <br>
+                Segundo Estébanez
+                <br>
+                18XX
+            </div>
+            <div class="person">
+                Bisabuela Materna Materna
+                <br>
+                Julia Nieto
+                <br>
+                18XX
+            </div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+            <div class="espacioLinea"></div>
+            <div class="line"></div>
+            <div class="espacioLinea"></div>
+            <div class="line"></div>
+            <div class="espacioLinea"></div>
+            <div class="line"></div>
+        </div>
+        <!-- Abuelos -->
+        <div class="generation">
+            <div class="person">
+                Abuelo Paterno
+                <br>
+                Pedro Fernández Mejino
+                <br>
+                1927 - 1999
+            </div>
+            <div class="espacioAbuelos"></div>
+            <div class="person">
+                Abuela Paterna
+                <br>
+                María Dolores Escalante Castaño (Lola)
+                <br>
+                1942 - 2008
+            </div>
+            <div class="espacioAbuelos"></div>
+            <div class="person">
+                Abuelo Materno
+                <br>
+                Fernando Pérez Llanos
+                <br>
+                1931 - 2009
+            </div>
+            <div class="espacioAbuelos"></div>
+            <div class="person">
+                Abuela Materna
+                <br>
+                Alejandra Estébanez Nieto
+                <br>
+                1930
+            </div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+            <div class="espacioAbuelosPadres"></div>
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+            <div class="espacioLinea2"></div>
+            <div class="line"></div>
+        </div>
+        <!-- Padres -->
+        <div class="generation">
+            <div class="person">
+                Padre
+                <br>
+                Rafael Fernández Escalante
+                <br>
+                1964
+            </div>
+            <div class="espacioPadres"></div>
+            <div class="person">
+                Madre
+                <br>
+                Luz Fernanda Esther Pérez Estébanez
+                <br>
+                1962
+            </div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line-horizontal"></div>
+            <div class="line"></div>
+        </div>
+        <div class="connector">
+            <div class="line"></div>
+        </div>
+        <!-- Hijos -->
+        <div class="generation">
+            <div class="person">
+                Hermano
+                <br>
+                Alberto Fernández Pérez
+                <br>
+                1993
+            </div>
+            <div class="person">
+                Yo
+                <br>
+                Alejandro Fernández Pérez
+                <br>
+                1997
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/alejandro-perfil/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/soyalexokei/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://x.com/soyalexokei" target="_blank"><img src="./img/Iconos/logo-twitter-x.png" alt="logo-twitter-x"/></a></li>
+                        <li><a href="https://www.infojobs.net/candidate/cv/view/index.xhtml" target="_blank"><img src="./img/Iconos/ij-logo_reduced.png"/></a></li>
+                    </ul>
+                    <p>Copyright &copy; 2023-2030 <a rel="nofollow noopener" href="index.html">My Personal WEB</a> - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
