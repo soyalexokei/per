@@ -1,21 +1,13 @@
 /* Variables de valor de cada zona del cuerpo */
-var valorCalentamiento = document.getElementById('valor-calentamiento');
-var valorCardio = document.getElementById('valor-cardio');
-var valorEspalda1 = document.getElementById('valor-espalda1');
-var valorEspalda2 = document.getElementById('valor-espalda2');
-var valorEspalda3 = document.getElementById('valor-espalda3');
-var valorEspalda4 = document.getElementById('valor-espalda4');
-var valorBiceps1 = document.getElementById('valor-biceps1');
-var valorBiceps2 = document.getElementById('valor-biceps2');
 
 /* Crear un contexto para el gráfico */
-var marco = document.getElementById('grafico-progresion').getContext('2d');
+var marco = document.getElementById('grafico-progresion-pecho').getContext('2d');
 
 var grafico = new Chart(marco,
     {
         type: 'line',
         data: {
-            labels: ['', 'Calentamiento', 'Cardio', 'Espalda', 'Bíceps', 'Pecho', 'Tríceps', 'Pierna', 'Hombro', 'Abdominales', 'Natación', 'Apnea', ''],
+            labels: ['', 'Semana 1', 'Semana 2', 'Semana 3', 'Semana 4', 'Semana 5', 'Semana 6', 'Semana 7', 'Semana 8', 'Semana 9', 'Semana 10', ''],
             datasets: [{
                 label: 'Progresión',
                 data: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
