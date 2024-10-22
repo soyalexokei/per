@@ -1,0 +1,566 @@
+/* ---- ---- ---- FUENTES ---- ---- ---- */
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: "KottaOne-Regular";
+    src: url("../fonts/Kotta_One/KottaOne-Regular.ttf");
+}
+
+/* ---- ---- ---- ANIMACIONES ---- ---- ---- */
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* ---- ---- ---- PROPIEDADES GENERALES ---- ---- ---- */
+#google_translate_element {
+    text-align: center;
+}
+
+.familiaresFotos {
+    width: 90px;
+}
+
+#parentescoFam {
+    font-size: x-large;
+}
+
+.carousel-inner p {
+    font-size: x-small;
+}
+
+.btnTreeAtras {
+    width: 80px;
+    background-color: rgb(37, 37, 73);
+    color: white;
+    font-size: x-large;
+    border-radius: 7px;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    cursor: none; 
+}
+
+body button, body form label{
+    cursor: none !important;
+}
+
+#parallax{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image:url("../images/FondoArbolVidaEditada.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(1,1,1,0.5) !important;
+    background-blend-mode: darken;
+}
+
+/* Puntero */
+
+.cursor{
+    position: fixed;
+    z-index: 9999;
+    background: #2696E8;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 15px #2696E8,
+                0 0 45px #2696E8,
+                0 0 90px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%,-50%);
+    opacity: .9;
+    display: none;
+}
+
+.cursor::before{
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 30px;
+    height: 30px;
+    opacity: .2;
+    transform: translate(-25%,-25%);
+    border-radius: 50%;
+}
+
+/*carousel*/
+.flia, .tiosAbuelos, .tiosMaternos, .tiosPaternos, .tiosPaternos{
+    height: 100vh;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 10vw !important;
+}
+
+/* Titulos */
+
+.carousel-item .titulo{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: "Lobster-Regular";
+}
+
+.carousel-item .subtitulo{
+    font-size: 2.8rem;
+    text-shadow: 1px 1.5px 1px #919191;
+}
+
+.carousel-item .h1{
+    font-size: 3.8rem;
+    text-shadow: 1px 2px 1px #2648cf,
+                 1px 4px 1px #ce382a;
+}
+
+.carousel-control-prev,.carousel-control-prev:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,0.4) 0%,rgba(255, 255, 255, 0) 100%) !important;
+    opacity: 1 !important;
+}
+.carousel-control-next,.carousel-control-next:hover{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.4)100%) !important;
+    opacity: 1 !important;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    width: 3rem !important;
+    height: 3rem !important;
+}
+
+/* Seccion principal */
+.container .card{ 
+    display: block;
+    margin: auto;
+    width: 15rem;
+    font-size: 1.7rem;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.4); 
+    border-left: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(5px);
+}
+
+#card9,#card10,#card11,#card12,#card13,#card14,#card48,#card58{
+    width: 12rem;
+}
+
+#principal #card15{
+    width: 13rem;
+}
+
+.card .nom{
+    font-family: "KottaOne-Regular";
+    color:whitesmoke;
+}
+
+.card .ape, .card .cambioFuente{
+    font-family: "Lobster-Regular";
+    color:whitesmoke; 
+}
+
+.card .desc{
+    position: absolute;
+    font-family: "KottaOne-Regular";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    -webkit-text-stroke: 0.05rem whitesmoke;
+
+    transition: all .3s;
+    transform: scale(1.5);
+    opacity: 0;
+} 
+
+.card .mm{
+    text-shadow: 1px 1px 1px #2648cf;
+}
+
+.card .pp{
+    text-shadow: 1px 1px 1px #ce382a;
+}
+
+.card .gen{
+    text-shadow: 1px 1px 1px #919191;
+}
+
+#lineas img{
+    color: whitesmoke;
+    width: 8rem;
+    height: 8rem;
+}
+
+#lineas  :is(.flechaIzquierdaYo,.flechaDerechaYo){
+    width: 10rem; 
+}
+
+/* Seccion Tios Abuelos */
+
+.flechaHno{
+    width: 10.5rem;
+    height: 5rem;
+}    
+
+.flechaAbue{
+    width: 11rem;
+    height: 5rem;
+}
+
+/* Media querys para hacer la pagina resposive*/
+@media screen and (max-width: 1530px)  {
+    .carousel-control-prev, .carousel-control-next{
+        width: 4rem !important;
+    }   
+}   
+
+@media screen and (max-width: 1200px)  {
+	.flechaHno{
+        width: 8rem;    
+    } 
+    .flechaAbue{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 995px)  {
+    .flechaHno, #lineas img{
+        width: 6rem;
+    }
+    .flechaAbue{
+        width: 7rem;
+    }
+    #lineas img{
+        height: 6rem;
+    }
+    
+    #lineas .flechaIzquierdaYo, #lineas .flechaDerechaYo, .container .card{
+        width: 8rem; 
+    }
+
+	.container .card{ 
+        font-size: 1.5rem;
+    }
+    
+    #card9,#card10,#card11,#card12,#card13,#card14,#card48,#card55,#card58{
+        width: 10rem;
+    }
+    
+    #principal #card15{
+        width: 11rem;
+    }
+    .card .desc{
+        font-size: 1.2rem;
+    }
+    .row .col{
+        padding: 0;
+    }  
+
+    .tiosAbuelos .row .col,.tiosPaternos .row .col,.tiosMaternos .row .col{
+        padding-left: 1px;
+        padding-right: 1px;
+    }    
+
+    .carousel-item .subtitulo{
+        font-size: 2.4rem;
+    }
+    
+    .carousel-item .h1{
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width: 770px)  {
+    .flia .flechaHno{
+        width: 4rem;
+    }
+    .container .card{ 
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+    
+    #card9,#card10,#card11,#card12,#card13,#card14,#card48,#card55,#card58{
+        width: 8rem;
+    }
+    
+    #principal #card15{
+        width: 9rem;
+    }
+    .card .desc{
+        font-size: 1rem;
+    } 
+    .carousel-item .h1{
+        font-size: 3.2rem;
+    }
+
+    .carousel-item .subtitulo{
+        font-size: 2rem;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        width: 3rem !important;
+    }
+} 
+
+@media screen and (max-width: 580px){
+    .container .card{ 
+        width: 9rem;
+        font-size: 1rem;
+        height: auto;
+    }
+
+    .tiosAbuelos .container .card, .tiosMaternos .container .card, .tiosPaternos .container .card{
+        width: 5.8rem;
+    }
+
+    .container .card p{ 
+        margin: 0;
+    }
+    
+    .card .desc{
+        font-size: 1rem;
+    }
+    
+    .carousel-item .h1{
+        font-size: 2.5rem;
+    }
+
+    .lineaMobile, .lineaMobile_3{
+        width: 100%;
+        height: 23px;
+        position: relative;
+    }
+
+    .lineaMobile i{
+        color: whitesmoke;
+        margin-left: 82%; 
+        font-size: 2rem; 
+    }
+
+    .lineaMobile_3 i{
+        color: whitesmoke;
+        margin-left: 49%; 
+        font-size: 2rem; 
+    }
+    
+    .lineaMobile .arrowBottom{
+        animation: slideBottom 1.5s ease-in-out infinite;
+    }
+
+    .lineaMobile .arrowTop{
+        animation: slideTop 1.5s ease-in-out infinite;
+    }
+
+    .lineaMobile .arrowBottom2{
+        margin-right: 60%;
+        margin-left: 0;
+        animation: slideBottom2 1.5s ease-in-out infinite;
+    }
+
+    .lineaMobile .arrowBottom3{
+        margin-right: 60%;
+        margin-left: 40%;
+        animation: slideBottom3 1.5s ease-in-out infinite;
+    }
+
+    .lineaMobile_3 .arrowBottom3{
+        animation: slideBottom3 1.5s ease-in-out infinite;
+    }
+
+    .lineaMobile_3 .arrowBottom180{
+        transform-origin: 50% 0%;
+        animation: slideBottom180 3s ease-in-out infinite;
+    }
+
+    .lineaMobile .arrowTop2{
+        margin-right: 60%; 
+        margin-left: 0;
+        animation: slideTop2 1.5s ease-in-out infinite;
+    }
+
+    @keyframes slideBottom{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(-15deg);
+        }
+
+        50% {
+            transform: translate(0, 1px) rotate(-15deg);
+        }
+    }
+    @keyframes slideBottom2{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(-45deg);
+        }
+
+        50% {
+            transform: translate(0, 1px) rotate(-45deg);
+        }
+    }
+    @keyframes slideBottom3{
+        0%,
+        100% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(0, 1px );
+        }
+    }
+    @keyframes slideBottom180{
+        0%,
+        100% {
+            transform: rotate(-45deg);
+        }
+
+        50% {
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes slideTop{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(15deg);
+        }
+
+        50% {
+            transform: translate(0, -1px) rotate(15deg);
+        }
+    }
+    @keyframes slideTop2{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(35deg);
+        }
+
+        50% {
+            transform: translate(0, -1px) rotate(35deg);
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        width: 0 !important;
+    }
+    
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        position:absolute !important;
+        bottom: 2rem;
+        width: 3rem !important;
+        height: 3rem !important; 
+    }
+    
+    .carousel-control-prev-icon{
+        left: 2rem;
+    }
+    .carousel-control-next-icon{
+        right: 2rem;
+    }
+
+    .modal-content{
+        font-size: 1.4rem;
+    }
+    
+    .modal-title{
+        font-size: 2rem;
+    }
+    
+    .modal-body :is(input, textarea){
+        font-size: 1.4rem; 
+    }
+    
+    .modal-body .btn{
+        width: 10rem;
+        font-size: 1.4rem;  
+    }
+    
+}    
+
+@media screen and (max-width: 460px){ 
+    @keyframes slideBottom{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(-25deg);
+        }
+
+        50% {
+            transform: translate(0, 1px) rotate(-25deg);
+        }
+    }
+    @keyframes slideTop{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(25deg);
+        }
+
+        50% {
+            transform: translate(0, -1px) rotate(25deg);
+        }
+    }
+}
+
+@media screen and (max-width: 410px){
+    .lineaMobile i{
+        margin-left: 75%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .tiosAbuelos .container .card, .tiosMaternos .container .card, .tiosPaternos .container .card{
+        width: 5.5rem;
+        font-size: .9rem;
+    }
+
+    #card48, #card55{
+        width: 5.8rem;
+    }
+
+    .lineaMobile :is(.arrowBottom, .arrowTop){
+        font-size: 1rem;
+    }  
+
+    .lineaMobile .arrowBottom{
+        padding-top: 10%;
+    }
+
+    @keyframes slideBottom{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(-35deg);
+        }
+
+        50% {
+            transform: translate(0, 1px) rotate(-35deg);
+        }
+    }
+    @keyframes slideTop{
+        0%,
+        100% {
+            transform: translate(1px, 0) rotate(35deg);
+        }
+
+        50% {
+            transform: translate(0, -1px) rotate(35deg);
+        }
+    } 
+}

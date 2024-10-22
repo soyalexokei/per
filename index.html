@@ -1,108 +1,312 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>My Personal WEB</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal Development APP">
-    <meta name="author" content="Alejandro Fernández Pérez">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My Personal WEB</title>
+        <meta name="description" content="Personal Development APP: Vanilla Plantilla HTML gratis">
+        <meta name="author" content="Alejandro Fernández Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/hero-slider.css">
-    <link rel="stylesheet" href="css/templatemo-main.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- favicon -->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-    <!-- favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-</head>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
 <body>
+
+    <!-- GOOGLE TRADUCTOR -->
+    <div id="google_translate_element" class="google"></div>
+    <!-- FIN DEL GOOGLE TRADUCTOR -->
+
+    <!-- PANTALLA INICIO -->
     <div class="parallax-content baner-content" id="home">
         <div class="container">
             <div class="first-content">
                 <h1>Alejandro Traveller</h1>
-                <h2>En estado de progreso personal constante</h2>
+                <span>En <em>estado</em> de progreso personal constante</span>
                 <div class="primary-button">
-                    <a href="#services">Mis Viajes</a>
-                    <a href="./contact.html">Contáctame</a>
+                    <a href="#trips">Mis Viajes</a>
+                    <a href="#hobbies">Mis Aficiones</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="./paginas/contact.html">Contáctame</a>
                 </div>
-                <br>
-                <br>
-                <p><img style="height: 20px; width: 13px;" src="./img/Iconos/Otros/ubicacion-icon.png" alt="ubicacion-icon"/> Un lugar llamado mundo</p>
             </div>
         </div>
     </div>
+    <!-- FIN DE LA PANTALLA INICIO -->
 
-    <div id="google_translate_element" class="google"></div>
-
-    <div class="service-content" id="services">
-        <div class="titulo-viajes">
-            <img width="40" height="40" src="./img/Iconos/Otros/icon-viajes.png" alt="icon-viajes"/>
-            <h1 class="titulos-secciones">Mis Viajes</h1>
-            <img width="40" height="40" src="./img/Iconos/Otros/icon-viajes.png" alt="icon-viajes"/>
-        </div>
+    <!-- PANTALLA VIAJES -->
+    <div class="service-content" id="trips">
+        <h1 class="titulos-secciones">Mis Viajes</h1>
         <br>
-        <img src="./world.svg" alt="world"/>
-        <div class="row" style="text-align: center;">
-            <div class="col-md-5">
-                <p style="color: white; font-size: large;">País natal:</p>
-                <a href="./spain.html"><img width="50" height="28" src="./img/Paises/spain.png" alt="spain"/></a>
-            </div>
-            <div class="col-md-5">
-                <p style="color: white; font-size: large;">Países visitados (imágenes):</p>
-                <a data-toggle="modal" data-target="#pais-img1"><img width="50" height="28" src="./img/Paises/usa-img.png" alt="usa"/></a>
-                <a data-toggle="modal" data-target="#pais-img2"><img width="50" height="28" src="./img/Paises/portugal-img.png" alt="portugal"/></a>
-                <a data-toggle="modal" data-target="#pais-img3"><img width="50" height="28" src="./img/Paises/england-img.png" alt="england"/></a>
-                <a data-toggle="modal" data-target="#pais-img5"><img width="50" height="28" src="./img/Paises/france-img.png" alt="france"/></a>
-                <a data-toggle="modal" data-target="#pais-img11"><img width="50" height="28" src="./img/Paises/germany-img.png" alt="germany"/></a>
-                <a data-toggle="modal" data-target="#pais-img6"><img width="50" height="28" src="./img/Paises/hungary-img.png" alt="hungary"/></a>
-                <a data-toggle="modal" data-target="#pais-img10"><img width="50" height="28" src="./img/Paises/austria-img.png" alt="austria"/></a>
-                <a data-toggle="modal" data-target="#pais-img9"><img width="50" height="28" src="./img/Paises/serbia-img.png" alt="serbia"/></a>
-                <a data-toggle="modal" data-target="#pais-img8"><img width="50" height="28" src="./img/Paises/montenegro-img.png" alt="montenegro"/></a>
-                <a data-toggle="modal" data-target="#pais-img4"><img width="50" height="28" src="./img/Paises/kosovo-img.png" alt="kosovo"/></a>
-                <a data-toggle="modal" data-target="#pais-img7"><img width="50" height="28" src="./img/Paises/gibraltar-img.png" alt="gibraltar"/></a>
-                <a data-toggle="modal" data-target="#pais-img12"><img width="50" height="28" src="./img/Paises/italy-img.png" alt="italy"/></a>
-                <br>
-                <br>
-                <p style="color: white; font-size: large;">Países visitados (vídeos):</p>
-                <a data-toggle="modal" data-target="#pais-video1"><img width="50" height="28" src="./img/Paises/usa-video.png" alt="usa"/></a>
-                <a data-toggle="modal" data-target="#pais-video2"><img width="50" height="28" src="./img/Paises/portugal-video.png" alt="portugal"/></a>
-                <a data-toggle="modal" data-target="#pais-video3" hidden><img width="50" height="28" src="./img/Paises/england-video.png" alt="england"/></a>
-                <a data-toggle="modal" data-target="#pais-video5" hidden><img width="50" height="28" src="./img/Paises/france-video.png" alt="france"/></a>
-                <a data-toggle="modal" data-target="#pais-video11"><img width="50" height="28" src="./img/Paises/germany-video.png" alt="germany"/></a>
-                <a data-toggle="modal" data-target="#pais-video6"><img width="50" height="28" src="./img/Paises/hungary-video.png" alt="hungary"/></a>
-                <a data-toggle="modal" data-target="#pais-video10"><img width="50" height="28" src="./img/Paises/austria-video.png" alt="austria"/></a>
-                <a data-toggle="modal" data-target="#pais-video9"><img width="50" height="28" src="./img/Paises/serbia-video.png" alt="serbia"/></a>
-                <a data-toggle="modal" data-target="#pais-video8"><img width="50" height="25" src="./img/Paises/montenegro-video.png" alt="montenegro"/></a>
-                <a data-toggle="modal" data-target="#pais-video4"><img width="50" height="28" src="./img/Paises/kosovo-video.png" alt="kosovo"/></a>
-                <a data-toggle="modal" data-target="#pais-video7"><img width="50" height="28" src="./img/Paises/gibraltar-video.png" alt="gibraltar"/></a>
-                <a data-toggle="modal" data-target="#pais-video12"><img width="50" height="28" src="./img/Paises/italy-video.png" alt="italy"/></a>
-            </div>
-        </div>
         <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>País natal:</p>
+                    <a href="./paginas/spain.html"><img class="banderas" src="./img/Paises/spain.png"/></a>
+                </div>
+                <div class="col-md-8">
+                    <p>Países visitados:</p>
+                    <a data-toggle="modal" data-target="#usa"><img class="banderas" src="./img/Paises/usa.png"/></a>
+                    <div id="usa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Estados Unidos de América</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-usa"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-usa">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-usa">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#portugal"><img class="banderas" src="./img/Paises/portugal.png"/></a>
+                    <div id="portugal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Portugal</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-portugal"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-portugal">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-portugal">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#england"><img class="banderas" src="./img/Paises/england.png"/></a>
+                    <div id="england" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Inglaterra</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-england"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-england">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-england">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#france"><img class="banderas" src="./img/Paises/france.png"/></a>
+                    <div id="france" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Francia</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-france"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-france">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-france">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#germany"><img class="banderas" src="./img/Paises/germany.png"/></a>
+                    <div id="germany" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Alemania</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-germany"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-germany">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-germany">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#hungary"><img class="banderas" src="./img/Paises/hungary.png"/></a>
+                    <div id="hungary" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Hungría</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-hungary"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-hungary">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-hungary">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#austria"><img class="banderas" src="./img/Paises/austria.png"/></a>
+                    <div id="austria" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Austria</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-austria"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-austria">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-austria">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#serbia"><img class="banderas" src="./img/Paises/serbia.png"/></a>
+                    <div id="serbia" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Serbia</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-serbia"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-serbia">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-serbia">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#montenegro"><img class="banderas" src="./img/Paises/montenegro.png"/></a>
+                    <div id="montenegro" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Montenegro</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-montenegro"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-montenegro">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-montenegro">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#kosovo"><img class="banderas" src="./img/Paises/kosovo.png"/></a>
+                    <div id="kosovo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Kosovo</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-kosovo"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-kosovo">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-kosovo">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#gibraltar"><img class="banderas" src="./img/Paises/gibraltar.png"/></a>
+                    <div id="gibraltar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Gibraltar</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-gibraltar"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-gibraltar">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-gibraltar">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-toggle="modal" data-target="#italy"><img class="banderas" src="./img/Paises/italy.png"/></a>
+                    <div id="italy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <h1>Italia</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-italy"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-italy">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-italy">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <img src="./mapas/world.svg"/>
+        </div>
     </div>
-
+    <!-- FIN DE LA PANTALLA VIAJES -->
     
-    <div class="parallax-content projects-content" id="portfolio">
+    <!-- PANTALLA AFICIONES -->
+    <div class="parallax-content projects-content" id="hobbies">
         <h1 class="titulos-secciones">Mis Aficiones</h1>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div id="owl-testimonials" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="testimonials-item">
-                                <a data-toggle="modal" data-target="#aficion19"><img src="./img/Iconos/Aficiones/1.png"/></a>
+                                <a data-toggle="modal" data-target="#van-life"><img src="./img/Iconos/Aficiones/van-life.png"/></a>
+                                <div id="van-life" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-van-life"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-van-life">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-van-life">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <h4>Van Life</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a data-toggle="modal" data-target="#street-art"><img src="./img/Iconos/Aficiones/street-art.png"/></a>
+                                <div id="street-art" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-street-art"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-street-art">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-street-art">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="text-content">
                                     <h4>Street Art</h4>
                                 </div>
@@ -110,7 +314,21 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a data-toggle="modal" data-target="#aficion1"><img src="./img/Iconos/Aficiones/2.png"/></a>
+                                <a data-toggle="modal" data-target="#coches"><img src="./img/Iconos/Aficiones/coches.png"/></a>
+                                <div id="coches" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-coches"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-coches">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-coches">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="text-content">
                                     <h4>Coches</h4>
                                 </div>
@@ -118,7 +336,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="./gym/index.html"><img src="./img/Iconos/Aficiones/3.png"/></a>
+                                <a href="./gym/index.html"><img src="./img/Iconos/Aficiones/deporte.png"/></a>
                                 <div class="text-content">
                                     <h4>Deporte</h4>
                                 </div>
@@ -126,7 +344,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a href="./cooking/index.html"><img src="./img/Iconos/Aficiones/4.png"/></a>
+                                <a href="./cooking/index.html"><img src="./img/Iconos/Aficiones/cocina.png"/></a>
                                 <div class="text-content">
                                     <h4>Cocinar</h4>
                                 </div>
@@ -134,7 +352,21 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a data-toggle="modal" data-target="#aficion2"><img src="./img/Iconos/Aficiones/5.png"/></a>
+                                <a data-toggle="modal" data-target="#draw"><img src="./img/Iconos/Aficiones/draw.png"/></a>
+                                <div id="draw" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-draw"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-draw">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-draw">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="text-content">
                                     <h4>Arte a mano alzada</h4>
                                 </div>
@@ -142,7 +374,21 @@
                         </div>
                         <div class="item">
                             <div class="testimonials-item">
-                                <a data-toggle="modal" data-target="#aficion3"><img src="./img/Iconos/Aficiones/6.png"/></a>
+                                <a data-toggle="modal" data-target="#papiroflexia"><img src="./img/Iconos/Aficiones/papiroflexia.png"/></a>
+                                <div id="papiroflexia" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-papiroflexia"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-papiroflexia">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-papiroflexia">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="text-content">
                                     <h4>Papiroflexia</h4>
                                 </div>
@@ -153,496 +399,157 @@
             </div>
         </div>
     </div>
+    <!-- FIN DE LA PANTALLA AFICIONES -->
 
-
-    <div class="tabs-content" id="our-story">
+    <!-- PANTALLA SOBRE MÍ -->
+    <div class="tabs-content" id="about">
         <h1 class="titulos-secciones">Sobre mí</h1>
-        <br>
-        <br>
         <div class="container">
-            <a data-toggle="modal" data-target="#descrip-sobre-mi"><button><img src="./img/Iconos/Sobre-mi/descripcion.png"/> <p>Descripción</p></button></a>
-            <a data-toggle="modal" data-target="#album"><button><img src="./img/Iconos/Sobre-mi/album.png"/> <p>Mi álbum</p></button></a>
-            <a href="./arbolGen.html"><button><img src="./img/Iconos/Sobre-mi/arbol-genealogico.png"/> <p>Mi Árbol Genealógico</p></button></a>
-            <a data-toggle="modal" data-target="#creciendo"><button><img src="./img/Iconos/Sobre-mi/creciendo.png"/> <p>Creciendo...</p></button></a>
-            <a data-toggle="modal" data-target="#solidaridad"><button><img src="./img/Iconos/Sobre-mi/solidaridad.png"/> <p>Vídeo de solidaridad</p></button></a>
-            <a data-toggle="modal" data-target="#mis-recuerdos"><button><img src="./img/Iconos/Sobre-mi/mis-recuerdos.png"/> <p>Mis Recuerdos</p></button></a>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="wrapper">
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <p>
+                                    Soy una persona proactiva que le gusta alcanzar metas, emprender
+                                    y superar cada bache de la vida. Nací el 30 de marzo de 1997, en
+                                    Madrid (España)<br><br>
+                                    
+                                    Me encanta viajar, descubrir nuevas culturas, conocer nuevas personas y
+                                    tener diversas experiencias a lo largo del mundo. Además de hacer
+                                    deporte, socializar con amigos y tener una buena alimentación
+                                    y equilibrada<br><br>
+
+                                    <q><i> Algunas veces se gana, otras se aprende </i></q> - Alejandro, septiembre 2019<br><br>
+                                    
+                                    <q><i> La vida se basa en tener proyectos y objetivos, sin ellos, somos Seres Humanos vacíos </i></q> - Alejandro, agosto 2023
+                                </p>
+                            </div>
+                            <div id="tab2">
+                                <a data-toggle="modal" data-target="#album"><img src="img/Iconos/Sobre-mi/album.png"/></a>
+                                <div id="album" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-album"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-album">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-album">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab3">
+                                <a data-toggle="modal" data-target="#creciendo"><img src="img/Iconos/Sobre-mi/creciendo.png"/></a>
+                                <div id="creciendo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-creciendo"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-creciendo">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-creciendo">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab4">
+                                <a data-toggle="modal" data-target="#solidaridad"><img src="img/Iconos/Sobre-mi/solidaridad.png"/></a>
+                                <div id="solidaridad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-solidaridad"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-solidaridad">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-solidaridad">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab5">
+                                <a data-toggle="modal" data-target="#mis-recuerdos"><img src="img/Iconos/Sobre-mi/mis-recuerdos.png"/></a>
+                                <div id="mis-recuerdos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body" style="text-align: center;">
+                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                <div class="carrusel-voluntariado">
+                                                    <div class="carrusel-voluntariado-contenedor" id="ver-mis-recuerdos"></div>
+                                                    <button class="flecha-izquierda-pasar" id="izq-mis-recuerdos">&#10094;</button>
+                                                    <button class="flecha-derecha-pasar" id="der-mis-recuerdos">&#10095;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab6">
+                                <a href="./paginas/treeFamiliar/index.html"><img src="img/Iconos/Sobre-mi/arbol-genealogico.png"/></a>
+                            </div>
+                        </section>
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">Descripción</a></li>
+                            <li><a href="#tab2">Mi álbum</a></li>
+                            <li><a href="#tab3">Creciendo...</a></li>
+                            <li><a href="#tab4">Vídeo de solidaridad</a></li>
+                            <li><a href="#tab5">Mis Recuerdos</a></li>
+                            <li><a href="#tab6">Mi Árbol Genealógico</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- FIN DE LA PANTALLA SOBRE MÍ -->
 
+    <!-- PIE DE PAGINA -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="primary-button">
-                        <a href="#home">A la portada</a>
+                        <a href="#home">Inicio</a>
                     </div>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/alejandro-perfil/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="https://www.instagram.com/soyalexokei/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://x.com/soyalexokei" target="_blank"><img src="./img/Iconos/logo-twitter-x.png" alt="logo-twitter-x"/></a></li>
-                        <li><a href="https://www.infojobs.net/candidate/cv/view/index.xhtml" target="_blank"><img src="./img/Iconos/ij-logo_reduced.png"/></a></li>
                     </ul>
-                    <p>Copyright &copy; 2023-2030 <a rel="nofollow noopener" href="index.html">My Personal WEB</a> - Todos los derechos reservados</p>
+                    <p>Copyright &copy; 2023-2030 <a rel="nofollow noopener" href="./index.html">My Personal WEB</a> - Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- FIN DEL PIE DE PAGINA -->
 
-    <!-- Modals -->
-
-    <!-- STREET ART -->
-    <div id="aficion19" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-aficion19"></div>
-                        <button class="flecha-izquierda-pasar" id="move-izquierda19">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="move-derecha19">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- COCHES -->
-    <div id="aficion1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-aficion1"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda1">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha1">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Arte a mano alzada -->
-    <div id="aficion2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-aficion2"></div>
-                        <button class="flecha-izquierda-pasar" id="izq-alzada">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="der-alzada">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Papiroflexia -->
-    <div id="aficion3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-aficion3"></div>
-                        <button class="flecha-izquierda-pasar" id="izq-papiro">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="der-papiro">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Acceso a la descripción sobre mí -->
-    <div id="descrip-sobre-mi" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="marco-descrip-sobre-mi"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Acceso a mi yo creciendo.... -->
-    <div id="creciendo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="marco-yo-creciendo"></div>
-                        <button class="flecha-izquierda-pasar" id="fase-anterior">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="fase-siguiente">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MI ALBUM PERSONAL -->
-    <div id="album" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-album"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda2">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha2">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SOLIDARIDAD -->
-    <div id="solidaridad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-solidaridad"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MIS RECUERDOS -->
-    <div id="mis-recuerdos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-mis-recuerdos"></div>
-                        <button class="flecha-izquierda-pasar" id="ve-anterior">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="ve-siguiente">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- USA -->
-    <div id="pais-img1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais1"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda3">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha3">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais1"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda4">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha4">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PORTUGAL -->
-    <div id="pais-img2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais2"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda5">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha5">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais2"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda6">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha6">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ENGLAND -->
-    <div id="pais-img3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais3"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda7">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha7">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FRANCE -->
-    <div id="pais-img5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais5"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda11">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha11">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- KOSOVO -->
-    <div id="pais-img4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais4"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda9">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha9">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais4"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda10">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha10">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- HUNGARY -->
-    <div id="pais-img6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais6"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda13">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha13">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais6"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda14">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha14">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- GIBRALTAR -->
-    <div id="pais-img7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais7"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda15">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha15">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais7"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda16">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha16">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MONTENEGRO -->
-    <div id="pais-img8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais8"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda17">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha17">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais8"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda18">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha18">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SERBIA -->
-    <div id="pais-img9" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais9"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda19">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha19">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video9" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais9"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda20">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha20">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- AUSTRIA -->
-    <div id="pais-img10" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais10"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda21">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha21">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video10" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais10"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda22">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha22">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- GERMANY -->
-    <div id="pais-img11" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="imgs-pais11"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda23">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha23">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="pais-video11" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body" style="text-align: center;">
-                    <div class="carrusel-voluntariado">
-                        <div class="carrusel-voluntariado-contenedor" id="videos-pais11"></div>
-                        <button class="flecha-izquierda-pasar" id="flecha-izquierda24">&#10094;</button>
-                        <button class="flecha-derecha-pasar" id="flecha-derecha24">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- end Modals -->
+    <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="./js/aficion1.js" type="text/javascript"></script>
-    <script src="./js/aficion19.js" type="text/javascript"></script>
-    <script src="./js/aficion2.js" type="text/javascript"></script>
-    <script src="./js/aficion3.js" type="text/javascript"></script>
-    <script src="./js/album.js" type="text/javascript"></script>
-    <script src="./js/solidaridad.js" type="text/javascript"></script>
-    <script src="./js/pais-img1.js" type="text/javascript"></script>
-    <script src="./js/pais-video1.js" type="text/javascript"></script>
-    <script src="./js/pais-img2.js" type="text/javascript"></script>
-    <script src="./js/pais-video2.js" type="text/javascript"></script>
-    <script src="./js/pais-img3.js" type="text/javascript"></script>
-    <script src="./js/pais-img5.js" type="text/javascript"></script>
-    <script src="./js/pais-img4.js" type="text/javascript"></script>
-    <script src="./js/pais-video4.js" type="text/javascript"></script>
-    <script src="./js/pais-img6.js" type="text/javascript"></script>
-    <script src="./js/pais-video6.js" type="text/javascript"></script>
-    <script src="./js/pais-img7.js" type="text/javascript"></script>
-    <script src="./js/pais-video7.js" type="text/javascript"></script>
-    <script src="./js/pais-img8.js" type="text/javascript"></script>
-    <script src="./js/pais-video8.js" type="text/javascript"></script>
-    <script src="./js/pais-img9.js" type="text/javascript"></script>
-    <script src="./js/pais-video9.js" type="text/javascript"></script>
-    <script src="./js/pais-img10.js" type="text/javascript"></script>
-    <script src="./js/pais-video10.js" type="text/javascript"></script>
-    <script src="./js/pais-img11.js" type="text/javascript"></script>
-    <script src="./js/pais-video11.js" type="text/javascript"></script>
-    <script src="./js/sobre-mi.js" type="text/javascript"></script>
-    <script src="./js/yoCreciendo.js" type="text/javascript"></script>
-    <script src="./js/misRecuerdos.js" type="text/javascript"></script>
-
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
-          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+          $("a, .primary-button a").on('click', function(event) {
 
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
@@ -665,12 +572,43 @@
           });
         });
     </script>
-    <!-- Google Traductor -->
+    <!-- FIN DE LOS JS -->
+
+    <!-- GOOGLE TRADUCTOR -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
         }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- FIN DEL GOOGLE TRADUCTOR -->
+
+    <!-- Archivos JS: Sobre mí -->
+    <script src="./js/album.js" type="text/javascript"></script>
+    <script src="./js/solidaridad.js" type="text/javascript"></script>
+    <script src="./js/sobre-mi.js" type="text/javascript"></script>
+    <script src="./js/yoCreciendo.js" type="text/javascript"></script>
+    <script src="./js/misRecuerdos.js" type="text/javascript"></script>
+
+    <!-- Archivos JS: Mis Aficiones -->
+    <script src="./js/van-life.js" type="text/javascript"></script>
+    <script src="./js/street-art.js" type="text/javascript"></script>
+    <script src="./js/coches.js" type="text/javascript"></script>
+    <script src="./js/dibujos.js" type="text/javascript"></script>
+    <script src="./js/papiroflexia.js" type="text/javascript"></script>
+
+    <!-- Archivos JS: Mis Viajes -->
+    <script src="./js/usa.js" type="text/javascript"></script>
+    <script src="./js/portugal.js" type="text/javascript"></script>
+    <script src="./js/england.js" type="text/javascript"></script>
+    <script src="./js/france.js" type="text/javascript"></script>
+    <script src="./js/germany.js" type="text/javascript"></script>
+    <script src="./js/hungary.js" type="text/javascript"></script>
+    <script src="./js/austria.js" type="text/javascript"></script>
+    <script src="./js/serbia.js" type="text/javascript"></script>
+    <script src="./js/montenegro.js" type="text/javascript"></script>
+    <script src="./js/kosovo.js" type="text/javascript"></script>
+    <script src="./js/gibraltar.js" type="text/javascript"></script>
+    <script src="./js/italy.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/FondoArbolVida.jpg">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Mi Árbol Genealógico</title>
+        <!-- Favicon -->
+        <link rel="icon" href="../../favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <!-- GOOGLE TRADUCTOR -->
+        <div id="google_translate_element" class="google">
+            <button class="btnTreeAtras"><a href="../../index.html#about">Atrás</a></button>
+        </div>
+        <!-- FIN DEL GOOGLE TRADUCTOR -->
+        
+        <div class="cursor"></div> 
+
+        <div id="parallax">
+        
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
+                <div class="carousel-indicators animate__animated animate__zoomInUp animate__slow">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section class="flia">
+                            <h1 class="text-center pt-3 titulo h1 animate__animated animate__zoomInUp animate__slow">Mi Árbol Genealógico: Principal</h1>
+                            <main class="pt-3">
+                                <div class="container pt-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card" onmouseover="mostrarDesc(`nom`,`ape`,`desc`)" onmouseout="ocultarDesc(`nom`,`ape`,`desc`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom">Fermín</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape">Fernández Nieto</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape">1893 - 1976</p>
+                                                <div class="desc" id="desc"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Bisabuelo Paterno Paterno</p>
+                                                </div>
+                                            </div>          
+                                        </div> 
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card2" onmouseover="mostrarDesc(`nom2`,`ape2`,`desc2`)" onmouseout="ocultarDesc(`nom2`,`ape2`,`desc2`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom2">Isabel</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape2">Megino Tineo</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape2">1896 - 1935</p>
+                                                <div class="desc" id="desc2"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Bisabuela Paterna Paterna</p>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card3" onmouseover="mostrarDesc(`nom3`,`ape3`,`desc3`)" onmouseout="ocultarDesc(`nom3`,`ape3`,`desc3`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom3">Rafael</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape3">Escalante Almellones</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape3">1902 - 1973</p>
+                                                <div class="desc" id="desc3"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Bisabuelo Paterno Materno</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Bisabuelos/Paternos/Maternos/Rafael.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card4" onmouseover="mostrarDesc(`nom4`,`ape4`,`desc4`)" onmouseout="ocultarDesc(`nom4`,`ape4`,`desc4`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom4">María</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape4">Castaño Ruiz</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape4">1905 - 1981</p>
+                                                <div class="desc" id="desc4"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Bisabuela Paterna Materna</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Bisabuelos/Paternos/Maternos/Maria.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card5" onmouseover="mostrarDesc(`nom5`,`ape5`,`desc5`)" onmouseout="ocultarDesc(`nom5`,`ape5`,`desc5`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom5">Mariano</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape5">Pérez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape5">1901 - 1963</p>
+                                                <div class="desc" id="desc5"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Bisabuelo Materno Paterno</p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card6" onmouseover="mostrarDesc(`nom6`,`ape6`,`desc6`)" onmouseout="ocultarDesc(`nom6`,`ape6`,`desc6`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom6">Victoria</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape6">Llanos Bayón</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape6">1905 - 1974</p>
+                                                <div class="desc" id="desc6"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Bisabuela Materna Paterna</p>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card7" onmouseover="mostrarDesc(`nom7`,`ape7`,`desc7`)" onmouseout="ocultarDesc(`nom7`,`ape7`,`desc7`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom7">Segundo</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape7">Estébanez Matilla</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape7">1906 - 1980</p>
+                                                <div class="desc" id="desc7"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Bisabuelo Materno Materno</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Bisabuelos/Maternos/Maternos/Segundo.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card8" onmouseover="mostrarDesc(`nom8`,`ape8`,`desc8`)" onmouseout="ocultarDesc(`nom8`,`ape8`,`desc8`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom8">Julia</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape8">Nieto Alonso</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape8">1910 - 1992</p>
+                                                <div class="desc" id="desc8"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Bisabuela Materna Materna</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Bisabuelos/Maternos/Maternos/Julia.png"/>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <div class="row" id="lineas"> <!-- Lineas -->
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>                
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card9" onmouseover="mostrarDesc(`nom9`,`ape9`,`desc9`)" onmouseout="ocultarDesc(`nom9`,`ape9`,`desc9`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom9">Pedro</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape9">Fernández Megino</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape9">1924 - 1999</p>  
+                                                <div class="desc" id="desc9"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Abuelo Paterno</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Abuelos/Paternos/Pedro.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card10" onmouseover="mostrarDesc(`nom10`,`ape10`,`desc10`)" onmouseout="ocultarDesc(`nom10`,`ape10`,`desc10`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom10">María Dolores (Loli)</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape10">Escalante Castaño</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape10">1939 - 2008</p>
+                                                <div class="desc" id="desc10"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Abuela Paterna</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Abuelos/Paternos/Loli.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card11" onmouseover="mostrarDesc(`nom11`,`ape11`,`desc11`)" onmouseout="ocultarDesc(`nom11`,`ape11`,`desc11`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom11">Fernando</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape11">Pérez Llanos</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape11">1931 - 2009</p>
+                                                <div class="desc" id="desc11"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Abuelo Materno</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Abuelos/Maternos/Fernando.png"/>
+                                            </div>
+                                        </div>    
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card12" onmouseover="mostrarDesc(`nom12`,`ape12`,`desc12`)" onmouseout="ocultarDesc(`nom12`,`ape12`,`desc12`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom12">Alejandra (Jandri)</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape12">Estébanez Nieto</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape12">1930</p>
+                                                <div class="desc" id="desc12"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Abuela Materna</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Abuelos/Maternos/Jandri.png"/>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="row" id="lineas"> <!-- Lineas -->
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card13" onmouseover="mostrarDesc(`nom13`,`ape13`,`desc13`)" onmouseout="ocultarDesc(`nom13`,`ape13`,`desc13`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom13">Rafael</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape13">Fernández Escalante</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape13">1964</p>
+                                                <div class="desc" id="desc13"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Padre</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Padres/Rafael.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card14" onmouseover="mostrarDesc(`nom14`,`ape14`,`desc14`)" onmouseout="ocultarDesc(`nom14`,`ape14`,`desc14`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom pp" id="nom14">Luz Fernanda Esther</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape14">Pérez Estébanez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape14">1962</p>
+                                                <div class="desc" id="desc14"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto pp">Madre</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Padres/Esther.png"/>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="row" id="lineas"> <!-- Lineas -->
+                                        
+                                        <div class="col-3"></div>
+                                        <div class="col-3"><img class="flechaIzquierdaYo mx-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha_yo.png" alt="flecha"></div>
+                                        <div class="col-3"><img class="flechaDerechaYo mx-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha_yo.png" alt="flecha"></div>
+                                        <div class="col-3"></div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"></div>
+                                        <div class="col-1" id="principal">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card15" onmouseover="mostrarDesc(`nom15`,`ape15`,`desc15`)" onmouseout="ocultarDesc(`nom15`,`ape15`,`desc15`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom15">Alberto</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape15">Fernández Pérez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape15">1993</p>
+                                                <div class="desc" id="desc15"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto gen">Hermano</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Hermanos/Alberto.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card16" onmouseover="mostrarDesc(`nom16`,`ape16`,`desc16`)" onmouseout="ocultarDesc(`nom16`,`ape16`,`desc16`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom16">Alejandro</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape16">Fernández Pérez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape pp" id="ape16">1997</p>
+                                                <div class="desc" id="desc16"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto gen">Yo</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Hermanos/Yo.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-2"></div>
+                                    </div>
+                                </div> 
+                            </main>
+                        </section> 
+                        <div class="carousel-caption d-block animate__animated animate__zoomInUp animate__slow"></div>    
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="flia">
+                            <h1 class="text-center pt-3 titulo h1 animate__animated animate__zoomInUp animate__slow">Mi Árbol Genealógico: Tíos, Primos y Sobrinos Maternos</h1>
+                            <main class="pt-3">
+                                <div class="container pt-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card37" onmouseover="mostrarDesc(`nom37`,`ape37`,`desc37`)" onmouseout="ocultarDesc(`nom37`,`ape37`,`desc37`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom37">Fernando</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape37">Pérez Estébanez</p> 
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape37">1958</p>   
+                                                <div class="desc" id="desc37"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Maternos/Fernando.png"/>
+                                            </div>           
+                                        </div> 
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card43" onmouseover="mostrarDesc(`nom43`,`ape43`,`desc43`)" onmouseout="ocultarDesc(`nom43`,`ape43`,`desc43`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom43">María Pilar</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape43">Cervera</p> 
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape43">1957</p>  
+                                                <div class="desc" id="desc43"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tía</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Maternos/Pilar.png"/>
+                                            </div> 
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card41" onmouseover="mostrarDesc(`nom41`,`ape41`,`desc41`)" onmouseout="ocultarDesc(`nom41`,`ape41`,`desc41`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom41">Juan Carlos</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape41">Pérez Estébanez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape41">1960</p>
+                                                <div class="desc" id="desc41"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Maternos/JuanCarlos.png"/>
+                                            </div>   
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card42" onmouseover="mostrarDesc(`nom42`,`ape42`,`desc42`)" onmouseout="ocultarDesc(`nom42`,`ape42`,`desc42`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom42">María</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape42">Díaz</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape42">1961</p>
+                                                <div class="desc" id="desc42"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tía</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Maternos/Maria.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                    </div>
+                                    <div class="row" id="lineas"> <!-- Lineas -->
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>                
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card38" onmouseover="mostrarDesc(`nom38`,`ape38`,`desc38`)" onmouseout="ocultarDesc(`nom38`,`ape38`,`desc38`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom38">Eva María</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape38">Pérez Cervera</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape38">1993</p>
+                                                <div class="desc" id="desc38"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Maternos/Eva.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <img class="flechaAbue animate__animated animate__zoomInRight animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/Flecha_hno.png" alt="flecha">
+                                        </div> 
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card39" onmouseover="mostrarDesc(`nom39`,`ape39`,`desc39`)" onmouseout="ocultarDesc(`nom39`,`ape39`,`desc39`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom39">Rafael</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape39">Barea Luengo</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape39">1990</p>
+                                                <div class="desc" id="desc39"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Su Marido</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Maternos/Rafa.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>    
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card44" onmouseover="mostrarDesc(`nom44`,`ape44`,`desc44`)" onmouseout="ocultarDesc(`nom44`,`ape44`,`desc44`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom44">Raquel</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape44">Pérez Díaz</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape44">1991</p>
+                                                <div class="desc" id="desc44"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Maternos/Raquel.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card45" onmouseover="mostrarDesc(`nom45`,`ape45`,`desc45`)" onmouseout="ocultarDesc(`nom45`,`ape45`,`desc45`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom45">Blanca</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape45">Pérez Díaz</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape45">1997</p>
+                                                <div class="desc" id="desc45"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Maternos/Blanca.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"></div>    
+                                        <div class="col"></div>    
+                                    </div>
+                                    <div class="row" id="lineas"> <!-- Lineas -->
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"></div> 
+                                        <div class="col"></div> 
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card40" onmouseover="mostrarDesc(`nom40`,`ape40`,`desc40`)" onmouseout="ocultarDesc(`nom40`,`ape40`,`desc40`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom40">Rafael</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape40">Barea Pérez</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape40">2023</p>
+                                                <div class="desc" id="desc40"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Sobrino 2º</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/sobrinosSegundos/Rafita.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"></div>    
+                                    </div>
+                                </div> 
+                            </main>
+                        </section> 
+                        <div class="carousel-caption d-block animate__animated animate__zoomInUp animate__slow"></div>    
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="flia">
+                            <h1 class="text-center pt-3 titulo h1 animate__animated animate__zoomInUp animate__slow">Mi Árbol Genealógico: Tíos y Primos Paternos</h1>
+                            <main class="pt-3">
+                                <div class="container pt-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card46" onmouseover="mostrarDesc(`nom46`,`ape46`,`desc46`)" onmouseout="ocultarDesc(`nom46`,`ape46`,`desc46`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom46">Pedro</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape46">Fernández Escalante</p> 
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape46">1963</p>   
+                                                <div class="desc" id="desc46"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Pedro.png"/>
+                                            </div>           
+                                        </div> 
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card47" onmouseover="mostrarDesc(`nom47`,`ape47`,`desc47`)" onmouseout="ocultarDesc(`nom47`,`ape47`,`desc47`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom47">María Consuelo (Marielo)</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape47">Ortega</p> 
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape47">1962</p>  
+                                                <div class="desc" id="desc47"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tía</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Marielo.png"/>
+                                            </div> 
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card48" onmouseover="mostrarDesc(`nom48`,`ape48`,`desc48`)" onmouseout="ocultarDesc(`nom48`,`ape48`,`desc48`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom48">Carlos</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape48">Fernández Escalante</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape48">1968</p>
+                                                <div class="desc" id="desc48"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Carlos.png"/>
+                                            </div>   
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card49" onmouseover="mostrarDesc(`nom49`,`ape49`,`desc49`)" onmouseout="ocultarDesc(`nom49`,`ape49`,`desc49`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom49">Eva</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape49">Martín Redondo</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape49">1973</p>
+                                                <div class="desc" id="desc49"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tía</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Eva.png"/>
+                                            </div>    
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card50" onmouseover="mostrarDesc(`nom50`,`ape50`,`desc50`)" onmouseout="ocultarDesc(`nom50`,`ape50`,`desc50`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom50">Álvaro</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape50">Fernández Escalante</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape50">1971</p>
+                                                <div class="desc" id="desc50"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Alvaro.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card51" onmouseover="mostrarDesc(`nom51`,`ape51`,`desc51`)" onmouseout="ocultarDesc(`nom51`,`ape51`,`desc51`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom51">David</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape51">Fernández Escalante</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape51">1979</p>
+                                                <div class="desc" id="desc51"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tío</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/David.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInUp animate__slow" id="card52" onmouseover="mostrarDesc(`nom52`,`ape52`,`desc52`)" onmouseout="ocultarDesc(`nom52`,`ape52`,`desc52`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom52">Nieves</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape52">X</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape52">1982</p>
+                                                <div class="desc" id="desc52"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Tía</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Tios/Paternos/Nieves.png"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="lineas">
+                                        <div class="col"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"><img class="flechaIzquierda ms-auto me-0 d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/izquierda_Flecha.png" alt="flecha"></div>
+                                        <div class="col"><img class="flechaDerecha ms-0 me-auto d-block animate__animated animate__zoomInUp animate__slow" src="images/vecteezy_hand-drawn-doodle-arrow-heads-black-collection_2299124/derecha_Flecha.png" alt="flecha"></div>            
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"></div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card53" onmouseover="mostrarDesc(`nom53`,`ape53`,`desc53`)" onmouseout="ocultarDesc(`nom53`,`ape53`,`desc53`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom53">Pedro</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape53">Fernández Ortega</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape53">1991</p>
+                                                <div class="desc" id="desc53"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Primo</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Paternos/Pedro.png"/>
+                                            </div>
+                                        </div> 
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card54" onmouseover="mostrarDesc(`nom54`,`ape54`,`desc54`)" onmouseout="ocultarDesc(`nom54`,`ape54`,`desc54`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom54">Helena</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape54">Fernández Ortega</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape54">1996</p>
+                                                <div class="desc" id="desc54"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Paternos/Helena.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>   
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card55" onmouseover="mostrarDesc(`nom55`,`ape55`,`desc55`)" onmouseout="ocultarDesc(`nom55`,`ape55`,`desc55`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom55">Sandra</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape55">Fernández Martín</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape55">2000</p>
+                                                <div class="desc" id="desc55"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Paternos/Sandra.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow d-flex align-items-center justify-content-center animate__animated animate__zoomInRight animate__slow" id="card56" onmouseover="mostrarDesc(`nom56`,`ape56`,`desc56`)" onmouseout="ocultarDesc(`nom56`,`ape56`,`desc56`)">
+                                                <p class="text-center mb-auto pt-2 pb-1 nom mm" id="nom56">Eva</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape56">Fernández Martín</p>
+                                                <p class="text-center mb-auto pt-1 pb-2 ape mm" id="ape56">2004</p>
+                                                <div class="desc" id="desc56"> 
+                                                    <p id="parentescoFam" class="text-center mb-auto mm">Prima</p>
+                                                </div>
+                                                <img class="familiaresFotos" src="./images/Primos/Paternos/Eva.png"/>
+                                            </div>
+                                        </div> 
+                                        <div class="col"></div>
+                                        <div class="col"></div> 
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div>
+                                        <div class="col"></div> 
+                                        <div class="col"></div> 
+                                        <div class="col"></div> 
+                                        <div class="col"></div> 
+                                        <div class="col"></div> 
+                                    </div>
+                                </div> 
+                            </main>
+                        </section> 
+                        <div class="carousel-caption d-block animate__animated animate__zoomInUp animate__slow"></div>    
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev animate__animated animate__fadeInLeft" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onmouseover="botonHoverOn(`botonPrev`)" onmouseout="botonHoverOff(`botonPrev`)">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" id="botonPrev"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next animate__animated animate__fadeInRight" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onmouseover="botonHoverOn(`botonNext`)" onmouseout="botonHoverOff(`botonNext`)">
+                    <span class="carousel-control-next-icon" aria-hidden="true" id="botonNext"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        
+        <!-- Iconos -->
+        <script src="https://kit.fontawesome.com/45f945ceff.js" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- Detectar si es mobile o tablet -->
+        <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+        <!-- General -->
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- GOOGLE TRADUCTOR -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- FIN DEL GOOGLE TRADUCTOR -->
+    </body>
+</html>
