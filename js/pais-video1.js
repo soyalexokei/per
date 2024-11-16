@@ -1,4 +1,7 @@
-var videosIDusa = ["nf1kb3TSD9w", "6E8OuGFDB8s", "jA_PeI3VieM", "-X-8jDfjExo", "zkhfF_SHNjA", "E2e1P1dsUYg", "Abq0iuBNCBU", "N4dxwAgW_X4", "sr1pmvg9KIs", "j-K_xTuppJQ", "50TjMT4zGrc", "DW--iP-CleY", "AY6cu8ShCQA", "VMuzCFVrCgQ", "MX_iH72HrKE", "r0sSaHApP8w", "kBAjLuGFMw0", "2ZReINrYpKQ"];
+var videosIDusa =
+[
+    
+];
 var indiceUSA = 0;
 
 // Función para agregar videos al carrusel

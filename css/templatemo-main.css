@@ -1,4 +1,8 @@
-/* AJUSTES PRINCIPALES */
+/* SECCION DEL GOOGLE TRADUCTOR */
+#google_translate_element {
+  text-align: center;
+}
+
 p {
   font-size: 15px;
   line-height: 25px;
@@ -10,18 +14,19 @@ section {
 }
 
 body { 
-  position: relative;
+  position: relative; /* we need this for the scrollspy */ 
   font-size: 14px;
 }
 
-a { 
-  color: white;
-  text-decoration: none;
+a { color: #3CC; cursor: pointer; }
+
+a:hover { color: #FF0; }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
 }
 
-a:hover { 
-  color: #FF0;
-}
 
 .primary-button a {
   display: inline-block;
@@ -29,30 +34,20 @@ a:hover {
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 9px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
 
-.titulos-secciones {
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
 
-/* SECCION DEL GOOGLE TRADUCTOR */
-#google_translate_element {
-  text-align: center;
-}
-
-/* PANTALLA INICIO */
 .parallax-content {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
 }
+
 
 .baner-content {
   padding-top: 30vh;
@@ -87,7 +82,8 @@ a:hover {
   margin-top: 15px;
 }
 
-/* PANTALLA VIAJES */
+
+
 .service-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -97,17 +93,56 @@ a:hover {
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
-  text-align: center;
+}
+
+.service-content p {
   color: white;
-  font-size: large;
+  margin: 20px;
 }
 
-.service-content .banderas {
-  width: 50px;
-  height: 28px;
+h4, .h4 {
+  font-size: 18px;
 }
 
-/* PANTALLA AFICIONES */
+/* 
+ * Rectangle 
+ */
+ .rectangle,
+ .big-rectangle {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   border: 1px solid #dddddd;
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -webkit-box-shadow: 4px 4px 0px 0px #dddddd;
+   -o-box-shadow: 4px 4px 0px 0px #dddddd;
+   -moz-box-shadow: 4px 4px 0px 0px #dddddd;
+   box-shadow: 4px 4px 0px 0px #dddddd;
+   cursor: pointer;
+ }
+ 
+ .rectangle i,
+ .big-rectangle img,
+ .rectangle span,
+ .rectangle img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 22px;
+   transform: translate(-50%, -50%) rotate(-45deg);
+   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+   -moz-transform: translate(-50%, -50%) rotate(-45deg);
+   -o-transform: translate(-50%, -50%) rotate(-45deg);
+   -ms-transform: translate(-50%, -50%) rotate(-45deg);
+   cursor: pointer;
+ }
+
+
+
 .projects-content {
   padding-top: 20vh;
   background-image: url(../img/3rd-section.jpg);
@@ -159,7 +194,7 @@ a:hover {
   background: #fff;
 }
 
-/* PANTALLA SOBRE MÍ */
+
 .tabs-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -224,7 +259,7 @@ section {
   clear:both;
 }
 
-/* PANTALLA CONTÁCTAME */
+
 .contact-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -234,11 +269,13 @@ section {
 
 .contact-form {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 25px;
+  padding: 20px 0 20px 130px;
   margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
 }
 
-#contact .form-control {
+#contact input:not([type="submit"]) {
   border-radius: 3px;
   padding-left: 15px;
   font-size: 13px;
@@ -249,11 +286,10 @@ section {
   box-shadow: none;
   line-height: 50px;
   height: 50px;
-  width: 100%;
   margin-bottom: 30px;
 }
 
-#contact .form-text {
+#contact textarea {
   border-radius: 3px;
   padding-left: 15px;
   padding-top: 10px;
@@ -265,15 +301,13 @@ section {
   box-shadow: none;
   height: 165px;
   max-height: 220px;
-  width: 100%;
   margin-bottom: 25px;
 }
 
-#contact .form-submit {
+#contact input[type="submit"] {
   display: inline-block;
   background-color: #ff7d27;
   padding: 15px 24px;
-  width: 100%;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;
@@ -283,19 +317,74 @@ section {
   letter-spacing: 0.5px;
 }
 
-.map {
-  margin-bottom: 30px;
-  width: 465px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px;
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 5vh 5%; /* Espaciado uniforme */
+    background-image: url(../img/5th-section.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin: 0 auto 15px auto;
+    border-radius: 5px;
+    max-width: 90%; /* Reduce el ancho del formulario */
+    text-align: center; /* Centra el contenido */
+    box-sizing: border-box;
+  }
+
+  #contact input, #contact textarea, #contact button {
+    display: block; /* Asegura que cada elemento esté en una línea propia */
+    margin: 0 auto 15px auto; /* Centrados horizontalmente y con separación inferior */
+    width: 80%; /* Más estrechos que el formulario */
+    max-width: 400px; /* Limita el ancho máximo en pantallas más grandes */
+    box-sizing: border-box;
+  }
+
+  #contact input:not([type="submit"]) {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #232323;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid #ccc;
+    outline: none;
+    line-height: normal;
+    height: auto;
+  }
+
+  #contact textarea {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #232323;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid #ccc;
+    height: 100px; /* Altura ajustada */
+    resize: none; /* Evita redimensionado manual */
+  }
+
+  #contact input[type="submit"] {
+    background-color: #ff7d27;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #contact button:hover {
+    background-color: #e66b20; /* Efecto hover */
+  }
 }
 
-.btn-contact {
-  background-color: #ff7d27;
-  font-size: large;
-}
 
-/* PANTALLA PIE DE PAGINA */
+
 footer {
   text-align: center;
   background-color: #282b2f;
@@ -351,7 +440,6 @@ footer em {
   font-style: normal;
 }
 
-/* AJUSTE RESPONSIBLE PARA MÓVILES Y TABLETS */
 @media (max-width: 767px){
   
   .baner-content {
@@ -370,28 +458,28 @@ footer em {
     margin-top: 15px;
   }
 
-  .service-content {
-    padding-top: 5vh;
-    text-align: center;
-  }
-
-  .service-content .left-text .line-dec {
-    width: 45px;
-    height: 3px;
+  .primary-button a {
+    display: block; /* Cambia a bloque para ocupar todo el ancho si es necesario */
     background-color: #ff7d27;
-    margin: 20px auto 20px auto;
-  }
-
-  .service-content .left-text ul {
-    text-align: left;
-  }
-
-  .service-content .service-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 25px 30px;
-    text-align: center;
+    padding: 12px 20px; /* Reduce el padding para ahorrar espacio */
+    border-radius: 5px; /* Bordes más redondeados para un diseño más moderno */
+    text-transform: uppercase;
+    font-size: 12px; /* Fuente ligeramente más grande para mejor visibilidad */
     color: #fff;
-    margin-bottom: 30px;
+    font-weight: 600; /* Aumenta el peso de la fuente */
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    text-align: center; /* Centra el texto dentro del botón */
+    max-width: 200px; /* Define un ancho máximo */
+    margin: 10px auto; /* Centra horizontalmente el botón y añade un margen vertical */
+  }
+
+  .primary-button a:hover {
+    background-color: #e66b20; /* Color de hover para interacción */
+  }
+
+  .service-content {
+    text-align: center;
   }
 
 }
@@ -403,8 +491,9 @@ footer em {
 }
 
 /* LIGHT BOX */
+
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../img/close.png) url(../img/prev.png) url(../img/next.png);
   display: none;
 }
 
@@ -440,6 +529,8 @@ body.lb-disable-scrolling {
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
+
+  /* Image border */
   border: 4px solid white;
 }
 
@@ -454,16 +545,51 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
   background-color: white;
 }
 
 .lb-outerContainer:after {
+  content: "";
   display: table;
   clear: both;
 }
 
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
 .lb-container > .nav {
   left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
 }
 
 .lb-prev, .lb-next {
@@ -579,7 +705,101 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-/* PESTAÑA IMAGENES */
+/* MODALS 
+================================================== */
+.modal.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.modal.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal.fade-scale .modal-dialog {
+  margin-top: 50px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  transform: translate(0, 0%);
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+}
+
+.modal-header {
+  height: 400px;
+}
+
+.modal-header .rectangle {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  height: 40px;
+  width: 40px;
+  background-color: #196fc2;
+  color: #ffffff;
+  box-shadow: none;
+  border: 0;
+  opacity: 1;
+}
+
+.modal-header .rectangle:hover {
+  background-color: #ffffff;
+  color: #196fc2;
+  border-color: #196fc2;
+}
+
+.modal-header,
+.modal-footer {
+  padding: 0;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.modal-footer .btn:hover {
+  background-color: #ffffff;
+  color: #196fc2;
+  border-color: #196fc2;
+}
+
+.modal-content {
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.modal-content p {
+  margin: 15px 0 0;
+}
+
+.modal-content .btn {
+  width: 100%;
+  border-width: 1px 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* MODALS */
+  .modal-dialog {
+    margin: 30px 30px 10px 10px;
+  }
+  .modal-header .rectangle {
+    right: -18px;
+    top: -18px;
+    height: 36px;
+    width: 36px;
+  }
+}
+/* Cuadros de voluntariados */
 .carrusel-voluntariado {
   position: relative;
   width: 100%;
