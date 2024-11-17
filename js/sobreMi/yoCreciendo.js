@@ -1,29 +1,51 @@
-const marcoCreciendo = document.getElementById('marco-yo-creciendo');
-
-const finalFases = 6;
-let ptoPartida = 1;
-
-function pasarMiCrecimiento(varaux) {
-  if (ptoPartida < 1) {
-    ptoPartida = finalFases;
-  } else if (ptoPartida > finalFases) {
-    ptoPartida = 1;
+//-- Variables.
+var imagenesIDcreciendo =
+[
+  "https://i.postimg.cc/yYpGLGF7/1.jpg",
+  "https://i.postimg.cc/Bn8VkCgH/2.jpg",
+  "https://i.postimg.cc/zDj6gvvb/3.jpg",
+  "https://i.postimg.cc/VLkTBw07/4.jpg",
+  "https://i.postimg.cc/mg05sFXq/5.jpg",
+  "https://i.postimg.cc/1zwY55bz/6.jpg",
+];
+  var primeracreciendo = 1;
+  var pantallacreciendo = document.getElementById("ver-creciendo");
+  var imgcreciendo = document.createElement("img");
+  
+  //-- Ctes.
+  const totalcreciendo = 6;
+  
+  function mostrarcreciendo(auxcreciendo) {
+    
+    //-- Limpiar la pantalla.
+    pantallacreciendo.innerHTML = "";
+  
+    imgcreciendo.src = imagenesIDcreciendo[auxcreciendo-1];
+    pantallacreciendo.appendChild(imgcreciendo);
   }
-  marcoCreciendo.style.transform = `translateX(-${(ptoPartida - 1) * 100}%)`;
-}
-
-document.getElementById("fase-anterior").addEventListener("click", () => {
-    ptoPartida--;
-    pasarMiCrecimiento(ptoPartida);
-});
-
-document.getElementById("fase-siguiente").addEventListener("click", () => {
-    ptoPartida++;
-    pasarMiCrecimiento(ptoPartida);
-});
-
-for (let i = 1; i <= finalFases; i++) {
-  const faseCreciendo = document.createElement("img");
-  faseCreciendo.src = `./img/Creciendo/${i}.jpg`;
-  marcoCreciendo.appendChild(faseCreciendo);
-}
+  
+  function imgAnteriorcreciendo() {
+    if(primeracreciendo > 1) {
+      primeracreciendo--;
+    }else {
+      primeracreciendo = totalcreciendo;
+    }
+    mostrarcreciendo(primeracreciendo);
+  }
+  
+  function imgSiguientecreciendo() {
+    if(primeracreciendo < totalcreciendo) {
+      primeracreciendo++;
+    }else {
+      primeracreciendo = 1;
+    }
+    mostrarcreciendo(primeracreciendo);
+  }
+  
+  //-- Pulsar flecha izquierda.
+  document.getElementById("izq-creciendo").addEventListener("click", imgAnteriorcreciendo);
+  //-- Pulsar flecha derecha.
+  document.getElementById("der-creciendo").addEventListener("click", imgSiguientecreciendo);
+  
+  //-- Punto de inicio del programa.
+  mostrarcreciendo(primeracreciendo);

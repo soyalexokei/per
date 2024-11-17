@@ -1,27 +1,47 @@
-const alzadaMax = 2;
-let alzadaInicial = 1;
-
-function cambiarArteAlzado(auxAlzada) {
-  if (alzadaInicial < 1) {
-    alzadaInicial = alzadaMax;
-  } else if (alzadaInicial > alzadaMax) {
-    alzadaInicial = 1;
+//-- Variables.
+var imagenesIDdraw =
+[
+  "https://i.postimg.cc/6qjWQhFt/1.jpg",
+  "https://i.postimg.cc/0j25x4WV/2.jpg",
+];
+  var primeradraw = 1;
+  var pantalladraw = document.getElementById("ver-draw");
+  var imgdraw = document.createElement("img");
+  
+  //-- Ctes.
+  const totaldraw = 2;
+  
+  function mostrardraw(auxdraw) {
+    
+    //-- Limpiar la pantalla.
+    pantalladraw.innerHTML = "";
+  
+    imgdraw.src = imagenesIDdraw[auxdraw-1];
+    pantalladraw.appendChild(imgdraw);
   }
-  document.getElementById("imgs-aficion2").style.transform = `translateX(-${(alzadaInicial - 1) * 100}%)`;
-}
-
-document.getElementById("izq-alzada").addEventListener("click", () => {
-    alzadaInicial--;
-    cambiarArteAlzado(alzadaInicial);
-});
-
-document.getElementById("der-alzada").addEventListener("click", () => {
-    alzadaInicial++;
-    cambiarArteAlzado(alzadaInicial);
-});
-
-for (let i = 1; i <= alzadaMax; i++) {
-  const marcoAlzado = document.createElement("img");
-  marcoAlzado.src = `./img/Arte/${i}.jpg`;
-  document.getElementById("imgs-aficion2").appendChild(marcoAlzado);
-}
+  
+  function imgAnteriordraw() {
+    if(primeradraw > 1) {
+      primeradraw--;
+    }else {
+      primeradraw = totaldraw;
+    }
+    mostrardraw(primeradraw);
+  }
+  
+  function imgSiguientedraw() {
+    if(primeradraw < totaldraw) {
+      primeradraw++;
+    }else {
+      primeradraw = 1;
+    }
+    mostrardraw(primeradraw);
+  }
+  
+  //-- Pulsar flecha izquierda.
+  document.getElementById("izq-draw").addEventListener("click", imgAnteriordraw);
+  //-- Pulsar flecha derecha.
+  document.getElementById("der-draw").addEventListener("click", imgSiguientedraw);
+  
+  //-- Punto de inicio del programa.
+  mostrardraw(primeradraw);

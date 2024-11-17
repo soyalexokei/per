@@ -1,16 +1,50 @@
-// Función para agregar videos al carrusel
-function cargarVideos0() {
+//-- Variables.
+var videosIDsolidaridad =
+[
+    "https://www.youtube.com/embed/CpCaowWDQDw?autoplay=1&loop=1&playlist=CpCaowWDQDw&controls=0&rel=0"
+];
+var indicesolidaridad = 1;
+var pantallasolidaridad = document.getElementById('ver-solidaridad');
+var iframesolidaridad = document.createElement("iframe");
 
-    var videosSolidaridad = document.getElementById("videos-solidaridad");
-    videosSolidaridad.innerHTML = "";
+//-- Ctes.
+const totalsolidaridad = 1;
 
-    var iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube.com/embed/CpCaowWDQDw";
-    iframe.allowFullscreen = true;
-    videosSolidaridad.appendChild(iframe);
+function mostrarsolidaridad(auxsolidaridad) {
+    
+    //-- Limpiar la pantalla.
+    pantallasolidaridad.innerHTML = "";
+
+    iframesolidaridad.src = videosIDsolidaridad[auxsolidaridad-1];
+    iframesolidaridad.width = "400";
+    iframesolidaridad.height = "533";
+    iframesolidaridad.setAttribute("allow", "autoplay");
+    iframesolidaridad.setAttribute("allowFullscreen", "false");
+    pantallasolidaridad.appendChild(iframesolidaridad);
 }
 
-// Llamar a la función para cargar los videos cuando se muestre el modal
-$('#solidaridad').on('shown.bs.modal', function () {
-    cargarVideos0();
-});
+function imgAnteriorsolidaridad() {
+    if(indicesolidaridad > 1) {
+        indicesolidaridad--;
+    }else {
+        indicesolidaridad = totalsolidaridad;
+    }
+    mostrarsolidaridad(indicesolidaridad);
+}
+
+function imgSiguientesolidaridad() {
+    if(indicesolidaridad < totalsolidaridad) {
+        indicesolidaridad++;
+    }else {
+        indicesolidaridad = 1;
+    }
+    mostrarsolidaridad(indicesolidaridad);
+}
+
+//-- Pulsar flecha izquierda.
+document.getElementById("izq-solidaridad").addEventListener("click", imgAnteriorsolidaridad);
+//-- Pulsar flecha derecha.
+document.getElementById("der-solidaridad").addEventListener("click", imgSiguientesolidaridad);
+
+//-- Punto de inicio del programa.
+mostrarsolidaridad(indicesolidaridad);

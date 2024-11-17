@@ -1,27 +1,53 @@
-const papiroMax = 8;
-let papiroInicial = 1;
-
-function cambiarPapiroflexia(auxPapiro) {
-  if (papiroInicial < 1) {
-    papiroInicial = papiroMax;
-  } else if (papiroInicial > papiroMax) {
-    papiroInicial = 1;
+//-- Variables.
+var imagenesIDpapiroflexia =
+[
+  "https://i.postimg.cc/50ZcKRcH/1.jpg",
+  "https://i.postimg.cc/tg4Hs6tg/2.jpg",
+  "https://i.postimg.cc/cJkGwJXB/3.jpg",
+  "https://i.postimg.cc/ydJ4PzG4/4.jpg",
+  "https://i.postimg.cc/KjL66DF0/5.jpg",
+  "https://i.postimg.cc/WpkcqTr0/6.jpg",
+  "https://i.postimg.cc/BQf9xkck/7.jpg",
+  "https://i.postimg.cc/c47qThFH/8.jpg",
+];
+  var primerapapiroflexia = 1;
+  var pantallapapiroflexia = document.getElementById("ver-papiroflexia");
+  var imgpapiroflexia = document.createElement("img");
+  
+  //-- Ctes.
+  const totalpapiroflexia = 8;
+  
+  function mostrarpapiroflexia(auxpapiroflexia) {
+    
+    //-- Limpiar la pantalla.
+    pantallapapiroflexia.innerHTML = "";
+  
+    imgpapiroflexia.src = imagenesIDpapiroflexia[auxpapiroflexia-1];
+    pantallapapiroflexia.appendChild(imgpapiroflexia);
   }
-  document.getElementById("imgs-aficion3").style.transform = `translateX(-${(papiroInicial - 1) * 100}%)`;
-}
-
-document.getElementById("izq-papiro").addEventListener("click", () => {
-    papiroInicial--;
-    cambiarPapiroflexia(papiroInicial);
-});
-
-document.getElementById("der-papiro").addEventListener("click", () => {
-    papiroInicial++;
-    cambiarPapiroflexia(papiroInicial);
-});
-
-for (let i = 1; i <= papiroMax; i++) {
-  const marcoPapiro = document.createElement("img");
-  marcoPapiro.src = `./img/Papiroflexia/${i}.jpg`;
-  document.getElementById("imgs-aficion3").appendChild(marcoPapiro);
-}
+  
+  function imgAnteriorpapiroflexia() {
+    if(primerapapiroflexia > 1) {
+      primerapapiroflexia--;
+    }else {
+      primerapapiroflexia = totalpapiroflexia;
+    }
+    mostrarpapiroflexia(primerapapiroflexia);
+  }
+  
+  function imgSiguientepapiroflexia() {
+    if(primerapapiroflexia < totalpapiroflexia) {
+      primerapapiroflexia++;
+    }else {
+      primerapapiroflexia = 1;
+    }
+    mostrarpapiroflexia(primerapapiroflexia);
+  }
+  
+  //-- Pulsar flecha izquierda.
+  document.getElementById("izq-papiroflexia").addEventListener("click", imgAnteriorpapiroflexia);
+  //-- Pulsar flecha derecha.
+  document.getElementById("der-papiroflexia").addEventListener("click", imgSiguientepapiroflexia);
+  
+  //-- Punto de inicio del programa.
+  mostrarpapiroflexia(primerapapiroflexia);
