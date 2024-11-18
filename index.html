@@ -523,27 +523,6 @@
                                     </div>
                                 </div>
                                 <div id="tab4">
-                                    <a data-toggle="modal" data-target="#solidaridad"><img src="img/Sobre-mi/solidaridad.png"/></a>
-                                    <div id="solidaridad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-body" style="text-align: center;">
-                                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                    <br>
-                                                    <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                    <br>
-                                                    <h1>Pintura callejera de Novi Sad (Serbia) en solidaridad por las víctimas de la Covid19</h1>
-                                                    <div class="carrusel-voluntariado">
-                                                        <div class="carrusel-voluntariado-contenedor" id="ver-solidaridad"></div>
-                                                        <button class="flecha-izquierda-pasar" id="izq-solidaridad">&#10094;</button>
-                                                        <button class="flecha-derecha-pasar" id="der-solidaridad">&#10095;</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tab5">
                                     <a data-toggle="modal" data-target="#mis-recuerdos"><img src="img/Sobre-mi/mis-recuerdos.png"/></a>
                                     <div id="mis-recuerdos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
@@ -564,7 +543,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="tab6">
+                                <div id="tab5">
                                     <a href="./paginas/treeFamiliar/index.html"><img src="img/Sobre-mi/arbol-genealogico.png"/></a>
                                 </div>
                             </section>
@@ -572,9 +551,8 @@
                                 <li><a href="#tab1" class="active">Descripción</a></li>
                                 <li><a href="#tab2">Mi álbum</a></li>
                                 <li><a href="#tab3">Creciendo...</a></li>
-                                <li><a href="#tab4">Solidaridad</a></li>
-                                <li><a href="#tab5">Mis Recuerdos</a></li>
-                                <li><a href="#tab6">Orígenes</a></li>
+                                <li><a href="#tab4">Mis Recuerdos</a></li>
+                                <li><a href="#tab5">Mi árbol genealógico</a></li>
                             </ul>
                         </div>
                     </div>
@@ -589,31 +567,27 @@
                 <div class="row">
                     <div class="contact-form">
                         <div class="row">
-                            <form id="contact" action="https://formsubmit.co/alejandrofernandezperez@protonmail.com" method="post">
+                            <form id="contact" action="https://getform.io/f/bgddjpra" method="POST">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="name" type="text" class="form-control" id="name" placeholder="NOMBRE...." required>
-                                        </fieldset>
+                                        <fieldset><input type="text" name="name" class="form-control" id="name" placeholder="NOMBRE...." required/></fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset><input type="email" name="email" class="form-control" id="email" placeholder="CORREO ELECTRÓNICO...." required/></fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset><input name="asunto" type="text" class="form-control" id="asunto" placeholder="ASUNTO...." required/></fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset><textarea name="message" rows="6" class="form-control" id="message" placeholder="MENSAJE...." required></textarea></fieldset>
                                     </div>
                                     <div class="col-md-12">
                                         <fieldset>
-                                            <input name="email" type="email" class="form-control" id="email" placeholder="CORREO ELECTRÓNICO...." required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="asunto" type="text" class="form-control" id="asunto" placeholder="ASUNTO...." required/>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="MENSAJE...." required></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input type="hidden" name="_next" value="https://alejandropersonalweb.netlify.app/#contactame"/>
+                                            <!-- Evita spams -->
+                                            <input type="hidden" name="_gotcha" style="display:none !important">
+                                            <!-- Una vez enviado redirige de nuevo al inicio -->
+                                            <input type="hidden" name="_redirect" value="https://alejandropersonalweb.netlify.app/#contactame" />
+                                            <!-- Botón enviar -->
                                             <input type="submit" id="form-submit" class="btn" value="Enviar"/>
                                         </fieldset>
                                     </div>
