@@ -24,9 +24,8 @@ a:hover { color: #FF0; }
 
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
-
 
 .primary-button a {
   display: inline-block;
@@ -259,12 +258,12 @@ section {
   clear:both;
 }
 
-
 .contact-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
   background-image: url(../img/5th-section.jpg);
+  border-radius: 15px;
 }
 
 .contact-form {
@@ -272,7 +271,6 @@ section {
   padding: 20px 0 20px 130px;
   margin-bottom: 30px;
   width: 100%;
-  text-align: center;
 }
 
 #contact input:not([type="submit"]) {
@@ -284,9 +282,18 @@ section {
   outline: none;
   border: none;
   box-shadow: none;
-  line-height: 50px;
-  height: 50px;
+  height: 30px;
   margin-bottom: 30px;
+}
+
+label {
+  color: white;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
 }
 
 #contact textarea {
@@ -304,17 +311,18 @@ section {
   margin-bottom: 25px;
 }
 
-#contact input[type="submit"] {
-  display: inline-block;
+input[type="submit"] {
   background-color: #ff7d27;
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
+  float: right;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -331,16 +339,8 @@ section {
     margin: 0 auto 15px auto;
     border-radius: 5px;
     max-width: 90%; /* Reduce el ancho del formulario */
-    text-align: center; /* Centra el contenido */
     box-sizing: border-box;
-  }
-
-  #contact input, #contact textarea, #contact button {
-    display: block; /* Asegura que cada elemento esté en una línea propia */
-    margin: 0 auto 15px auto; /* Centrados horizontalmente y con separación inferior */
-    width: 80%; /* Más estrechos que el formulario */
-    max-width: 400px; /* Limita el ancho máximo en pantallas más grandes */
-    box-sizing: border-box;
+    text-align: center;
   }
 
   #contact input:not([type="submit"]) {
@@ -353,37 +353,38 @@ section {
     outline: none;
     line-height: normal;
     height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
   }
 
   #contact textarea {
     border-radius: 5px;
-    padding: 10px;
     font-size: 14px;
     color: #232323;
     background-color: rgba(250, 250, 250, 1);
     border: 1px solid #ccc;
-    height: 100px; /* Altura ajustada */
     resize: none; /* Evita redimensionado manual */
+    width: 80%;
+    margin-left: 40px;
   }
 
   #contact input[type="submit"] {
     background-color: #ff7d27;
-    border: none;
-    border-radius: 5px;
-    padding: 12px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
+    border-radius: 3px;
     text-transform: uppercase;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    width: 80%;
+    margin-right: 40px;
   }
 
   #contact button:hover {
     background-color: #e66b20; /* Efecto hover */
   }
 }
-
-
 
 footer {
   text-align: center;

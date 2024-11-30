@@ -4,21 +4,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>My Personal WEB</title>
-        <!-- favicon -->
         <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
         <meta name="description" content="Personal Development APP: Vanilla Plantilla HTML gratis">
         <meta name="author" content="Alejandro Fernández Pérez">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/templatemo-main.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -358,6 +355,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="testimonials-item">
+                                    <a data-toggle="modal" data-target="#seriesTV"><img src="./img/Aficiones/seriesTV.png"/></a>
+                                    <div class="text-content">
+                                        <h4>Series de TV</h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -450,6 +455,24 @@
                             <div class="carrusel-voluntariado-contenedor" id="ver-papiroflexia"></div>
                             <button class="flecha-izquierda-pasar" id="izq-papiroflexia">&#10094;</button>
                             <button class="flecha-derecha-pasar" id="der-papiroflexia">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seriesTV" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" style="text-align: center;">
+                        <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                        <br>
+                        <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
+                        <br>
+                        <h1>Mis Series de TV favoritas</h1>
+                        <div class="carrusel-voluntariado">
+                            <div class="carrusel-voluntariado-contenedor" id="ver-seriesTV"></div>
+                            <button class="flecha-izquierda-pasar" id="izq-seriesTV">&#10094;</button>
+                            <button class="flecha-derecha-pasar" id="der-seriesTV">&#10095;</button>
                         </div>
                     </div>
                 </div>
@@ -567,29 +590,29 @@
                 <div class="row">
                     <div class="contact-form">
                         <div class="row">
-                            <form id="contact" action="https://getform.io/f/bgddjpra" method="POST">
+                            <form id="contact" action="https://formsubmit.co/alejandrofernandezperez@protonmail.com" method="POST">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <fieldset><input type="text" name="name" class="form-control" id="name" placeholder="NOMBRE...." required/></fieldset>
+                                        <label for="nombre">Nombre y apellidos: <span class="required"></span></label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Escribe tu nombre y tus apellidos...." required/>
                                     </div>
                                     <div class="col-md-12">
-                                        <fieldset><input type="email" name="email" class="form-control" id="email" placeholder="CORREO ELECTRÓNICO...." required/></fieldset>
+                                        <label for="nombre">Correo electrónico: <span class="required"></span></label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico...." required/>
                                     </div>
                                     <div class="col-md-12">
-                                        <fieldset><input name="asunto" type="text" class="form-control" id="asunto" placeholder="ASUNTO...." required/></fieldset>
+                                        <label for="nombre">Asunto: <span class="required"></span></label>
+                                        <input name="asunto" type="text" class="form-control" id="asunto" placeholder="Escribe un asunto...." required/>
                                     </div>
                                     <div class="col-md-12">
-                                        <fieldset><textarea name="message" rows="6" class="form-control" id="message" placeholder="MENSAJE...." required></textarea></fieldset>
+                                        <label for="nombre">Mensaje: <span class="required"></span></label>
+                                        <textarea name="message" rows="8" class="form-control" id="message" placeholder="Escribe un mensaje...." required></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <fieldset>
-                                            <!-- Evita spams -->
-                                            <input type="hidden" name="_gotcha" style="display:none !important">
-                                            <!-- Una vez enviado redirige de nuevo al inicio -->
-                                            <input type="hidden" name="_redirect" value="https://alejandropersonalweb.netlify.app" />
-                                            <!-- Botón enviar -->
-                                            <input type="submit" id="form-submit" class="btn" value="Enviar"/>
-                                        </fieldset>
+                                        <input type="hidden" name="_redirect" value="https://alejandropersonalweb.netlify.app/#contactame" />
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="text" name="_honey" style="display:none">
+                                        <input type="submit" id="form-submit" class="btn" value="Enviar"/>
                                     </div>
                                 </div>
                             </form>
@@ -611,6 +634,7 @@
                         <ul>
                             <li><a href="https://www.instagram.com/soyalexokei/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/alejandro-perfil/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@soyalexokei?lang=es" target="_blank"><i class="bi bi-tiktok"></i></a></li>
                         </ul>
                         <p>Copyright &copy; 2023-2030 <a href="./index.html">My Personal WEB</a> - Todos los derechos reservados</p>
                     </div>
@@ -619,16 +643,6 @@
         </footer>
 
         <!-- ARCHIVOS JS -->
-
-        <!-- Redirección al enviar el correo -->
-        <script>
-            document.getElementById("contact").addEventListener("submit", function (event) {
-              setTimeout(function () {
-                window.location.href = "https://alejandropersonalweb.netlify.app";
-              }, 500); // Redirige tras 500ms para permitir que el formulario se envíe.
-            });
-        </script>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -653,6 +667,7 @@
         <script src="./js/aficiones/coches.js" type="text/javascript"></script>
         <script src="./js/aficiones/dibujos.js" type="text/javascript"></script>
         <script src="./js/aficiones/papiroflexia.js" type="text/javascript"></script>
+        <script src="./js/aficiones/seriestv.js" type="text/javascript"></script>
         <!-- Archivos JS: Sobre mí -->
         <script src="./js/sobreMi/album.js" type="text/javascript"></script>
         <script src="./js/sobreMi/solidaridad.js" type="text/javascript"></script>

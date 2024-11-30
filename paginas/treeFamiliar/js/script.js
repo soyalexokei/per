@@ -68,7 +68,7 @@ const comprobarAncho = () => {
         if(window.innerWidth > 580 && detector.tablet()==null && detector.phone()==null && detector.mobile()==null){
             window.location.href="index.html";
         }
-    }    
+    }   
 };
 
 comprobarAncho();

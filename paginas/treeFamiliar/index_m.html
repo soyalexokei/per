@@ -15,19 +15,21 @@
         <link rel="icon" href="../../favicon.ico" type="image/x-icon"/>
     </head>
     <body>
-
+        <!-- GOOGLE TRADUCTOR -->
+        <div id="google_translate_element" class="google">
+            <button class="btnTreeAtras"><a href="../../index.html#about">Atrás</a></button>
+        </div>
+        <!-- FIN DEL GOOGLE TRADUCTOR -->
         <div class="cursor"></div> 
         <div id="parallax">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <section class="flia">
-                            <main class="pt-3">
-                                <h1 class="text-center pt-3 titulo h1 animate__animated animate__zoomInUp animate__slow">VISUALIZACIÓN<br>Únicamente en el computador<br>(no en móviles)</h1>
-                            </main>
+                            <h1 class="text-center pt-3 titulo h1 animate__animated animate__zoomInUp animate__slow">Para visualizar mi árbol<br>genealógico, sólo es posible<br>desde un computador<br>o una tablet.<br>Lo siento.</h1>
                         </section> 
                     </div>
-                </div>    
+                </div> 
             </div>
         </div>
         <!-- Iconos -->
@@ -38,5 +40,13 @@
         <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
         <!-- General -->
         <script type="text/javascript" src="js/script.js"></script>
+        <!-- GOOGLE TRADUCTOR -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- FIN DEL GOOGLE TRADUCTOR -->
     </body>
 </html>

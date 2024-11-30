@@ -249,6 +249,9 @@ body button, body form label{
     .flechaHno, #lineas img{
         width: 6rem;
     }
+    .familiaresFotos {
+        width: 60px;
+    }
     .flechaAbue{
         width: 7rem;
     }
@@ -296,16 +299,16 @@ body button, body form label{
         width: 4rem;
     }
     .container .card{ 
-        width: 6rem;
+        width: 4rem;
         font-size: 1.2rem;
     }
     
     #card9,#card10,#card11,#card12,#card13,#card14,#card48,#card55,#card58{
-        width: 8rem;
+        width: 6rem;
     }
     
     #principal #card15{
-        width: 9rem;
+        width: 7rem;
     }
     .card .desc{
         font-size: 1rem;

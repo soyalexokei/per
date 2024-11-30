@@ -15,23 +15,39 @@ var imagenesIDrecuerdos =
   "https://i.postimg.cc/BQxWM3qH/12.png",
   "https://i.postimg.cc/QCSNfYWZ/13.png",
   "https://i.postimg.cc/yx7YXCxT/14.png",
-  "https://i.postimg.cc/QtQdTd8t/15.png",
-  "https://i.postimg.cc/tgVT9z8F/16.png",
+  "https://i.postimg.cc/QtQdTd8t/15.png","",
+  "https://i.postimg.cc/tgVT9z8F/16.png"
+];
+var videosIDrecuerdos =
+[
+  "","","","","","","","","","","","","","","",
+  "https://www.youtube.com/embed/jIHHz4n3J7U?autoplay=1&loop=1&playlist=jIHHz4n3J7U&controls=0&rel=0",""
 ];
   var primerarecuerdos = 1;
   var pantallarecuerdos = document.getElementById("ver-mis-recuerdos");
   var imgrecuerdos = document.createElement("img");
+  var iframerecuerdos = document.createElement("iframe");
   
   //-- Ctes.
-  const totalrecuerdos = 16;
+  const totalrecuerdos = 17;
   
   function mostrarrecuerdos(auxrecuerdos) {
     
     //-- Limpiar la pantalla.
     pantallarecuerdos.innerHTML = "";
-  
-    imgrecuerdos.src = imagenesIDrecuerdos[auxrecuerdos-1];
-    pantallarecuerdos.appendChild(imgrecuerdos);
+
+    //-- Verificar si es una imagen o un vídeo.
+    if(imagenesIDrecuerdos[auxrecuerdos-1]) {
+      imgrecuerdos.src = imagenesIDrecuerdos[auxrecuerdos-1];
+      pantallarecuerdos.appendChild(imgrecuerdos);
+    }else {
+      iframerecuerdos.src = videosIDrecuerdos[auxrecuerdos-1];
+      iframerecuerdos.width = "400";
+      iframerecuerdos.height = "533";
+      iframerecuerdos.setAttribute("allow", "autoplay");
+      iframerecuerdos.setAttribute("allowFullscreen", "false");
+      pantallarecuerdos.appendChild(iframerecuerdos);
+    }
   }
   
   function imgAnteriorrecuerdos() {
