@@ -91,3 +91,45 @@ table tr td {
         padding: 10px;
     }
 }
+
+.carrusel-voluntariado {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flecha-izquierda-pasar, .flecha-derecha-pasar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px; /* Incrementar padding para flechas más grandes */
+    font-size: 3rem; /* Aumentar el tamaño del texto */
+    z-index: 1;
+}
+
+.flecha-izquierda-pasar {
+    left: 0;
+}
+
+.flecha-derecha-pasar {
+    right: 0;
+}
+
+.carrusel-voluntariado-contenedor {
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.carrusel-voluntariado-contenedor img {
+    display: inline-block;
+    width: 100%;
+}
+
+.flecha-izquierda-pasar:hover, .flecha-derecha-pasar:hover {
+    color: #555;
+}
