@@ -14,8 +14,8 @@ var videosIDsportTV =
   function mostrarsportTV(auxsportTV) {
     pantallasportTV.innerHTML = "";
     iframesportTV.src = videosIDsportTV[auxsportTV-1];
-    iframesportTV.width = "900";
-    iframesportTV.height = "700";
+    iframesportTV.width = "500";
+    iframesportTV.height = "389";
     iframesportTV.setAttribute("allowFullscreen", "false");
     pantallasportTV.appendChild(iframesportTV);
   }
