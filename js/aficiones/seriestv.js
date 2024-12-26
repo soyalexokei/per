@@ -4,12 +4,12 @@ var imagenesIDseriesTV =
   "https://i.postimg.cc/DwpRrfnS/1.png","https://i.postimg.cc/1XKjfsv5/2.png",
   "https://i.postimg.cc/2yYtkVFK/3.png","https://i.postimg.cc/bJkMfQbn/4.png",
   "https://i.postimg.cc/DztDNCWF/5.png","https://i.postimg.cc/hGJ6pFtp/6.png",
-  "https://i.postimg.cc/T33Z55M8/7.png",""
+  "https://i.postimg.cc/T33Z55M8/7.png","","https://i.postimg.cc/YqZNw6TJ/8.jpg"
 ];
 var videosIDseriesTV =
 [
     "","","","","","","",
-    "https://www.youtube.com/embed/mT_h_ULDo3g?autoplay=1&loop=1&playlist=mT_h_ULDo3g&controls=0&rel=0"
+    "https://www.youtube.com/embed/mT_h_ULDo3g?autoplay=1&loop=1&playlist=mT_h_ULDo3g&controls=0&rel=0",""
 ];
   var primeraseriesTV = 1;
   var pantallaseriesTV = document.getElementById("ver-seriesTV");
@@ -17,7 +17,7 @@ var videosIDseriesTV =
   var iframeseriesTV = document.createElement("iframe");
   
   //-- Ctes.
-  const totalseriesTV = 8;
+  const totalseriesTV = 9;
   
   function mostrarseriesTV(auxseriesTV) {
     

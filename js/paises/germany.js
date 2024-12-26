@@ -1,20 +1,59 @@
 //-- Variables.
 var videosIDgermany =
 [
+    /* 1-10 */"", "", "", "", "", "", "", "", "", "",
+    /* 11 */"https://www.youtube.com/embed/IwFSMl46kM4?autoplay=1&loop=1&playlist=IwFSMl46kM4&controls=0&rel=0",
+    /* 12 */"https://www.youtube.com/embed/ewkwAVRY6Ks?autoplay=1&loop=1&playlist=ewkwAVRY6Ks&controls=0&rel=0",
+    /* 13-18 */"", "", "", "", "", "",
+    /* 19 */"https://www.youtube.com/embed/5RptBMUfhyM?autoplay=1&loop=1&playlist=5RptBMUfhyM&controls=0&rel=0",
+    /* 20 */"https://www.youtube.com/embed/nrwwn3p55KI?autoplay=1&loop=1&playlist=nrwwn3p55KI&controls=0&rel=0",
+    /* 21 */"https://www.youtube.com/embed/viFpOsd7Dug?autoplay=1&loop=1&playlist=viFpOsd7Dug&controls=0&rel=0",
+    /* 22 */"https://www.youtube.com/embed/xmebiFcO_4U?autoplay=1&loop=1&playlist=xmebiFcO_4U&controls=0&rel=0",
+    /* 23 */"https://www.youtube.com/embed/0F4zmzF6nyg?autoplay=1&loop=1&playlist=0F4zmzF6nyg&controls=0&rel=0",
+    /* 24-26 */"","","",
+    /* 27 */"https://www.youtube.com/embed/4fLlLlGyNjE?autoplay=1&loop=1&playlist=4fLlLlGyNjE&controls=0&rel=0",
+    /* 28 */"https://www.youtube.com/embed/O8XNB15hZ6o?autoplay=1&loop=1&playlist=O8XNB15hZ6o&controls=0&rel=0",
+    /* 29 */"https://www.youtube.com/embed/OB1hMSRHt3s?autoplay=1&loop=1&playlist=OB1hMSRHt3s&controls=0&rel=0",
     
+    /* 30-37 */"", "", "", "", "", "", "", "",
+    /* 38 */"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", ""
 ];
 var imagenesIDgermany =
 [
-    "https://i.postimg.cc/7Y7pwr7j/1.jpg","https://i.postimg.cc/8Ck3RF3V/2.jpg","https://i.postimg.cc/Vk82NZWv/3.jpg",
+    /* 1-10 */"https://i.postimg.cc/7Y7pwr7j/1.jpg","https://i.postimg.cc/8Ck3RF3V/2.jpg","https://i.postimg.cc/Vk82NZWv/3.jpg",
     "https://i.postimg.cc/fRfpS78K/4.jpg","https://i.postimg.cc/76fWRFws/5.jpg","https://i.postimg.cc/yNfGv143/6.jpg",
     "https://i.postimg.cc/XJmz6svV/7.jpg","https://i.postimg.cc/nrmwFqsq/8.jpg","https://i.postimg.cc/SQYPfbZj/9.jpg",
-    "https://i.postimg.cc/WbRH9YK8/10.jpg","https://i.postimg.cc/bNQF4Hfh/11.jpg","https://i.postimg.cc/8z4XzpCX/12.jpg",
+    "https://i.postimg.cc/WbRH9YK8/10.jpg",
+    /* 11-12 */"","",
+    /* 13-18 */"https://i.postimg.cc/bNQF4Hfh/11.jpg","https://i.postimg.cc/8z4XzpCX/12.jpg",
     "https://i.postimg.cc/jStkTwRJ/13.jpg","https://i.postimg.cc/SKKTXB2S/14.jpg","https://i.postimg.cc/6Q1HCMnd/15.jpg",
-    "https://i.postimg.cc/W3F580wx/16.jpg","https://i.postimg.cc/nzy0PMdr/17.jpg","https://i.postimg.cc/6qCYJwS0/18.jpg",
-    "https://i.postimg.cc/RVzg166b/19.jpg","https://i.postimg.cc/ry4htCmr/20.jpg","https://i.postimg.cc/GmLzNWjF/21.jpg",
+    "https://i.postimg.cc/W3F580wx/16.jpg",
+    /* 19-23 */"","","","","",
+    /* 24-26 */"https://i.postimg.cc/nzy0PMdr/17.jpg","https://i.postimg.cc/6qCYJwS0/18.jpg","https://i.postimg.cc/RVzg166b/19.jpg",
+    /* 29 */"",
+    /* 30 */"https://i.postimg.cc/ry4htCmr/20.jpg","https://i.postimg.cc/GmLzNWjF/21.jpg",
     "https://i.postimg.cc/Qxk0f8cN/22.jpg","https://i.postimg.cc/QdfSrf6R/23.jpg","https://i.postimg.cc/8Cs4kL9s/24.jpg",
     "https://i.postimg.cc/gc3D0zSy/25.jpg","https://i.postimg.cc/43M5YmRP/26.jpg","https://i.postimg.cc/B6KCH4q0/27.jpg",
-    "https://i.postimg.cc/8cgmb95r/28.jpg","https://i.postimg.cc/FzbgCpdC/29.jpg","https://i.postimg.cc/7YDNGFdF/30.jpg",
+    /* 38 */"","https://i.postimg.cc/8cgmb95r/28.jpg","https://i.postimg.cc/FzbgCpdC/29.jpg",
+    
+    "https://i.postimg.cc/7YDNGFdF/30.jpg",
     "https://i.postimg.cc/VLRWj7cd/31.jpg","https://i.postimg.cc/VkkB4jY4/32.jpg","https://i.postimg.cc/dVNRfL3F/33.jpg",
     "https://i.postimg.cc/jjW6Ytn7/34.jpg","https://i.postimg.cc/25PQzMnX/35.jpg","https://i.postimg.cc/0QDprnf5/36.jpg",
     "https://i.postimg.cc/1XSDFFCG/37.jpg","https://i.postimg.cc/J0QZ5hv9/38.jpg","https://i.postimg.cc/vHQWHW6M/39.jpg",
@@ -90,7 +129,10 @@ var imagenesIDgermany =
     "https://i.postimg.cc/J4zC32BF/247.jpg","https://i.postimg.cc/sDHdT4Yg/248.jpg","https://i.postimg.cc/qvtfS6wX/249.jpg",
     "https://i.postimg.cc/9Qv3hXN3/250.jpg","https://i.postimg.cc/pd8wXNgm/251.jpg","https://i.postimg.cc/xC2WXx2t/252.jpg",
     "https://i.postimg.cc/Y9zTY62k/253.jpg","https://i.postimg.cc/5y9T3Xjz/254.jpg","https://i.postimg.cc/RhP8bvnD/255.jpg",
-    "https://i.postimg.cc/J4nSHHfV/256.jpg","https://i.postimg.cc/c1TVJB5B/257.jpg","https://i.postimg.cc/28KMQ8Yq/258.jpg","https://i.postimg.cc/2SLJ2Rj0/259.jpg"
+    "https://i.postimg.cc/J4nSHHfV/256.jpg","https://i.postimg.cc/c1TVJB5B/257.jpg","https://i.postimg.cc/28KMQ8Yq/258.jpg","https://i.postimg.cc/2SLJ2Rj0/259.jpg",
+    "", "", "", "",
+    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", ""
 ];
 var indiceGermany = 1;
 var pantallaGermany = document.getElementById('ver-germany');
@@ -98,7 +140,7 @@ var imgGermany = document.createElement("img");
 var iframeGermany = document.createElement("iframe");
 
 //-- Ctes.
-const totalGermany = 259;
+const totalGermany = 300;
 
 function mostrarGermany(auxGermany) {
     
