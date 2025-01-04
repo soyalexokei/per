@@ -4,12 +4,17 @@ var imagenesIDseriesTV =
   "https://i.postimg.cc/DwpRrfnS/1.png","https://i.postimg.cc/1XKjfsv5/2.png",
   "https://i.postimg.cc/2yYtkVFK/3.png","https://i.postimg.cc/bJkMfQbn/4.png",
   "https://i.postimg.cc/DztDNCWF/5.png","https://i.postimg.cc/hGJ6pFtp/6.png",
-  "https://i.postimg.cc/T33Z55M8/7.png","","https://i.postimg.cc/YqZNw6TJ/8.jpg"
+  "https://i.postimg.cc/T33Z55M8/7.png","","https://i.postimg.cc/YqZNw6TJ/8.jpg",
+  "https://i.postimg.cc/43Qhx972/9.png","https://i.postimg.cc/7Lk24V6T/10.png",
+  "https://i.postimg.cc/W1rkxK2v/11.png","https://i.postimg.cc/TYBb7Gv0/12.png",
+  "https://i.postimg.cc/wMvNPjBf/13.png","https://i.postimg.cc/DySsP0Hm/14.png",
+  "https://i.postimg.cc/SRv9pb2y/15.png","https://i.postimg.cc/597LzLPZ/16.png"
 ];
 var videosIDseriesTV =
 [
     "","","","","","","",
-    "https://www.youtube.com/embed/mT_h_ULDo3g?autoplay=1&loop=1&playlist=mT_h_ULDo3g&controls=0&rel=0",""
+    "https://www.youtube.com/embed/mT_h_ULDo3g?autoplay=1&loop=1&playlist=mT_h_ULDo3g&controls=0&rel=0","",
+    "","","","","","","",""
 ];
   var primeraseriesTV = 1;
   var pantallaseriesTV = document.getElementById("ver-seriesTV");
@@ -17,7 +22,7 @@ var videosIDseriesTV =
   var iframeseriesTV = document.createElement("iframe");
   
   //-- Ctes.
-  const totalseriesTV = 9;
+  const totalseriesTV = 17;
   
   function mostrarseriesTV(auxseriesTV) {
     
