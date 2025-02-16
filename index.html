@@ -672,6 +672,24 @@
                                 <div id="tab5">
                                     <a href="./paginas/treeFamiliar/index.html"><img src="img/Sobre-mi/arbol-genealogico.png"/></a>
                                 </div>
+                                <div id="tab6">
+                                    <a data-toggle="modal" data-target="#imgs-IA"><img src="./img/Sobre-mi/mis-imagenes-con-ia.png"/></a>
+                                    <div id="imgs-IA" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body" style="text-align: center;">
+                                                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                                    <br>
+                                                    <div class="carrusel-voluntariado">
+                                                        <div class="carrusel-voluntariado-contenedor" id="ver-imgs-IA"></div>
+                                                        <button class="flecha-izquierda-pasar" id="izq-imgs-IA">&#10094;</button>
+                                                        <button class="flecha-derecha-pasar" id="der-imgs-IA">&#10095;</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </section>
                             <ul class="tabs clearfix" data-tabgroup="first-tab-group">
                                 <li><a href="#tab1" class="active">Descripción</a></li>
@@ -679,6 +697,7 @@
                                 <li><a href="#tab3">Creciendo...</a></li>
                                 <li><a href="#tab4">Mis Recuerdos</a></li>
                                 <li><a href="#tab5">Mi árbol genealógico</a></li>
+                                <li><a href="#tap6">Imágenes con IA</a></li>
                             </ul>
                         </div>
                     </div>
@@ -779,6 +798,7 @@
         <script src="./js/sobreMi/solidaridad.js" type="text/javascript"></script>
         <script src="./js/sobreMi/yoCreciendo.js" type="text/javascript"></script>
         <script src="./js/sobreMi/misRecuerdos.js" type="text/javascript"></script>
+        <script src="./js/sobreMi/IAimgs.js" type="text/javascript"></script>
         <script>
             function openCity(cityName) {
                 var i;
