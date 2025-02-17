@@ -50,13 +50,15 @@ var imagenesIDcoches =
   "https://i.postimg.cc/g0qZ4ffJ/47.jpg",
   "https://i.postimg.cc/B6S1zm0C/48.jpg",
   "https://i.postimg.cc/gJg6b3cb/49.jpg",
+  "https://i.postimg.cc/y6SfTXQL/50.png",
+  "https://i.postimg.cc/vT93HbgJ/51.png"
 ];
   var primeracoches = 1;
   var pantallacoches = document.getElementById("ver-coches");
   var imgcoches = document.createElement("img");
   
   //-- Ctes.
-  const totalcoches = 49;
+  const totalcoches = 51;
   
   function mostrarcoches(auxcoches) {
     
