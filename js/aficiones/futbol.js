@@ -1,20 +1,46 @@
 //-- Variables.
 var imagenesIDfutexp =
 [
-  
+  "https://i.postimg.cc/7Zd24Kcc/1.png", "https://i.postimg.cc/526CDhPL/2.png", "https://i.postimg.cc/vHPnqYvG/3.png",
+  "https://i.postimg.cc/sDfS4Q7n/4.png", "https://i.postimg.cc/66fnZL22/5.png", "https://i.postimg.cc/fyCdhDnj/6.png",
+  "https://i.postimg.cc/nrpm5M5h/7.png", "https://i.postimg.cc/vBW9350K/8.png", "https://i.postimg.cc/LXdLtx3f/9.png",
+  "https://i.postimg.cc/jjnynpPt/10.png", "https://i.postimg.cc/ht59jDJ2/11.png", "https://i.postimg.cc/Z5R84Bq9/12.png",
+  "https://i.postimg.cc/xTgvwy9D/13.png", "https://i.postimg.cc/X7nK1DSk/14.png", "https://i.postimg.cc/BbBTQ2DF/15.png",
+  "https://i.postimg.cc/c1RMmGjJ/16.png", "https://i.postimg.cc/0jsGsV6x/17.png", "https://i.postimg.cc/zBWw6sG0/18.png",
+  "https://i.postimg.cc/8C7mBJQ8/19.png", "https://i.postimg.cc/nLNYdFpX/20.png", "https://i.postimg.cc/L8CV1kWB/21.png",
+  "https://i.postimg.cc/RZVRhpgZ/22.png", "https://i.postimg.cc/Kv5fZhrW/23.png", "https://i.postimg.cc/GhRzwmYY/24.png",
+  "https://i.postimg.cc/SR6r2B0J/25.png", "https://i.postimg.cc/qByQ53t4/26.png", "https://i.postimg.cc/QCGmMXy2/27.png",
+  "https://i.postimg.cc/C1fJYZmC/28.png", "https://i.postimg.cc/fRB8vQVd/29.png", "https://i.postimg.cc/KYWQd7rv/30.png",
+  "https://i.postimg.cc/g2YMR22d/31.png", "https://i.postimg.cc/fbyB2qdr/32.png", "https://i.postimg.cc/50Z7F56k/33.png",
+  "https://i.postimg.cc/5NWK43cX/34.png", "https://i.postimg.cc/jq7kY11V/35.png", "https://i.postimg.cc/1XwW0gFR/36.png"
+];
+var videosIDfutexp =
+[
+
 ];
   var primerafutexp = 1;
   var pantallafutexp = document.getElementById("ver-futexp");
   var imgfutexp = document.createElement("img");
+  var iframefutexp = document.createElement("iframe");
   
   //-- Ctes.
-  const totalfutexp = 2;
+  const totalfutexp = 36;
   
   function mostrarfutexp(auxfutexp) {
     
     pantallafutexp.innerHTML = "";
-    imgfutexp.src = imagenesIDfutexp[auxfutexp-1];
-    pantallafutexp.appendChild(imgfutexp);
+    
+    if(imagenesIDfutexp[auxfutexp-1]) {
+      imgfutexp.src = imagenesIDfutexp[auxfutexp-1];
+      pantallafutexp.appendChild(imgfutexp);
+    }else {
+      iframefutexp.src = videosIDfutexp[auxfutexp-1];
+      iframefutexp.width = "400";
+      iframefutexp.height = "533";
+      iframefutexp.setAttribute("allow", "autoplay");
+      iframefutexp.setAttribute("allowFullscreen", "false");
+      pantallafutexp.appendChild(iframefutexp);
+    }
   }
   
   function imgAnteriorfutexp() {
