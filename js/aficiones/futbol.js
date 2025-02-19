@@ -12,11 +12,25 @@ var imagenesIDfutexp =
   "https://i.postimg.cc/SR6r2B0J/25.png", "https://i.postimg.cc/qByQ53t4/26.png", "https://i.postimg.cc/QCGmMXy2/27.png",
   "https://i.postimg.cc/C1fJYZmC/28.png", "https://i.postimg.cc/fRB8vQVd/29.png", "https://i.postimg.cc/KYWQd7rv/30.png",
   "https://i.postimg.cc/g2YMR22d/31.png", "https://i.postimg.cc/fbyB2qdr/32.png", "https://i.postimg.cc/50Z7F56k/33.png",
-  "https://i.postimg.cc/5NWK43cX/34.png", "https://i.postimg.cc/jq7kY11V/35.png", "https://i.postimg.cc/1XwW0gFR/36.png"
+  "https://i.postimg.cc/5NWK43cX/34.png", "https://i.postimg.cc/jq7kY11V/35.png", "https://i.postimg.cc/1XwW0gFR/36.png","",
+  "https://i.postimg.cc/tR5BdZ7J/38.png", "https://i.postimg.cc/90J1cSsZ/39.png", "https://i.postimg.cc/sDgwTjZc/40.png","",
+  "https://i.postimg.cc/FKwR1g26/42.png", "https://i.postimg.cc/9Q8zHj1C/43.png", "https://i.postimg.cc/R0WhMbbf/44.png","",
+  "https://i.postimg.cc/XvYHX9w9/46.png",""
 ];
 var videosIDfutexp =
 [
-
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "https://www.youtube.com/embed/F3vgZL1bfkA?autoplay=1&loop=1&playlist=F3vgZL1bfkA&controls=0&rel=0",
+  "", "", "",
+  "https://www.youtube.com/embed/1imIzdzcN0M?autoplay=1&loop=1&playlist=1imIzdzcN0M&controls=0&rel=0",
+  "", "", "",
+  "https://www.youtube.com/embed/PIqpZmWlzfc?autoplay=1&loop=1&playlist=PIqpZmWlzfc&controls=0&rel=0","",
+  "https://www.youtube.com/embed/V_vkwOrO_uY?autoplay=1&loop=1&playlist=V_vkwOrO_uY&controls=0&rel=0"
 ];
   var primerafutexp = 1;
   var pantallafutexp = document.getElementById("ver-futexp");
@@ -24,7 +38,7 @@ var videosIDfutexp =
   var iframefutexp = document.createElement("iframe");
   
   //-- Ctes.
-  const totalfutexp = 36;
+  const totalfutexp = 47;
   
   function mostrarfutexp(auxfutexp) {
     
