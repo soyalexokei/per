@@ -158,7 +158,7 @@ var imgAustria = document.createElement("img");
 var iframeAustria = document.createElement("iframe");
 
 //-- Ctes.
-const totalAustria = 256;
+const totalAustria = 255;
 
 function mostrarAustria(auxAustria) {
     
