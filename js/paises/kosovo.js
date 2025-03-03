@@ -1,4 +1,4 @@
-//-- Variables.
+//-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
 var videosIDkosovo =
 [
     "",
@@ -61,6 +61,38 @@ var videosIDkosovo =
     "",
     "https://www.youtube.com/embed/lrq6L_GXr3U?autoplay=1&loop=1&playlist=lrq6L_GXr3U&controls=0&rel=0",
     "https://www.youtube.com/embed/KDSLhfilP_s?autoplay=1&loop=1&playlist=KDSLhfilP_s&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://www.youtube.com/embed/ncY2FBFV3r0?autoplay=1&loop=1&playlist=ncY2FBFV3r0&controls=0&rel=0",
+    "https://www.youtube.com/embed/jN2nO1V23uA?autoplay=1&loop=1&playlist=jN2nO1V23uA&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://www.youtube.com/embed/mAo4oiYGyzQ?autoplay=1&loop=1&playlist=mAo4oiYGyzQ&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
     "",
     "",
     "",
@@ -134,6 +166,38 @@ var imagenesIDkosovo =
     "https://i.postimg.cc/9MJMYvFc/34.jpg",
     "https://i.postimg.cc/sxLgt7h8/35.jpg",
     "https://i.postimg.cc/fT3LYq4h/36.jpg",
+    "https://i.postimg.cc/3w2PRRTq/IMG-20220417-103837.png",
+    "https://i.postimg.cc/V612b8sk/IMG-20220417-105759.png",
+    "https://i.postimg.cc/Tw9FV4hq/IMG-20220417-105904.png",
+    "https://i.postimg.cc/LX1778yD/IMG-20220417-110202.png",
+    "https://i.postimg.cc/CLYtPYbC/IMG-20220417-110124.png",
+    "https://i.postimg.cc/Vv9hfHPb/IMG-20220417-110734.png",
+    "https://i.postimg.cc/G3vVx9Th/IMG-20220417-110955.png",
+    "https://i.postimg.cc/gjb5PbQW/IMG-20220417-112412.png",
+    "https://i.postimg.cc/267dVp3m/IMG-20220417-111730.png",
+    "https://i.postimg.cc/1XWprppj/IMG-20220417-111954.png",
+    "https://i.postimg.cc/8ckRvyrv/IMG-20220417-112056.png",
+    "",
+    "",
+    "https://i.postimg.cc/XY5s4zKN/Img-83298hff.png",
+    "https://i.postimg.cc/XJjLKNRX/IMG-20220417-113109.png",
+    "https://i.postimg.cc/xdygbNFW/IMG-20220417-113500.png",
+    "https://i.postimg.cc/6QNY3fzr/IMG-20220417-115203.png",
+    "https://i.postimg.cc/BQKXBXr6/IMG-20220417-120209.png",
+    "https://i.postimg.cc/JnYGPJ7y/IMG-20220417-122024.png",
+    "https://i.postimg.cc/Gpr82dSp/IMG-20220417-122017.png",
+    "https://i.postimg.cc/652GbHvB/IMG-20220417-120527.png",
+    "",
+    "https://i.postimg.cc/bw1SpsgM/IMG-20220417-125845.png",
+    "https://i.postimg.cc/65k4kdrn/IMG-20220417-125929.png",
+    "https://i.postimg.cc/6Q074gDf/IMG-20220417-125853.png",
+    "https://i.postimg.cc/tT4s3DbQ/37.jpg",
+    "https://i.postimg.cc/qqtgYRg1/38.jpg",
+    "https://i.postimg.cc/NFWLwcHB/39.jpg",
+    "https://i.postimg.cc/L8FhCmSV/40.jpg",
+    "https://i.postimg.cc/c1jv3Q52/41.jpg",
+    "https://i.postimg.cc/cL7CPP4G/42.jpg",
+    "https://i.postimg.cc/Jh108KGD/43.jpg"
 ];
 var indiceKosovo = 1;
 var pantallaKosovo = document.getElementById('ver-kosovo');
@@ -141,7 +205,7 @@ var imgKosovo = document.createElement("img");
 var iframeKosovo = document.createElement("iframe");
 
 //-- Ctes.
-const totalKosovo = 65;
+const totalKosovo = 97;
 
 function mostrarKosovo(auxKosovo) {
     
