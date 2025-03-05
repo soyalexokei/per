@@ -32,6 +32,10 @@ var videosIDfrance =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDfrance =
 [
@@ -66,6 +70,10 @@ var imagenesIDfrance =
     "https://i.postimg.cc/4xjZK9CJ/20150912-191625.jpg",
     "https://i.postimg.cc/MpnqKYFP/P1000065.jpg",
     "https://i.postimg.cc/rFnqkHQR/P1000067.jpg",
+    "https://i.postimg.cc/DZTLk8Yy/46.jpg",
+    "https://i.postimg.cc/267vzrPd/5.jpg",
+    "https://i.postimg.cc/sxfWxbrk/57.jpg",
+    "https://i.postimg.cc/Kj9MMQcR/59.jpg",
 ];
 var indiceFrance = 1;
 var pantallaFrance = document.getElementById('ver-france');
@@ -73,7 +81,7 @@ var imgFrance = document.createElement("img");
 var iframeFrance = document.createElement("iframe");
 
 //-- Ctes.
-const totalFrance = 31;
+const totalFrance = 35;
 
 function mostrarFrance(auxFrance) {
     
