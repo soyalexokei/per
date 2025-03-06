@@ -36,6 +36,26 @@ var videosIDfrance =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDfrance =
 [
@@ -74,6 +94,26 @@ var imagenesIDfrance =
     "https://i.postimg.cc/267vzrPd/5.jpg",
     "https://i.postimg.cc/sxfWxbrk/57.jpg",
     "https://i.postimg.cc/Kj9MMQcR/59.jpg",
+    "https://i.postimg.cc/VNc0pWwT/20150911-131549.png",
+    "https://i.postimg.cc/Pqzvjvrq/20150911-131627.png",
+    "https://i.postimg.cc/1tmn5Rfr/20150911-131705.png",
+    "https://i.postimg.cc/QtfBBL7G/20150911-132307.png",
+    "https://i.postimg.cc/QxTtDKfr/20150911-132628.jpg",
+    "https://i.postimg.cc/CxpKxM2n/20150911-132720.jpg",
+    "https://i.postimg.cc/Jz3zDVw6/20150911-132744.jpg",
+    "https://i.postimg.cc/d0qtGHwq/20150911-132943.jpg",
+    "https://i.postimg.cc/2yPSvC8J/20150911-133131.jpg",
+    "https://i.postimg.cc/ZYgRXxFc/20150911-133412.jpg",
+    "https://i.postimg.cc/j5S2Y8F8/20150911-133552.jpg",
+    "https://i.postimg.cc/tTvTq309/20150911-134041.jpg",
+    "https://i.postimg.cc/XqZvpr3d/20150911-134122.jpg",
+    "https://i.postimg.cc/PJNCY6bL/20150911-134307.png",
+    "https://i.postimg.cc/ZqcngkVB/20150911-134311.png",
+    "https://i.postimg.cc/brMsTQLm/20150911-134318.png",
+    "https://i.postimg.cc/pdxyqVYM/20150913-123449-HDR.png",
+    "https://i.postimg.cc/J4fsH5sn/P1000265.png",
+    "https://i.postimg.cc/HscJLhsR/P1000268.png",
+    "https://i.postimg.cc/mZ6zBsR7/P1000272.png",
 ];
 var indiceFrance = 1;
 var pantallaFrance = document.getElementById('ver-france');
@@ -81,7 +121,7 @@ var imgFrance = document.createElement("img");
 var iframeFrance = document.createElement("iframe");
 
 //-- Ctes.
-const totalFrance = 35;
+const totalFrance = 55;
 
 function mostrarFrance(auxFrance) {
     
