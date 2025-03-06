@@ -5,14 +5,15 @@ var videosIDsportTV =
   "https://www.youtube.com/embed/cWm0tmkpKlk?autoplay=0&loop=1&playlist=cWm0tmkpKlk&controls=0&rel=0",
   "https://www.youtube.com/embed/BlXqbzxGnN4?autoplay=0&loop=1&playlist=BlXqbzxGnN4&controls=0&rel=0",
   "https://www.youtube.com/embed/FmLeT9L7-kI?autoplay=0&loop=1&playlist=FmLeT9L7-kI&controls=0&rel=0",
-  "https://www.youtube.com/embed/7wK_Xh8mc0A?autoplay=0&loop=1&playlist=7wK_Xh8mc0A&controls=0&rel=0"
+  "https://www.youtube.com/embed/7wK_Xh8mc0A?autoplay=0&loop=1&playlist=7wK_Xh8mc0A&controls=0&rel=0",
+  "https://www.youtube.com/embed/xQKtnr2mz2M?autoplay=0&loop=1&playlist=xQKtnr2mz2M&controls=0&rel=0"
 ];
   var primerasportTV = 1;
   var pantallasportTV = document.getElementById("ver-sportTV");
   var iframesportTV = document.createElement("iframe");
   
   //-- Ctes.
-  const totalsportTV = 5;
+  const totalsportTV = 6;
   
   function mostrarsportTV(auxsportTV) {
     pantallasportTV.innerHTML = "";
