@@ -74,6 +74,33 @@ var videosIDfrance =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
 ];
 var imagenesIDfrance =
 [
@@ -150,6 +177,33 @@ var imagenesIDfrance =
     "https://i.postimg.cc/YSNzfvyT/P1000072.png",
     "https://i.postimg.cc/t4x5JSdq/P1000071.png",
     "https://i.postimg.cc/WbK82LkY/P1000060.png",
+    "https://i.postimg.cc/8km50sXT/20150911-131141.png",
+    "https://i.postimg.cc/T103LH5K/IMG-20170201-192245-595.png",
+    "https://i.postimg.cc/Gtdpp1t0/P1000004.png",
+    "https://i.postimg.cc/2646m5zF/P1000011.png",
+    "https://i.postimg.cc/5tQy73Tr/P1000012.png",
+    "https://i.postimg.cc/8585qvVz/P1000013.png",
+    "https://i.postimg.cc/MpFXm4PR/P1000014.png",
+    "https://i.postimg.cc/gk4xnr3g/P1000016.png",
+    "https://i.postimg.cc/nhzC7Zkp/P1000017.png",
+    "https://i.postimg.cc/VLzSfX0S/P1000020.png",
+    "https://i.postimg.cc/CMGBpc5T/P1000022.png",
+    "https://i.postimg.cc/hvBX7dC5/P1000024.png",
+    "https://i.postimg.cc/KjDR78wv/P1000025.png",
+    "https://i.postimg.cc/W3rD3n7Z/P1000027.png",
+    "https://i.postimg.cc/8CxJN3LD/P1000029.png",
+    "https://i.postimg.cc/43YHCZ7B/P1000032.png",
+    "https://i.postimg.cc/rwnRYzmD/P1000034.png",
+    "https://i.postimg.cc/7YN20KrM/P1000037.png",
+    "https://i.postimg.cc/pLXnZK2N/P1000041.png",
+    "https://i.postimg.cc/HsmMrfRk/P1000046.png",
+    "https://i.postimg.cc/Y2YgqpXP/P1000050.png",
+    "https://i.postimg.cc/3NXDLB4h/P1000053.png",
+    "https://i.postimg.cc/YqB614Gk/P1000054.png",
+    "https://i.postimg.cc/rFGSg8x4/P1000056.png",
+    "https://i.postimg.cc/NjpRqpNf/P1000057.png",
+    "https://i.postimg.cc/SKRCyC5L/P1000059.png",
+    "https://i.postimg.cc/C5W1GfL8/20150912-150818.png"
 ];
 var indiceFrance = 1;
 var pantallaFrance = document.getElementById('ver-france');
@@ -157,7 +211,7 @@ var imgFrance = document.createElement("img");
 var iframeFrance = document.createElement("iframe");
 
 //-- Ctes.
-const totalFrance = 73;
+const totalFrance = 100;
 
 function mostrarFrance(auxFrance) {
     
