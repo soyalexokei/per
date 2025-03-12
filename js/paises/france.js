@@ -239,6 +239,7 @@ var videosIDfrance =
     "",
     "",
     "",
+    "https://www.youtube.com/embed/Z8YHqR7K5_8?autoplay=1&loop=1&playlist=Z8YHqR7K5_8&controls=0&rel=0",
     "",
     "",
     "",
@@ -246,6 +247,19 @@ var videosIDfrance =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
 ];
 var imagenesIDfrance =
 [
@@ -259,7 +273,7 @@ var imagenesIDfrance =
     "https://i.postimg.cc/Z5dM2h6Y/20150912-223800.jpg",
     "https://i.postimg.cc/WbKy54Ff/20150912-223933.jpg",
     "https://i.postimg.cc/Gh9NPD2y/20150912-224022.jpg",
-    "https://i.postimg.cc/rsySG5NR/6.jpg",
+    "https://i.postimg.cc/4dQQ7VSq/P1000137.jpg",
     "https://i.postimg.cc/PJqwvTdm/3.jpg",
     "https://i.postimg.cc/50gzt6W4/4.jpg",
     "https://i.postimg.cc/0NMxQ3gb/20150912-190537.jpg",
@@ -342,13 +356,6 @@ var imagenesIDfrance =
     "https://i.postimg.cc/NjpRqpNf/P1000057.png",
     "https://i.postimg.cc/SKRCyC5L/P1000059.png",
     "https://i.postimg.cc/C5W1GfL8/20150912-150818.png",
-    "https://i.postimg.cc/fyWjxk4L/P1000133.jpg",
-    "https://i.postimg.cc/cJqRFFqP/P1000134.jpg",
-    "https://i.postimg.cc/0jtGZxxC/P1000135.jpg",
-    "https://i.postimg.cc/NGbxQ8Tr/P1000136.jpg",
-    "https://i.postimg.cc/4dQQ7VSq/P1000137.jpg",
-    "https://i.postimg.cc/JtVXphvZ/20150911-203507.jpg",
-    "https://i.postimg.cc/XvdYg83H/67.jpg",
     "https://i.postimg.cc/mktwXYmX/34.jpg",
     "https://i.postimg.cc/HkQthstg/36.jpg",
     "https://i.postimg.cc/NF967g0Z/P1000139.png",
@@ -494,6 +501,27 @@ var imagenesIDfrance =
     "https://i.postimg.cc/Pf40MYXH/Construccion7.jpg",
     "https://i.postimg.cc/FRXwTxkr/Construccion8.jpg",
     "https://i.postimg.cc/mrYmgWh4/P1000039.jpg",
+    "",
+    "https://i.postimg.cc/9XtYPctq/P1000008.png",
+    "https://i.postimg.cc/hvgbFYgj/P1000009.png",
+    "https://i.postimg.cc/d1GmxYbp/P1000005.png",
+    "https://i.postimg.cc/SKBfdsvc/P1000006.png",
+    "https://i.postimg.cc/1XH0yK5K/P1000007.png",
+    "https://i.postimg.cc/4xzfyFTZ/20150913-130229.png",
+    "https://i.postimg.cc/RVJV5ZsW/20150913-130249.png",
+    "https://i.postimg.cc/3xMrKQVn/20150913-130307.png",
+    "https://i.postimg.cc/c1b4bnmq/20150913-130548-HDR.png",
+    "https://i.postimg.cc/V6F4NwKM/20150911-125632.png",
+    "https://i.postimg.cc/kMff3n6P/20150911-125603.png",
+    "https://i.postimg.cc/Z59fx1qt/20150913-120636.png",
+    "https://i.postimg.cc/NFfD9nnn/20150913-120700.jpg",
+    "https://i.postimg.cc/RhsRcR5Z/20150913-120712.jpg",
+    "https://i.postimg.cc/ncrTn6Bj/20150913-120719.jpg",
+    "https://i.postimg.cc/KzbJFjDx/20150913-120803.jpg",
+    "https://i.postimg.cc/htH2ypJJ/20150913-120925-HDR.jpg",
+    "https://i.postimg.cc/g08Nf8Rg/20150913-121004-HDR.jpg",
+    "https://i.postimg.cc/s1C20FR6/Fin.jpg",
+    "https://i.postimg.cc/C5GBjCZf/Avion.png"
 ];
 var indiceFrance = 1;
 var pantallaFrance = document.getElementById('ver-france');
@@ -501,7 +529,7 @@ var imgFrance = document.createElement("img");
 var iframeFrance = document.createElement("iframe");
 
 //-- Ctes.
-const totalFrance = 245;
+const totalFrance = 259;
 
 function mostrarFrance(auxFrance) {
     
