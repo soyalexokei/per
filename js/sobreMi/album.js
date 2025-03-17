@@ -35,7 +35,6 @@ var imagenesIDalbum =
   "https://i.postimg.cc/sxqyBV1z/56.png", "https://i.postimg.cc/RFCvys2k/57.png", "https://i.postimg.cc/SKfyZF1L/58.png",
   "https://i.postimg.cc/nrCpcsFT/59.png", "https://i.postimg.cc/SKhS7NdN/60.png", "https://i.postimg.cc/L8f41Zzb/61.png",
   "https://i.postimg.cc/4NYxX0nZ/62.png", "https://i.postimg.cc/vHCHTv6n/63.png", "https://i.postimg.cc/qBb7VrJj/64.png"
-
 ];
   var primeraalbum = 1;
   var pantallaalbum = document.getElementById("ver-album");

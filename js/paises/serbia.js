@@ -97,6 +97,32 @@ var videosIDserbia =
     "",
     "",
     "https://www.youtube.com/embed/VCq5uBjleLQ?autoplay=1&loop=1&playlist=VCq5uBjleLQ&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://www.youtube.com/embed/rd4ynoeNLjc?autoplay=1&loop=1&playlist=rd4ynoeNLjc&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDserbia =
 [
@@ -196,6 +222,32 @@ var imagenesIDserbia =
     "https://i.postimg.cc/Pr0KQ6t3/60.jpg",
     "https://i.postimg.cc/VsGKdf2c/61.jpg",
     "",
+    "https://i.postimg.cc/9FF1sWCk/62.jpg",
+    "https://i.postimg.cc/RVsGBj0Z/63.jpg",
+    "https://i.postimg.cc/3xk1JnyC/64.jpg",
+    "https://i.postimg.cc/j2vcC1Qv/65.jpg",
+    "https://i.postimg.cc/wvX0YM1C/66.jpg",
+    "https://i.postimg.cc/85QtYMzd/67.jpg",
+    "https://i.postimg.cc/T1TQdxmp/68.jpg",
+    "https://i.postimg.cc/kMyfjV38/69.jpg",
+    "",
+    "https://i.postimg.cc/dVXhw9dC/DSC-0022.jpg",
+    "https://i.postimg.cc/Kzh4gv0v/DSC-0054.png",
+    "https://i.postimg.cc/W1tdByDj/DSC-0060.jpg",
+    "https://i.postimg.cc/rFfdYTwQ/DSC-0068.jpg",
+    "https://i.postimg.cc/pr2TqcNw/DSC-0073.jpg",
+    "https://i.postimg.cc/sXPxPdLP/DSC-0087-1.jpg",
+    "https://i.postimg.cc/vmVcB6LN/DSC-0147.jpg",
+    "https://i.postimg.cc/mk8rq3Bt/DSC-0162.jpg",
+    "https://i.postimg.cc/N0nG1Gbr/IMG-20240712-WA0014.png",
+    "https://i.postimg.cc/jdMpWgMD/70.jpg",
+    "https://i.postimg.cc/pLygKfSq/71.jpg",
+    "https://i.postimg.cc/BbqzbHD5/DSC-0389.jpg",
+    "https://i.postimg.cc/L5Nb15Bc/DSC-0390.jpg",
+    "https://i.postimg.cc/1t0TyJg5/DSC-0391.jpg",
+    "https://i.postimg.cc/76rdvpZW/DSC-0392.jpg",
+    "https://i.postimg.cc/3x6z1y57/DSC-0394.jpg",
+    "https://i.postimg.cc/KYMwHZxT/DSC-0403.jpg",
 ];
 var indiceSerbia = 1;
 var pantallaSerbia = document.getElementById('ver-serbia');
@@ -203,7 +255,7 @@ var imgSerbia = document.createElement("img");
 var iframeSerbia = document.createElement("iframe");
 
 //-- Ctes.
-const totalSerbia = 96;
+const totalSerbia = 122;
 
 function mostrarSerbia(auxSerbia) {
     
