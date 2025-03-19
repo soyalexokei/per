@@ -264,6 +264,37 @@ var videosIDserbia =
     "",
     "https://www.youtube.com/embed/P4lA04kT6-U?autoplay=1&loop=1&playlist=P4lA04kT6-U&controls=0&rel=0",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDserbia =
 [
@@ -529,7 +560,38 @@ var imagenesIDserbia =
     "https://i.postimg.cc/cL26NPLQ/139.jpg",
     "https://i.postimg.cc/nhCMgnpF/140.jpg",
     "",
+    "https://i.postimg.cc/mk9FCkFd/DSC-0896.png",
+    "https://i.postimg.cc/cH2nvw6g/IMG-20220507-104343.png",
     "https://i.postimg.cc/NF2qWjLv/IMG-20220507-104036.png",
+    "https://i.postimg.cc/W3BdNVf0/DSCF1682.jpg",
+    "https://i.postimg.cc/2SrBLzjw/DSC-0861.jpg",
+    "https://i.postimg.cc/PrmwqLHJ/DSC-0865-1.jpg",
+    "https://i.postimg.cc/7YvzD3pj/DSC-0866.jpg",
+    "https://i.postimg.cc/7Z9Jgpfy/DSC-0868.jpg",
+    "https://i.postimg.cc/Gpp8zqyT/DSC-0871.jpg",
+    "https://i.postimg.cc/s20BL7Y6/DSC-0899.jpg",
+    "https://i.postimg.cc/LXYqF5vH/DSC-0912.jpg",
+    "https://i.postimg.cc/c4NvPs3S/IMG-20220507-114857.jpg",
+    "https://i.postimg.cc/WpZD9Dh8/IMG-20220507-114919.jpg",
+    "https://i.postimg.cc/L5jnhWrw/IMG-20220507-114947.jpg",
+    "https://i.postimg.cc/764RPd0C/DSC-0864.png",
+    "https://i.postimg.cc/QtqyFmJf/IMG-20220507-110302.png",
+    "https://i.postimg.cc/3rcZnzNg/DSCF1657.jpg",
+    "https://i.postimg.cc/85yb80Hg/DSCF1659.jpg",
+    "https://i.postimg.cc/ZKvxgjvX/DSCF1662.jpg",
+    "https://i.postimg.cc/WzC6zqC9/IMG-20220507-110306.jpg",
+    "https://i.postimg.cc/90rYcY8R/IMG-20220507-111122.jpg",
+    "https://i.postimg.cc/PxfMRj1M/IMG-20220507-111209.jpg",
+    "https://i.postimg.cc/PxBMyFQX/IMG-20220507-112130.png",
+    "https://i.postimg.cc/QMdSd7M3/DSC-0873.jpg",
+    "https://i.postimg.cc/BnsMRk9t/DSC-0875.jpg",
+    "https://i.postimg.cc/m27mXRn0/DSC-0876.jpg",
+    "https://i.postimg.cc/BngM3p4p/DSC-0882.jpg",
+    "https://i.postimg.cc/TPN0LPyW/DSC-0890.jpg",
+    "https://i.postimg.cc/vB1zWd92/IMG-20220507-111432.jpg",
+    "https://i.postimg.cc/0QxkS9LP/DSCF1686.png",
+    "https://i.postimg.cc/W4VLWXS7/DSCF1676.png",
+    "https://i.postimg.cc/mgCWy03D/DSCF1678.png",
 ];
 var indiceSerbia = 1;
 var pantallaSerbia = document.getElementById('ver-serbia');
@@ -537,7 +599,7 @@ var imgSerbia = document.createElement("img");
 var iframeSerbia = document.createElement("iframe");
 
 //-- Ctes.
-const totalSerbia = 263;
+const totalSerbia = 294;
 
 function mostrarSerbia(auxSerbia) {
     
