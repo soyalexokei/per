@@ -28,7 +28,7 @@ var videosIDrecuerdos =
   "","","","","","","","","","","","","","","",
   "https://www.youtube.com/embed/jIHHz4n3J7U?autoplay=1&loop=1&playlist=jIHHz4n3J7U&controls=0&rel=0",
   "","","","","","","","","","","","","","","",
-  "https://www.youtube.com/embed/Fy3XI5X799U?autoplay=1&loop=1&playlist=Fy3XI5X799U&controls=0&rel=0"
+  "https://www.youtube.com/embed/xt2H7tSxnR8?autoplay=1&loop=1&playlist=xt2H7tSxnR8&controls=0&rel=0"
 ];
   var primerarecuerdos = 1;
   var pantallarecuerdos = document.getElementById("ver-mis-recuerdos");
