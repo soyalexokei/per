@@ -419,6 +419,15 @@ var videosIDserbia =
     "",
     "",
     "",
+    "https://www.youtube.com/embed/KTJSI40Csl4?autoplay=1&loop=1&playlist=KTJSI40Csl4&controls=0&rel=0",
+    "https://www.youtube.com/embed/BGna1XOgabE?autoplay=1&loop=1&playlist=BGna1XOgabE&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://www.youtube.com/embed/3FyrqYUH-Po?autoplay=1&loop=1&playlist=3FyrqYUH-Po&controls=0&rel=0",
+    "https://www.youtube.com/embed/5dxo70TBpj0?autoplay=1&loop=1&playlist=5dxo70TBpj0&controls=0&rel=0",
 ];
 var imagenesIDserbia =
 [
@@ -840,6 +849,15 @@ var imagenesIDserbia =
     "https://i.postimg.cc/YSJtVgZ6/174.jpg",
     "https://i.postimg.cc/xjG9xXRm/IMG-20220708-051814.jpg",
     "https://i.postimg.cc/dtqwzJHx/IMG-20220708-054254.jpg",
+    "",
+    "",
+    "https://i.postimg.cc/637hcTVT/177.jpg",
+    "https://i.postimg.cc/VvqnZtJs/IMG-20220710-WA0007.jpg",
+    "https://i.postimg.cc/NFqRxDfP/IMG-20220709-183320.jpg",
+    "https://i.postimg.cc/ryx1wBf6/IMG-20220711-012553.jpg",
+    "https://i.postimg.cc/gJ6vRQdZ/IMG-20220711-145316-490.jpg",
+    "",
+    "",
 ];
 var indiceSerbia = 1;
 var pantallaSerbia = document.getElementById('ver-serbia');
@@ -847,7 +865,7 @@ var imgSerbia = document.createElement("img");
 var iframeSerbia = document.createElement("iframe");
 
 //-- Ctes.
-const totalSerbia = 418;
+const totalSerbia = 427;
 
 function mostrarSerbia(auxSerbia) {
     
