@@ -5,7 +5,7 @@ function cargarPierna3() {
     videosPierna3.innerHTML = "";
 
     var iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube.com/embed/Mr4W1DCj05U";
+    iframe.src = "https://www.youtube.com/embed/wBUf2PiLszY";
     iframe.allowFullscreen = true;
     videosPierna3.appendChild(iframe);
 }
