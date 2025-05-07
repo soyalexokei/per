@@ -5,7 +5,7 @@ function cargarTriceps2() {
     videosTriceps2.innerHTML = "";
 
     var iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube.com/embed/owUBBQm0w90";
+    iframe.src = "https://www.youtube.com/embed/Zj1h0ObPsp8";
     iframe.allowFullscreen = true;
     videosTriceps2.appendChild(iframe);
 }
