@@ -10,8 +10,15 @@ var videosIDusa =
     "",
     "",
     "",
-    /* 10 */"",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://www.youtube.com/embed/8k3Jxh4p5Vs?autoplay=1&loop=1&playlist=8k3Jxh4p5Vs&controls=0&rel=0",
+    "",
+    /* A partir de aqui */
     "",
     "",
     "",
@@ -52,7 +59,7 @@ var videosIDusa =
 ];
 var imagenesIDusa =
 [
-    /* 1 */"https://i.postimg.cc/CLr5VHGN/001.jpg",
+    "https://i.postimg.cc/CLr5VHGN/001.jpg",
     "https://i.postimg.cc/G2LCCfg0/IMG20250613194138714.png",
     "https://i.postimg.cc/tgXqq77m/IMG20250618193921.png",
     "https://i.postimg.cc/FKmtyq4f/IMG20250613194600699.png",
@@ -61,8 +68,15 @@ var imagenesIDusa =
     "https://i.postimg.cc/N040mmWc/IMG20250618192750096.png",
     "https://i.postimg.cc/W3v4JS9S/IMG20250618194523377.png",
     "https://i.postimg.cc/hvJ4kwhD/IMG20250618200356.png",
-    /* 10 */"https://i.postimg.cc/63fpVRgK/IMG20250618195052.png",
+    "https://i.postimg.cc/63fpVRgK/IMG20250618195052.png",
     "https://i.postimg.cc/DZxKycRS/IMG20250618195734.png",
+    "https://i.postimg.cc/gJCFLd8f/IMG-20250620-175524-215.webp",
+    "https://i.postimg.cc/HnbGQKtj/IMG-20250620-182548.png",
+    "https://i.postimg.cc/L6yDxD0s/IMG-20250620-180704.png",
+    "https://i.postimg.cc/MTMJGXM7/IMG-20250620-180422-670.webp",
+    "",
+    "https://i.postimg.cc/4xjp7Snr/IMG-20250620-182537.png",
+    /* A partir de aqui */
     "https://i.postimg.cc/3wmxpsPS/003.jpg", 
     "https://i.postimg.cc/fR3LWt5h/004.jpg",
     "https://i.postimg.cc/3RhJZLhK/005.jpg",
@@ -239,7 +253,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 180;
+const totalUSA = 186;
 
 function mostrarUSA(auxUSA) {
     
