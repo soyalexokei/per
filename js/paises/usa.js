@@ -18,6 +18,13 @@ var videosIDusa =
     "",
     "https://www.youtube.com/embed/8k3Jxh4p5Vs?autoplay=1&loop=1&playlist=8k3Jxh4p5Vs&controls=0&rel=0",
     "",
+    "https://www.youtube.com/embed/tmoGFikhKes?autoplay=1&loop=1&playlist=tmoGFikhKes&controls=0&rel=0",
+    "https://www.youtube.com/embed/9PbdBCb-Ajo?autoplay=1&loop=1&playlist=9PbdBCb-Ajo&controls=0&rel=0",
+    "",
+    "",
+    "",
+    "",
+    "",
     /* A partir de aqui */
     "",
     "",
@@ -76,6 +83,13 @@ var imagenesIDusa =
     "https://i.postimg.cc/MTMJGXM7/IMG-20250620-180422-670.webp",
     "",
     "https://i.postimg.cc/4xjp7Snr/IMG-20250620-182537.png",
+    "",
+    "",
+    "https://i.postimg.cc/pXj0v2Wm/IMG-20250624-195053.png",
+    "https://i.postimg.cc/9F6VJFM1/IMG-20250625-001430.png",
+    "https://i.postimg.cc/xTJnvb0c/IMG-20250625-001759.png",
+    "https://i.postimg.cc/T2HT5cvz/IMG-20250625-002513.jpg",
+    "https://i.postimg.cc/fyFZ4Mvz/IMG-20250625-002815.png",
     /* A partir de aqui */
     "https://i.postimg.cc/3wmxpsPS/003.jpg", 
     "https://i.postimg.cc/fR3LWt5h/004.jpg",
@@ -85,7 +99,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/bN5y5YPV/008.jpg",
     "https://i.postimg.cc/yYx6ngMS/009.jpg",
     "",
-    /* 20 */"",
+    "",
     "",
     "",
     "https://i.postimg.cc/Zn1QrQkH/014.jpg",
@@ -95,7 +109,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/NfHSgQTz/018.jpg",
     "",
     "",
-    /* 30 */"https://i.postimg.cc/4xZgqYM5/021.jpg",
+    "https://i.postimg.cc/4xZgqYM5/021.jpg",
     "https://i.postimg.cc/rwJkk82L/022.jpg",
     "https://i.postimg.cc/8CzVkqTf/023.jpg",
     "https://i.postimg.cc/BQ23mThb/024.jpg",
@@ -105,7 +119,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/85q8HcML/028.jpg",
     "https://i.postimg.cc/7Yr8JCxk/029.jpg",
     "https://i.postimg.cc/NGHv08vD/030.jpg",
-    /* 40 */"https://i.postimg.cc/7ZqFXpGt/031.jpg",
+    "https://i.postimg.cc/7ZqFXpGt/031.jpg",
     "https://i.postimg.cc/Jhn9CZQb/032.jpg",
     "https://i.postimg.cc/SxVwPDcS/033.jpg",
     "https://i.postimg.cc/9fnsm0xs/034.jpg",
@@ -115,7 +129,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/0Nw0SNkT/038.jpg",
     "https://i.postimg.cc/Sx5Gj9hL/039.jpg",
     "https://i.postimg.cc/Vk5RYR3L/040.jpg",
-    /* 50 */"https://i.postimg.cc/3RQCFHWd/041.jpg",
+    "https://i.postimg.cc/3RQCFHWd/041.jpg",
     "https://i.postimg.cc/9MPPxNq1/042.jpg",
     "https://i.postimg.cc/ZnT8XF8m/043.jpg",
     "",
@@ -125,7 +139,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/QdbHyG6F/048.jpg",
     "https://i.postimg.cc/KvtKtgBr/049.jpg",
     "https://i.postimg.cc/Y25G4xGC/050.jpg",
-    /* 60 */"https://i.postimg.cc/3x7k1JZM/051.jpg",
+    "https://i.postimg.cc/3x7k1JZM/051.jpg",
     "https://i.postimg.cc/SK1jmLbq/052.jpg",
     "https://i.postimg.cc/cJLrq9jX/053.jpg",
     "https://i.postimg.cc/DZW00W7G/054.jpg",
@@ -135,7 +149,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/021j52F6/058.jpg",
     "https://i.postimg.cc/bN0JZffm/059.jpg",
     "https://i.postimg.cc/nhHL7SHp/060.jpg",
-    /* 70 */"https://i.postimg.cc/fRBRv7LX/061.jpg",
+    "https://i.postimg.cc/fRBRv7LX/061.jpg",
     "https://i.postimg.cc/fbPWGwYR/062.jpg",
     "https://i.postimg.cc/6Qq5b72P/063.jpg",
     "https://i.postimg.cc/TwW2GZcq/064.jpg",
@@ -253,7 +267,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 186;
+const totalUSA = 193;
 
 function mostrarUSA(auxUSA) {
     
