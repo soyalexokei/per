@@ -25,12 +25,17 @@ var videosIDusa =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     /* A partir de aqui */
-    "",
-    "",
-    "",
-    "",
-    "",
     "",
     "",
     "https://www.youtube.com/embed/6E8OuGFDB8s?autoplay=1&loop=1&playlist=6E8OuGFDB8s&controls=0&rel=0",
@@ -90,12 +95,17 @@ var imagenesIDusa =
     "https://i.postimg.cc/xTJnvb0c/IMG-20250625-001759.png",
     "https://i.postimg.cc/T2HT5cvz/IMG-20250625-002513.jpg",
     "https://i.postimg.cc/fyFZ4Mvz/IMG-20250625-002815.png",
-    /* A partir de aqui */
-    "https://i.postimg.cc/3wmxpsPS/003.jpg", 
-    "https://i.postimg.cc/fR3LWt5h/004.jpg",
+    "https://i.postimg.cc/g2N67txM/IMG-20250625-012523.png",
+    "https://i.postimg.cc/rpHRVdCx/IMG-20250625-012538.png",
+    "https://i.postimg.cc/hPdtRyfD/IMG-20250625-234500.png",
+    "https://i.postimg.cc/25yBNdvC/IMG-20250625-012551.png",
     "https://i.postimg.cc/3RhJZLhK/005.jpg",
     "https://i.postimg.cc/RhsS44HF/006.jpg",
     "https://i.postimg.cc/HWBsQ4hg/007.jpg",
+    "https://i.postimg.cc/g0NZLSy9/IMG-20250625-235825.png",
+    "https://i.postimg.cc/t4dPpCY4/IMG-20250626-001234-343.jpg",
+    "https://i.postimg.cc/tgX6TQxt/IMG-20250626-001516-296.png",
+    /* A partir de aqui */
     "https://i.postimg.cc/bN5y5YPV/008.jpg",
     "https://i.postimg.cc/yYx6ngMS/009.jpg",
     "",
@@ -267,7 +277,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 193;
+const totalUSA = 198;
 
 function mostrarUSA(auxUSA) {
     
