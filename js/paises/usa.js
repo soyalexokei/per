@@ -35,9 +35,11 @@ var videosIDusa =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
     /* A partir de aqui */
-    "",
-    "",
     "https://www.youtube.com/embed/6E8OuGFDB8s?autoplay=1&loop=1&playlist=6E8OuGFDB8s&controls=0&rel=0",
     "https://www.youtube.com/embed/jA_PeI3VieM?autoplay=1&loop=1&playlist=jA_PeI3VieM&controls=0&rel=0",
     "https://www.youtube.com/embed/-X-8jDfjExo?autoplay=1&loop=1&playlist=-X-8jDfjExo&controls=0&rel=0",
@@ -103,11 +105,13 @@ var imagenesIDusa =
     "https://i.postimg.cc/RhsS44HF/006.jpg",
     "https://i.postimg.cc/HWBsQ4hg/007.jpg",
     "https://i.postimg.cc/g0NZLSy9/IMG-20250625-235825.png",
-    "https://i.postimg.cc/t4dPpCY4/IMG-20250626-001234-343.jpg",
+    "https://i.postimg.cc/2jZqN5Ps/IMG-20250626-001234-343.png",
+    "https://i.postimg.cc/RhKq7P7S/IMG-20250626-121222-152.webp",
     "https://i.postimg.cc/tgX6TQxt/IMG-20250626-001516-296.png",
-    /* A partir de aqui */
     "https://i.postimg.cc/bN5y5YPV/008.jpg",
     "https://i.postimg.cc/yYx6ngMS/009.jpg",
+    "https://i.postimg.cc/sDG48ycx/IMG-20250627-002537-524.webp",
+    /* A partir de aqui */
     "",
     "",
     "",
@@ -277,7 +281,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 198;
+const totalUSA = 200;
 
 function mostrarUSA(auxUSA) {
     
