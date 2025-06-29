@@ -1,6 +1,7 @@
 //-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
 var videosIDmadrid =
 [
+    /* Junio de 2025 - Despedida de Soltero de Colombi */
     "",
     "",
     "https://www.youtube.com/embed/z2VSs76sbHA?autoplay=1&loop=1&playlist=z2VSs76sbHA&controls=0&rel=0",
@@ -10,6 +11,14 @@ var videosIDmadrid =
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    /* Junio de 2025 - International Dinner in Retiro Park */
     "",
     "",
     "",
@@ -31,6 +40,14 @@ var imagenesIDmadrid =
     "https://i.postimg.cc/cCcD2f3R/IMG-20250628-194611-185.webp",
     "https://i.postimg.cc/CLmP4HSY/IMG-20250628-194936-117.webp",
     "https://i.postimg.cc/Y2NyvBPv/IMG-20250628-195236-083.webp",
+    "https://i.postimg.cc/cHRZhJVK/IMG-20250630-003949.png",
+    "https://i.postimg.cc/g06GwssH/IMG-20250630-003934-311.webp",
+    "https://i.postimg.cc/RF54wtb5/IMG-20250630-003622-931.webp",
+    /* Junio de 2025 - International Dinner in Retiro Park */
+    "https://i.postimg.cc/BbDj3sLH/IMG-20250630-011343-537.webp",
+    "https://i.postimg.cc/gkFwDwQD/IMG-20250630-011642-024.webp",
+    "https://i.postimg.cc/y6SgchQx/IMG-20250630-011911-821.webp",
+    "https://i.postimg.cc/50DXDj0f/IMG-20250630-012212-193.jpg",
 ];
 var indicemadrid = 1;
 var pantallamadrid = document.getElementById('ver-madrid');
@@ -38,7 +55,7 @@ var imgmadrid = document.createElement("img");
 var iframemadrid = document.createElement("iframe");
 
 //-- Ctes.
-const totalmadrid = 13;
+const totalmadrid = 20;
 
 function mostrarmadrid(auxmadrid) {
     

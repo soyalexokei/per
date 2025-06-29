@@ -39,15 +39,36 @@ var videosIDusa =
     "",
     "",
     "",
-    /* A partir de aqui */
     "https://www.youtube.com/embed/6E8OuGFDB8s?autoplay=1&loop=1&playlist=6E8OuGFDB8s&controls=0&rel=0",
     "https://www.youtube.com/embed/jA_PeI3VieM?autoplay=1&loop=1&playlist=jA_PeI3VieM&controls=0&rel=0",
     "https://www.youtube.com/embed/-X-8jDfjExo?autoplay=1&loop=1&playlist=-X-8jDfjExo&controls=0&rel=0",
     "https://www.youtube.com/embed/zkhfF_SHNjA?autoplay=1&loop=1&playlist=zkhfF_SHNjA&controls=0&rel=0",
-    "","","","","",
+    "",
+    "",
+    "",
+    "",
+    "",
     "https://www.youtube.com/embed/Abq0iuBNCBU?autoplay=1&loop=1&playlist=Abq0iuBNCBU&controls=0&rel=0",
     "https://www.youtube.com/embed/E2e1P1dsUYg?autoplay=1&loop=1&playlist=E2e1P1dsUYg&controls=0&rel=0",
-    "","","","","","","","","","","","","","","","",
+    "",
+    "",
+    "",
+    "",
+    "",
+    /* A partir de aqui */
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     "https://www.youtube.com/embed/N4dxwAgW_X4?autoplay=1&loop=1&playlist=N4dxwAgW_X4&controls=0&rel=0",
     "","","","","","",
     "https://www.youtube.com/embed/sr1pmvg9KIs?autoplay=1&loop=1&playlist=sr1pmvg9KIs&controls=0&rel=0",
@@ -111,7 +132,6 @@ var imagenesIDusa =
     "https://i.postimg.cc/bN5y5YPV/008.jpg",
     "https://i.postimg.cc/yYx6ngMS/009.jpg",
     "https://i.postimg.cc/sDG48ycx/IMG-20250627-002537-524.webp",
-    /* A partir de aqui */
     "",
     "",
     "",
@@ -124,8 +144,11 @@ var imagenesIDusa =
     "",
     "",
     "https://i.postimg.cc/4xZgqYM5/021.jpg",
+    "https://i.postimg.cc/hjgf8Nf0/IMG-20190730-221743.jpg",
     "https://i.postimg.cc/rwJkk82L/022.jpg",
     "https://i.postimg.cc/8CzVkqTf/023.jpg",
+    "https://i.postimg.cc/fbYV9MTL/IMG-20190804-214343.jpg",
+    /* A partir de aqui: imagen grupo Mt. Olympus. */
     "https://i.postimg.cc/BQ23mThb/024.jpg",
     "https://i.postimg.cc/zf2Yy0ft/025.jpg",
     "https://i.postimg.cc/JnyVZZD1/026.jpg",
@@ -281,7 +304,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 200;
+const totalUSA = 202;
 
 function mostrarUSA(auxUSA) {
     
