@@ -23,6 +23,16 @@ var videosIDmadrid =
     "",
     "",
     "",
+    /* Junio de 2025 - BBQ con amigos del curro PSS/Accenture */
+    "",
+    /* Junio de 2025 - Fiesta Años 70's familiar */
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDmadrid =
 [
@@ -48,6 +58,16 @@ var imagenesIDmadrid =
     "https://i.postimg.cc/gkFwDwQD/IMG-20250630-011642-024.webp",
     "https://i.postimg.cc/y6SgchQx/IMG-20250630-011911-821.webp",
     "https://i.postimg.cc/50DXDj0f/IMG-20250630-012212-193.jpg",
+    /* Junio de 2025 - BBQ con amigos del curro PSS/Accenture */
+    "https://i.postimg.cc/RZnxVZG3/IMG-20250630-164918.png",
+    /* Junio de 2025 - Fiesta Años 70's familiar */
+    "https://i.postimg.cc/MZyDx2yW/IMG-20250630-165654.png",
+    "https://i.postimg.cc/tJHNP2HQ/IMG-20250630-165923-065.webp",
+    "https://i.postimg.cc/fyjjvmw3/IMG-20250630-170552.png",
+    "https://i.postimg.cc/9fKpXc8f/IMG-20250630-170608.png",
+    "https://i.postimg.cc/tT6zY8wN/IMG-20250630-170634.png",
+    "https://i.postimg.cc/jS8c9HyP/IMG-20250630-170654.png",
+    "https://i.postimg.cc/GpHK14jN/IMG-20250630-170711.png",
 ];
 var indicemadrid = 1;
 var pantallamadrid = document.getElementById('ver-madrid');
@@ -55,7 +75,7 @@ var imgmadrid = document.createElement("img");
 var iframemadrid = document.createElement("iframe");
 
 //-- Ctes.
-const totalmadrid = 20;
+const totalmadrid = 28;
 
 function mostrarmadrid(auxmadrid) {
     
