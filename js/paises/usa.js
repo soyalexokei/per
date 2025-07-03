@@ -78,7 +78,15 @@ var videosIDusa =
     "",
     "",
     "",
-    "", /* Twins y la rusa */
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "", /* Drinking from a coconut cup */
     "",
     "",
     "https://www.youtube.com/embed/N4dxwAgW_X4?autoplay=1&loop=1&playlist=N4dxwAgW_X4&controls=0&rel=0",
@@ -182,7 +190,15 @@ var imagenesIDusa =
     "https://i.postimg.cc/NGHv08vD/030.jpg",
     "https://i.postimg.cc/7ZqFXpGt/031.jpg",
     "https://i.postimg.cc/Jhn9CZQb/032.jpg",
-    "https://i.postimg.cc/SxVwPDcS/033.jpg", /* Twins y la rusa */
+    "https://i.postimg.cc/SxVwPDcS/033.jpg",
+    "https://i.postimg.cc/K8WGYNHZ/IMG-20250703-171458-777.webp",
+    "https://i.postimg.cc/t4JRyfDS/IMG-20250703-171634-634.webp",
+    "https://i.postimg.cc/m28ZvR31/IMG-20250703-235009-752.webp",
+    "https://i.postimg.cc/mZ3gS7tw/IMG-20250703-235617-289.webp",
+    "https://i.postimg.cc/T1c2YvZS/IMG-20250703-235841-504.webp",
+    "https://i.postimg.cc/qMkMDgKd/IMG-20250704-000718.png",
+    "https://i.postimg.cc/Bb3Q0nwH/IMG-20250704-000731.png",
+    "https://i.postimg.cc/pTzX4FkP/IMG-20250704-000901-530.webp", /* Drinking from a coconut cup */
     "https://i.postimg.cc/9fnsm0xs/034.jpg",
     "https://i.postimg.cc/xCNhcQh8/035.jpg",
     "https://i.postimg.cc/KjXVTVhN/036.jpg",
@@ -328,7 +344,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 215;
+const totalUSA = 223;
 
 function mostrarUSA(auxUSA) {
     

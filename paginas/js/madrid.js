@@ -1,6 +1,11 @@
 //-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
 var videosIDmadrid =
 [
+    /* Enero de 2025 - Evento Binance */
+    "",
+    "",
+    "",
+    "",
     /* Junio de 2025 - Despedida de Soltero de Colombi */
     "",
     "",
@@ -36,6 +41,11 @@ var videosIDmadrid =
 ];
 var imagenesIDmadrid =
 [
+    /* Enero de 2025 - Evento Binance */
+    "https://i.postimg.cc/rFCMSTZY/binance01.jpg",
+    "https://i.postimg.cc/kgg3KbbB/binance02.webp",
+    "https://i.postimg.cc/7YDyPcP1/binance03.jpg",
+    "https://i.postimg.cc/xTRVXRqw/binance04.webp",
     /* Junio de 2025 - Despedida de Soltero de Colombi */
     "https://i.postimg.cc/x8dkCWf7/IMG-20250627-154547.png",
     "https://i.postimg.cc/t70rytys/IMG-20250627-154044.png",
@@ -75,7 +85,7 @@ var imgmadrid = document.createElement("img");
 var iframemadrid = document.createElement("iframe");
 
 //-- Ctes.
-const totalmadrid = 28;
+const totalmadrid = 32;
 
 function mostrarmadrid(auxmadrid) {
     
