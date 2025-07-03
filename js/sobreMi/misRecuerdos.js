@@ -21,14 +21,17 @@ var imagenesIDrecuerdos =
   "https://i.postimg.cc/fbPbMNhj/20.png", "https://i.postimg.cc/Cxm168P2/21.png", "https://i.postimg.cc/CxF5N7ND/22.png",
   "https://i.postimg.cc/L6khLwz2/23.png", "https://i.postimg.cc/BQfX84Pm/24.png", "https://i.postimg.cc/pVFmXpr9/25.png",
   "https://i.postimg.cc/GtGtMSVP/26.png", "https://i.postimg.cc/CKxZF7nY/27.png", "https://i.postimg.cc/HLvrjMbM/28.png",
-  "https://i.postimg.cc/76CfzLNW/29.png", "https://i.postimg.cc/RFjqLzsV/30.png", ""
+  "https://i.postimg.cc/76CfzLNW/29.png", "https://i.postimg.cc/RFjqLzsV/30.png", "",
+  "https://i.postimg.cc/2S4k32kf/Orange.png","https://i.postimg.cc/CKSF8k5n/Movistar.png","https://i.postimg.cc/VNgzWv0G/Vodafone.png",
+  "https://i.postimg.cc/HkGWpfC2/MTS.png",
 ];
 var videosIDrecuerdos =
 [
   "","","","","","","","","","","","","","","",
   "https://www.youtube.com/embed/jIHHz4n3J7U?autoplay=1&loop=1&playlist=jIHHz4n3J7U&controls=0&rel=0",
   "","","","","","","","","","","","","","","","",
-  "https://www.youtube.com/embed/xt2H7tSxnR8?autoplay=1&loop=1&playlist=xt2H7tSxnR8&controls=0&rel=0"
+  "https://www.youtube.com/embed/xt2H7tSxnR8?autoplay=1&loop=1&playlist=xt2H7tSxnR8&controls=0&rel=0",
+  "","","","",
 ];
   var primerarecuerdos = 1;
   var pantallarecuerdos = document.getElementById("ver-mis-recuerdos");
@@ -36,7 +39,7 @@ var videosIDrecuerdos =
   var iframerecuerdos = document.createElement("iframe");
   
   //-- Ctes.
-  const totalrecuerdos = 33;
+  const totalrecuerdos = 37;
   
   function mostrarrecuerdos(auxrecuerdos) {
     
