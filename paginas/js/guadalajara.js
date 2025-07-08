@@ -1,61 +1,71 @@
 //-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
-var videosID =
+var videosIDguadalajara =
 [
-    
+    /* 4 de Julio de 2025 - Boda Daniel y Roxana */
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
-var imagenesID =
+var imagenesIDguadalajara =
 [
-    
+    /* 4 de Julio de 2025 - Boda Daniel y Roxana */
+    "https://i.postimg.cc/k5HM412S/IMG-20250708-193144.png",
+    "https://i.postimg.cc/Rh5M1WQV/IMG-20250708-191612-937.webp",
+    "https://i.postimg.cc/ZRyby8NM/IMG-20250708-192941.png",
+    "https://i.postimg.cc/g2N29kdN/IMG-20250708-191909-422.webp",
+    "https://i.postimg.cc/q7qMpVv0/IMG-20250708-192212-883.webp",
 ];
-var indice = 1;
-var pantalla = document.getElementById('ver-');
-var img = document.createElement("img");
-var iframe = document.createElement("iframe");
+var indiceguadalajara = 1;
+var pantallaguadalajara = document.getElementById('ver-guadalajara');
+var imgguadalajara = document.createElement("img");
+var iframeguadalajara = document.createElement("iframe");
 
 //-- Ctes.
-const total = 0;
+const totalguadalajara = 5;
 
-function mostrar(aux) {
+function mostrarguadalajara(auxguadalajara) {
     
     //-- Limpiar la pantalla.
-    pantalla.innerHTML = "";
+    pantallaguadalajara.innerHTML = "";
 
     //-- Verificar si es una imagen o un vídeo.
-    if(imagenesID[aux-1]) {
-        img.src = imagenesID[aux-1];
-        pantalla.appendChild(img);
+    if(imagenesIDguadalajara[auxguadalajara-1]) {
+        imgguadalajara.src = imagenesIDguadalajara[auxguadalajara-1];
+        pantallaguadalajara.appendChild(imgguadalajara);
     }else {
-        iframe.src = videosID[aux-1];
-        iframe.width = "400";
-        iframe.height = "533";
-        iframe.setAttribute("allow", "autoplay");
-        iframe.setAttribute("allowFullscreen", "false");
-        pantalla.appendChild(iframe);
+        iframeguadalajara.src = videosIDguadalajara[auxguadalajara-1];
+        iframeguadalajara.width = "400";
+        iframeguadalajara.height = "533";
+        iframeguadalajara.setAttribute("allow", "autoplay");
+        iframeguadalajara.setAttribute("allowFullscreen", "false");
+        pantallaguadalajara.appendChild(iframeguadalajara);
     }
 }
 
-function imgAnterior() {
-    if(indice > 1) {
-        indice--;
+function imgAnteriorguadalajara() {
+    if(indiceguadalajara > 1) {
+        indiceguadalajara--;
     }else {
-        indice = total;
+        indiceguadalajara = totalguadalajara;
     }
-    mostrar(indice);
+    mostrarguadalajara(indiceguadalajara);
 }
 
-function imgSiguiente() {
-    if(indice < total) {
-        indice++;
+function imgSiguienteguadalajara() {
+    if(indiceguadalajara < totalguadalajara) {
+        indiceguadalajara++;
     }else {
-        indice = 1;
+        indiceguadalajara = 1;
     }
-    mostrar(indice);
+    mostrarguadalajara(indiceguadalajara);
 }
 
 //-- Pulsar flecha izquierda.
-document.getElementById("izq-").addEventListener("click", imgAnterior);
+document.getElementById("izq-guadalajara").addEventListener("click", imgAnteriorguadalajara);
 //-- Pulsar flecha derecha.
-document.getElementById("der-").addEventListener("click", imgSiguiente);
+document.getElementById("der-guadalajara").addEventListener("click", imgSiguienteguadalajara);
 
 //-- Punto de inicio del programa.
-mostrar(indice);
+mostrarguadalajara(indiceguadalajara);

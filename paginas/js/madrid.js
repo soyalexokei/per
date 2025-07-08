@@ -38,6 +38,12 @@ var videosIDmadrid =
     "",
     "",
     "",
+    /* Julio de 2025 - Domingo de Ruta en bici */
+    "",
+    "",
+    "",
+    "",
+    "",
 ];
 var imagenesIDmadrid =
 [
@@ -78,6 +84,12 @@ var imagenesIDmadrid =
     "https://i.postimg.cc/tT6zY8wN/IMG-20250630-170634.png",
     "https://i.postimg.cc/jS8c9HyP/IMG-20250630-170654.png",
     "https://i.postimg.cc/GpHK14jN/IMG-20250630-170711.png",
+    /* Julio de 2025 - Domingo de Ruta en bici */
+    "https://i.postimg.cc/pL6bPNFf/IMG-20250708-184746.png",
+    "https://i.postimg.cc/KzLy994n/IMG-20250708-184759.png",
+    "https://i.postimg.cc/wT9dVQzm/IMG-20250708-184814.png",
+    "https://i.postimg.cc/wBnpQKxq/IMG-20250708-184828.png",
+    "https://i.postimg.cc/L8XFd4n4/IMG-20250708-184843.png",
 ];
 var indicemadrid = 1;
 var pantallamadrid = document.getElementById('ver-madrid');
@@ -85,7 +97,7 @@ var imgmadrid = document.createElement("img");
 var iframemadrid = document.createElement("iframe");
 
 //-- Ctes.
-const totalmadrid = 32;
+const totalmadrid = 37;
 
 function mostrarmadrid(auxmadrid) {
     
