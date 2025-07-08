@@ -8,14 +8,15 @@ var imagenesIDrelaciones =
   "https://i.postimg.cc/xC6f25sH/relacion4.png",
   "https://i.postimg.cc/wM36TNPr/relacion5.png",
   "https://i.postimg.cc/J0gRynCz/relacion6.png",
-  "https://i.postimg.cc/YqGp51QG/relacion7.png",
+  "https://i.postimg.cc/C52cy7WN/relacion7.png",
+  "https://i.postimg.cc/HL31yGqP/relacion8.png",
 ];
   var primerarelaciones = 1;
   var pantallarelaciones = document.getElementById("ver-relaciones");
   var imgrelaciones = document.createElement("img");
   
   //-- Ctes.
-  const totalrelaciones = 8;
+  const totalrelaciones = 9;
   
   function mostrarrelaciones(auxrelaciones) {
     
