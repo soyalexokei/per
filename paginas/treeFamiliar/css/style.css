@@ -9,6 +9,85 @@
     src: url("../fonts/Kotta_One/KottaOne-Regular.ttf");
 }
 
+/* Botón emergente */
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 300px; /* ajusta para mover más hacia el centro */
+    background-color: #007BFF;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+    z-index: 1050; /* para que esté por encima del modal */
+  }
+  
+  .btn-flotante:hover {
+    background-color: #0056b3;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .rectangle {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .carrusel-voluntariado {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .carrusel-voluntariado-contenedor img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .flecha-izquierda-pasar, .flecha-derecha-pasar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+  }
+  .flecha-izquierda-pasar {
+    left: 10px;
+  }
+  .flecha-derecha-pasar {
+    right: 10px;
+  }
+
 /* ---- ---- ---- ANIMACIONES ---- ---- ---- */
 @keyframes colors{
     0%{

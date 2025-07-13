@@ -569,7 +569,25 @@
                         </section> 
                         <div class="carousel-caption d-block animate__animated animate__zoomInUp animate__slow"></div>    
                     </div>
-
+                    <a class="btn-flotante" id="openModalBtn" data-toggle="modal" data-target="#relaciones"><i class="fa-solid fa-heart" style="color: white"></i> Relaciones amorosas</a>
+                    <div id="relaciones" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle" id="closeModalBtn" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <br><br>
+                                    <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
+                                    <br>
+                                    <h1>Mis relaciones amorosas</h1>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="ver-relaciones"></div>
+                                        <button class="flecha-izquierda-pasar" id="izq-relaciones">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="der-relaciones">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button class="carousel-control-prev animate__animated animate__fadeInLeft" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onmouseover="botonHoverOn(`botonPrev`)" onmouseout="botonHoverOff(`botonPrev`)">
                     <span class="carousel-control-prev-icon" aria-hidden="true" id="botonPrev"></span>
@@ -589,6 +607,7 @@
         <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
         <!-- General -->
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/relaciones.js"></script>
         <!-- GOOGLE TRADUCTOR -->
         <script type="text/javascript">
             function googleTranslateElementInit() {
