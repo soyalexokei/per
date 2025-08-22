@@ -1,24 +1,3 @@
-// Abrir/cerrar modal
-const modal = document.getElementById('relaciones');
-const openBtn = document.getElementById('openModalBtn');
-const closeBtn = document.getElementById('closeModalBtn');
-
-openBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  modal.style.display = 'block';
-});
-
-closeBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', function(e) {
-  if(e.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
 //-- Variables.
 var imagenesIDrelaciones =
 [

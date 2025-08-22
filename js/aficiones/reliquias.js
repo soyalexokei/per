@@ -7,7 +7,9 @@ var imagenesIDreliquias =
     "https://i.postimg.cc/6qt9BSTT/4.png","",
     "https://i.postimg.cc/RVCM8jjD/6.png",
     "https://i.postimg.cc/fTHwh8sT/7.png",
-    "https://i.postimg.cc/Nj5QGRG8/8.png"
+    "https://i.postimg.cc/Nj5QGRG8/8.png",
+    "https://i.postimg.cc/N0VdcZyW/IMG-20250822-182108.png",
+    "https://i.postimg.cc/XvXstnvf/IMG-20250822-182340.png"
 ];
 var videosIDreliquias =
 [
@@ -21,7 +23,7 @@ var videosIDreliquias =
   var iframeReliquias = document.createElement("iframe");
   
   //-- Ctes.
-  const totalReliquias = 8;
+  const totalReliquias = 10;
   
   function mostrarReliquias(auxReliquias) {
     
