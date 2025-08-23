@@ -54,7 +54,7 @@ var videosIDusa =
     "",
     "https://www.youtube.com/embed/Abq0iuBNCBU?autoplay=1&loop=1&playlist=Abq0iuBNCBU&controls=0&rel=0",
     "https://www.youtube.com/embed/E2e1P1dsUYg?autoplay=1&loop=1&playlist=E2e1P1dsUYg&controls=0&rel=0",
-    "https://www.youtube.com/embed/HG0fTEoKpRc?autoplay=1&loop=1&playlist=HG0fTEoKpRc&controls=0&rel=0",
+    "https://www.youtube.com/embed/snaXLC_8GgY?autoplay=1&loop=1&playlist=snaXLC_8GgY&controls=0&rel=0",
     "https://www.youtube.com/embed/vQ5xTWDfp_A?autoplay=1&loop=1&playlist=vQ5xTWDfp_A&controls=0&rel=0",
     "",
     "",
@@ -86,9 +86,13 @@ var videosIDusa =
     "",
     "",
     "",
-    "", /* Drinking from a coconut cup */
+    "",
+    "https://www.youtube.com/embed/ugaE7mNA89Y?autoplay=1&loop=1&playlist=ugaE7mNA89Y&controls=0&rel=0",
     "",
     "",
+    "",
+    "https://www.youtube.com/embed/QI0npMvCv_Q?autoplay=1&loop=1&playlist=QI0npMvCv_Q&controls=0&rel=0",
+    /* Ruta en barco por el Rio Wisconsin con amigos */
     "https://www.youtube.com/embed/N4dxwAgW_X4?autoplay=1&loop=1&playlist=N4dxwAgW_X4&controls=0&rel=0",
     "","","","","","",
     "https://www.youtube.com/embed/sr1pmvg9KIs?autoplay=1&loop=1&playlist=sr1pmvg9KIs&controls=0&rel=0",
@@ -176,7 +180,7 @@ var imagenesIDusa =
     "https://i.postimg.cc/sDbn8n3S/IMG-20250701-193942.png",
     "https://i.postimg.cc/BZY75Sym/IMG-20250701-194309.png",
     "https://i.postimg.cc/PJR6dyZg/IMG-20250701-194327.png",
-    "https://i.postimg.cc/4xZgqYM5/021.jpg",
+    "https://i.postimg.cc/TwrcNyYp/021.png",
     "https://i.postimg.cc/hjgf8Nf0/IMG-20190730-221743.jpg",
     "https://i.postimg.cc/rwJkk82L/022.jpg",
     "https://i.postimg.cc/8CzVkqTf/023.jpg",
@@ -198,10 +202,13 @@ var imagenesIDusa =
     "https://i.postimg.cc/T1c2YvZS/IMG-20250703-235841-504.webp",
     "https://i.postimg.cc/qMkMDgKd/IMG-20250704-000718.png",
     "https://i.postimg.cc/Bb3Q0nwH/IMG-20250704-000731.png",
-    "https://i.postimg.cc/pTzX4FkP/IMG-20250704-000901-530.webp", /* Drinking from a coconut cup */
+    "https://i.postimg.cc/pTzX4FkP/IMG-20250704-000901-530.webp",
+    "",
     "https://i.postimg.cc/9fnsm0xs/034.jpg",
     "https://i.postimg.cc/xCNhcQh8/035.jpg",
     "https://i.postimg.cc/KjXVTVhN/036.jpg",
+    "",
+    /* Ruta en barco por el Rio Wisconsin con amigos */
     "",
     "https://i.postimg.cc/0Nw0SNkT/038.jpg",
     "https://i.postimg.cc/Sx5Gj9hL/039.jpg",
@@ -344,7 +351,7 @@ var imgUSA = document.createElement("img");
 var iframeUSA = document.createElement("iframe");
 
 //-- Ctes.
-const totalUSA = 223;
+const totalUSA = 225;
 
 function mostrarUSA(auxUSA) {
     
