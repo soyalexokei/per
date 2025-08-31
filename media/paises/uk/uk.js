@@ -1,5 +1,9 @@
-/* { type: "image", src: "" }, y { type: "youtube", src: "https://www.youtube.com/embed/" }, */
-const media = [
+/*
+{ type: "image", src: "" },
+{ type: "youtube", src: "https://www.youtube.com/embed/" },
+*/
+const media =
+[
   { type: "image", src: "https://i.postimg.cc/x1zF64bP/01.png" },
   { type: "image", src: "https://i.postimg.cc/k5NYmRs6/02.jpg" },
   { type: "image", src: "https://i.postimg.cc/DZBCWVt7/03.jpg" },
@@ -63,8 +67,6 @@ const media = [
   { type: "youtube", src: "https://www.youtube.com/embed/2yKlY0AHPMk" },
   { type: "youtube", src: "https://www.youtube.com/embed/vTACcj9CGSg" },
   { type: "image", src: "https://i.postimg.cc/Tw0YXFnr/25.png" },
-  /* { type: "image", src: "" },
-  { type: "youtube", src: "https://www.youtube.com/embed/" }, */
 ];
 
 let currentIndex = 1;

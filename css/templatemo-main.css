@@ -18,7 +18,11 @@ body {
   font-size: 14px;
 }
 
-a { color: #3CC; cursor: pointer; }
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 a:hover { color: #FF0; }
 

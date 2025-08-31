@@ -1,61 +1,62 @@
-//-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
-var videosIDitaly =
+/*
+{ type: "image", src: "" },
+{ type: "youtube", src: "https://www.youtube.com/embed/" },
+*/
+const media =
 [
     
 ];
-var imagenesIDitaly =
-[
-    
-];
-var indiceItaly = 1;
-var pantallaItaly = document.getElementById('ver-italy');
-var imgItaly = document.createElement("img");
-var iframeItaly = document.createElement("iframe");
 
-//-- Ctes.
-const totalItaly = 0;
+let currentIndex = 1;
+const totalMedia = media.length;
 
-function mostrarItaly(auxItaly) {
-    
-    //-- Limpiar la pantalla.
-    pantallaItaly.innerHTML = "";
+const mediaViewer = document.getElementById('mediaViewer');
+const mediaInput = document.getElementById('mediaIndex');
+const totalSpan = document.getElementById('totalMedia');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-    //-- Verificar si es una imagen o un vídeo.
-    if(imagenesIDitaly[auxItaly-1]) {
-        imgItaly.src = imagenesIDitaly[auxItaly-1];
-        pantallaItaly.appendChild(imgItaly);
-    }else {
-        iframeItaly.src = videosIDitaly[auxItaly-1];
-        iframeItaly.width = "400";
-        iframeItaly.height = "533";
-        iframeItaly.setAttribute("allow", "autoplay");
-        iframeItaly.setAttribute("allowFullscreen", "false");
-        pantallaItaly.appendChild(iframeItaly);
-    }
+totalSpan.textContent = totalMedia;
+
+function loadMedia(index) {
+  if (index < 1) index = totalMedia;
+  if (index > totalMedia) index = 1;
+
+  const item = media[index - 1];
+  mediaViewer.innerHTML = "";
+
+  if (item.type === "image") {
+    const img = document.createElement("img");
+    img.src = item.src;
+    mediaViewer.appendChild(img);
+  } else if (item.type === "youtube") {
+    mediaViewer.innerHTML = "";
+    mediaViewer.style.width = "432px";
+    mediaViewer.style.height = "825px";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = item.src + "?autoplay=1&rel=0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = false;
+    iframe.style.width = "100%";  // ocupa todo el ancho del div
+    iframe.style.height = "100%"; // ocupa todo el alto del div
+    mediaViewer.appendChild(iframe);
+  }
+
+  currentIndex = index;
+  mediaInput.value = index;
 }
 
-function imgAnteriorItaly() {
-    if(indiceItaly > 1) {
-        indiceItaly--;
-    }else {
-        indiceItaly = totalItaly;
-    }
-    mostrarItaly(indiceItaly);
-}
+prevBtn.addEventListener('click', () => {
+  loadMedia(currentIndex - 1);
+});
 
-function imgSiguienteItaly() {
-    if(indiceItaly < totalItaly) {
-        indiceItaly++;
-    }else {
-        indiceItaly = 1;
-    }
-    mostrarItaly(indiceItaly);
-}
+nextBtn.addEventListener('click', () => {
+  loadMedia(currentIndex + 1);
+});
 
-//-- Pulsar flecha izquierda.
-document.getElementById("izq-italy").addEventListener("click", imgAnteriorItaly);
-//-- Pulsar flecha derecha.
-document.getElementById("der-italy").addEventListener("click", imgSiguienteItaly);
+mediaInput.addEventListener('change', () => {
+  loadMedia(parseInt(mediaInput.value));
+});
 
-//-- Punto de inicio del programa.
-mostrarItaly(indiceItaly);
+loadMedia(currentIndex);
