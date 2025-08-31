@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My Personal WEB: Tarragona</title>
+        <link rel="icon" href="../../../favicon.ico" type="image/x-icon"/>
+        <meta name="description" content="Personal Development APP: Vanilla Plantilla HTML gratis">
+        <meta name="author" content="Alejandro Fernández Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="tarragona.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- GOOGLE TRADUCTOR -->
+        <div id="google_translate_element" class="google"></div>
+        <!-- FIN DEL GOOGLE TRADUCTOR -->
+        <a href="../../../paginas/spain.html"><button id="backBtn"><i class="fa-solid fa-house" style="color: #ffffff;"></i></button></a><br>
+        <div class="container">
+            <div class="viewer" id="mediaViewer"></div>
+    
+            <div class="controls">
+                <button id="prevBtn" class="btn-visor">Anterior</button>
+                <div class="index-control">
+                <input type="number" id="mediaIndex" min="1" value="1"><span> / </span><span id="totalMedia"></span>
+                </div>
+                <button id="nextBtn" class="btn-visor">Siguiente</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="tarragona.js"></script>
+        <!-- GOOGLE TRADUCTOR -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>
