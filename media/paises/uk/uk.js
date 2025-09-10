@@ -4,6 +4,7 @@
 */
 const media =
 [
+  /* 1) Intercambio con mi "hermano" inglés Jack en Holmfirth - 2012*/
   { type: "image", src: "https://i.postimg.cc/x1zF64bP/01.png" },
   { type: "image", src: "https://i.postimg.cc/k5NYmRs6/02.jpg" },
   { type: "image", src: "https://i.postimg.cc/DZBCWVt7/03.jpg" },
@@ -42,6 +43,7 @@ const media =
   { type: "image", src: "https://i.postimg.cc/3JMLdZq4/30.jpg" },
   { type: "image", src: "https://i.postimg.cc/dt85dyMW/31.jpg" },
   { type: "image", src: "https://i.postimg.cc/mgB8SgBT/32.jpg" },
+  /* 39) Viaje por trabajo a Apsley y Luton (UK) - 2024 */
   { type: "image", src: "https://i.postimg.cc/dtHkCkk8/1.png" },
   { type: "image", src: "https://i.postimg.cc/PrrvNzxX/2.png" },
   { type: "youtube", src: "https://www.youtube.com/embed/tedzX0xufsM" },

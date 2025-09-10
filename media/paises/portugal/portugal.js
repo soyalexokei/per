@@ -3,6 +3,7 @@
 { type: "youtube", src: "https://www.youtube.com/embed/" },
 */
 const media = [
+  /* 1) Vacaciones Navidad con mi familia - de 2010 a 2011 */
   { type: "image", src: "https://i.postimg.cc/L6QbXPWv/001.png"},
   { type: "image", src: "https://i.postimg.cc/DZDS0Bqn/002.png"},
   { type: "image", src: "https://i.postimg.cc/TwhyTZ5t/003.png"},
@@ -108,6 +109,7 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/pdjXWz2n/103.jpg"},
   { type: "image", src: "https://i.postimg.cc/sX9jSzGj/104.jpg"},
   { type: "image", src: "https://i.postimg.cc/2y0Ccxxg/105.jpg"},
+  /* 106) Viaje de fin de curso 4º ESO - Abril 2013 */
   { type: "image", src: "https://i.postimg.cc/WbcyCZyH/106.jpg"},
   { type: "image", src: "https://i.postimg.cc/TYyP7ZZ9/107.png"},
   { type: "youtube", src: "https://www.youtube.com/embed/8vc2MJ5RiVE"},

@@ -1,5 +1,6 @@
 /* { type: "image", src: "" }, y { type: "youtube", src: "https://www.youtube.com/embed/" }, */
 const media = [
+  /* 1) Work & Travel experience 2019 */
   { type: "image", src: "https://i.postimg.cc/CLr5VHGN/001.jpg" },
   { type: "image", src: "https://i.postimg.cc/G2LCCfg0/IMG20250613194138714.png" },
   { type: "image", src: "https://i.postimg.cc/tgXqq77m/IMG20250618193921.png" },
@@ -90,14 +91,14 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/xCNhcQh8/035.jpg"},
   { type: "image", src: "https://i.postimg.cc/KjXVTVhN/036.jpg"},
   { type: "youtube", src: "https://www.youtube.com/embed/QI0npMvCv_Q"},
-  /* Ruta en barco por el Rio Wisconsin con amigos */
-  { type: "youtube", src: "https://www.youtube.com/embed/N4dxwAgW_X4"},
-  { type: "image", src: "https://i.postimg.cc/0Nw0SNkT/038.jpg"},
-  { type: "image", src: "https://i.postimg.cc/Sx5Gj9hL/039.jpg"},
-  { type: "image", src: "https://i.postimg.cc/Vk5RYR3L/040.jpg"},
-  { type: "image", src: "https://i.postimg.cc/3RQCFHWd/041.jpg"},
-  { type: "image", src: "https://i.postimg.cc/9MPPxNq1/042.jpg"},
-  { type: "image", src: "https://i.postimg.cc/ZnT8XF8m/043.jpg"},
+  /* 91) Ruta en barco por el Rio Wisconsin con amigos */
+  { type: "youtube", src: "https://www.youtube.com/embed/N4dxwAgW_X4"},/* 91 */
+  { type: "image", src: "https://i.postimg.cc/0Nw0SNkT/038.jpg"},/* 92 */
+  { type: "image", src: "https://i.postimg.cc/Sx5Gj9hL/039.jpg"},/* 93 */
+  { type: "image", src: "https://i.postimg.cc/Vk5RYR3L/040.jpg"},/* 94 */
+  { type: "image", src: "https://i.postimg.cc/3RQCFHWd/041.jpg"},/* 95 */
+  { type: "image", src: "https://i.postimg.cc/9MPPxNq1/042.jpg"},/* 96 */
+  { type: "image", src: "https://i.postimg.cc/ZnT8XF8m/043.jpg"},/* 97 */
   { type: "youtube", src: "https://www.youtube.com/embed/sr1pmvg9KIs"},
   { type: "image", src: "https://i.postimg.cc/c4z3cNb0/045.jpg"},
   { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},
@@ -222,6 +223,7 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/LsqFZwbq/165.jpg"},
   { type: "image", src: "https://i.postimg.cc/HLfD0zq6/166.jpg"},
   { type: "image", src: "https://i.postimg.cc/hjTF2xgc/167.jpg"},
+  /* 222) En la Embajada de EE.UU - Diciembre 2019 */
   { type: "image", src: "https://i.postimg.cc/L5pcwX6f/168.jpg"},
   { type: "image", src: "https://i.postimg.cc/NFk3cc5n/169.jpg"},
   { type: "image", src: "https://i.postimg.cc/xjGDHKtP/170.jpg"},

@@ -8,14 +8,14 @@ var imagenesIDfashionMen =
   "https://i.postimg.cc/8kvVry9J/013.png", "https://i.postimg.cc/rsDCKZZX/IMG-20250419-131150.png",
   "https://i.postimg.cc/1XDhhtwc/014.png", "https://i.postimg.cc/xCwD4HJ1/015.png","https://i.postimg.cc/7PncJ2CL/nike-Platinum.png",
   "https://i.postimg.cc/GmHSfgXB/nike-AI.png", "https://i.postimg.cc/fbTfrSF6/nikejordanazules.png",
-  "https://i.postimg.cc/6QjfJ5xT/nikejordanmidpatentbwg.png", "https://i.postimg.cc/sxFnqD57/chaqueta.png"
+  "https://i.postimg.cc/6QjfJ5xT/nikejordanmidpatentbwg.png", "https://i.postimg.cc/sxFnqD57/chaqueta.png", "https://i.postimg.cc/5NchqyX7/IMG-20250903-095121.png"
 ];
   var primerafashionMen = 1;
   var pantallafashionMen = document.getElementById("ver-fashionMen");
   var imgfashionMen = document.createElement("img");
   
   //-- Ctes.
-  const totalfashionMen = 21;
+  const totalfashionMen = 22;
   
   function mostrarfashionMen(auxfashionMen) {
     
