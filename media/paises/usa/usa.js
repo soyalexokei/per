@@ -1,4 +1,7 @@
-/* { type: "image", src: "" }, y { type: "youtube", src: "https://www.youtube.com/embed/" }, */
+/*
+{ type: "image", src: "" },
+{ type: "youtube", src: "https://www.youtube.com/embed/" },
+ */
 const media = [
   /* 1) Work & Travel experience 2019 */
   { type: "image", src: "https://i.postimg.cc/CLr5VHGN/001.jpg" },
@@ -82,7 +85,6 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/t4JRyfDS/IMG-20250703-171634-634.webp"},
   { type: "image", src: "https://i.postimg.cc/m28ZvR31/IMG-20250703-235009-752.webp"},
   { type: "image", src: "https://i.postimg.cc/mZ3gS7tw/IMG-20250703-235617-289.webp"},
-  { type: "image", src: "https://i.postimg.cc/T1c2YvZS/IMG-20250703-235841-504.webp"},
   { type: "image", src: "https://i.postimg.cc/qMkMDgKd/IMG-20250704-000718.png"},
   { type: "image", src: "https://i.postimg.cc/Bb3Q0nwH/IMG-20250704-000731.png"},
   { type: "image", src: "https://i.postimg.cc/pTzX4FkP/IMG-20250704-000901-530.webp"},
@@ -91,14 +93,19 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/xCNhcQh8/035.jpg"},
   { type: "image", src: "https://i.postimg.cc/KjXVTVhN/036.jpg"},
   { type: "youtube", src: "https://www.youtube.com/embed/QI0npMvCv_Q"},
-  /* 91) Ruta en barco por el Rio Wisconsin con amigos */
-  { type: "youtube", src: "https://www.youtube.com/embed/N4dxwAgW_X4"},/* 91 */
-  { type: "image", src: "https://i.postimg.cc/0Nw0SNkT/038.jpg"},/* 92 */
-  { type: "image", src: "https://i.postimg.cc/Sx5Gj9hL/039.jpg"},/* 93 */
-  { type: "image", src: "https://i.postimg.cc/Vk5RYR3L/040.jpg"},/* 94 */
-  { type: "image", src: "https://i.postimg.cc/3RQCFHWd/041.jpg"},/* 95 */
-  { type: "image", src: "https://i.postimg.cc/9MPPxNq1/042.jpg"},/* 96 */
-  { type: "image", src: "https://i.postimg.cc/ZnT8XF8m/043.jpg"},/* 97 */
+  { type: "image", src: "https://i.postimg.cc/gc4gG40Z/IMG-20250910-214245-314.webp"},/* 91 */
+  { type: "image", src: "https://i.postimg.cc/d3W6nQfB/IMG-20250910-214542-296.webp"},
+  { type: "image", src: "https://i.postimg.cc/qqBQ861q/IMG-20250910-214706-827.webp"},
+  { type: "youtube", src: "https://www.youtube.com/embed/N4dxwAgW_X4"},
+  { type: "image", src: "https://i.postimg.cc/hPyZ1MWB/IMG-20250910-222902-515.webp"},
+  { type: "image", src: "https://i.postimg.cc/76nmGnMj/IMG-20250910-215202-053.webp" },
+  { type: "image", src: "https://i.postimg.cc/bYRBspmd/IMG-20250911-171719.png"},
+  { type: "image", src: "https://i.postimg.cc/fR1H6LRq/IMG-20250910-222559-667.webp"},
+  { type: "image", src: "https://i.postimg.cc/NMcdjzT1/IMG-20250910-220546-640.webp"},
+  { type: "image", src: "https://i.postimg.cc/LsfyRpq9/IMG-20250910-221312.jpg" },
+  { type: "image", src: "https://i.postimg.cc/FzGWqVY0/IMG-20250911-182102.png" },
+  { type: "image", src: "https://i.postimg.cc/mgPXXMBF/IMG-20250911-182441.png" },
+  { type: "image", src: "https://i.postimg.cc/YqqyFZPR/IMG-20250911-183201.png" },
   { type: "youtube", src: "https://www.youtube.com/embed/sr1pmvg9KIs"},
   { type: "image", src: "https://i.postimg.cc/c4z3cNb0/045.jpg"},
   { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},
@@ -118,7 +125,7 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/nhHL7SHp/060.jpg"},
   { type: "image", src: "https://i.postimg.cc/fRBRv7LX/061.jpg"},
   { type: "image", src: "https://i.postimg.cc/fbPWGwYR/062.jpg"},
-  { type: "image", src: "https://i.postimg.cc/6Qq5b72P/063.jpg"},
+  { type: "image", src: "https://i.postimg.cc/T1c2YvZS/IMG-20250703-235841-504.webp"},
   { type: "image", src: "https://i.postimg.cc/TwW2GZcq/064.jpg"},
   { type: "image", src: "https://i.postimg.cc/905mfJ83/065.jpg"},
   { type: "image", src: "https://i.postimg.cc/7h3xJ0d5/066.jpg"},
