@@ -3,7 +3,7 @@
 { type: "youtube", src: "https://www.youtube.com/embed/" },
  */
 const media = [
-  /* 1) Work & Travel experience 2019 */
+  /* Junio a Octubre de 2019 - Work & Travel experience in Wisconsin Dells */
   { type: "image", src: "https://i.postimg.cc/CLr5VHGN/001.jpg" },
   { type: "image", src: "https://i.postimg.cc/G2LCCfg0/IMG20250613194138714.png" },
   { type: "image", src: "https://i.postimg.cc/tgXqq77m/IMG20250618193921.png" },
@@ -93,10 +93,12 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/xCNhcQh8/035.jpg"},
   { type: "image", src: "https://i.postimg.cc/KjXVTVhN/036.jpg"},
   { type: "youtube", src: "https://www.youtube.com/embed/QI0npMvCv_Q"},
-  { type: "image", src: "https://i.postimg.cc/gc4gG40Z/IMG-20250910-214245-314.webp"},/* 91 */
+  { type: "image", src: "https://i.postimg.cc/gc4gG40Z/IMG-20250910-214245-314.webp"},
   { type: "image", src: "https://i.postimg.cc/d3W6nQfB/IMG-20250910-214542-296.webp"},
   { type: "image", src: "https://i.postimg.cc/qqBQ861q/IMG-20250910-214706-827.webp"},
+  { type: "youtube", src: "https://www.youtube.com/embed/HqiPvBf3zLI"},
   { type: "youtube", src: "https://www.youtube.com/embed/N4dxwAgW_X4"},
+  { type: "youtube", src: "https://www.youtube.com/embed/IpS--N-5JsI"},
   { type: "image", src: "https://i.postimg.cc/hPyZ1MWB/IMG-20250910-222902-515.webp"},
   { type: "image", src: "https://i.postimg.cc/76nmGnMj/IMG-20250910-215202-053.webp" },
   { type: "image", src: "https://i.postimg.cc/bYRBspmd/IMG-20250911-171719.png"},
@@ -108,9 +110,12 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/YqqyFZPR/IMG-20250911-183201.png" },
   { type: "youtube", src: "https://www.youtube.com/embed/sr1pmvg9KIs"},
   { type: "image", src: "https://i.postimg.cc/c4z3cNb0/045.jpg"},
-  { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},
-  { type: "youtube", src: "https://www.youtube.com/embed/j-K_xTuppJQ"},
-  { type: "image", src: "https://i.postimg.cc/QdbHyG6F/048.jpg"},
+  { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},/* 107 */
+  /* 108 - imagen de mis amigas antes del Reef */
+  { type: "youtube", src: "https://www.youtube.com/embed/tGiZoJcWats"},
+  { type: "youtube", src: "https://www.youtube.com/embed/KeuddXYY8Mw"},
+  { type: "youtube", src: "https://www.youtube.com/embed/HOUyB97Tp1M"},
+  { type: "image", src: "https://i.postimg.cc/QdbHyG6F/048.jpg"},/* 111 - Typical American Wafle */
   { type: "image", src: "https://i.postimg.cc/KvtKtgBr/049.jpg"},
   { type: "image", src: "https://i.postimg.cc/Y25G4xGC/050.jpg"},
   { type: "image", src: "https://i.postimg.cc/3x7k1JZM/051.jpg"},
@@ -230,7 +235,7 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/LsqFZwbq/165.jpg"},
   { type: "image", src: "https://i.postimg.cc/HLfD0zq6/166.jpg"},
   { type: "image", src: "https://i.postimg.cc/hjTF2xgc/167.jpg"},
-  /* 222) En la Embajada de EE.UU - Diciembre 2019 */
+  /* Diciembre 2019 - En la Embajada de EE.UU (Madrid) */
   { type: "image", src: "https://i.postimg.cc/L5pcwX6f/168.jpg"},
   { type: "image", src: "https://i.postimg.cc/NFk3cc5n/169.jpg"},
   { type: "image", src: "https://i.postimg.cc/xjGDHKtP/170.jpg"},
