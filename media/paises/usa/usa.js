@@ -110,12 +110,12 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/YqqyFZPR/IMG-20250911-183201.png" },
   { type: "youtube", src: "https://www.youtube.com/embed/sr1pmvg9KIs"},
   { type: "image", src: "https://i.postimg.cc/c4z3cNb0/045.jpg"},
-  { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},/* 107 */
-  /* 108 - imagen de mis amigas antes del Reef */
+  { type: "image", src: "https://i.postimg.cc/MKHRRGt9/046.jpg"},
+  { type: "image", src: "https://i.postimg.cc/T3VVJz3t/lpkodj.png"},
   { type: "youtube", src: "https://www.youtube.com/embed/tGiZoJcWats"},
   { type: "youtube", src: "https://www.youtube.com/embed/KeuddXYY8Mw"},
   { type: "youtube", src: "https://www.youtube.com/embed/HOUyB97Tp1M"},
-  { type: "image", src: "https://i.postimg.cc/QdbHyG6F/048.jpg"},/* 111 - Typical American Wafle */
+  { type: "image", src: "https://i.postimg.cc/QdbHyG6F/048.jpg"},
   { type: "image", src: "https://i.postimg.cc/KvtKtgBr/049.jpg"},
   { type: "image", src: "https://i.postimg.cc/Y25G4xGC/050.jpg"},
   { type: "image", src: "https://i.postimg.cc/3x7k1JZM/051.jpg"},
@@ -123,11 +123,14 @@ const media = [
   { type: "image", src: "https://i.postimg.cc/cJLrq9jX/053.jpg"},
   { type: "image", src: "https://i.postimg.cc/DZW00W7G/054.jpg"},
   { type: "image", src: "https://i.postimg.cc/TwZwDRP4/055.jpg"},
-  { type: "image", src: "https://i.postimg.cc/C5kKCWBL/056.jpg"},
-  { type: "image", src: "https://i.postimg.cc/gcZrP6SF/057.jpg"},
+  { type: "image", src: "https://i.postimg.cc/C5kKCWBL/056.jpg"},/* 120 */
+  /* 121 - Imagen mia en Pirates Mini golf */
+  { type: "image", src: "https://i.postimg.cc/gcZrP6SF/057.jpg"},/* Sustitucion de esta imagen por la misma con mejor resolución */
   { type: "image", src: "https://i.postimg.cc/021j52F6/058.jpg"},
   { type: "image", src: "https://i.postimg.cc/bN0JZffm/059.jpg"},
+  /* Incluir 3 fotos mas, pero en cada una hay 2 fotos. */
   { type: "image", src: "https://i.postimg.cc/nhHL7SHp/060.jpg"},
+  /* Resultados de los 4 amigos al finalizar la partida de mini golf */
   { type: "image", src: "https://i.postimg.cc/fRBRv7LX/061.jpg"},
   { type: "image", src: "https://i.postimg.cc/fbPWGwYR/062.jpg"},
   { type: "image", src: "https://i.postimg.cc/T1c2YvZS/IMG-20250703-235841-504.webp"},
