@@ -48,10 +48,12 @@ const media =
     { type: "image", src: "https://i.postimg.cc/wBnpQKxq/IMG-20250708-184828.png"},
     { type: "image", src: "https://i.postimg.cc/L8XFd4n4/IMG-20250708-184843.png"},
     /* Octubre de 2025 - Fiestas de Boadilla */
-    { type: "image", src: "https://i.postimg.cc/7LQ6Y4t7/IMG-20251006-184303.png" },
+    { type: "image", src: "https://i.postimg.cc/JhjSjgLv/IMG-20251006-184303.png" },
     { type: "youtube", src: "https://www.youtube.com/embed/5mxaB-2awww" },
     { type: "youtube", src: "https://www.youtube.com/embed/l74rNrKKHgE" },
     { type: "youtube", src: "https://www.youtube.com/embed/8Wn58dD0XFg" },
+    /* Octubre 2015 - Experiencias */
+    { type: "image", src: "https://i.postimg.cc/5t8D8GVD/IMG-20251014-135724.png" },
 ];
 
 let currentIndex = 1;
