@@ -47,6 +47,33 @@ const media =
     { type: "image", src: "https://i.postimg.cc/wT9dVQzm/IMG-20250708-184814.png"},
     { type: "image", src: "https://i.postimg.cc/wBnpQKxq/IMG-20250708-184828.png"},
     { type: "image", src: "https://i.postimg.cc/L8XFd4n4/IMG-20250708-184843.png"},
+    /* Julio de 2025 - Explorando lagos */
+    { type: "youtube", src: "https://www.youtube.com/embed/XLOLo-Ik1qs"},
+    /* 19 de Julio de 2025 - Fiesta Rockera con amigos */
+    { type: "image", src: "https://i.postimg.cc/fLSHv7Cf/IMG-20251017-180831.png"},
+    { type: "youtube", src: "https://www.youtube.com/embed/ZcdkhYWBTww"},
+    { type: "youtube", src: "https://www.youtube.com/embed/zWeClHSzGuI"},
+    /* 23 de Julio de 2025 - Among us y preparación viaje a A Coruña */
+    { type: "image", src: "https://i.postimg.cc/FKBWcCyp/IMG-20251017-181217.png"},
+    /* 30 de Julio de 2025 - Celebrando el cumple de mi abuela */
+    { type: "image", src: "https://i.postimg.cc/wvRWk52X/IMG-20251017-181713.png"},
+    { type: "image", src: "https://i.postimg.cc/YSsngD6N/IMG-20251017-181947-479.webp"},
+    { type: "youtube", src: "https://www.youtube.com/embed/Zt8jOYfvLmo"},
+    /* 24 de agosto de 2025 - Día de Río Alberche, Madrid */
+    { type: "youtube", src: "https://www.youtube.com/embed/Rd8OqtF3QCw"},
+    { type: "image", src: "https://i.postimg.cc/bvBCbVx9/IMG-20251017-182458-886.webp"},
+    { type: "image", src: "https://i.postimg.cc/pLtBFhmL/IMG-20251017-182650-197.webp" },
+    { type: "image", src: "https://i.postimg.cc/4xT197Yy/IMG-20251017-182756-231.webp" },
+    { type: "image", src: "https://i.postimg.cc/RZzTH6Wq/IMG-20251017-183113-346.webp" },
+    { type: "image", src: "https://i.postimg.cc/DwKcXJSz/IMG-20251017-183203-814.webp" },
+    /* 27 de agosto de 2025 - Cena cachopo post partido de padel con amigos */
+    { type: "image", src: "https://i.postimg.cc/G203LCMX/IMG-20251017-183601.png" },
+    /* 21 de septiembre de 2025 - Cumple familiar */
+    { type: "youtube", src: "https://www.youtube.com/embed/f-7jn5N9YHU" },
+    /* 27 de septiembre de 2025 - Quedada amigos de Madrid centro */
+    { type: "youtube", src: "https://www.youtube.com/embed/oCVxutwvXnQ" },
+    { type: "image", src: "https://i.postimg.cc/90F6Vgjg/IMG-20251017-184622-170.webp" },
+    { type: "image", src: "https://i.postimg.cc/mk2vRpGV/IMG-20251017-184801-180.webp" },
     /* Octubre de 2025 - Fiestas de Boadilla */
     { type: "image", src: "https://i.postimg.cc/JhjSjgLv/IMG-20251006-184303.png" },
     { type: "youtube", src: "https://www.youtube.com/embed/5mxaB-2awww" },
