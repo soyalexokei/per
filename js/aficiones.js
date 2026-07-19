@@ -25,45 +25,184 @@ let hobbyActual = 0;
 const aficiones = [
     //-- PADEL
     {
-        titulo: "Pádel",
-        pagina:0,
-        pages:[
+        titulo: "Pádel como afición",
+        pagina: 0,
+        pages: [
             {
-                text:`
-                    <h3>¿Qué significa para mí?</h3>
+                text: `
+                    <img src="https://i.postimg.cc/MHtmDsgf/padel.png"/>
                     <p>
-                        El pádel es mi deporte favorito.
-                        Juego varias veces por semana y me gusta
-                        competir con amigos.
+                        Yo me inscribo a partidos públicos de la APP de
+                        <a href="https://playtomic.io/" target="_blank">Playtomic</a> para jugar
+                        con gente de mi nivel por la provincia de Madrid u otras provincias y/o
+                        países. Además, juego con amigos y familiares.
+                        <br><br>
+                        Suelo jugar en modo competitivo, pero también, puedo jugar en modo amistoso.
+                        <br><br>
+                        Soy un nivel 3 de Playtomic.
                     </p>
-                `
-            },
-            {
-                img:"img/Aficiones/padel1.jpg"
-            },
-            {
-                img:"img/Aficiones/padel2.jpg"
-            },
-            {
-                video:"https://www.youtube.com/embed/VIDEO_ID"
+                    <p><b>Vídeo sobre mí jugando al pádel:</b></p>
+                `,
+                video: "https://streamable.com/e/skh8vt"
             }
         ]
     },
+    //-- NUTRICION
     {
-        titulo:"Viajar",
-        pagina:0,
-        pages:[
+        titulo: "La nutrición mejora tu vida",
+        pagina: 0,
+        pages: [
             {
-                text:`
-                    <h3>Viajar</h3>
-                    <p>
-                        Me encanta descubrir nuevos lugares
-                        y conocer otras culturas.
-                    </p>
+                text: `
+                    <p><b>¿Qué es la nutrición?:</b></p>
+                    <ul>
+                        <p>
+                            Es un conjunto de procesos biológicos, involuntarios y celulares mediante los cuales el organismo ingiere,
+                            absorbe y asimila los nutrientes de los alimentos
+                        </p>
+                    </ul>
+                    <p><b>¿Y la nutrición deportiva?:</b></p>
+                    <ul>
+                        <p>
+                            Es la rama de la dietética especializada en las personas que practican deporte. Su objetivo principal
+                            es adaptar la alimentación a las necesidades del ejercicio para optimizar el rendimiento físico, acelerar
+                            la recuperación tras el esfuerzo y prevenir lesiones
+                        </p>
+                        <p>
+                            Hay tres conceptos a tener en cuenta:
+                            <ul>
+                                <p>1. Aporte de energía => para adaptar la ingesta de carbohidratos (principal combustible)
+                                según la intensidad y duración de la actividad</p>
+                                <p>2. Reparación y desarrollo muscular => para utilizar las proteínas, reparar los tejidos
+                                dañados durante el ejercicio y favorecer la hipertrofia</p>
+                                <p>3. Regulación y salud => para emplear grasas saludables, vitaminas y minerales (micronutrientes),
+                                mantener el sistema inmunológico fuerte y regular el metabolismo</p>
+                            </ul>
+                        </p>
+                    </ul>
                 `
             },
             {
-                img:"img/Aficiones/viajar1.jpg"
+                text: `
+                    <p><b>Personalización según el tipo de deporte:</b></p>
+                    <p>Las necesidades nutricionales varían drásticamente dependiendo de la disciplina que practiques:</p>
+                    <ul>
+                        <p>1. Deportes de resistencia => requieren de una alta carga de carbohidratos para mantener los niveles
+                        de glucógeno y una correcta hidratación y reposición de electrolitos</p>
+                        <p>2. Deportes de fuerza y potencia => requieren un mayor hincapié en el consumo proteico
+                        para favorecer el aumento de la masa muscular</p>
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>¿Qué comprar para llevar una buena nutrición?:</b></p>
+                    <iframe src="./documentos/nutricion/Listado_Compra.pdf" width="100%" height="500px"></iframe>
+                `
+            },
+            {
+                text: `
+                    <p><b>¿Qué desayunar para llevar una buena nutrición?:</b></p>
+                    <iframe src="./documentos/nutricion/Desayunar.pdf" width="100%" height="500px"></iframe>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta 1 para llevar una buena nutrición:</b></p>
+                    <iframe src="./documentos/nutricion/Receta1.pdf" width="100%" height="500px"></iframe>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta 2 para llevar una buena nutrición:</b></p>
+                    <iframe src="./documentos/nutricion/Receta2.pdf" width="100%" height="500px"></iframe>
+                `
+            }
+        ]
+    },
+    //-- GYM
+    {
+        
+    },
+    //-- VAN LIFE
+    {
+        
+    },
+    //-- HELICOPTER EXPERIENCE
+    {
+        
+    },
+    //-- PAPIROFLEXIA
+    {
+        
+    },
+    //-- IA MUSICAL
+    {
+        
+    },
+    //-- IA VISUAL
+    {
+        
+    },
+    //-- COCHES
+    {
+        
+    },
+    //-- DIBUJO
+    {
+        
+    },
+    //-- VLOGS
+    {
+        
+    },
+    //-- LIGAS FANTASY
+    {
+        
+    },
+    //-- MODA
+    {
+        
+    },
+    //-- FOOTBALL EVENTS
+    {
+        
+    },
+    //-- RELAJACION
+    {
+        
+    },
+    //-- MIS RELIQUIAS
+    {
+        
+    },
+    //-- MIS SERIES DE TV FAVORITAS
+    {
+        
+    },
+    //-- ARTE CALLEJERO
+    {
+        
+    },
+    //-- TENIS
+    {
+        titulo: "Tenis como afición",
+        pagina: 0,
+        pages: [
+            {
+                text: `
+                    <img src="https://i.postimg.cc/sfZcGcTL/tenis.jpg"/>
+                    <p>
+                        Yo me inscribo a partidos públicos de la APP de
+                        <a href="https://playtomic.io/" target="_blank">Playtomic</a> para jugar
+                        con gente de mi nivel por la provincia de Madrid u otras provincias y/o
+                        países. Además, juego con amigos y familiares.
+                        <br><br>
+                        Suelo jugar en modo competitivo, pero también, puedo jugar en modo amistoso.
+                        <br><br>
+                        Soy un nivel 1 de Playtomic.
+                    </p>
+                `
             }
         ]
     }
