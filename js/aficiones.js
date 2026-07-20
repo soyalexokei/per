@@ -109,13 +109,19 @@ const aficiones = [
             {
                 text: `
                     <p><b>Receta 1 para llevar una buena nutrición:</b></p>
-                    <iframe src="./documentos/nutricion/Receta1.pdf" width="100%" height="500px"></iframe>
+                    <img src="https://i.postimg.cc/Kvhj8LcD/Receta1.png"/>
                 `
             },
             {
                 text: `
                     <p><b>Receta 2 para llevar una buena nutrición:</b></p>
-                    <iframe src="./documentos/nutricion/Receta2.pdf" width="100%" height="500px"></iframe>
+                    <img src="https://i.postimg.cc/Hs1nk5Wh/Receta2.png"/>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta 3 para llevar una buena nutrición:</b></p>
+                    <img src="https://i.postimg.cc/xTm0HZZB/IMG-20260612-WA0003.jpg"/>
                 `
             }
         ]
@@ -126,7 +132,12 @@ const aficiones = [
     },
     //-- VAN LIFE
     {
-        
+        titulo: "Van Life como estilo de vida",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/GmtGL78g/001.png"},
+            {img: "https://i.postimg.cc/BQq2yQq0/002.png"}
+        ]
     },
     //-- HELICOPTER EXPERIENCE
     {
@@ -182,7 +193,20 @@ const aficiones = [
     },
     //-- ARTE CALLEJERO
     {
-        
+        titulo: "Street Art",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/FKdzSqjY/1.jpg"},
+            {img: "https://i.postimg.cc/KjF8d8CT/2.jpg"},
+            {img: "https://i.postimg.cc/C1bKPqrY/3.jpg"},
+            {img: "https://i.postimg.cc/k504vccf/4.jpg"},
+            {img: "https://i.postimg.cc/C5NxYVVQ/5.jpg"},
+            {img: "https://i.postimg.cc/gkz0srVF/6.jpg"},
+            {img: "https://i.postimg.cc/y6Xd00Sy/7.jpg"},
+            {img: "https://i.postimg.cc/9FLQnVb4/8.jpg"},
+            {img: "https://i.postimg.cc/Mp4KzDhq/9.jpg"},
+            {img: "https://i.postimg.cc/bwdwXMVm/10.jpg"}
+        ]
     },
     //-- TENIS
     {
@@ -191,7 +215,7 @@ const aficiones = [
         pages: [
             {
                 text: `
-                    <img src="https://i.postimg.cc/sfZcGcTL/tenis.jpg"/>
+                    <img src="https://i.postimg.cc/cL6Pwt6r/tenis.png"/>
                     <p>
                         Yo me inscribo a partidos públicos de la APP de
                         <a href="https://playtomic.io/" target="_blank">Playtomic</a> para jugar
