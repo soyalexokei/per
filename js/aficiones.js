@@ -28,21 +28,16 @@ const aficiones = [
         titulo: "Pádel",
         pagina: 0,
         pages: [
+            {img: "https://i.postimg.cc/MHtmDsgf/padel.png"},
             {
                 text: `
-                    <img src="https://i.postimg.cc/MHtmDsgf/padel.png"/>
-                    <p>
-                        Yo me inscribo a partidos públicos de la APP de
-                        <a href="https://playtomic.io/" target="_blank">Playtomic</a> para jugar
-                        con gente de mi nivel por la provincia de Madrid u otras provincias y/o
-                        países. Además, juego con amigos y familiares.
-                        <br><br>
-                        Suelo jugar en modo competitivo, pero también, puedo jugar en modo amistoso.
-                        <br><br>
-                        Soy un nivel 3 de Playtomic.
-                    </p>
-                    <p><b>Vídeo sobre mí jugando al pádel:</b></p>
-                `,
+                    <p><b>Juego a través de:</b> Partidos competitivos de la APP de <a href="https://playtomic.io/" target="_blank">Playtomic</a></p>
+                    <p><b>Mi nivel:</b> 3</p>
+                    <p><b>Rango de mis contrincantes:</b> 2,4 - 3,4</p>
+                `
+            },
+            {
+                text: `<p><b>Vídeo sobre mí jugando al pádel:</b></p>`,
                 video: "https://streamable.com/e/skh8vt"
             }
         ]
@@ -97,31 +92,49 @@ const aficiones = [
             {
                 text: `
                     <p><b>¿Qué comprar para llevar una buena nutrición?:</b></p>
-                    <iframe src="./documentos/nutricion/Listado_Compra.pdf" width="100%" height="500px"></iframe>
+                    <img src="https://i.postimg.cc/PJwxRHmB/Listado-Compra-im-igenes-0.jpg"/>
                 `
             },
+            {img: "https://i.postimg.cc/tgt5n0wb/Listado-Compra-im-igenes-1.jpg"},
+            {img: "https://i.postimg.cc/3wCB0MVH/Listado-Compra-im-igenes-2.jpg"},
+            {img: "https://i.postimg.cc/TPq958F6/Listado-Compra-im-igenes-3.jpg"},
+            {img: "https://i.postimg.cc/tgt5n0wZ/Listado-Compra-im-igenes-4.jpg"},
+            {img: "https://i.postimg.cc/TPq958Fm/Listado-Compra-im-igenes-5.jpg"},
+            {img: "https://i.postimg.cc/7LMVJvd0/Listado-Compra-im-igenes-6.jpg"},
+            {img: "https://i.postimg.cc/8CBHf89L/Listado-Compra-im-igenes-7.jpg"},
+            {img: "https://i.postimg.cc/Qt8qp4ZT/Listado-Compra-im-igenes-8.jpg"},
+            {img: "https://i.postimg.cc/gJzKvSbh/Listado-Compra-im-igenes-9.jpg"},
+            {img: "https://i.postimg.cc/xCfPKxVL/Listado-Compra-im-igenes-10.jpg"},
+            {img: "https://i.postimg.cc/FRrxjWXj/Listado-Compra-im-igenes-11.jpg"},
+            {img: "https://i.postimg.cc/SsSGWTbf/Listado-Compra-im-igenes-12.jpg"},
+            {img: "https://i.postimg.cc/d1s98Hc9/Listado-Compra-im-igenes-13.jpg"},
+            {img: "https://i.postimg.cc/SsSGWTbd/Listado-Compra-im-igenes-14.jpg"},
             {
                 text: `
                     <p><b>¿Qué desayunar para llevar una buena nutrición?:</b></p>
-                    <iframe src="./documentos/nutricion/Desayunar.pdf" width="100%" height="500px"></iframe>
+                    <img src="https://i.postimg.cc/qBXW2SVV/Desayunar-page-0001.jpg"/>
                 `
             },
+            {img: "https://i.postimg.cc/k4hqCHnh/Desayunar-page-0002.jpg"},
+            {img: "https://i.postimg.cc/DZYnhN2R/Desayunar-page-0003.jpg"},
+            {img: "https://i.postimg.cc/cH50Wzsk/Desayunar-page-0004.jpg"},
+            {img: "https://i.postimg.cc/pT1RvS27/Desayunar-page-0005.jpg"},
             {
                 text: `
                     <p><b>Receta 1 para llevar una buena nutrición:</b></p>
-                    <img src="https://i.postimg.cc/Kvhj8LcD/Receta1.png"/>
+                    <img src="https://i.postimg.cc/9XtsyK5h/Receta1.png"/>
                 `
             },
             {
                 text: `
                     <p><b>Receta 2 para llevar una buena nutrición:</b></p>
-                    <img src="https://i.postimg.cc/Hs1nk5Wh/Receta2.png"/>
+                    <img src="https://i.postimg.cc/ZYFX62tz/Receta2.png"/>
                 `
             },
             {
                 text: `
                     <p><b>Receta 3 para llevar una buena nutrición:</b></p>
-                    <img src="https://i.postimg.cc/xTm0HZZB/IMG-20260612-WA0003.jpg"/>
+                    <img src="https://i.postimg.cc/SQ7Hc3F0/IMG-20260612-WA0003.jpg"/>
                 `
             }
         ]
@@ -150,7 +163,11 @@ const aficiones = [
             },
             {img: "https://i.postimg.cc/TYZx8TsX/IMG20260309192412.jpg"},
             {img: "https://i.postimg.cc/dtzFMJxb/MG-0797.jpg"},
-            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"}
+            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"},
+            {
+                text: `<p><b>Vídeo sobre mi reto 5 min Plancha Abdomen:</b></p>`,
+                video: "https://streamable.com/e/p5b0h0"
+            }
         ]
     },
     //-- VAN LIFE
@@ -403,7 +420,17 @@ const aficiones = [
             {img: "https://i.postimg.cc/R0WhMbbf/44.png"},
             {video: "https://streamable.com/e/bbcu4a"},
             {img: "https://i.postimg.cc/XvYHX9w9/46.png"},
-            {video: "https://streamable.com/e/embdxm"}
+            {video: "https://streamable.com/e/embdxm"},
+            /* España Campeona del Mundo 2026 */
+            {img: "https://i.postimg.cc/T19pv6kH/descripcion-mundial.png"},
+            {img: "https://i.postimg.cc/NfFgjmL6/IMG-20260720-WA0014.jpg"},
+            {img: "https://i.postimg.cc/wMV7YpfY/IMG-20260722-125825-323.jpg"},
+            {video: "https://streamable.com/e/ist7ko"},
+            {video: "https://streamable.com/e/zwjeiz"},
+            {img: "https://i.postimg.cc/gjDnbWMf/IMG-20260722-125902-825.jpg"},
+            {video: "https://streamable.com/e/vjv0ps"},
+            {img: "https://i.postimg.cc/sDxVg71p/IMG-20260720-WA0015.jpg"},
+            {video: "https://streamable.com/e/636cv7"}
         ]
     },
     //-- RELAJACION
@@ -479,20 +506,138 @@ const aficiones = [
         titulo: "Tenis",
         pagina: 0,
         pages: [
+            {img: "https://i.postimg.cc/cL6Pwt6r/tenis.png"},
             {
                 text: `
-                    <img src="https://i.postimg.cc/cL6Pwt6r/tenis.png"/>
-                    <p>
-                        Yo me inscribo a partidos públicos de la APP de
-                        <a href="https://playtomic.io/" target="_blank">Playtomic</a> para jugar
-                        con gente de mi nivel por la provincia de Madrid u otras provincias y/o
-                        países. Además, juego con amigos y familiares.
-                        <br><br>
-                        Suelo jugar en modo competitivo, pero también, puedo jugar en modo amistoso.
-                        <br><br>
-                        Soy un nivel 1 de Playtomic.
-                    </p>
+                    <p><b>Juego a través de:</b> Partidos competitivos de la APP de <a href="https://playtomic.io/" target="_blank">Playtomic</a></p>
+                    <p><b>Mi nivel:</b> 1</p>
+                    <p><b>Rango de mis contrincantes:</b> 0,5 - 1,5</p>
                 `
+            }
+        ]
+    },
+    //-- MOUNTAIN BIKE
+    {
+        titulo: "Mountain Bike",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/J0K5qTSt/bike.png"},
+            {
+                text: `<p><b>Vídeo sobre mí haciendo mountain bike:</b></p>`,
+                video: "https://streamable.com/e/r7373x"
+            }
+        ]
+    },
+    //-- ESCALADA
+    {
+        titulo: "Escalada",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/yxnyPf2k/escalada.png"},
+            {
+                text: `<p><b>Vídeo sobre mí haciendo escalada:</b></p>`,
+                video: "https://streamable.com/e/fvee31"
+            }
+        ]
+    },
+    //-- NATACION
+    {
+        titulo: "Natación",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/qqQxLmWh/natacion.png"},
+            {
+                text: `<p><b>Vídeo sobre mí haciendo natación:</b></p>`,
+                video: "https://streamable.com/e/68701l"
+            }
+        ]
+    },
+    //-- PADEL SURF
+    {
+        titulo: "Pádel Surf",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/GtzxQM6s/padelsurf.png"},
+            {
+                text: `<p><b>Vídeo sobre mí haciendo pádel surf:</b></p>`,
+                video: "https://streamable.com/e/l7d4ip"
+            }
+        ]
+    },
+    //-- QUAD
+    {
+        titulo: "Quad",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/66hct3q0/quad.png"},
+            {
+                text: `<p><b>Vídeo sobre mí montando en quad (01/06/2025):</b></p>`,
+                video: "https://streamable.com/e/pdqpgx"
+            }
+        ]
+    },
+    //-- SURF
+    {
+        titulo: "Surf",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/Dfc6nZ0P/surf.png"},
+            {
+                text: `<p><b>Experiencia surfera en el Honna Surf Hub (Alcorcón):</b></p>`,
+                video: "https://streamable.com/e/m951fz"
+            }
+        ]
+    },
+    //-- TIROLINAS
+    {
+        titulo: "Tirolinas",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/3rZ1YRN1/tirolinas.png"},
+            {
+                text: `<p><b>Vídeo sobre mí en las tirolinas de Cercedilla:</b></p>`,
+                video: "https://streamable.com/e/haoavt"
+            }
+        ]
+    },
+    //-- CALISTENIA
+    {
+        titulo: "Calistenia",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/KYnt9RXH/fit-man-working-out-in-climbing-parcour-doing-pull-royalty-free-image-1600264048.avif"},
+            {
+                text: `<p><b>Vídeo sobre mí haciendo calistenia:</b></p>`,
+                video: "https://streamable.com/e/sxi9v5"
+            },
+            {
+                text: `<p><b>Otros vídeos:</b></p>`,
+                video: "https://streamable.com/e/qqblmj"
+            },
+            {video: "https://streamable.com/e/mnmvpt"}
+        ]
+    },
+    //-- COCINA
+    {
+        titulo: "Cocina",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/k4NHQJXN/tipos-de-cocina-opt.jpg"},
+            {
+                text: `
+                    <p><b>Receta de Salmorejo:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <p>- 1 Kg de tomates pera</p>
+                        <p>- 1/2 barra de pan</p>
+                        <p>- 1/2 cucharada de ajo en polvo o 1/2 diente de ajo</p>
+                        <p>- 1 cucharada de vinagre</p>
+                        <p>- 1 cucharada de sal</p>
+                        <p>- Aceite de oliva para emulsionar</p>
+                        <p>- 2 huevos frescos</p>
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/66jf8z3Q/1.png"
             }
         ]
     }
