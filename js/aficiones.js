@@ -637,7 +637,193 @@ const aficiones = [
                         <p>- 2 huevos frescos</p>
                     </ul>
                 `,
-                img: "https://i.postimg.cc/66jf8z3Q/1.png"
+                img: "https://i.postimg.cc/Bvxp2Xsm/2.jpg"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Salmorejo (para 6 personas):</b></p>
+                    <ul>
+                        <p>1º) Cuece los huevos en una cacerola con agua (cubriendo los huevos), vinagre y sal. Cuando empiece a hervir el agua (con los huevos dentro), empieza a contar los 12 min de coción</p>
+                        <p>2º) Tira el agua de la cacerola, enfría los huevos ya cocidos, pélalos y resérvalos en el frigorífico</p>
+                        <p>3º) Bate con la batidora todos los tomates hasta que estén totalmente líquidos</p>
+                        <p>4º) Bate con la batidora todo el pan hasta que la mezcla esté totalmente líquida</p>
+                        <p>5º) Echa el ajo en polvo (o medio diente de ajo), la sal y el vinagre y mézclalo con la batidora</p>
+                        <p>6º) Echa muy poco a poco el aceite de oliva, mientras bates al mismo tiempo, para que emulsione la mezcla y dé lugar al Salmorejo</p>
+                        <p>7º) Opcionalmente, déjalo reposar en el frigorífico y después, sírvelo y ¡a disfrutar!</p>
+                    </ul>
+                `,
+                video: "https://streamable.com/e/lsfoyw"
+            },
+            {
+                text: `
+                    <p><b>Receta de Pastel de brócoli, queso y zanahoria:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <p>- 1 árbol de brócoli</p>
+                        <p>- 2 zanahorias</p>
+                        <p>- Aceite de oliva</p>
+                        <p>- 1 cebolla blanca</p>
+                        <p>- 1 brick de leche evaporada</p>
+                        <p>- 4 huevos</p>
+                        <p>- Sal</p>
+                        <p>- Pimienta negra molida</p>
+                        <p>- 1 bolsa de queso mozzarella rallado</p>
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/SKCCr292/5.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Pastel de brócoli, queso y zanahoria (para 6 personas):</b></p>
+                    <ul>
+                        <p>1º) Cuece el brócoli, córtalo y resérvalo en un bowl aparte</p>
+                        <p>2º) En una sartén con aceite de oliva (o aceite de girasol), rehoga la cebolla picada durante 4 minutos y luego, agregar la zanahoria picada para cocinarla durante 3-4 minutos. Reserva la mezcla en un bowl aparte</p>
+                        <p>3º) Bate los huevos frescos y sazona con sal y pimienta negra molida a gusto</p>
+                        <p>4º) Añade la leche evaporada y el queso mozarella y mezclarlo bien</p>
+                        <p>5º) Incorpora a esa mezcla, el brócoli y la zanahoria picada</p>
+                        <p>6º) Mezcla todo bien</p>
+                        <p>7º) Prepara un molde de cristal de 20 cm de radio, pon papel de horno y añade copos de avena hasta cubrir el fondo</p>
+                        <p>8º) Vierte toda la mezcla realizada previamente en el molde, e introdúcelo en el horno a 180°C durante 30 minutos</p>
+                        <p>9º) Deja reposarlo unos minutos a temperatura ambiente antes de cortarlo y servirlo</p>
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta de Arroz con champiñones y salsa de curry:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <p>- 500 g de arroz cocido</p>
+                        <p>- 3 vasos con caldo de Avecrem</p>
+                        <p>- 200 gramos de champiñones laminados cortados</p>
+                        <p>- 3 cucharadas de curry</p>
+                        <p>- 2 dientes ajo o 2 cucharadas de ajo en polvo</p>
+                        <p>- Sal al gusto</p>
+                        <p>- Perejil al gusto</p>
+                        <p>- Pimienta negra al gusto</p>
+                        <p>- 1 vaso de vino blanco</p>
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/HnhrHd51/9.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Arroz con champiñones y salsa de curry:</b></p>
+                    <ul>
+                        <p>1º) Trocea los ajos en rodajitas mientras hervimos agua con un avecrem</p>
+                        <p>2º) Sofríe los ajos en una olla hasta que estén dorados</p>
+                        <p>3º) Añade el arroz y remueve con una espátula</p>
+                        <p>4º) Añade 2 cucharadas de curry</p>
+                        <p>5º) Añade el caldo de Avecrem, sal y perejil</p>
+                        <p>6º) Deja que se cocine durante 12 min</p>
+                        <p>7º) Al empezar a hervir, baja la potencia de la vitrocerámica y cocina a fuego lento</p>
+                        <p>8º) Lava los champiñones y en otra sartén cocínalos, añadiendo sal, pereji, una pizca de pimienta negra y 1 cucharada de curry</p>
+                        <p>9º) Añade 1 vaso de vino blanco</p>
+                        <p>10º) Mézclalo bien y deja que se evapore el alcohol</p>
+                        <p>11º) Junta el arroz y los champiñones, remuévelo y listo</p>
+                    </ul>
+                `,
+                video: "https://streamable.com/e/jlope4"
+            },
+            {
+                text: `
+                    <p><b>Receta de Arroz con garbanzos y salsa de curry:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        <p>- 200 g de arroz SOS</p>
+                        <p>- 200 g de garbanzos cocidos</p>
+                        <p>- 2 cucharadas de curry amarillo</p>
+                        <p>- 120 ml de leche semidesnatada</p>
+                        <p>- Aceite de oliva</p>
+                        <p>- Sal</p>
+                        <p>- Perejil</p>
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/PxMDgg2d/6.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Arroz con garbanzos y salsa de curry:</b></p>
+                    <ul>
+                        <p>1º) Cuece los garbanzos en una cacerola</p>
+                        <p>2º) En una sartén grande, calienta un poco de aceite y añade los garbanzos cocidos junto con la leche semidesnatada y el curry amarillo. Condimenta con sal al gusto</p>
+                        <p>3º) Cocina la mezcla a fuego medio hasta que la salsa se reduzca y los sabores se intensifiquen</p>
+                        <p>4º) Cocina el arroz en una olla hasta que esté al dente. Una vez listo, resérvalo para más adelante</p>
+                        <p>5º) Sirve el arroz en un bol y coloca los garbanzos al curry al lado. Decora con perejil fresco para un toque de color y frescura, ¡y a disfrutar!</p>
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta de Tortilla de patata:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/brCtJ17M/7.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Tortilla de patata:</b></p>
+                    <ul>
+                        
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta de Gazpacho:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/3NJGYtcm/8.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Gazpacho:</b></p>
+                    <ul>
+                        
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta de Pasta con salsa carbonara y bacon:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/qMNtw6VJ/10.png"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Pasta con salsa carbonara y bacon:</b></p>
+                    <ul>
+                        
+                    </ul>
+                `
+            },
+            {
+                text: `
+                    <p><b>Receta de Queso provolone al horno con huevo y salsa de tomate:</b></p>
+                    <p>Ingredientes:</p>
+                    <ul>
+                        
+                    </ul>
+                `,
+                img: "https://i.postimg.cc/sD4ZP7ZQ/3.jpg"
+            },
+            {
+                text: `
+                    <p><b>Preparación de Queso provolone al horno con huevo y salsa de tomate:</b></p>
+                    <ul>
+                        
+                    </ul>
+                `
             }
         ]
     }
