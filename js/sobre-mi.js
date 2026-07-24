@@ -99,9 +99,12 @@ const sobreMi = [
         titulo: "Creciendo",
         pagina: 0,
         pages: [
-            {
-                img: ""
-            }
+            {img: "https://i.postimg.cc/yYpGLGF7/1.jpg"},
+            {img: "https://i.postimg.cc/Bn8VkCgH/2.jpg"},
+            {img: "https://i.postimg.cc/zDj6gvvb/3.jpg"},
+            {img: "https://i.postimg.cc/VLkTBw07/4.jpg"},
+            {img: "https://i.postimg.cc/mg05sFXq/5.jpg"},
+            {img: "https://i.postimg.cc/1zwY55bz/6.jpg"},
         ]
     },
     //-- Recuerdos
@@ -109,9 +112,43 @@ const sobreMi = [
         titulo: "Recuerdos",
         pagina: 0,
         pages: [
-            {
-                img: ""
-            }
+            {img: "https://i.postimg.cc/8kxDZwLQ/1.jpg"},
+            {img: "https://i.postimg.cc/4xgGgd8W/2.jpg"},
+            {img: "https://i.postimg.cc/nVXpKNjG/3.jpg"},
+            {img: "https://i.postimg.cc/rFWT3W9d/4.jpg"},
+            {img: "https://i.postimg.cc/2S7D8DMr/5.jpg"},
+            {img: "https://i.postimg.cc/ZqfzpLJQ/6.jpg"},
+            {img: "https://i.postimg.cc/tTYQ5VT4/7.jpg"},
+            {img: "https://i.postimg.cc/tTw0mCZt/8.jpg"},
+            {img: "https://i.postimg.cc/zvhmmZTm/9.jpg"},
+            {img: "https://i.postimg.cc/Y2LBLgZX/10.jpg"},
+            {img: "https://i.postimg.cc/fT4ncyhM/11.jpg"},
+            {img: "https://i.postimg.cc/BQxWM3qH/12.png"},
+            {img: "https://i.postimg.cc/QCSNfYWZ/13.png"},
+            {img: "https://i.postimg.cc/yx7YXCxT/14.png"},
+            {img: "https://i.postimg.cc/QtQdTd8t/15.png"},
+            {video: "https://streamable.com/e/bhgnf3"},
+            {img: "https://i.postimg.cc/tgVT9z8F/16.png"},
+            {img: "https://i.postimg.cc/k4mb5qfB/IMG20250331210553.png"},
+            {img: "https://i.postimg.cc/4y64vHHB/17.png"},
+            {img: "https://i.postimg.cc/MH2KjmHn/18.png"},
+            {img: "https://i.postimg.cc/26BS6Kkp/19.png"},
+            {img: "https://i.postimg.cc/fbPbMNhj/20.png"}, 
+            {img: "https://i.postimg.cc/Cxm168P2/21.png"}, 
+            {img: "https://i.postimg.cc/CxF5N7ND/22.png"},
+            {img: "https://i.postimg.cc/L6khLwz2/23.png"}, 
+            {img: "https://i.postimg.cc/BQfX84Pm/24.png"}, 
+            {img: "https://i.postimg.cc/pVFmXpr9/25.png"},
+            {img: "https://i.postimg.cc/GtGtMSVP/26.png"}, 
+            {img: "https://i.postimg.cc/CKxZF7nY/27.png"}, 
+            {img: "https://i.postimg.cc/HLvrjMbM/28.png"},
+            {img: "https://i.postimg.cc/76CfzLNW/29.png"}, 
+            {img: "https://i.postimg.cc/RFjqLzsV/30.png"},
+            {video: "https://streamable.com/e/27mssq"},
+            {img: "https://i.postimg.cc/2S4k32kf/Orange.png"},
+            {img: "https://i.postimg.cc/CKSF8k5n/Movistar.png"},
+            {img: "https://i.postimg.cc/VNgzWv0G/Vodafone.png"},
+            {img: "https://i.postimg.cc/HkGWpfC2/MTS.png"}
         ]
     },
     //-- Familia
@@ -120,7 +157,7 @@ const sobreMi = [
         pagina: 0,
         pages: [
             {
-                img: ""
+                
             }
         ]
     }
