@@ -758,7 +758,11 @@ const aficiones = [
                     <p><b>Receta de Tortilla de patata:</b></p>
                     <p>Ingredientes:</p>
                     <ul>
-                        
+                        <p>- 4 patatas medianas</p>
+                        <p>- 5 huevos</p>
+                        <p>- 1 cebolla mediana</p>
+                        <p>- 1/4 de litro de aceite de oliva</p>
+                        <p>- Sal al gusto</p>
                     </ul>
                 `,
                 img: "https://i.postimg.cc/brCtJ17M/7.png"
@@ -767,7 +771,20 @@ const aficiones = [
                 text: `
                     <p><b>Preparación de Tortilla de patata:</b></p>
                     <ul>
-                        
+                        <p>1º) Pela, lava y seca las patatas</p>
+                        <p>2º) Cortarlas en rodajas finas</p>
+                        <p>3º) Introducelas en una sartén honda con el aceite de oliva a temperatura media para que se cuezan lentamente</p>
+                        <p>4º) Agrega la cebolla cortada finita</p>
+                        <p>5º) Fríela lentamente con las patatas hasta que estén blandas y empiecen a dorarse</p>
+                        <p>6º) Remueve con la espumadera</p>
+                        <p>7º) Corta con la misma los ingredientes</p>
+                        <p>8º) Pasados 10 minutos, escurre el aceite</p>
+                        <p>9º) Bate en un cuenco los huevos con un poco de sal</p>
+                        <p>10º) Agrega la mezcla de las patatas con la cebolla</p>
+                        <p>11º) Pon de nuevo la sartén con un poco del aceite escurrido y añade toda la mezcla</p>
+                        <p>12º) Déjalo a fuego lento tapando la sartén durante unos 5 ó 10 minutos, hasta que se dore por abajo</p>
+                        <p>13º) Da la vuelta a la tortilla sobre sí misma con la ayuda de una tapadera y déjala caer por el otro lado en la sartén hasta que se cuaje despacio</p>
+                        <p>14º) Finalmente, cuando la tortilla esté dorada por ambos lados, significa que está lista para servir</p>
                     </ul>
                 `
             },
@@ -776,16 +793,38 @@ const aficiones = [
                     <p><b>Receta de Gazpacho:</b></p>
                     <p>Ingredientes:</p>
                     <ul>
-                        
+                        <p>- 1350 g de tomate</p>
+                        <p>- 150 g de pepino</p>
+                        <p>- 135 g de pimiento verde</p>
+                        <p>- 1 diente de ajo o 1 cucharada de ajo en polvo</p>
+                        <p>- 100 g de migas de pan</p>
+                        <p>- 120 ml de aceite de oliva virgen extra</p>
+                        <p>- 30 ml de vinagre</p>
+                        <p>- 600 ml de agua</p>
+                        <p>- Sal al gusto</p>
                     </ul>
                 `,
                 img: "https://i.postimg.cc/3NJGYtcm/8.png"
             },
             {
                 text: `
-                    <p><b>Preparación de Gazpacho:</b></p>
+                    <p><b>Preparación de Gazpacho (para 6 personas):</b></p>
                     <ul>
-                        
+                        <p>1º) Lava muy bien todas las hortalizas</p>
+                        <p>2º) Pela el pepino y cortalo desechando los extremos</p>
+                        <p>3º) Corta también el pimiento verde, retirándole las semillas y las venas interiores</p>
+                        <p>4º) Corta los tomates, quitándoles siempre el pedúnculo verde</p>
+                        <p>5º) Pela el diente de ajo y retirale el germen interior</p>
+                        <p>6º) Pon en un bol la miga de pan con el agua fría para que se vaya ablandando</p>
+                        <p>7º) Incorpora en un bol grande, todas las hortalizas, el ajo, la sal, el aceite de oliva virgen extra, el vinagre, la miga de pan y el agua</p>
+                        <p>8º) Bate con una batidora a máxima potencia hasta conseguir una textura líquida y uniforme, sin ningún grumo ni resto de piel o pepitas</p>
+                        <p>9º) Prueba el gazpacho para comprobar el punto de sal y para ver si hice falta echarle algo más de agua</p>
+                        <p>10º) Cuélalo para que quede con una textura aún más fina y no notemos ningún grumo que pueda haber por las semillas o la piel de los tomates</p>
+                        <p>11º) Mételo en la nevera una hora como mínimo para que esté bien fresquito</p>
+                        <p>12º) Finalmente, sírvelo frío en tazas o cuencos hondos</p>
+                        <p>OPCIONALMENTE:</p>
+                        <p>13º) Pon de guarnición: trocitos de tomate, pepino y pimiento verde</p>
+                        <p>14º) Echa por encima un chorrito de aceite de oliva virgen extra</p>
                     </ul>
                 `
             },
@@ -794,7 +833,16 @@ const aficiones = [
                     <p><b>Receta de Pasta con salsa carbonara y bacon:</b></p>
                     <p>Ingredientes:</p>
                     <ul>
-                        
+                        <p>- 500 g de pasta</p>
+                        <p>- 2 huevos</p>
+                        <p>- 1/2 brick de nata para cocinar</p>
+                        <p>- Leche al gusto</p>
+                        <p>- Ajo en polvo al gusto</p>
+                        <p>- Sal al gusto</p>
+                        <p>- Perejil al gusto</p>
+                        <p>- Canela al gusto</p>
+                        <p>- Pimienta negra al gusto</p>
+                        <p>- 1/2 envase de bacon</p>
                     </ul>
                 `,
                 img: "https://i.postimg.cc/qMNtw6VJ/10.png"
@@ -803,7 +851,11 @@ const aficiones = [
                 text: `
                     <p><b>Preparación de Pasta con salsa carbonara y bacon:</b></p>
                     <ul>
-                        
+                        <p>1º) Pon a cocer la pasta</p>
+                        <p>2º) Haz la salsa carbonara, mezclando: los huevos, la nata, la leche, el ajo en polvo, la sal, el perejil, la canela y la pimienta negra</p>
+                        <p>3º) Dora en una sartén el bacon</p>
+                        <p>4º) Remueve en la sartén: la pasta, el bacon y la salsa carbonara</p>
+                        <p>5º) Sirve con queso rayado por encima</p>
                     </ul>
                 `
             },
@@ -812,7 +864,9 @@ const aficiones = [
                     <p><b>Receta de Queso provolone al horno con huevo y salsa de tomate:</b></p>
                     <p>Ingredientes:</p>
                     <ul>
-                        
+                        <p>- 1 queso provolone con orégano</p>
+                        <p>- Salsa de tomate</p>
+                        <p>- Un huevo fresco</p>
                     </ul>
                 `,
                 img: "https://i.postimg.cc/sD4ZP7ZQ/3.jpg"
@@ -821,7 +875,14 @@ const aficiones = [
                 text: `
                     <p><b>Preparación de Queso provolone al horno con huevo y salsa de tomate:</b></p>
                     <ul>
-                        
+                        <p>1º) Precalienta el horno a 200º, arriba y abajo</p>
+                        <p>2º) Coge un cuenco/plato de barro donde preparar al horno y servir el queso provolone</p>
+                        <p>3º) Esparce la salsa de tomate por todo el cuenco/plato sin dejar ningún hueco</p>
+                        <p>4º) Pon encima el queso provolone</p>
+                        <p>5º) Rompe un huevo fresco y separa la yema de la clara, quedándonos con lo primero</p>
+                        <p>6º) Pon la yema encima del queso provolone</p>
+                        <p>7º) Si el horno está preparado y suficientemente caliente, introduce el cuenco/plato de barro con el queso provolone y el resto de ingredientes en él</p>
+                        <p>8º) Cuando veas y notes que ya está cocinado, sácalo sin quemarte, sírvelo y ¡a comer!</p>
                     </ul>
                 `
             }

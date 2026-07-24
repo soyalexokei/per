@@ -326,6 +326,15 @@ h1 em,h2 em{font-style:italic;color:var(--acid)}
     border-color:#ff7a1a;
 }
 
+.me-content img{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.me-content img:hover{
+    transform:scale(1.03);
+}
+
 footer{background:var(--deep);color:var(--cream);padding:27px 4vw;display:flex;align-items:center;justify-content:space-between;font:15px "DM Mono";letter-spacing:.09em}
 
 footer p{margin:0;color:#a0bbb5}
