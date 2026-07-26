@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My Personal WEB: EE.UU</title>
+        <link rel="icon" href="../../favicon.ico" type="image/x-icon"/>
+        <meta name="description" content="Personal Development APP: Vanilla Plantilla HTML gratis">
+        <meta name="author" content="Alejandro Fernández Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body class="paises_body">
+        <div class="control_paises">
+            <button><div id="google_translate_element" class="google"></div></button>
+            <a class="enlace_paises" href="../../index.html#viajes"><button id="backBtn"><i class="fa-solid fa-house"></i></button></a>
+        </div>
+        <p class="viewer" id="mediaViewer"></p>
+        <div class="controls">
+            <button id="prevBtn" class="btn-visor">Anterior</button>
+            <input type="number" id="mediaIndex" min="1" value="1"/><span id="barra_sep"> / </span><span id="totalMedia"></span>
+            <button id="nextBtn" class="btn-visor">Siguiente</button>
+        </div>
+        <script type="text/javascript" src="usa.js"></script>
+        <!-- GOOGLE TRADUCTOR -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>

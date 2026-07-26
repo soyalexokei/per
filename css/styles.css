@@ -139,9 +139,33 @@ h1 em,h2 em{font-style:italic;color:var(--acid)}
 
 .trail{padding:110px 4vw 80px;display:grid;grid-template-columns:32% 1fr;gap:8vw;overflow:hidden}
 
-.trail-head h2,.wild-title h2,.spain h2,.me h2{font-size:clamp(45px,5vw,85px)}
+.trail-head h2,.wild-title h2,.spain h2,.me h2 {
+    font-size: clamp(45px,5vw,85px)
+}
 
-.trail-head h2 em,.spain h2 em,.me h2 em{color:var(--coral)}
+.trail-head h2 em,.spain h2 em,.me h2 em {
+    color:var(--coral)
+}
+
+.provinces {
+    display: grid;
+    min-height: 700px;
+    background: var(--deep);
+    overflow: hidden;
+    padding: 100px 9% 60px;
+}
+
+.provinces-head h2 {
+    color:var(--acid);
+    letter-spacing: 3px;
+    font-size: xx-large;
+}
+
+.provinces-head p {
+    color: #adcbc5;
+    font-size: 17px;
+    margin: 28px 0
+}
 
 .country-ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;align-content:start}
 
@@ -153,21 +177,15 @@ h1 em,h2 em{font-style:italic;color:var(--acid)}
 
 .country-ribbon span{font:9px "DM Mono";letter-spacing:.06em}
 
-.spain{display:grid;grid-template-columns:1.1fr .9fr;min-height:650px;background:var(--coral);overflow:hidden}
+.province-ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;align-content:start}
 
-.spain-map{position:relative;display:grid;place-items:center;padding:70px}
+.province-ribbon a{height:135px;border:1px solid var(--line);padding:12px;position:relative;display:flex;flex-direction:column;justify-content:space-between;background:#faf7ee;transition:transform .25s,background .25s}
 
-.spain-map img{width:98%;max-height:540px;filter:brightness(.45) saturate(.4) contrast(1.4)}
+.province-ribbon a:hover{transform:rotate(-2deg) translateY(-6px);background:var(--acid)}
 
-.spain-copy{padding:100px 9% 60px;background:var(--deep);color:var(--cream);display:flex;justify-content:center;flex-direction:column}
+.province-ribbon img{width:100px;height:100px;object-fit:contain;align-self:end}
 
-.spain-copy {color:var(--acid)}
-
-.spain-copy p {color:#adcbc5;font-size:17px;margin:28px 0}
-
-.dark-button{font:10px "DM Mono";letter-spacing:.1em;border:1px solid var(--acid);padding:15px 18px;color:var(--acid);width:max-content}
-
-.dark-button b{margin-left:23px;font-size:15px}
+.province-ribbon span{font:9px "DM Mono";letter-spacing:.06em}
 
 .passions {
     background: #e6e1d4;
@@ -426,10 +444,6 @@ footer p{margin:0;color:#a0bbb5}
     .spain {
         grid-template-columns:1fr
     }
-    .spain-map {
-        height: 360px;
-        padding: 30px
-    }
     .spain-copy {
         padding: 70px 9%;
         min-height: 410px
@@ -628,5 +642,128 @@ footer p{margin:0;color:#a0bbb5}
     .modal-navigation{
         margin-top:25px;
     }
+    .paises_body {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .control_paises {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .viewer {
+        width: 95%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #backBtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #google_translate_element {
+        width: auto;
+        height: auto;
+    }
+
+    .btn-visor {
+        width: 70px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    #mediaIndex {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    .enlace_paises {
+        margin-bottom: 40px;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    #totalMedia,
+    #barra_sep {
+        font-size: 15px;
+    }
 }
 /***********/
+
+/* Paginas de paises */
+.paises_body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #123c3f;
+}
+.paises_body i {
+    color: white;
+}
+.control_paises {
+    display: inline-block;
+    margin: 60px;
+}
+.paises_body p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: fit-content;
+    height: fit-content;
+    background: #000;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#backBtn {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#google_translate_element {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.enlace_paises {
+    margin-bottom: 100px;
+}
+.btn-visor {
+    background-color: silver;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    color: black;
+}
+#totalMedia {
+    color: white;
+}
+#mediaIndex {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+}
+#barra_sep {
+    color: white;
+}
