@@ -156,9 +156,9 @@ const sobreMi = [
         titulo: "Familia",
         pagina: 0,
         pages: [
-            {
-                
-            }
+            {img: "https://i.postimg.cc/wv5YKdwb/Antepasados-hasta-mi.png"},
+            {img: "https://i.postimg.cc/Jnyctbyv/Familiares-Paternos.png"},
+            {img: "https://i.postimg.cc/zv7cFCjF/Familiares-Maternos.png"}
         ]
     }
 ];
