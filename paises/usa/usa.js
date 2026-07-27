@@ -440,15 +440,13 @@ function loadMedia(index) {
     mediaViewer.appendChild(img);
   } else if (item.type === "youtube") {
     mediaViewer.innerHTML = "";
-    mediaViewer.style.width = "432px";
-    mediaViewer.style.height = "825px";
 
     const iframe = document.createElement("iframe");
     iframe.src = item.src + "?autoplay=1&rel=0";
     iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
     iframe.allowFullscreen = false;
-    iframe.style.width = "100%";  // ocupa todo el ancho del div
-    iframe.style.height = "100%"; // ocupa todo el alto del div
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
     mediaViewer.appendChild(iframe);
   }
 

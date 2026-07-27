@@ -629,7 +629,7 @@ footer p{margin:0;color:#a0bbb5}
 /**********************************/
 /* RESPONSIVE */
 /**********************************/
-@media(max-width:768px){
+@media(max-width:768px) {
     .modal-content{
         padding:30px 20px;
     }
@@ -642,111 +642,48 @@ footer p{margin:0;color:#a0bbb5}
     .modal-navigation{
         margin-top:25px;
     }
-    .paises_body {
-        padding: 20px 10px;
-        text-align: center;
+    .paises_body{
+        background: #123c3f;
+        color: white;
     }
 
-    .control_paises {
-        display: block;
-        margin: 20px auto;
-        width: 100%;
+    .control_paises button{
+        width:50px;
+        height:35px;
     }
 
-    .viewer {
-        width: 95%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
+    .btn-visor{
+        flex:1;
+        height:45px;
     }
 
-    .controls {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    #backBtn {
-        width: 50px;
-        height: 50px;
-    }
-
-    #google_translate_element {
-        width: auto;
-        height: auto;
-    }
-
-    .btn-visor {
-        width: 70px;
-        height: 38px;
-        font-size: 14px;
-    }
-
-    #mediaIndex {
-        width: 50px;
-        font-size: 14px;
-    }
-
-    .enlace_paises {
-        margin-bottom: 40px;
-        padding: 0 10px;
-        word-break: break-word;
-    }
-
-    #totalMedia,
-    #barra_sep {
-        font-size: 15px;
+    #mediaIndex{
+        width:45px;
+        text-align:center;
     }
 }
 /***********/
 
 /* Paginas de paises */
 .paises_body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #123c3f;
-}
-.paises_body i {
     color: white;
+    margin: 1.25%;
 }
-.control_paises {
-    display: inline-block;
-    margin: 60px;
-}
-.paises_body p {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: fit-content;
-    height: fit-content;
-    background: #000;
-    border: 2px solid #444;
-    border-radius: 8px;
-    margin-bottom: 60px;
+.control_paises button {
+    color: white;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-}
-#backBtn {
-    background-color: transparent;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-#google_translate_element {
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-.enlace_paises {
-    margin-bottom: 100px;
 }
 .btn-visor {
     background-color: silver;
