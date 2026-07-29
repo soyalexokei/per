@@ -642,65 +642,386 @@ footer p{margin:0;color:#a0bbb5}
     .modal-navigation{
         margin-top:25px;
     }
-    .paises_body{
-        background: #123c3f;
-        color: white;
-    }
-
-    .control_paises button{
-        width:50px;
-        height:35px;
-    }
-
-    .btn-visor{
-        flex:1;
-        height:45px;
-    }
-
-    #mediaIndex{
-        width:45px;
-        text-align:center;
-    }
 }
 /***********/
 
-/* Paginas de paises */
+/* ================================
+   PAGINA PAISES - VISOR MULTIMEDIA
+================================ */
 .paises_body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #123c3f;
-    color: white;
-    margin: 1.25%;
-}
-.control_paises button {
-    color: white;
-    background-color: transparent;
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-}
-.controls {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+        BOTON HOME IZQUIERDA
+================================ */
+
+.control_paises {
+
+    position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+}
+
+
+.control_paises button {
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    backdrop-filter: blur(5px);
+}
+
+
+.control_paises button:hover {
+
+    background: #ffffff;
+    color: #111;
+
+    transform: scale(1.1);
+}
+
+
+/* ================================
+            VISOR CENTRAL
+================================ */
+
+.viewer {
+
+    width: 70vw;
+    height: 85vh;
+
+    display: flex;
+
     justify-content: center;
     align-items: center;
-    gap: 15px;
+
+    background: black;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.8);
+
 }
+
+
+/* Imagen dentro del visor */
+
+.viewer img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Video dentro del visor */
+
+.viewer video {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+
+/* ================================
+        CONTROLES DERECHA
+================================ */
+
+.controls {
+
+    position: fixed;
+
+    right: 25px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+
+
+    color:white;
+
+}
+
+
+/* Botones siguiente/anterior */
+
 .btn-visor {
-    background-color: silver;
+
     width: 80px;
-    height: 40px;
-    cursor: pointer;
-    color: black;
+    height:80px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+
+    background: rgba(255,255,255,0.15);
+
+    color:white;
+
+
+    transition:.3s ease;
+
+    backdrop-filter:blur(5px);
 }
-#totalMedia {
-    color: white;
+
+
+.btn-visor:hover {
+
+    background:white;
+    color:black;
+
+    transform:scale(1.1);
 }
+
+
+
+/* Input contador */
+
 #mediaIndex {
-    width: 60px;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
+
+    width:80px;
+
+    height:45px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    border-radius:10px;
+
+    border:none;
+
 }
+
+
 #barra_sep {
-    color: white;
+
+    font-size:30px;
+}
+
+
+#totalMedia {
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/* ======================================
+            TABLETS
+====================================== */
+
+@media(max-width:900px){
+
+
+    .viewer {
+
+        width:75vw;
+        height:80vh;
+
+    }
+
+
+    .control_paises {
+
+        left:10px;
+
+    }
+
+
+    .control_paises button {
+
+        width:65px;
+        height:65px;
+
+    }
+
+
+    .controls {
+
+        right:10px;
+
+    }
+
+
+    .btn-visor {
+
+        width:60px;
+        height:60px;
+
+    }
+
+}
+
+
+
+
+
+/* ======================================
+            MOVIL
+====================================== */
+
+@media(max-width:600px){
+
+
+    .paises_body {
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        overflow:auto;
+
+    }
+
+
+
+    /* HOME ARRIBA */
+
+    .control_paises {
+
+        position:absolute;
+
+        top:20px;
+
+        left:20px;
+
+        transform:none;
+
+    }
+
+
+    .control_paises button {
+
+        width:55px;
+        height:55px;
+
+    }
+
+
+
+    /* VISOR */
+
+    .viewer {
+
+        width:95vw;
+
+        height:70vh;
+
+        margin-top:70px;
+
+        border-radius:10px;
+
+    }
+
+
+
+    /* CONTROLES ABAJO */
+
+    .controls {
+
+        position:absolute;
+
+        bottom:20px;
+
+        right:auto;
+
+        top:auto;
+
+
+        width:100%;
+
+
+        flex-direction:row;
+
+        justify-content:center;
+
+
+        gap:15px;
+
+        transform:none;
+
+    }
+
+
+    .btn-visor {
+
+        width:55px;
+        height:55px;
+
+    }
+
+
+    #mediaIndex {
+
+        width:55px;
+
+        height:35px;
+
+        font-size:18px;
+
+    }
+
+
+    #barra_sep {
+
+        font-size:22px;
+
+    }
+
+
+    #totalMedia {
+
+        font-size:22px;
+
+    }
+
 }
