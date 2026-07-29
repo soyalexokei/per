@@ -820,8 +820,7 @@ footer p{margin:0;color:#a0bbb5}
 
 
 /* Input contador */
-
-#mediaIndex {
+.paises_body input {
 
     width:80px;
 
@@ -844,7 +843,7 @@ footer p{margin:0;color:#a0bbb5}
 }
 
 
-#totalMedia {
+.paises_body .totalmedia {
 
     font-size:28px;
 
@@ -1000,7 +999,7 @@ footer p{margin:0;color:#a0bbb5}
     }
 
 
-    #mediaIndex {
+    .paises_body input {
 
         width:55px;
 
@@ -1018,7 +1017,7 @@ footer p{margin:0;color:#a0bbb5}
     }
 
 
-    #totalMedia {
+    .paises_body .totalmedia {
 
         font-size:22px;
 

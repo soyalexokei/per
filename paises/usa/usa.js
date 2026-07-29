@@ -1,11 +1,11 @@
 /****************************************************/
 /* ELEMENTOS */
 /****************************************************/
-const viewer = document.getElementById("mediaViewer");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const mediaIndex = document.getElementById("mediaIndex");
-const totalMedia = document.getElementById("totalMedia");
+const viewerUSA = document.getElementById("mediaViewerUSA");
+const prevBtnUSA = document.getElementById("prevBtnUSA");
+const nextBtnUSA = document.getElementById("nextBtnUSA");
+const mediaIndexUSA = document.getElementById("mediaIndexUSA");
+const totalMediaUSA = document.getElementById("totalMediaUSA");
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -431,20 +431,20 @@ const viajeUSA = {
   ]
 };
 
-let currentMedia = 0;
+let currentMediaUSA = 0;
 
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function renderMedia() {
-  const media = viajeUSA.medios[currentMedia];
-  viewer.innerHTML="";
+function renderMediaUSA() {
+  const media = viajeUSA.medios[currentMediaUSA];
+  viewerUSA.innerHTML="";
   /******** IMAGEN ********/
   if(media.type==="image") {
     const img=document.createElement("img");
     img.src=media.src;
     img.className="viewer-image";
-    viewer.appendChild(img);
+    viewerUSA.appendChild(img);
   }
   /******** VIDEO ********/
   else if(media.type==="video") {
@@ -454,52 +454,52 @@ function renderMedia() {
     iframe.width = "100%";
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = false;
-    viewer.appendChild(iframe);
+    viewerUSA.appendChild(iframe);
   }
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");
     div.className="viewer-text";
     div.innerHTML=media.content;
-    viewer.appendChild(div);
+    viewerUSA.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndex.value=currentMedia+1;
-  totalMedia.textContent = viajeUSA.medios.length;
+  mediaIndexUSA.value=currentMediaUSA+1;
+  totalMediaUSA.textContent = viajeUSA.medios.length;
 }
 
 /****************************************************/
 /* SIGUIENTE */
 /****************************************************/
-nextBtn.addEventListener("click", () => {
-  currentMedia++;
-  if(currentMedia >= viajeUSA.medios.length) {
-    currentMedia=0;
+nextBtnUSA.addEventListener("click", () => {
+  currentMediaUSA++;
+  if(currentMediaUSA >= viajeUSA.medios.length) {
+    currentMediaUSA=0;
   }
-  renderMedia();
+  renderMediaUSA();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
-prevBtn.addEventListener("click",()=>{
-  currentMedia--;
-  if(currentMedia < 0) {
-    currentMedia=
+prevBtnUSA.addEventListener("click",()=>{
+  currentMediaUSA--;
+  if(currentMediaUSA < 0) {
+    currentMediaUSA=
     viajeUSA.medios.length-1;
   }
-  renderMedia();
+  renderMediaUSA();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
-mediaIndex.addEventListener("change",()=>{
+mediaIndexUSA.addEventListener("change",()=>{
   const value=
-  Number(mediaIndex.value);
+  Number(mediaIndexUSA.value);
   if(value>=1 && value<=viajeUSA.medios.length) {
-    currentMedia=value-1;
-    renderMedia();
+    currentMediaUSA=value-1;
+    renderMediaUSA();
   }
 });
 
@@ -508,14 +508,14 @@ mediaIndex.addEventListener("change",()=>{
 /****************************************************/
 document.addEventListener("keydown",(e)=>{
   if(e.key==="ArrowRight"){
-    nextBtn.click();
+    nextBtnUSA.click();
   }
   if(e.key==="ArrowLeft"){
-    prevBtn.click();
+    prevBtnUSA.click();
   }
 });
 
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMedia();
+renderMediaUSA();
