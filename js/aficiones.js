@@ -23,6 +23,34 @@ let hobbyActual = 0;
 /****************************************************/
 
 const aficiones = [
+    //-- FREE HUGS
+    {
+        titulo: "Free Hugs",
+        pagina: 0,
+        pages: [
+            {
+                text: `
+                    <p>
+                        En español significa "Abrazos Gratis". Fue un reto que hice con amigos de Erasmus+
+                        en la ciudad serbia de Novi Sad en el año 2022. A continuación, podréis ver el
+                        vídeo completo
+                    </p>
+                `
+            },
+            {video: "https://streamable.com/e/v622yt"}
+        ]
+    },
+    //-- 5 MIN PLANCHA ABDOMEN
+    {
+        titulo: "Reto 5 min Plancha Abdomen",
+        pagina: 0,
+        pages: [
+            {
+                text: `<p><b>Vídeo sobre mi reto de "5 min Plancha Abdomen":</b></p>`,
+                video: "https://streamable.com/e/p5b0h0"
+            }
+        ]
+    },
     //-- PADEL
     {
         titulo: "Pádel",
@@ -163,11 +191,7 @@ const aficiones = [
             },
             {img: "https://i.postimg.cc/TYZx8TsX/IMG20260309192412.jpg"},
             {img: "https://i.postimg.cc/dtzFMJxb/MG-0797.jpg"},
-            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"},
-            {
-                text: `<p><b>Vídeo sobre mi reto 5 min Plancha Abdomen:</b></p>`,
-                video: "https://streamable.com/e/p5b0h0"
-            }
+            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"}
         ]
     },
     //-- VAN LIFE

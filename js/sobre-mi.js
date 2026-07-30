@@ -28,6 +28,13 @@ const sobreMi = [
         titulo: "Álbum",
         pagina: 0,
         pages: [
+            {
+                text: `
+                    <p>Acrobatic at the Willis Tower of Chicago (USA):</p>
+                `,
+                img: "https://i.postimg.cc/vZBPmgRp/wdewfewfewfe.jpg"
+            },
+            {img: "https://i.postimg.cc/yYnQBh51/sfhsafbjsdfsjadkvbvkjdsfhusdjk.jpg"},
             {img: "https://i.postimg.cc/bv5N8LcP/1.jpg"},
             {img: "https://i.postimg.cc/RZXZp4gN/2.jpg"},
             {img: "https://i.postimg.cc/BvbQdkzN/3.jpg"},
