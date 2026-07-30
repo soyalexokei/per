@@ -1,11 +1,11 @@
 /****************************************************/
 /* ELEMENTOS */
 /****************************************************/
-const viewer = document.getElementById("mediaViewer");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const mediaIndex = document.getElementById("mediaIndex");
-const totalMedia = document.getElementById("totalMedia");
+const viewerUK = document.getElementById("mediaViewerUK");
+const prevBtnUK = document.getElementById("prevBtnUK");
+const nextBtnUK = document.getElementById("nextBtnUK");
+const mediaIndexUK = document.getElementById("mediaIndexUK");
+const totalMediaUK = document.getElementById("totalMediaUK");
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -81,20 +81,20 @@ const viajeUK = {
   ]
 };
 
-let currentMedia = 0;
+let currentMediaUK = 0;
 
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function renderMedia() {
-  const media = viajeUK.medios[currentMedia];
-  viewer.innerHTML="";
+function renderMediaUK() {
+  const media = viajeUK.medios[currentMediaUK];
+  viewerUK.innerHTML="";
   /******** IMAGEN ********/
   if(media.type==="image") {
     const img=document.createElement("img");
     img.src=media.src;
     img.className="viewer-image";
-    viewer.appendChild(img);
+    viewerUK.appendChild(img);
   }
   /******** VIDEO ********/
   else if(media.type==="video") {
@@ -104,52 +104,52 @@ function renderMedia() {
     iframe.width = "100%";
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = false;
-    viewer.appendChild(iframe);
+    viewerUK.appendChild(iframe);
   }
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");
     div.className="viewer-text";
     div.innerHTML=media.content;
-    viewer.appendChild(div);
+    viewerUK.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndex.value=currentMedia+1;
-  totalMedia.textContent = viajeUK.medios.length;
+  mediaIndexUK.value=currentMediaUK+1;
+  totalMediaUK.textContent = viajeUK.medios.length;
 }
 
 /****************************************************/
 /* SIGUIENTE */
 /****************************************************/
-nextBtn.addEventListener("click", () => {
-  currentMedia++;
-  if(currentMedia >= viajeUK.medios.length) {
-    currentMedia=0;
+nextBtnUK.addEventListener("click", () => {
+  currentMediaUK++;
+  if(currentMediaUK >= viajeUK.medios.length) {
+    currentMediaUK=0;
   }
-  renderMedia();
+  renderMediaUK();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
-prevBtn.addEventListener("click",()=>{
-  currentMedia--;
-  if(currentMedia < 0) {
-    currentMedia=
+prevBtnUK.addEventListener("click",()=>{
+  currentMediaUK--;
+  if(currentMediaUK < 0) {
+    currentMediaUK=
     viajeUK.medios.length-1;
   }
-  renderMedia();
+  renderMediaUK();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
-mediaIndex.addEventListener("change",()=>{
+mediaIndexUK.addEventListener("change",()=>{
   const value=
-  Number(mediaIndex.value);
+  Number(mediaIndexUK.value);
   if(value>=1 && value<=viajeUK.medios.length) {
-    currentMedia=value-1;
-    renderMedia();
+    currentMediaUK=value-1;
+    renderMediaUK();
   }
 });
 
@@ -158,14 +158,14 @@ mediaIndex.addEventListener("change",()=>{
 /****************************************************/
 document.addEventListener("keydown",(e)=>{
   if(e.key==="ArrowRight"){
-    nextBtn.click();
+    nextBtnUK.click();
   }
   if(e.key==="ArrowLeft"){
-    prevBtn.click();
+    prevBtnUK.click();
   }
 });
 
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMedia();
+renderMediaUK();

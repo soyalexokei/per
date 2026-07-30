@@ -1,7 +1,19 @@
+/****************************************************/
+/* ELEMENTOS */
+/****************************************************/
+const viewerSerbia = document.getElementById("mediaViewerSerbia");
+const prevBtnSerbia = document.getElementById("prevBtnSerbia");
+const nextBtnSerbia = document.getElementById("nextBtnSerbia");
+const mediaIndexSerbia = document.getElementById("mediaIndexSerbia");
+const totalMediaSerbia = document.getElementById("totalMediaSerbia");
+
+/****************************************************/
+/* DATOS DEL VIAJE */
+/****************************************************/
 const viajeSerbia = {
   nombre: "Serbia",
   medios: [
-      { type: "image", src: "https://i.postimg.cc/6p1p8vD9/1.jpg"},
+    { type: "image", src: "https://i.postimg.cc/6p1p8vD9/1.jpg"},
     { type: "image", src: "https://i.postimg.cc/CKBLkKgb/2.jpg"},
     { type: "image", src: "https://i.postimg.cc/9QffXpg8/3.jpg"},
     { type: "image", src: "https://i.postimg.cc/j5YKfQvr/6.jpg"},
@@ -526,20 +538,20 @@ const viajeSerbia = {
   ]
 };
 
-let currentMedia = 0;
+let currentMediaSerbia = 0;
 
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function renderMedia() {
-  const media = viajeSerbia.medios[currentMedia];
-  viewer.innerHTML="";
+function renderMediaSerbia() {
+  const media = viajeSerbia.medios[currentMediaSerbia];
+  viewerSerbia.innerHTML="";
   /******** IMAGEN ********/
   if(media.type==="image") {
     const img=document.createElement("img");
     img.src=media.src;
     img.className="viewer-image";
-    viewer.appendChild(img);
+    viewerSerbia.appendChild(img);
   }
   /******** VIDEO ********/
   else if(media.type==="video") {
@@ -549,52 +561,52 @@ function renderMedia() {
     iframe.width = "100%";
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = false;
-    viewer.appendChild(iframe);
+    viewerSerbia.appendChild(iframe);
   }
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");
     div.className="viewer-text";
     div.innerHTML=media.content;
-    viewer.appendChild(div);
+    viewerSerbia.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndex.value=currentMedia+1;
-  totalMedia.textContent = viajeSerbia.medios.length;
+  mediaIndexSerbia.value=currentMediaSerbia+1;
+  totalMediaSerbia.textContent = viajeSerbia.medios.length;
 }
 
 /****************************************************/
 /* SIGUIENTE */
 /****************************************************/
-nextBtn.addEventListener("click", () => {
-  currentMedia++;
-  if(currentMedia >= viajeSerbia.medios.length) {
-    currentMedia=0;
+nextBtnSerbia.addEventListener("click", () => {
+  currentMediaSerbia++;
+  if(currentMediaSerbia >= viajeSerbia.medios.length) {
+    currentMediaSerbia=0;
   }
-  renderMedia();
+  renderMediaSerbia();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
-prevBtn.addEventListener("click",()=>{
-  currentMedia--;
-  if(currentMedia < 0) {
-    currentMedia=
+prevBtnSerbia.addEventListener("click",()=>{
+  currentMediaSerbia--;
+  if(currentMediaSerbia < 0) {
+    currentMediaSerbia=
     viajeSerbia.medios.length-1;
   }
-  renderMedia();
+  renderMediaSerbia();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
-mediaIndex.addEventListener("change",()=>{
+mediaIndexSerbia.addEventListener("change",()=>{
   const value=
-  Number(mediaIndex.value);
+  Number(mediaIndexSerbia.value);
   if(value>=1 && value<=viajeSerbia.medios.length) {
-    currentMedia=value-1;
-    renderMedia();
+    currentMediaSerbia=value-1;
+    renderMediaSerbia();
   }
 });
 
@@ -603,14 +615,14 @@ mediaIndex.addEventListener("change",()=>{
 /****************************************************/
 document.addEventListener("keydown",(e)=>{
   if(e.key==="ArrowRight"){
-    nextBtn.click();
+    nextBtnSerbia.click();
   }
   if(e.key==="ArrowLeft"){
-    prevBtn.click();
+    prevBtnSerbia.click();
   }
 });
 
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMedia();
+renderMediaSerbia();

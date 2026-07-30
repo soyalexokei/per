@@ -177,7 +177,12 @@ h1 em,h2 em{font-style:italic;color:var(--acid)}
 
 .country-ribbon span{font:9px "DM Mono";letter-spacing:.06em}
 
-.province-ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;align-content:start}
+.province-ribbon {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:11px;
+    align-content:start
+}
 
 .province-ribbon a{height:135px;border:1px solid var(--line);padding:12px;position:relative;display:flex;flex-direction:column;justify-content:space-between;background:#faf7ee;transition:transform .25s,background .25s}
 
