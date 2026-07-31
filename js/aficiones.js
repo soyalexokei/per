@@ -1,27 +1,24 @@
 /****************************************************/
 /* ELEMENTOS */
 /****************************************************/
-
-const modal = document.getElementById("hobbyModal");
-
-const modalTitle = document.querySelector(".modal-title");
-const modalText = document.querySelector(".modal-text");
-const modalImage = document.querySelector(".modal-image");
-const modalVideo = document.querySelector(".modal-video");
-
-const modalCounter = document.querySelector(".modal-counter");
-
-const btnPrev = document.querySelector(".modal-prev");
-const btnNext = document.querySelector(".modal-next");
-const btnClose = document.querySelector(".modal-close");
+const hobbies = document.getElementById("hobbyModal");
+const hobbiesTitle = document.getElementById("titleHobbies");
+const hobbiesText = document.getElementById("textHobbies");
+const hobbiesImage = document.getElementById("imageHobbies");
+const hobbiesLoader = document.getElementById('loaderHobbies');
+const hobbiesVideo = document.getElementById("videoHobbies");
+const hobbiesCounter = document.getElementById("counterHobbies");
+const btnPrevHobbies = document.getElementById("prevHobbies");
+const btnNextHobbies = document.getElementById("nextHobbies");
+const btnCloseHobbies = document.getElementById("btnCloseHobbies");
 
 const hobbyLinks = document.querySelectorAll("[data-hobby]");
 let hobbyActual = 0;
+let pendingHobbyImage = null;
 
 /****************************************************/
 /* DATOS */
 /****************************************************/
-
 const aficiones = [
     //-- FREE HUGS
     {
@@ -914,37 +911,70 @@ const aficiones = [
     }
 ];
 
-function renderModal() {
+function mostrarLoaderHobbies() {
+    hobbiesLoader.style.display = "block";
+    hobbiesImage.style.display = "none";
+}
+
+function ocultarLoaderHobbies() {
+    hobbiesLoader.style.display = "none";
+}
+
+function cargarImagenHobbies(url) {
+    if (!url) {
+        hobbiesImage.removeAttribute('src');
+        hobbiesImage.style.display = 'none';
+        hobbiesLoader.style.display = 'none';
+        return;
+    }
+
+    mostrarLoaderHobbies();
+
+    const img = new Image();
+    pendingHobbyImage = img;
+
+    img.onload = () => {
+        if (pendingHobbyImage !== img) return;
+        hobbiesImage.src = url;
+        hobbiesImage.style.display = 'block';
+        ocultarLoaderHobbies();
+        pendingHobbyImage = null;
+    };
+
+    img.onerror = () => {
+        if (pendingHobbyImage !== img) return;
+        ocultarLoaderHobbies();
+        hobbiesImage.style.display = 'none';
+        pendingHobbyImage = null;
+    };
+
+    img.src = url;
+}
+
+function renderHobbies() {
     const hobby = aficiones[hobbyActual];
     const page = hobby.pages[hobby.pagina];
-    modalTitle.textContent = hobby.titulo;
-    modalCounter.textContent = `${hobby.pagina+1} / ${hobby.pages.length}`;
+    hobbiesTitle.textContent = hobby.titulo;
+    hobbiesCounter.textContent = `${hobby.pagina + 1} / ${hobby.pages.length}`;
 
     /************ TEXTO ************/
-    if(page.text){
-        modalText.innerHTML = page.text;
-        modalText.style.display="block";
-    }else{
-        modalText.innerHTML="";
-        modalText.style.display="none";
+    if (page.text) {
+        hobbiesText.innerHTML = page.text;
+        hobbiesText.style.display = "block";
+    } else {
+        hobbiesText.innerHTML = "";
+        hobbiesText.style.display = "none";
     }
 
-    /************ IMAGEN ************/
-    if(page.img){
-        modalImage.src = page.img;
-        modalImage.style.display="block";
-    }else{
-        modalImage.removeAttribute("src");
-        modalImage.style.display="none";
-    }
+    cargarImagenHobbies(page.img);
 
     /************ VIDEO ************/
-    if(page.video){
-        modalVideo.src = page.video;
-        modalVideo.style.display="block";
-    }else{
-        modalVideo.removeAttribute("src");
-        modalVideo.style.display="none";
+    if (page.video) {
+        hobbiesVideo.src = page.video;
+        hobbiesVideo.style.display = "block";
+    } else {
+        hobbiesVideo.removeAttribute("src");
+        hobbiesVideo.style.display = "none";
     }
 }
 
@@ -954,44 +984,44 @@ hobbyLinks.forEach(link=>{
         e.preventDefault();
         hobbyActual = Number(link.dataset.hobby);
         aficiones[hobbyActual].pagina = 0;
-        renderModal();
-        modal.classList.add("active");
+        renderHobbies();
+        hobbies.classList.add("active");
     });
 });
 
 /* Cerrar modal */
-btnClose.addEventListener("click",cerrarModal);
-modal.addEventListener("click",(e)=>{
-    if(e.target===modal){
-        cerrarModal();
+btnCloseHobbies.addEventListener("click",cerrarHobbies);
+hobbies.addEventListener("click",(e)=>{
+    if(e.target===hobbies){
+        cerrarHobbies();
     }
 });
 document.addEventListener("keydown",(e)=>{
     if(e.key==="Escape"){
-        cerrarModal();
+        cerrarHobbies();
     }
 });
-function cerrarModal(){
-    modal.classList.remove("active");
-    modalVideo.removeAttribute("src");
+function cerrarHobbies(){
+    hobbies.classList.remove("active");
+    hobbiesVideo.removeAttribute("src");
 }
 
 /* Siguiente Página */
-btnNext.addEventListener("click",()=>{
+btnNextHobbies.addEventListener("click",()=>{
     const hobby = aficiones[hobbyActual];
     hobby.pagina++;
     if(hobby.pagina>=hobby.pages.length){
         hobby.pagina=0;
     }
-    renderModal();
+    renderHobbies();
 });
 
 /* Anterior página */
-btnPrev.addEventListener("click",()=>{
+btnPrevHobbies.addEventListener("click",()=>{
     const hobby = aficiones[hobbyActual];
     hobby.pagina--;
     if(hobby.pagina<0){
         hobby.pagina=hobby.pages.length-1;
     }
-    renderModal();
+    renderHobbies();
 });

@@ -2,20 +2,22 @@
 /* ELEMENTOS */
 /****************************************************/
 const aboutModal = document.getElementById("aboutModal");
-const aboutTitle = aboutModal.querySelector(".modal-title");
-const aboutText = aboutModal.querySelector(".modal-text");
-const aboutImage = aboutModal.querySelector(".modal-image");
-const aboutVideo = aboutModal.querySelector(".modal-video");
-const aboutCounter = aboutModal.querySelector(".modal-counter");
-const aboutPrev = aboutModal.querySelector(".modal-prev");
-const aboutNext = aboutModal.querySelector(".modal-next");
-const aboutClose = aboutModal.querySelector(".modal-close");
+const aboutTitle = document.getElementById("titleAbout");
+const aboutText = document.getElementById("textAbout");
+const aboutLoader = document.getElementById('loaderAbout');
+const aboutImage = document.getElementById("imageAbout");
+const aboutVideo = document.getElementById("videoAbout");
+const aboutCounter = document.getElementById("counterAbout");
+const aboutPrev = document.getElementById("prevAbout");
+const aboutNext = document.getElementById("nextAbout");
+const aboutClose = document.getElementById("btnCloseAbout");
 
 /****************************************************/
 /* BOTONES SOBRE MI */
 /****************************************************/
 const aboutLinks = document.querySelectorAll(".me-content");
 let aboutActual = 0;
+let pendingaboutImage = null;
 
 /****************************************************/
 /* DATOS */
@@ -173,6 +175,46 @@ const sobreMi = [
 /****************************************************/
 /* RENDER */
 /****************************************************/
+function mostrarLoaderAbout() {
+    aboutLoader.style.display = "block";
+    aboutImage.style.display = "none";
+}
+
+function ocultarLoaderAbout() {
+    aboutLoader.style.display = "none";
+}
+
+function cargarImagenAbout(url) {
+    if (!url) {
+        aboutImage.removeAttribute('src');
+        aboutImage.style.display = 'none';
+        aboutLoader.style.display = 'none';
+        return;
+    }
+
+    mostrarLoaderAbout();
+
+    const img = new Image();
+    pendingaboutImage = img;
+
+    img.onload = () => {
+        if (pendingaboutImage !== img) return;
+        aboutImage.src = url;
+        aboutImage.style.display = 'block';
+        ocultarLoaderAbout();
+        pendingaboutImage = null;
+    };
+
+    img.onerror = () => {
+        if (pendingaboutImage !== img) return;
+        ocultarLoaderAbout();
+        aboutImage.style.display = 'none';
+        pendingaboutImage = null;
+    };
+
+    img.src = url;
+}
+
 function renderAbout(){
     const about = sobreMi[aboutActual];
     const page = about.pages[about.pagina];
@@ -188,14 +230,7 @@ function renderAbout(){
         aboutText.style.display = "none";
     }
 
-    /******** IMAGEN ********/
-    if(page.img){
-        aboutImage.src = page.img;
-        aboutImage.style.display = "block";
-    }else{
-        aboutImage.removeAttribute("src");
-        aboutImage.style.display = "none";
-    }
+    cargarImagenAbout(page.img);
 
     /******** VIDEO ********/
     if(page.video){
