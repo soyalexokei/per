@@ -6,6 +6,9 @@ const prevBtnUSA = document.getElementById("prevBtnUSA");
 const nextBtnUSA = document.getElementById("nextBtnUSA");
 const mediaIndexUSA = document.getElementById("mediaIndexUSA");
 const totalMediaUSA = document.getElementById("totalMediaUSA");
+const loaderUSA = document.getElementById("loaderUSA");
+let currentMediaUSA = 0;
+let pendingUSAImage = null;
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -431,31 +434,83 @@ const viajeUSA = {
   ]
 };
 
-let currentMediaUSA = 0;
-
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
+function mostrarLoaderUSA() {
+  loaderUSA.style.display = "block";
+  viewerUSA.style.display = "none";
+}
+
+function ocultarLoaderUSA() {
+  loaderUSA.style.display = "none";
+}
+
+function cargarImagenUSA(url) {
+  if (!url) {
+    viewerUSA.innerHTML = "";
+    viewerUSA.style.display = "none";
+    ocultarLoaderUSA();
+    return;
+  }
+
+  mostrarLoaderUSA();
+
+  const img = new Image();
+  pendingUSAImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingUSAImage !== img) return;
+
+    viewerUSA.innerHTML = "";
+    viewerUSA.appendChild(img);
+
+    viewerUSA.style.display = "block";
+    ocultarLoaderUSA();
+
+    pendingUSAImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingUSAImage !== img) return;
+
+    viewerUSA.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerUSA.style.display = "block";
+    ocultarLoaderUSA();
+
+    pendingUSAImage = null;
+  };
+
+  img.src = url;
+}
+
 function renderMediaUSA() {
   const media = viajeUSA.medios[currentMediaUSA];
   viewerUSA.innerHTML="";
+
   /******** IMAGEN ********/
   if(media.type==="image") {
-    const img=document.createElement("img");
-    img.src=media.src;
-    img.className="viewer-image";
-    viewerUSA.appendChild(img);
+    cargarImagenUSA(media.src);
   }
+
   /******** VIDEO ********/
-  else if(media.type==="video") {
-    const iframe=document.createElement("iframe");
-    iframe.src= media.src;
-    iframe.height = "100%";
+  else if (media.type === "video") {
+
+    ocultarLoaderUSA();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
     iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
     iframe.allow = "autoplay; encrypted-media";
-    iframe.allowFullscreen = false;
+    iframe.allowFullscreen = true;
+
+    viewerUSA.style.display = "block";
     viewerUSA.appendChild(iframe);
   }
+  
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");

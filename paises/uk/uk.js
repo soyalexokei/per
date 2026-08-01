@@ -6,6 +6,9 @@ const prevBtnUK = document.getElementById("prevBtnUK");
 const nextBtnUK = document.getElementById("nextBtnUK");
 const mediaIndexUK = document.getElementById("mediaIndexUK");
 const totalMediaUK = document.getElementById("totalMediaUK");
+const loaderUK = document.getElementById("loaderUK");
+let currentMediaUK = 0;
+let pendingUKImage = null;
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -55,12 +58,12 @@ const viajeUK = {
     /* 39) Viaje por trabajo a Apsley y Luton (UK) - 2024 */
     { type: "image", src: "https://i.postimg.cc/dtHkCkk8/1.png" },
     { type: "image", src: "https://i.postimg.cc/PrrvNzxX/2.png" },
-    { type: "youtube", src: "https://www.youtube.com/embed/tedzX0xufsM" },
-    { type: "youtube", src: "https://www.youtube.com/embed/s3GpWv21uVM" },
+    { type: "video", src: "https://streamable.com/e/9zty5h" },
+    { type: "video", src: "https://streamable.com/e/1y0fpi" },
     { type: "image", src: "https://i.postimg.cc/9QsDx6B0/5.png" },
-    { type: "youtube", src: "https://www.youtube.com/embed/GiRyIoHuMxY" },
-    { type: "youtube", src: "https://www.youtube.com/embed/7jihgkFH99s" },
-    { type: "youtube", src: "https://www.youtube.com/embed/fxJ11BakWaA" },
+    { type: "video", src: "https://streamable.com/e/fk8cpg" },
+    { type: "video", src: "https://streamable.com/e/g6wdtm" },
+    { type: "video", src: "https://streamable.com/e/k1iqe1" },
     { type: "image", src: "https://i.postimg.cc/138grmwb/9.png" },
     { type: "image", src: "https://i.postimg.cc/d3Q3kwJH/10.png" },
     { type: "image", src: "https://i.postimg.cc/pTJyLpM5/11.png" },
@@ -73,39 +76,91 @@ const viajeUK = {
     { type: "image", src: "https://i.postimg.cc/nh9zQdtJ/18.png" },
     { type: "image", src: "https://i.postimg.cc/DzVzQq2b/19.png" },
     { type: "image", src: "https://i.postimg.cc/8ChzZj5X/20.png" },
-    { type: "youtube", src: "https://www.youtube.com/embed/tLiUptwA3E4" },
+    { type: "video", src: "https://streamable.com/e/41qe3z" },
     { type: "image", src: "https://i.postimg.cc/TwfYFf5d/22.png" },
-    { type: "youtube", src: "https://www.youtube.com/embed/2yKlY0AHPMk" },
-    { type: "youtube", src: "https://www.youtube.com/embed/vTACcj9CGSg" },
+    { type: "video", src: "https://streamable.com/e/tpstki" },
+    { type: "video", src: "https://streamable.com/e/wr0x6s" },
     { type: "image", src: "https://i.postimg.cc/Tw0YXFnr/25.png" },
   ]
 };
 
-let currentMediaUK = 0;
-
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
+function mostrarLoaderUK() {
+  loaderUK.style.display = "block";
+  viewerUK.style.display = "none";
+}
+
+function ocultarLoaderUK() {
+  loaderUK.style.display = "none";
+}
+
+function cargarImagenUK(url) {
+  if (!url) {
+    viewerUK.innerHTML = "";
+    viewerUK.style.display = "none";
+    ocultarLoaderUK();
+    return;
+  }
+
+  mostrarLoaderUK();
+
+  const img = new Image();
+  pendingUKImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingUKImage !== img) return;
+
+    viewerUK.innerHTML = "";
+    viewerUK.appendChild(img);
+
+    viewerUK.style.display = "block";
+    ocultarLoaderUK();
+
+    pendingUKImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingUKImage !== img) return;
+
+    viewerUK.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerUK.style.display = "block";
+    ocultarLoaderUK();
+
+    pendingUKImage = null;
+  };
+
+  img.src = url;
+}
+
 function renderMediaUK() {
   const media = viajeUK.medios[currentMediaUK];
   viewerUK.innerHTML="";
+
   /******** IMAGEN ********/
   if(media.type==="image") {
-    const img=document.createElement("img");
-    img.src=media.src;
-    img.className="viewer-image";
-    viewerUK.appendChild(img);
+    cargarImagenUK(media.src);
   }
+
   /******** VIDEO ********/
-  else if(media.type==="video") {
-    const iframe=document.createElement("iframe");
-    iframe.src= media.src;
-    iframe.height = "100%";
+  else if (media.type === "video") {
+
+    ocultarLoaderUK();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
     iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
     iframe.allow = "autoplay; encrypted-media";
-    iframe.allowFullscreen = false;
+    iframe.allowFullscreen = true;
+
+    viewerUK.style.display = "block";
     viewerUK.appendChild(iframe);
   }
+
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");

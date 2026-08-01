@@ -6,6 +6,9 @@ const prevBtnSerbia = document.getElementById("prevBtnSerbia");
 const nextBtnSerbia = document.getElementById("nextBtnSerbia");
 const mediaIndexSerbia = document.getElementById("mediaIndexSerbia");
 const totalMediaSerbia = document.getElementById("totalMediaSerbia");
+const loaderSerbia = document.getElementById("loaderSerbia");
+let currentMediaSerbia = 0;
+let pendingSerbiaImage = null;
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -538,31 +541,83 @@ const viajeSerbia = {
   ]
 };
 
-let currentMediaSerbia = 0;
-
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
+function mostrarLoaderSerbia() {
+  loaderSerbia.style.display = "block";
+  viewerSerbia.style.display = "none";
+}
+
+function ocultarLoaderSerbia() {
+  loaderSerbia.style.display = "none";
+}
+
+function cargarImagenSerbia(url) {
+  if (!url) {
+    viewerSerbia.innerHTML = "";
+    viewerSerbia.style.display = "none";
+    ocultarLoaderSerbia();
+    return;
+  }
+
+  mostrarLoaderSerbia();
+
+  const img = new Image();
+  pendingSerbiaImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingSerbiaImage !== img) return;
+
+    viewerSerbia.innerHTML = "";
+    viewerSerbia.appendChild(img);
+
+    viewerSerbia.style.display = "block";
+    ocultarLoaderSerbia();
+
+    pendingSerbiaImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingSerbiaImage !== img) return;
+
+    viewerSerbia.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerSerbia.style.display = "block";
+    ocultarLoaderSerbia();
+
+    pendingSerbiaImage = null;
+  };
+
+  img.src = url;
+}
+
 function renderMediaSerbia() {
   const media = viajeSerbia.medios[currentMediaSerbia];
   viewerSerbia.innerHTML="";
+
   /******** IMAGEN ********/
   if(media.type==="image") {
-    const img=document.createElement("img");
-    img.src=media.src;
-    img.className="viewer-image";
-    viewerSerbia.appendChild(img);
+    cargarImagenSerbia(media.src);
   }
+
   /******** VIDEO ********/
-  else if(media.type==="video") {
-    const iframe=document.createElement("iframe");
-    iframe.src= media.src;
-    iframe.height = "100%";
+  else if (media.type === "video") {
+
+    ocultarLoaderSerbia();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
     iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
     iframe.allow = "autoplay; encrypted-media";
-    iframe.allowFullscreen = false;
+    iframe.allowFullscreen = true;
+
+    viewerSerbia.style.display = "block";
     viewerSerbia.appendChild(iframe);
   }
+
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");

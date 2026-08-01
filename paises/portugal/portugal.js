@@ -6,6 +6,9 @@ const prevBtnPortugal = document.getElementById("prevBtnPortugal");
 const nextBtnPortugal = document.getElementById("nextBtnPortugal");
 const mediaIndexPortugal = document.getElementById("mediaIndexPortugal");
 const totalMediaPortugal = document.getElementById("totalMediaPortugal");
+const loaderPortugal = document.getElementById("loaderPortugal");
+let currentMediaPortugal = 0;
+let pendingPortugalImage = null;
 
 /****************************************************/
 /* DATOS DEL VIAJE */
@@ -122,7 +125,7 @@ const viajePortugal = {
     /* 106) Viaje de fin de curso 4º ESO - Abril 2013 */
     { type: "image", src: "https://i.postimg.cc/WbcyCZyH/106.jpg"},
     { type: "image", src: "https://i.postimg.cc/TYyP7ZZ9/107.png"},
-    { type: "youtube", src: "https://www.youtube.com/embed/8vc2MJ5RiVE"},
+    { type: "video", src: "https://streamable.com/e/jfpdo8"},
     { type: "image", src: "https://i.postimg.cc/VL3k3Kwc/109.png"},
     { type: "image", src: "https://i.postimg.cc/2y1CtZX6/110.jpg"},
     { type: "image", src: "https://i.postimg.cc/5tm9Q1Cx/111.jpg"},
@@ -131,37 +134,89 @@ const viajePortugal = {
     { type: "image", src: "https://i.postimg.cc/DfpZc2Y0/114.png"},
     { type: "image", src: "https://i.postimg.cc/d1ts8X2G/115.png"},
     { type: "image", src: "https://i.postimg.cc/zBtJpj76/116.png"},
-    { type: "youtube", src: "https://www.youtube.com/embed/-__M_IdXoN0"},
-    { type: "youtube", src: "https://www.youtube.com/embed/ctNOn9zZ_oU"},
-    { type: "youtube", src: "https://www.youtube.com/embed/6WYIC4dZOHU"},
+    { type: "video", src: "https://streamable.com/e/it1umx"},
+    { type: "video", src: "https://streamable.com/e/uo178n"},
+    { type: "video", src: "https://streamable.com/e/h96uec"},
   ]
 };
-
-let currentMediaSerbia = 0;
 
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function renderMediaSerbia() {
-  const media = viajePortugal.medios[currentMediaSerbia];
+function mostrarLoaderPortugal() {
+  loaderPortugal.style.display = "block";
+  viewerPortugal.style.display = "none";
+}
+
+function ocultarLoaderPortugal() {
+  loaderPortugal.style.display = "none";
+}
+
+function cargarImagenPortugal(url) {
+  if (!url) {
+    viewerPortugal.innerHTML = "";
+    viewerPortugal.style.display = "none";
+    ocultarLoaderPortugal();
+    return;
+  }
+
+  mostrarLoaderPortugal();
+
+  const img = new Image();
+  pendingPortugalImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingPortugalImage !== img) return;
+
+    viewerPortugal.innerHTML = "";
+    viewerPortugal.appendChild(img);
+
+    viewerPortugal.style.display = "block";
+    ocultarLoaderPortugal();
+
+    pendingPortugalImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingPortugalImage !== img) return;
+
+    viewerPortugal.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerPortugal.style.display = "block";
+    ocultarLoaderPortugal();
+
+    pendingPortugalImage = null;
+  };
+
+  img.src = url;
+}
+
+function renderMediaPortugal() {
+  const media = viajePortugal.medios[currentMediaPortugal];
   viewerPortugal.innerHTML="";
+
   /******** IMAGEN ********/
   if(media.type==="image") {
-    const img=document.createElement("img");
-    img.src=media.src;
-    img.className="viewer-image";
-    viewerPortugal.appendChild(img);
+    cargarImagenPortugal(media.src);
   }
+
   /******** VIDEO ********/
-  else if(media.type==="video") {
-    const iframe=document.createElement("iframe");
-    iframe.src= media.src;
-    iframe.height = "100%";
+  else if (media.type === "video") {
+
+    ocultarLoaderPortugal();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
     iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
     iframe.allow = "autoplay; encrypted-media";
-    iframe.allowFullscreen = false;
+    iframe.allowFullscreen = true;
+
+    viewerPortugal.style.display = "block";
     viewerPortugal.appendChild(iframe);
   }
+
   /******** TEXTO ********/
   else if(media.type==="text") {
     const div=document.createElement("div");
@@ -170,7 +225,7 @@ function renderMediaSerbia() {
     viewerPortugal.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndexPortugal.value=currentMediaSerbia+1;
+  mediaIndexPortugal.value=currentMediaPortugal+1;
   totalMediaPortugal.textContent = viajePortugal.medios.length;
 }
 
@@ -178,34 +233,33 @@ function renderMediaSerbia() {
 /* SIGUIENTE */
 /****************************************************/
 nextBtnPortugal.addEventListener("click", () => {
-  currentMediaSerbia++;
-  if(currentMediaSerbia >= viajePortugal.medios.length) {
-    currentMediaSerbia=0;
+  currentMediaPortugal++;
+  if(currentMediaPortugal >= viajePortugal.medios.length) {
+    currentMediaPortugal=0;
   }
-  renderMediaSerbia();
+  renderMediaPortugal();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
 prevBtnPortugal.addEventListener("click",()=>{
-  currentMediaSerbia--;
-  if(currentMediaSerbia < 0) {
-    currentMediaSerbia=
+  currentMediaPortugal--;
+  if(currentMediaPortugal < 0) {
+    currentMediaPortugal=
     viajePortugal.medios.length-1;
   }
-  renderMediaSerbia();
+  renderMediaPortugal();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
 mediaIndexPortugal.addEventListener("change",()=>{
-  const value=
-  Number(mediaIndexPortugal.value);
+  const value=Number(mediaIndexPortugal.value);
   if(value>=1 && value<=viajePortugal.medios.length) {
-    currentMediaSerbia=value-1;
-    renderMediaSerbia();
+    currentMediaPortugal=value-1;
+    renderMediaPortugal();
   }
 });
 
@@ -224,4 +278,4 @@ document.addEventListener("keydown",(e)=>{
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMediaSerbia();
+renderMediaPortugal();
