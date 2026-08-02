@@ -100,7 +100,41 @@ const viajeMadrid = {
     /* Enero de 2026 - Roof Top Picalagartos de Madrid */
     { type: "image", src: "https://i.postimg.cc/MTG74SMh/IMG-20260802-182934-312.webp" },
     /* Enero de 2026 - El Corte Inglés y Mainframe */
-    { type: "image", src: "https://i.postimg.cc/v8ckj1nM/IMG-20260802-182628-062.jpg" }
+    { type: "image", src: "https://i.postimg.cc/v8ckj1nM/IMG-20260802-182628-062.jpg" },
+    /* 9/05/2026 - Fiesta en la Sala Ginger, Ponzano, Madrid */
+    { type: "video", src: "https://streamable.com/e/iw365b" },
+    { type: "image", src: "https://i.postimg.cc/1t81mr9v/IMG-20260803-003348-459.webp" },
+    /* 16/05/2026 - Ruta y baño por La Pedriza */
+    { type: "image", src: "https://i.postimg.cc/qvwP25qQ/IMG-20260803-003704-158.webp" },
+    { type: "image", src: "https://i.postimg.cc/qvwP25qj/IMG-20260803-003741-497.webp" },
+    { type: "image", src: "https://i.postimg.cc/C5pP3GdK/IMG-20260803-003847-179.webp" },
+    { type: "image", src: "https://i.postimg.cc/J0C6fNtn/IMG-20260803-004107-502.webp" },
+    { type: "video", src: "https://streamable.com/e/a798x7" },
+    { type: "image", src: "https://i.postimg.cc/5N1KpSZh/IMG-20260803-004218-071.webp" },
+    { type: "image", src: "https://i.postimg.cc/d1rnjh6z/IMG-20260803-004241-729.webp" },
+    { type: "image", src: "https://i.postimg.cc/JnZK5sxF/IMG-20260803-004352-536.webp" },
+    { type: "image", src: "https://i.postimg.cc/LXLv3JDw/IMG-20260803-004418-977.webp" },
+    { type: "image", src: "https://i.postimg.cc/SsCVfnd5/IMG-20260803-004441-717.webp" },
+    { type: "video", src: "https://streamable.com/e/svlv8h" },
+    { type: "video", src: "https://streamable.com/e/zxjeb4" },
+    { type: "video", src: "https://streamable.com/e/pees0d" },
+    { type: "image", src: "https://i.postimg.cc/JzHXk9Pc/IMG-20260803-004835-918.webp" },
+    { type: "image", src: "https://i.postimg.cc/Vk0tC3D4/IMG-20260803-004901-476.webp" },
+    { type: "video", src: "https://streamable.com/e/0cw20a" },
+    { type: "image", src: "https://i.postimg.cc/3x0GvPnF/IMG-20260803-005003-535.webp" },
+    { type: "video", src: "https://streamable.com/e/qihqr8" },
+    /* Mayo 2026 - Un miércoles cualquiera */
+    { type: "image", src: "https://i.postimg.cc/L6BhfmpV/IMG-20260803-001914-841.jpg" },
+    { type: "image", src: "https://i.postimg.cc/NjsFkZs9/IMG-20260802-185454-738.webp" },
+    { type: "image", src: "https://i.postimg.cc/g2zjH1zL/IMG-20260802-185639-304.webp" },
+    /* Mayo 2026 - The Champions Burger y Cheesecake Vicálvaro */
+    { type: "image", src: "https://i.postimg.cc/kgYJF4hG/IMG-20260802-184806-189.webp" },
+    { type: "image", src: "https://i.postimg.cc/x1pfyCFC/IMG-20260802-184850-464.webp" },
+    { type: "image", src: "https://i.postimg.cc/sgHj9X0g/IMG-20260802-184941-730.webp" },
+    { type: "image", src: "https://i.postimg.cc/K8pGrzsv/IMG-20260802-185042-941.jpg" },
+    /* 19/07/2026 - España Campeona del Mundo 2026 */
+    { type: "image", src: "https://i.postimg.cc/NfFgjmL6/IMG-20260720-WA0014.jpg" },
+    { type: "image", src: "https://i.postimg.cc/sDxVg71p/IMG-20260720-WA0015.jpg" }
   ]
 };
 
