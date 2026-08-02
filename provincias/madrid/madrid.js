@@ -1,9 +1,23 @@
-/*
-{ type: "image", src: "" },
-{ type: "youtube", src: "https://www.youtube.com/embed/" },
-*/
-const media =
-[
+/****************************************************/
+/* ELEMENTOS */
+/****************************************************/
+const viewerMadrid = document.getElementById("mediaViewerMadrid");
+const prevBtnMadrid = document.getElementById("prevBtnMadrid");
+const nextBtnMadrid = document.getElementById("nextBtnMadrid");
+const mediaIndexMadrid = document.getElementById("mediaIndexMadrid");
+const totalMediaMadrid = document.getElementById("totalMediaMadrid");
+const loaderMadrid = document.getElementById("loaderMadrid");
+let currentMediaMadrid = 0;
+let pendingMadridImage = null;
+
+/****************************************************/
+/* DATOS DEL VIAJE */
+/****************************************************/
+const viajeMadrid = {
+  nombre: "Madrid",
+  medios: [
+    /* La Vuelta España de Ciclismo pasando por mi calle */
+    { type: "video", src: "https://streamable.com/e/5f4ojb"},
     /* Enero de 2025 - Evento Binance */
     { type: "image", src: "https://i.postimg.cc/rFCMSTZY/binance01.jpg"},
     { type: "image", src: "https://i.postimg.cc/kgg3KbbB/binance02.webp"},
@@ -12,10 +26,10 @@ const media =
     /* Junio de 2025 - Despedida de Soltero de Colombi */
     { type: "image", src: "https://i.postimg.cc/x8dkCWf7/IMG-20250627-154547.png"},
     { type: "image", src: "https://i.postimg.cc/t70rytys/IMG-20250627-154044.png"},
-    { type: "youtube", src: "https://www.youtube.com/embed/z2VSs76sbHA"},
+    { type: "video", src: "https://streamable.com/e/h8qq4m"},
     { type: "image", src: "https://i.postimg.cc/63Nt53xq/IMG-20250628-181859.png"},
     { type: "image", src: "https://i.postimg.cc/nzYZsJnk/IMG-20250628-181916.png"},
-    { type: "youtube", src: "https://www.youtube.com/embed/ttZWCvyfsWE"},
+    { type: "video", src: "https://streamable.com/e/dz4co9"},
     { type: "image", src: "https://i.postimg.cc/BvFJ0FyR/IMG-20250628-182752-784.webp"},
     { type: "image", src: "https://i.postimg.cc/KvZpLsXJ/IMG-20250628-193912-274.webp"},
     { type: "image", src: "https://i.postimg.cc/vZTP2gZn/IMG-20250628-194243-902.webp"},
@@ -48,19 +62,19 @@ const media =
     { type: "image", src: "https://i.postimg.cc/wBnpQKxq/IMG-20250708-184828.png"},
     { type: "image", src: "https://i.postimg.cc/L8XFd4n4/IMG-20250708-184843.png"},
     /* Julio de 2025 - Explorando lagos */
-    { type: "youtube", src: "https://www.youtube.com/embed/XLOLo-Ik1qs"},
+    { type: "video", src: "https://streamable.com/e/5hluj6"},
     /* 19 de Julio de 2025 - Fiesta Rockera con amigos */
     { type: "image", src: "https://i.postimg.cc/fLSHv7Cf/IMG-20251017-180831.png"},
-    { type: "youtube", src: "https://www.youtube.com/embed/ZcdkhYWBTww"},
-    { type: "youtube", src: "https://www.youtube.com/embed/zWeClHSzGuI"},
+    { type: "video", src: "https://streamable.com/e/rndc32"},
+    { type: "video", src: "https://streamable.com/e/0ou0zs"},
     /* 23 de Julio de 2025 - Among us y preparación viaje a A Coruña */
     { type: "image", src: "https://i.postimg.cc/FKBWcCyp/IMG-20251017-181217.png"},
     /* 30 de Julio de 2025 - Celebrando el cumple de mi abuela */
     { type: "image", src: "https://i.postimg.cc/wvRWk52X/IMG-20251017-181713.png"},
     { type: "image", src: "https://i.postimg.cc/YSsngD6N/IMG-20251017-181947-479.webp"},
-    { type: "youtube", src: "https://www.youtube.com/embed/Zt8jOYfvLmo"},
+    { type: "video", src: "https://streamable.com/e/clmwvl"},
     /* 24 de agosto de 2025 - Día de Río Alberche, Madrid */
-    { type: "youtube", src: "https://www.youtube.com/embed/Rd8OqtF3QCw"},
+    { type: "video", src: "https://streamable.com/e/do36hc"},
     { type: "image", src: "https://i.postimg.cc/bvBCbVx9/IMG-20251017-182458-886.webp"},
     { type: "image", src: "https://i.postimg.cc/pLtBFhmL/IMG-20251017-182650-197.webp" },
     { type: "image", src: "https://i.postimg.cc/4xT197Yy/IMG-20251017-182756-231.webp" },
@@ -69,70 +83,163 @@ const media =
     /* 27 de agosto de 2025 - Cena cachopo post partido de padel con amigos */
     { type: "image", src: "https://i.postimg.cc/G203LCMX/IMG-20251017-183601.png" },
     /* 21 de septiembre de 2025 - Cumple familiar */
-    { type: "youtube", src: "https://www.youtube.com/embed/f-7jn5N9YHU" },
+    { type: "video", src: "https://streamable.com/e/ynunle" },
     /* 27 de septiembre de 2025 - Quedada amigos de Madrid centro */
-    { type: "youtube", src: "https://www.youtube.com/embed/oCVxutwvXnQ" },
+    { type: "video", src: "https://streamable.com/e/d7rr28" },
     { type: "image", src: "https://i.postimg.cc/90F6Vgjg/IMG-20251017-184622-170.webp" },
     { type: "image", src: "https://i.postimg.cc/mk2vRpGV/IMG-20251017-184801-180.webp" },
     /* Octubre de 2025 - Fiestas de Boadilla */
     { type: "image", src: "https://i.postimg.cc/JhjSjgLv/IMG-20251006-184303.png" },
-    { type: "youtube", src: "https://www.youtube.com/embed/5mxaB-2awww" },
-    { type: "youtube", src: "https://www.youtube.com/embed/l74rNrKKHgE" },
-    { type: "youtube", src: "https://www.youtube.com/embed/8Wn58dD0XFg" },
-    /* Octubre 2015 - Experiencias */
+    { type: "video", src: "https://streamable.com/e/zqvyx9" },
+    { type: "video", src: "https://streamable.com/e/1yu5j6" },
+    { type: "video", src: "https://streamable.com/e/1sbxu9" },
     { type: "image", src: "https://i.postimg.cc/5t8D8GVD/IMG-20251014-135724.png" },
-];
+    /* Enero de 2026 - Día de Reyes familiar */
+    { type: "image", src: "https://i.postimg.cc/66m0kyh3/IMG-20260802-182121-649.jpg" },
+    { type: "image", src: "https://i.postimg.cc/XNz8Rpgv/IMG-20260802-182334-280.jpg" },
+    /* Enero de 2026 - Roof Top Picalagartos de Madrid */
+    { type: "image", src: "https://i.postimg.cc/MTG74SMh/IMG-20260802-182934-312.webp" },
+    /* Enero de 2026 - El Corte Inglés y Mainframe */
+    { type: "image", src: "https://i.postimg.cc/v8ckj1nM/IMG-20260802-182628-062.jpg" }
+  ]
+};
 
-let currentIndex = 1;
-const totalMedia = media.length;
-
-const mediaViewer = document.getElementById('mediaViewer');
-const mediaInput = document.getElementById('mediaIndex');
-const totalSpan = document.getElementById('totalMedia');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-totalSpan.textContent = totalMedia;
-
-function loadMedia(index) {
-  if (index < 1) index = totalMedia;
-  if (index > totalMedia) index = 1;
-
-  const item = media[index - 1];
-  mediaViewer.innerHTML = "";
-
-  if (item.type === "image") {
-    const img = document.createElement("img");
-    img.src = item.src;
-    mediaViewer.appendChild(img);
-  } else if (item.type === "youtube") {
-    mediaViewer.innerHTML = "";
-    mediaViewer.style.width = "432px";
-    mediaViewer.style.height = "825px";
-
-    const iframe = document.createElement("iframe");
-    iframe.src = item.src + "?autoplay=1&rel=0";
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-    iframe.allowFullscreen = false;
-    iframe.style.width = "100%";  // ocupa todo el ancho del div
-    iframe.style.height = "100%"; // ocupa todo el alto del div
-    mediaViewer.appendChild(iframe);
-  }
-
-  currentIndex = index;
-  mediaInput.value = index;
+/****************************************************/
+/* RENDER DEL VISOR */
+/****************************************************/
+function mostrarLoaderMadrid() {
+  loaderMadrid.style.display = "block";
+  viewerMadrid.style.display = "none";
 }
 
-prevBtn.addEventListener('click', () => {
-  loadMedia(currentIndex - 1);
+function ocultarLoaderMadrid() {
+  loaderMadrid.style.display = "none";
+}
+
+function cargarImagenMadrid(url) {
+  if (!url) {
+    viewerMadrid.innerHTML = "";
+    viewerMadrid.style.display = "none";
+    ocultarLoaderMadrid();
+    return;
+  }
+
+  mostrarLoaderMadrid();
+
+  const img = new Image();
+  pendingMadridImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingMadridImage !== img) return;
+
+    viewerMadrid.innerHTML = "";
+    viewerMadrid.appendChild(img);
+
+    viewerMadrid.style.display = "block";
+    ocultarLoaderMadrid();
+
+    pendingMadridImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingMadridImage !== img) return;
+
+    viewerMadrid.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerMadrid.style.display = "block";
+    ocultarLoaderMadrid();
+
+    pendingMadridImage = null;
+  };
+
+  img.src = url;
+}
+
+function renderMediaMadrid() {
+  const media = viajeMadrid.medios[currentMediaMadrid];
+  viewerMadrid.innerHTML="";
+
+  /******** IMAGEN ********/
+  if(media.type==="image") {
+    cargarImagenMadrid(media.src);
+  }
+
+  /******** VIDEO ********/
+  else if (media.type === "video") {
+
+    ocultarLoaderMadrid();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
+    iframe.allow = "autoplay; encrypted-media";
+    iframe.allowFullscreen = true;
+
+    viewerMadrid.style.display = "block";
+    viewerMadrid.appendChild(iframe);
+  }
+
+  /******** TEXTO ********/
+  else if(media.type==="text") {
+    const div=document.createElement("div");
+    div.className="viewer-text";
+    div.innerHTML=media.content;
+    viewerMadrid.appendChild(div);
+  }
+  /******** CONTADOR ********/
+  mediaIndexMadrid.value=currentMediaMadrid+1;
+  totalMediaMadrid.textContent = viajeMadrid.medios.length;
+}
+
+/****************************************************/
+/* SIGUIENTE */
+/****************************************************/
+nextBtnMadrid.addEventListener("click", () => {
+  currentMediaMadrid++;
+  if(currentMediaMadrid >= viajeMadrid.medios.length) {
+    currentMediaMadrid=0;
+  }
+  renderMediaMadrid();
 });
 
-nextBtn.addEventListener('click', () => {
-  loadMedia(currentIndex + 1);
+/****************************************************/
+/* ANTERIOR */
+/****************************************************/
+prevBtnMadrid.addEventListener("click",()=>{
+  currentMediaMadrid--;
+  if(currentMediaMadrid < 0) {
+    currentMediaMadrid=
+    viajeMadrid.medios.length-1;
+  }
+  renderMediaMadrid();
 });
 
-mediaInput.addEventListener('change', () => {
-  loadMedia(parseInt(mediaInput.value));
+/****************************************************/
+/* SALTAR A PÁGINA */
+/****************************************************/
+mediaIndexMadrid.addEventListener("change",()=>{
+  const value=Number(mediaIndexMadrid.value);
+  if(value>=1 && value<=viajeMadrid.medios.length) {
+    currentMediaMadrid=value-1;
+    renderMediaMadrid();
+  }
 });
 
-loadMedia(currentIndex);
+/****************************************************/
+/* TECLADO */
+/****************************************************/
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="ArrowRight"){
+    nextBtnMadrid.click();
+  }
+  if(e.key==="ArrowLeft"){
+    prevBtnMadrid.click();
+  }
+});
+
+/****************************************************/
+/* INICIO */
+/****************************************************/
+renderMediaMadrid();
