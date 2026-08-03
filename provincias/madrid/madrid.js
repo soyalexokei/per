@@ -132,6 +132,20 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/x1pfyCFC/IMG-20260802-184850-464.webp" },
     { type: "image", src: "https://i.postimg.cc/sgHj9X0g/IMG-20260802-184941-730.webp" },
     { type: "image", src: "https://i.postimg.cc/K8pGrzsv/IMG-20260802-185042-941.jpg" },
+    /* Junio 2026 - Río Alberche */
+    { type: "video", src: "https://streamable.com/e/u7gsb4" },
+    /* Junio 2026 - Majadahonda */
+    { type: "video", src: "https://streamable.com/e/jsj81t" },
+    /* 20 Junio 2026 - Premiere House Ana y Juan Boadilla */
+    { type: "image", src: "https://i.postimg.cc/G3j6dTCD/IMG-20260803-173213-427.webp" },
+    { type: "image", src: "https://i.postimg.cc/MTm36Nhm/IMG-20260803-174103-778.webp" },
+    { type: "image", src: "https://i.postimg.cc/XJk1jmTc/IMG-20260803-174424-296.webp" },
+    { type: "image", src: "https://i.postimg.cc/zBF2z69w/IMG-20260803-174552-357.webp" },
+    { type: "image", src: "https://i.postimg.cc/MT1HvbD9/IMG-20260803-174631-938.jpg" },
+    { type: "image", src: "https://i.postimg.cc/ZnZR3B73/IMG-20260803-174705-237.jpg" },
+    { type: "image", src: "https://i.postimg.cc/mD7ktNw8/IMG-20260803-174737-106.jpg" },
+    { type: "image", src: "https://i.postimg.cc/Xq3JFGHw/IMG-20260803-174807-327.jpg" },
+    { type: "video", src: "https://streamable.com/e/e5pxe0" },
     /* 19/07/2026 - España Campeona del Mundo 2026 */
     { type: "image", src: "https://i.postimg.cc/NfFgjmL6/IMG-20260720-WA0014.jpg" },
     { type: "image", src: "https://i.postimg.cc/sDxVg71p/IMG-20260720-WA0015.jpg" }
