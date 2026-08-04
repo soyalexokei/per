@@ -151,10 +151,69 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/VN3fg5RZ/IMG-20260804-080310-908.jpg"},
     { type: "image", src: "https://i.postimg.cc/d0zs6DBp/IMG-20260804-080504-803.webp"},
     { type: "image", src: "https://i.postimg.cc/8Cqp4sHy/IMG-20260804-080537-004.jpg"},
+    { type: "image", src: "https://i.postimg.cc/gJTPmHNB/IMG-20260804-115821-387.jpg"},
+    { type: "image", src: "https://i.postimg.cc/GtTn2T5F/IMG-20260804-115850-646.webp"},
+    { type: "image", src: "https://i.postimg.cc/LXbM23NQ/IMG-20260804-115924-225.jpg"},
+    { type: "image", src: "https://i.postimg.cc/XJz04kQH/IMG-20260804-120036-946.jpg"},
+    { type: "image", src: "https://i.postimg.cc/76WywnmB/IMG-20260804-120120-569.jpg"},
+    { type: "image", src: "https://i.postimg.cc/vBNdbt30/IMG-20260804-120153-005.jpg"},
+    { type: "image", src: "https://i.postimg.cc/hj5qc1pp/IMG-20260804-120225-831.jpg"},
+    { type: "image", src: "https://i.postimg.cc/FRBQNVDG/IMG-20260804-120303-213.jpg"},
+    { type: "image", src: "https://i.postimg.cc/850VNmtb/IMG-20260804-120333-947.jpg"},
+    { type: "image", src: "https://i.postimg.cc/C1QVSsms/IMG-20260804-120406-491.jpg"},
+    { type: "image", src: "https://i.postimg.cc/63mNtfYL/IMG-20260804-120444-793.jpg"},
+    { type: "image", src: "https://i.postimg.cc/gJTPmHNy/IMG-20260804-120530-042.jpg"},
+    { type: "image", src: "https://i.postimg.cc/Tw4XfJCg/IMG-20260804-120622-209.jpg"},
+    { type: "image", src: "https://i.postimg.cc/PxRkTQ2p/IMG-20260804-120702-950.jpg"},
+    { type: "image", src: "https://i.postimg.cc/ydbzsyv3/IMG-20260804-120732-577.jpg"},
+    { type: "image", src: "https://i.postimg.cc/tTMHpN2V/IMG-20260804-120822-018.jpg"},
+    { type: "image", src: "https://i.postimg.cc/pT6tRJqj/IMG-20260804-121603-189.jpg"},
+    { type: "video", src: "https://streamable.com/e/o6tvzk" },
     { type: "video", src: "https://streamable.com/e/e5pxe0" },
+    /* 21/06/2026 - Día de río Alberche */
+    { type: "video", src: "https://streamable.com/e/3rn4iv" },
+    { type: "video", src: "https://streamable.com/e/zkdht3" },
+    /* 05/Julio/2026 - Picnic romántico */
+    { type: "image", src: "https://i.postimg.cc/QM1QLcrG/IMG-20260804-140451-653.jpg" },
+    { type: "image", src: "https://i.postimg.cc/h45frhkB/IMG-20260804-140538-879.jpg" },
+    { type: "image", src: "https://i.postimg.cc/mgQkBjtL/IMG-20260804-140513-512.jpg" },
+    /* A cuartos de final del Mundial 2026 */
+    { type: "image", src: "https://i.postimg.cc/1z7fjt8P/IMG-20260804-141028-289.jpg" },
+    { type: "image", src: "https://i.postimg.cc/SK1Jvsnk/IMG-20260804-141122-616.jpg" },
+    /* Fiesta por Moncloa */
+    { type: "image", src: "https://i.postimg.cc/MpWHZRRj/IMG-20260804-141313-390.webp" },
     /* 19/07/2026 - España Campeona del Mundo 2026 */
-    { type: "image", src: "https://i.postimg.cc/NfFgjmL6/IMG-20260720-WA0014.jpg" },
-    { type: "image", src: "https://i.postimg.cc/sDxVg71p/IMG-20260720-WA0015.jpg" }
+    { type: "image", src: "https://i.postimg.cc/vBRdTFj6/IMG-20260804-143255-392.webp" },
+    { type: "image", src: "https://i.postimg.cc/V6FH8xcX/IMG-20260804-143555-044.jpg" },
+    { type: "image", src: "https://i.postimg.cc/1tKYQkZw/IMG-20260804-143710-460.jpg" },
+    { type: "image", src: "https://i.postimg.cc/sXJ0rkRS/IMG-20260804-143807-144.jpg" },
+    { type: "image", src: "https://i.postimg.cc/HnhzWHv5/IMG-20260804-144055-411.webp"},
+    /* Incendios forestales */
+    { type: "image", src: "https://i.postimg.cc/265n1MZZ/IMG-20260804-144709-956.webp"},
+    { type: "video", src: "https://streamable.com/e/3lpa0i"},
+    { type: "video", src: "https://streamable.com/e/god3jo"},
+    { type: "video", src: "https://streamable.com/e/iro1tn"},
+    /* Cine: Spiderman Brand New Day - 29 Julio 2026 */
+    { type: "video", src: "https://streamable.com/e/ui74pv"},
+    { type: "image", src: "https://i.postimg.cc/9MTJpzpJ/IMG-20260804-175735-633.jpg"},
+    { type: "image", src: "https://i.postimg.cc/bJb3TdT6/IMG-20260804-175934-246.jpg"},
+    { type: "image", src: "https://i.postimg.cc/xCHtRqR5/IMG-20260804-180007-552.jpg"},
+    { type: "image", src: "https://i.postimg.cc/vmC0f5Wj/IMG-20260804-180058-434.jpg"},
+    { type: "image", src: "https://i.postimg.cc/sXSwc1cc/IMG-20260804-180140-964.jpg"},
+    { type: "image", src: "https://i.postimg.cc/yN2Lc0FG/IMG-20260804-180224-905.jpg"},
+    { type: "image", src: "https://i.postimg.cc/d0g5rG8g/IMG-20260804-180338-129.jpg"},
+    /* 31 julio 2026 - Fiesta por Madrid centro */
+    { type: "image", src: "https://i.postimg.cc/m28kDj4s/IMG-20260804-184804-458.jpg" },
+    { type: "image", src: "https://i.postimg.cc/tC2JTkbG/IMG-20260804-185032-357.jpg" },
+    { type: "image", src: "https://i.postimg.cc/DyB0Z6hV/IMG-20260804-185110-026.jpg" },
+    { type: "image", src: "https://i.postimg.cc/bN3rJgPc/IMG-20260804-185145-855.jpg" },
+    { type: "image", src: "https://i.postimg.cc/vH3TBhsS/IMG-20260804-185237-900.jpg" },
+    { type: "image", src: "https://i.postimg.cc/9FJ0Mbhg/IMG-20260804-185324-631.jpg" },
+    /* 1 agosto 2026 - Jowke */
+    { type: "image", src: "https://i.postimg.cc/tC2JTkjw/IMG-20260804-190125-287.jpg" },
+    { type: "image", src: "https://i.postimg.cc/FsDzRp46/IMG-20260804-190331-950.jpg" },
+    /* Post incendios forestales sierra oeste Madrid */
+    { type: "video", src: "https://streamable.com/e/bm0nmv" },
   ]
 };
 
