@@ -194,7 +194,8 @@ const aficiones = [
             },
             {img: "https://i.postimg.cc/TYZx8TsX/IMG20260309192412.jpg"},
             {img: "https://i.postimg.cc/dtzFMJxb/MG-0797.jpg"},
-            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"}
+            {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"},
+            {video: "https://streamable.com/e/8vny5w"},
         ]
     },
     //-- VAN LIFE
@@ -253,6 +254,14 @@ const aficiones = [
             {video: "https://streamable.com/e/eevhb0"},
             {video: "https://streamable.com/e/53mvce"},
             {video: "https://streamable.com/e/6u5uwx"}
+        ]
+    },
+    //-- Leer
+    {
+        titulo: "Libros que me he leído",
+        pagina: 0,
+        pages: [
+            {img: ""},
         ]
     },
     //-- IA VISUAL
