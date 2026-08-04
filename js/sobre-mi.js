@@ -37,6 +37,9 @@ const sobreMi = [
                 img: "https://i.postimg.cc/vZBPmgRp/wdewfewfewfe.jpg"
             },
             {img: "https://i.postimg.cc/yYnQBh51/sfhsafbjsdfsjadkvbvkjdsfhusdjk.jpg"},
+            {img: "https://i.postimg.cc/9M2byQyG/Imagen-CV.jpg"},
+            {img: "https://i.postimg.cc/3Rh12x21/Imagen-CV-Band-W.png"},
+            {img: "https://i.postimg.cc/RFmdwZww/IMG-20250814-202156.jpg"},
             {img: "https://i.postimg.cc/bv5N8LcP/1.jpg"},
             {img: "https://i.postimg.cc/RZXZp4gN/2.jpg"},
             {img: "https://i.postimg.cc/BvbQdkzN/3.jpg"},
@@ -168,6 +171,21 @@ const sobreMi = [
             {img: "https://i.postimg.cc/wv5YKdwb/Antepasados-hasta-mi.png"},
             {img: "https://i.postimg.cc/Jnyctbyv/Familiares-Paternos.png"},
             {img: "https://i.postimg.cc/zv7cFCjF/Familiares-Maternos.png"}
+        ]
+    },
+    //-- Amores
+    {
+        titulo: "Amores",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/YC3CtXb2/relacion1.png"},
+            {img: "https://i.postimg.cc/Qdbdj60D/relacion2.png"},
+            {img: "https://i.postimg.cc/5NmVzXLf/relacion3.png"},
+            {img: "https://i.postimg.cc/8zHzTytT/relacion4.png"},
+            {img: "https://i.postimg.cc/Hk2kTSBH/relacion5.png"},
+            {img: "https://i.postimg.cc/13H3yWJq/relacion6.png"},
+            {img: "https://i.postimg.cc/Wb7vZdgv/relacion7.png"},
+            {img: "https://i.postimg.cc/NF7WRnyX/otras-Relaciones.png"},
         ]
     }
 ];

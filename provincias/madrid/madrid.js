@@ -145,6 +145,12 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/ZnZR3B73/IMG-20260803-174705-237.jpg" },
     { type: "image", src: "https://i.postimg.cc/mD7ktNw8/IMG-20260803-174737-106.jpg" },
     { type: "image", src: "https://i.postimg.cc/Xq3JFGHw/IMG-20260803-174807-327.jpg" },
+    { type: "image", src: "https://i.postimg.cc/1zLmB4B1/IMG-20260804-080111-772.webp"},
+    { type: "image", src: "https://i.postimg.cc/zf9z737m/IMG-20260804-080147-387.jpg"},
+    { type: "image", src: "https://i.postimg.cc/W4QN8tnW/IMG-20260804-080227-544.jpg"},
+    { type: "image", src: "https://i.postimg.cc/VN3fg5RZ/IMG-20260804-080310-908.jpg"},
+    { type: "image", src: "https://i.postimg.cc/d0zs6DBp/IMG-20260804-080504-803.webp"},
+    { type: "image", src: "https://i.postimg.cc/8Cqp4sHy/IMG-20260804-080537-004.jpg"},
     { type: "video", src: "https://streamable.com/e/e5pxe0" },
     /* 19/07/2026 - España Campeona del Mundo 2026 */
     { type: "image", src: "https://i.postimg.cc/NfFgjmL6/IMG-20260720-WA0014.jpg" },

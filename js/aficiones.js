@@ -169,6 +169,12 @@ const aficiones = [
         titulo: "Gym",
         pagina: 0,
         pages: [
+            {img: "https://i.postimg.cc/5NPzfqp4/Intro-1.png"},
+            {img: "https://i.postimg.cc/Qx67jkSj/Intro-2.png"},
+            {img: "https://i.postimg.cc/VL7tzB4m/Intro-3.png"},
+            {img: "https://i.postimg.cc/TYkbTqQR/Intro-4.png"},
+            {img: "https://i.postimg.cc/gkMhGq4r/Intro-5.png"},
+            {img: "https://i.postimg.cc/ncdmnYTs/Intro-6.png"},
             {
                 text: `<p><b>Vídeo sobre mí entrenando en el gimnasio:</b></p>`,
                 video: "https://streamable.com/e/93rn4c"
