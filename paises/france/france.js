@@ -329,7 +329,7 @@ function cargarImagenFrancia(url) {
 }
 
 function renderMediaFrancia() {
-  const media = viajeGibraltar.medios[currentMediaFrancia];
+  const media = viajeFrancia.medios[currentMediaFrancia];
   viewerFrancia.innerHTML="";
 
   /******** IMAGEN ********/
