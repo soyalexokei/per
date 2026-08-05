@@ -261,7 +261,55 @@ const aficiones = [
         titulo: "Libros que me he leído",
         pagina: 0,
         pages: [
-            {img: ""},
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1oJX6tYY0LqpQvH0Y76XlOA" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/jSDp7y1k/51AUh-Lynh-L.jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/19hU4x3ipC61DmxEoKr3eCQ" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/bwZ7t15B/61kr-Xzz14t-L-AC-UF1000-1000-QL80.jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1g4wj4nsPHI-oCZYNYQ_kZA" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/bwZ7t155/71HC7rqarn-L-AC-UF1000-1000-QL80.jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1jXR9b0L6X9R6d6vMgX_AWQ" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/7Z5F2SRc/81Vkqq-XT7OL-UF1000-1000-QL80.jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1pZR4ls7btBd-oD43MhZopQ" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/sgMkh5LH/images.jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1KOiolwVdiiTbUmvEJQc7xQ" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/5tcRQTvZ/images-(1).jpg"/>
+                    </a>
+                `
+            },
+            {
+                text: `
+                    <a href="https://1024terabox.com/s/1P0fDZYW_lHTEvIpYZLPyVA" target="_blank">
+                        <img width="50%" src="https://i.postimg.cc/jjzkHc4z/81z-P3c9Out-L-UF350-350-QL50.jpg"/>
+                    </a>
+                `
+            },
         ]
     },
     //-- IA VISUAL
