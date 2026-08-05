@@ -1,9 +1,21 @@
-/*
-{ type: "image", src: "" },
-{ type: "youtube", src: "https://www.youtube.com/embed/" },
-*/
-const media =
-[
+/****************************************************/
+/* ELEMENTOS */
+/****************************************************/
+const viewerFrancia = document.getElementById("mediaViewerFrancia");
+const prevBtnFrancia = document.getElementById("prevBtnFrancia");
+const nextBtnFrancia = document.getElementById("nextBtnFrancia");
+const mediaIndexFrancia = document.getElementById("mediaIndexFrancia");
+const totalMediaFrancia = document.getElementById("totalMediaFrancia");
+const loaderFrancia = document.getElementById("loaderFrancia");
+let currentMediaFrancia = 0;
+let pendingFranciaImage = null;
+
+/****************************************************/
+/* DATOS DEL VIAJE */
+/****************************************************/
+const viajeFrancia = {
+  nombre: "Francia",
+  medios: [
     { type: "image", src: "https://i.postimg.cc/Ls4jft4d/1.jpg"},
     { type: "image", src: "https://i.postimg.cc/DzCLcSmS/2.jpg"},
     { type: "image", src: "https://i.postimg.cc/rp570LpZ/20150912-221620.jpg"},
@@ -241,7 +253,7 @@ const media =
     { type: "image", src: "https://i.postimg.cc/Pf40MYXH/Construccion7.jpg"},
     { type: "image", src: "https://i.postimg.cc/FRXwTxkr/Construccion8.jpg"},
     { type: "image", src: "https://i.postimg.cc/mrYmgWh4/P1000039.jpg"},
-    { type: "youtube", src: "https://www.youtube.com/embed/Z8YHqR7K5_8"},
+    { type: "video", src: "https://streamable.com/e/6ntmnb"},
     { type: "image", src: "https://i.postimg.cc/9XtYPctq/P1000008.png"},
     { type: "image", src: "https://i.postimg.cc/hvgbFYgj/P1000009.png"},
     { type: "image", src: "https://i.postimg.cc/d1GmxYbp/P1000005.png"},
@@ -262,58 +274,144 @@ const media =
     { type: "image", src: "https://i.postimg.cc/g08Nf8Rg/20150913-121004-HDR.jpg"},
     { type: "image", src: "https://i.postimg.cc/s1C20FR6/Fin.jpg"},
     { type: "image", src: "https://i.postimg.cc/C5GBjCZf/Avion.png"},
-];
+  ]
+};
 
-let currentIndex = 1;
-const totalMedia = media.length;
-
-const mediaViewer = document.getElementById('mediaViewer');
-const mediaInput = document.getElementById('mediaIndex');
-const totalSpan = document.getElementById('totalMedia');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-totalSpan.textContent = totalMedia;
-
-function loadMedia(index) {
-  if (index < 1) index = totalMedia;
-  if (index > totalMedia) index = 1;
-
-  const item = media[index - 1];
-  mediaViewer.innerHTML = "";
-
-  if (item.type === "image") {
-    const img = document.createElement("img");
-    img.src = item.src;
-    mediaViewer.appendChild(img);
-  } else if (item.type === "youtube") {
-    mediaViewer.innerHTML = "";
-    mediaViewer.style.width = "432px";
-    mediaViewer.style.height = "825px";
-
-    const iframe = document.createElement("iframe");
-    iframe.src = item.src + "?autoplay=1&rel=0";
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-    iframe.allowFullscreen = false;
-    iframe.style.width = "100%";  // ocupa todo el ancho del div
-    iframe.style.height = "100%"; // ocupa todo el alto del div
-    mediaViewer.appendChild(iframe);
-  }
-
-  currentIndex = index;
-  mediaInput.value = index;
+/****************************************************/
+/* RENDER DEL VISOR */
+/****************************************************/
+function mostrarLoaderFrancia() {
+  loaderFrancia.style.display = "block";
+  viewerFrancia.style.display = "none";
 }
 
-prevBtn.addEventListener('click', () => {
-  loadMedia(currentIndex - 1);
+function ocultarLoaderFrancia() {
+  loaderFrancia.style.display = "none";
+}
+
+function cargarImagenFrancia(url) {
+  if (!url) {
+    viewerFrancia.innerHTML = "";
+    viewerFrancia.style.display = "none";
+    ocultarLoaderFrancia();
+    return;
+  }
+
+  mostrarLoaderFrancia();
+
+  const img = new Image();
+  pendingFranciaImage = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingFranciaImage !== img) return;
+
+    viewerFrancia.innerHTML = "";
+    viewerFrancia.appendChild(img);
+
+    viewerFrancia.style.display = "block";
+    ocultarLoaderFrancia();
+
+    pendingFranciaImage = null;
+  };
+
+  img.onerror = () => {
+    if (pendingFranciaImage !== img) return;
+
+    viewerFrancia.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerFrancia.style.display = "block";
+    ocultarLoaderFrancia();
+
+    pendingFranciaImage = null;
+  };
+
+  img.src = url;
+}
+
+function renderMediaFrancia() {
+  const media = viajeGibraltar.medios[currentMediaFrancia];
+  viewerFrancia.innerHTML="";
+
+  /******** IMAGEN ********/
+  if(media.type==="image") {
+    cargarImagenFrancia(media.src);
+  }
+
+  /******** VIDEO ********/
+  else if (media.type === "video") {
+
+    ocultarLoaderFrancia();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
+    iframe.allow = "autoplay; encrypted-media";
+    iframe.allowFullscreen = true;
+
+    viewerFrancia.style.display = "block";
+    viewerFrancia.appendChild(iframe);
+  }
+
+  /******** TEXTO ********/
+  else if(media.type==="text") {
+    const div=document.createElement("div");
+    div.className="viewer-text";
+    div.innerHTML=media.content;
+    viewerFrancia.appendChild(div);
+  }
+  /******** CONTADOR ********/
+  mediaIndexFrancia.value=currentMediaFrancia+1;
+  totalMediaFrancia.textContent = viajeFrancia.medios.length;
+}
+
+/****************************************************/
+/* SIGUIENTE */
+/****************************************************/
+nextBtnFrancia.addEventListener("click", () => {
+  currentMediaFrancia++;
+  if(currentMediaFrancia >= viajeFrancia.medios.length) {
+    currentMediaFrancia=0;
+  }
+  renderMediaFrancia();
 });
 
-nextBtn.addEventListener('click', () => {
-  loadMedia(currentIndex + 1);
+/****************************************************/
+/* ANTERIOR */
+/****************************************************/
+prevBtnFrancia.addEventListener("click",()=>{
+  currentMediaFrancia--;
+  if(currentMediaFrancia < 0) {
+    currentMediaFrancia = viajeFrancia.medios.length-1;
+  }
+  renderMediaFrancia();
 });
 
-mediaInput.addEventListener('change', () => {
-  loadMedia(parseInt(mediaInput.value));
+/****************************************************/
+/* SALTAR A PÁGINA */
+/****************************************************/
+mediaIndexFrancia.addEventListener("change",()=>{
+  const value=Number(mediaIndexFrancia.value);
+  if(value>=1 && value<=viajeFrancia.medios.length) {
+    currentMediaFrancia=value-1;
+    renderMediaFrancia();
+  }
 });
 
-loadMedia(currentIndex);
+/****************************************************/
+/* TECLADO */
+/****************************************************/
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="ArrowRight"){
+    nextBtnFrancia.click();
+  }
+  if(e.key==="ArrowLeft"){
+    prevBtnFrancia.click();
+  }
+});
+
+/****************************************************/
+/* INICIO */
+/****************************************************/
+renderMediaFrancia();
