@@ -681,6 +681,107 @@ footer p{margin:0;color:#a0bbb5}
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.croatia_body {
+    margin:0;
+    padding:20px;
+
+    min-height:100vh;
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:flex-start;
+
+    overflow:auto;
+
+    background:#111;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.planning_croatia{
+    width:70vw;
+    margin-top:30px;
+    margin-bottom:30px;
+    overflow-x:auto;
+    color: white;
+    font-style: bold;
+}
+
+.planning_croatia h2 {
+    margin: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.tabla_planning{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+
+    background:#1b1b1b;
+    color:#fff;
+
+    border:2px solid #555;
+}
+
+.tabla_planning th,
+.tabla_planning td{
+    border:1px solid #555;   /* Línea de separación entre todas las celdas */
+    padding:8px;
+    text-align:center;
+    height:60px;
+}
+
+.tabla_planning thead th{
+    background:#2d6cdf;
+    color:#fff;
+    border:2px solid #555;
+}
+
+.tabla_planning tbody th{
+    background:#222;
+    width:70px;
+    border:2px solid #555;
+}
+
+.tabla_planning td{
+    height:55px;
+    background:#181818;
+    vertical-align:top;
+    transition:background .2s;
+}
+
+.tabla_planning td:hover{
+    background:#2b2b2b;
+}
+
+.playa{
+    background:#4fc3f7 !important;
+    color:#111;
+    font-weight:bold;
+}
+
+.ruta{
+    background:#ffb74d !important;
+    color:#111;
+    font-weight:bold;
+}
+
+.hotel{
+    background:#81c784 !important;
+    color:#111;
+    font-weight:bold;
+}
+
+.comida{
+    background:#e57373 !important;
+    color:#111;
+    font-weight:bold;
+}
 
 /* ================================
         BOTON HOME IZQUIERDA
@@ -886,6 +987,10 @@ footer p{margin:0;color:#a0bbb5}
 
     }
 
+    .planning_croatia{
+        width:75vw;
+    }
+
 
     .control_paises {
 
@@ -937,6 +1042,44 @@ footer p{margin:0;color:#a0bbb5}
 
         overflow:auto;
 
+    }
+
+    .planning_croatia{
+        width:95vw;
+        margin-top:170px;
+        margin-bottom:90px;
+    }
+
+    .tabla_planning{
+        font-size:12px;
+    }
+
+    .tabla_planning th,
+    .tabla_planning td{
+        padding:6px;
+    }
+
+    .tabla_planning thead th{
+        position:sticky;
+        top:0;
+        z-index:5;
+    }
+
+    .tabla_planning tbody th{
+        position:sticky;
+        left:0;
+        z-index:4;
+        background:#222;
+    }
+
+    .tabla_planning td{
+        min-height:45px;
+        height:auto;
+    }
+
+    .planning_croatia h2{
+        font-size:20px;
+        letter-spacing:2px;
     }
 
 
