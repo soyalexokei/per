@@ -184,6 +184,7 @@ const sobreMi = [
             {img: "https://i.postimg.cc/8zHzTytT/relacion4.png"},
             {img: "https://i.postimg.cc/Hk2kTSBH/relacion5.png"},
             {img: "https://i.postimg.cc/13H3yWJq/relacion6.png"},
+            {img: "https://i.postimg.cc/xTKN15Gg/relacion8.png"},
             {img: "https://i.postimg.cc/Wb7vZdgv/relacion7.png"},
             {img: "https://i.postimg.cc/NF7WRnyX/otras-Relaciones.png"},
         ]
