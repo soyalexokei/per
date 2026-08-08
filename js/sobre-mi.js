@@ -169,8 +169,15 @@ const sobreMi = [
         pagina: 0,
         pages: [
             {img: "https://i.postimg.cc/wv5YKdwb/Antepasados-hasta-mi.png"},
+            {
+                text: `
+                    <h3>Todos mis apellidos junto a mi nombre:</h3>
+                    <p><b>Nombre:</b> Alejandro</p>
+                    <p><b>Apellidos:</b> Fernández Pérez Escalante Estébanez Megino Llanos Castaño Nieto Nieto -?- Almellones Matilla Tineo Bayón Ruiz Alonso</p>
+                `
+            },
             {img: "https://i.postimg.cc/Jnyctbyv/Familiares-Paternos.png"},
-            {img: "https://i.postimg.cc/zv7cFCjF/Familiares-Maternos.png"}
+            {img: "https://i.postimg.cc/zv7cFCjF/Familiares-Maternos.png"},
         ]
     },
     //-- Amores

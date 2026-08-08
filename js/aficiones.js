@@ -450,7 +450,8 @@ const aficiones = [
             {img: "https://i.postimg.cc/fbTfrSF6/nikejordanazules.png"},
             {img: "https://i.postimg.cc/6QjfJ5xT/nikejordanmidpatentbwg.png"}, 
             {img: "https://i.postimg.cc/sxFnqD57/chaqueta.png"}, 
-            {img: "https://i.postimg.cc/5NchqyX7/IMG-20250903-095121.png"}
+            {img: "https://i.postimg.cc/5NchqyX7/IMG-20250903-095121.png"},
+            {img: "https://i.postimg.cc/x1TDvXLY/Nike-Air-Force-One-LV8-Platinum-Tint.png"},
         ]
     },
     //-- FOOTBALL EVENTS
@@ -970,6 +971,15 @@ const aficiones = [
                     </ul>
                 `
             }
+        ]
+    },
+    //-- COMIDA JAPONESA
+    {
+        titulo: "Comida japonesa",
+        pagina: 0,
+        pages: [
+            {img: ""},
+            {img: ""},
         ]
     }
 ];
