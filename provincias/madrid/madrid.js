@@ -16,7 +16,7 @@ let pendingMadridImage = null;
 const viajeMadrid = {
   nombre: "Madrid",
   medios: [
-    /* La Vuelta España de Ciclismo pasando por mi calle */
+    /* La Vuelta España 2017 de Ciclismo pasando por mi calle */
     { type: "video", src: "https://streamable.com/e/5f4ojb"},
     /* Enero de 2025 - Evento Binance */
     { type: "image", src: "https://i.postimg.cc/rFCMSTZY/binance01.jpg"},
@@ -214,6 +214,8 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/FsDzRp46/IMG-20260804-190331-950.jpg" },
     /* Post incendios forestales sierra oeste Madrid */
     { type: "video", src: "https://streamable.com/e/bm0nmv" },
+    /* Fiesta Madriz Madrid Bajos Argüelles */
+    { type: "image", src: "https://i.postimg.cc/x1gb21Qy/Madriz-Madrid-Rock-Bar.png"},
   ]
 };
 

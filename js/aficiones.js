@@ -978,8 +978,12 @@ const aficiones = [
         titulo: "Comida japonesa",
         pagina: 0,
         pages: [
-            {img: ""},
-            {img: ""},
+            {img: "https://i.postimg.cc/g2LdmGfr/1.png"},
+            {img: "https://i.postimg.cc/fRSZDM6y/2.png"},
+            {img: "https://i.postimg.cc/rwRcMqvV/3.png"},
+            {img: "https://i.postimg.cc/Dw4Fn7t2/4.png"},
+            {img: "https://i.postimg.cc/L8gR2mrm/5.png"},
+            {img: "https://i.postimg.cc/RZJ94vjC/6.png"},
         ]
     }
 ];
