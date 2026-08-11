@@ -216,6 +216,8 @@ const viajeMadrid = {
     { type: "video", src: "https://streamable.com/e/bm0nmv" },
     /* Fiesta Madriz Madrid Bajos Argüelles */
     { type: "image", src: "https://i.postimg.cc/x1gb21Qy/Madriz-Madrid-Rock-Bar.png"},
+    /* Por el monte de El Pardo (Madrid) - 11/08/2026 */
+    { type: "video", src: "https://streamable.com/e/jybx0m"},
   ]
 };
 

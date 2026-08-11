@@ -452,6 +452,9 @@ const aficiones = [
             {img: "https://i.postimg.cc/sxFnqD57/chaqueta.png"}, 
             {img: "https://i.postimg.cc/5NchqyX7/IMG-20250903-095121.png"},
             {img: "https://i.postimg.cc/x1TDvXLY/Nike-Air-Force-One-LV8-Platinum-Tint.png"},
+            {img: "https://i.postimg.cc/CLTyX9sm/moda-ohsahfsdf.png"},
+            {img: "https://i.postimg.cc/c4yq2PBm/moda-podoiff.png"},
+            {img: "https://i.postimg.cc/bNcXW49R/moda-lspddsjf.png"},
         ]
     },
     //-- FOOTBALL EVENTS

@@ -1,71 +1,168 @@
-//-- Variables. https://www.youtube.com/embed/ ?autoplay=1&loop=1&playlist= &controls=0&rel=0
-var videosIDcuenca =
-[
-    "", /* 1 */
-    "",
-    "",
-    "",
-    "",
-    "",
-];
-var imagenesIDcuenca =
-[
-    "https://i.postimg.cc/nz1GtMzt/1.png", /* 1 */
-    "https://i.postimg.cc/Y0qf2kGL/2.png",
-    "https://i.postimg.cc/wjSVXSPn/3.png",
-    "https://i.postimg.cc/hGT0p2Rv/4.png",
-    "https://i.postimg.cc/tJSdYfWS/5.png",
-    "https://i.postimg.cc/XJWkh9n8/6.png",
-];
-var indiceCuenca = 1;
-var pantallaCuenca = document.getElementById('ver-cuenca');
-var imgCuenca = document.createElement("img");
-var iframeCuenca = document.createElement("iframe");
+/****************************************************/
+/* ELEMENTOS DEL VIAJE */
+/****************************************************/
+const viewerCuenca = document.getElementById("mediaViewerCuenca");
+const prevBtnCuenca = document.getElementById("prevBtnCuenca");
+const nextBtnCuenca = document.getElementById("nextBtnCuenca");
+const mediaIndexCuenca = document.getElementById("mediaIndexCuenca");
+const totalMediaCuenca = document.getElementById("totalMediaCuenca");
+const loaderCuenca = document.getElementById("loaderCuenca");
+let currentMediaCuenca = 0;
+let pendingImageCuenca = null;
 
-//-- Ctes.
-const totalCuenca = 6;
+/****************************************************/
+/* DATOS DEL VIAJE */
+/****************************************************/
+const viajeCuenca = {
+  nombre: "Cuenca",
+  medios: [
+    { type: "image", src: "https://i.postimg.cc/nz1GtMzt/1.png"},
+    { type: "image", src: "https://i.postimg.cc/Y0qf2kGL/2.png"},
+    { type: "image", src: "https://i.postimg.cc/wjSVXSPn/3.png"},
+    { type: "image", src: "https://i.postimg.cc/hGT0p2Rv/4.png"},
+    { type: "image", src: "https://i.postimg.cc/tJSdYfWS/5.png"},
+    { type: "image", src: "https://i.postimg.cc/XJWkh9n8/6.png"},
+  ]
+};
 
-function mostrarCuenca(auxCuenca) {
-    
-    //-- Limpiar la pantalla.
-    pantallaCuenca.innerHTML = "";
-
-    //-- Verificar si es una imagen o un vídeo.
-    if(imagenesIDcuenca[auxCuenca-1]) {
-        imgCuenca.src = imagenesIDcuenca[auxCuenca-1];
-        pantallaCuenca.appendChild(imgCuenca);
-    }else {
-        iframeCuenca.src = videosIDcuenca[auxCuenca-1];
-        iframeCuenca.width = "400";
-        iframeCuenca.height = "533";
-        iframeCuenca.setAttribute("allow", "autoplay");
-        iframeCuenca.setAttribute("allowFullscreen", "false");
-        pantallaCuenca.appendChild(iframeCuenca);
-    }
+/****************************************************/
+/* PROCESAMIENTO DEL VIAJE */
+/****************************************************/
+/****************************************************/
+/* RENDER DEL VISOR */
+/****************************************************/
+function mostrarLoaderCuenca() {
+  loaderCuenca.style.display = "block";
+  viewerCuenca.style.display = "none";
 }
 
-function imgAnteriorCuenca() {
-    if(indiceCuenca > 1) {
-        indiceCuenca--;
-    }else {
-        indiceCuenca = totalCuenca;
-    }
-    mostrarCuenca(indiceCuenca);
+function ocultarLoaderCuenca() {
+  loaderCuenca.style.display = "none";
 }
 
-function imgSiguienteCuenca() {
-    if(indiceCuenca < totalCuenca) {
-        indiceCuenca++;
-    }else {
-        indiceCuenca = 1;
-    }
-    mostrarCuenca(indiceCuenca);
+function cargarImagenCuenca(url) {
+  if (!url) {
+    viewerCuenca.innerHTML = "";
+    viewerCuenca.style.display = "none";
+    ocultarLoaderCuenca();
+    return;
+  }
+
+  mostrarLoaderCuenca();
+
+  const img = new Image();
+  pendingImageCuenca = img;
+
+  img.onload = () => {
+    // Si mientras cargaba se solicitó otra imagen, cancelamos esta
+    if (pendingImageCuenca !== img) return;
+
+    viewerCuenca.innerHTML = "";
+    viewerCuenca.appendChild(img);
+
+    viewerCuenca.style.display = "block";
+    ocultarLoaderCuenca();
+
+    pendingImageCuenca = null;
+  };
+
+  img.onerror = () => {
+    if (pendingImageCuenca !== img) return;
+
+    viewerCuenca.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerCuenca.style.display = "block";
+    ocultarLoaderCuenca();
+
+    pendingImageCuenca = null;
+  };
+
+  img.src = url;
 }
 
-//-- Pulsar flecha izquierda.
-document.getElementById("izq-cuenca").addEventListener("click", imgAnteriorCuenca);
-//-- Pulsar flecha derecha.
-document.getElementById("der-cuenca").addEventListener("click", imgSiguienteCuenca);
+function renderMediaCuenca() {
+  const media = viajeCuenca.medios[currentMediaCuenca];
+  viewerCuenca.innerHTML="";
 
-//-- Punto de inicio del programa.
-mostrarCuenca(indiceCuenca);
+  /******** IMAGEN ********/
+  if(media.type==="image") {
+    cargarImagenCuenca(media.src);
+  }
+
+  /******** VIDEO ********/
+  else if (media.type === "video") {
+
+    ocultarLoaderCuenca();
+
+    const iframe = document.createElement("iframe");
+    iframe.src = media.src;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.loading = "lazy";
+    iframe.allow = "autoplay; encrypted-media";
+    iframe.allowFullscreen = true;
+
+    viewerCuenca.style.display = "block";
+    viewerCuenca.appendChild(iframe);
+  }
+
+  /******** TEXTO ********/
+  else if(media.type==="text") {
+    const div=document.createElement("div");
+    div.className="viewer-text";
+    div.innerHTML=media.content;
+    viewerCuenca.appendChild(div);
+  }
+  /******** CONTADOR ********/
+  mediaIndexCuenca.value=currentMediaCuenca+1;
+  totalMediaCuenca.textContent = viajeCuenca.medios.length;
+}
+
+/****************************************************/
+/* SIGUIENTE */
+/****************************************************/
+nextBtnCuenca.addEventListener("click", () => {
+  currentMediaCuenca++;
+  if(currentMediaCuenca >= viajeCuenca.medios.length) {
+    currentMediaCuenca=0;
+  }
+  renderMediaCuenca();
+});
+
+/****************************************************/
+/* ANTERIOR */
+/****************************************************/
+prevBtnCuenca.addEventListener("click",()=>{
+  currentMediaCuenca--;
+  if(currentMediaCuenca < 0) {
+    currentMediaCuenca = viajeCuenca.medios.length-1;
+  }
+  renderMediaCuenca();
+});
+
+/****************************************************/
+/* SALTAR A PÁGINA */
+/****************************************************/
+mediaIndexCuenca.addEventListener("change", () => {
+  const value=Number(mediaIndexCuenca.value);
+  if(value>=1 && value<=viajeCuenca.medios.length) {
+    currentMediaCuenca=value-1;
+    renderMediaCuenca();
+  }
+});
+
+/****************************************************/
+/* TECLADO */
+/****************************************************/
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="ArrowRight"){
+    nextBtnCuenca.click();
+  }
+  if(e.key==="ArrowLeft"){
+    prevBtnCuenca.click();
+  }
+});
+
+/****************************************************/
+/* INICIO */
+/****************************************************/
+renderMediaCuenca();

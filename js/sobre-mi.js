@@ -30,6 +30,7 @@ const sobreMi = [
         titulo: "Álbum",
         pagina: 0,
         pages: [
+            {img: "https://i.postimg.cc/dV7JKGTj/IMG-20260811-184121014-HDR.png"},
             {
                 text: `
                     <p>Acrobatic at the Willis Tower of Chicago (USA):</p>
