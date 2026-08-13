@@ -455,6 +455,7 @@ const aficiones = [
             {img: "https://i.postimg.cc/CLTyX9sm/moda-ohsahfsdf.png"},
             {img: "https://i.postimg.cc/c4yq2PBm/moda-podoiff.png"},
             {img: "https://i.postimg.cc/bNcXW49R/moda-lspddsjf.png"},
+            {img: "https://i.postimg.cc/sDSqcqs4/IMG-20260813-144808430-HDR.png"},
         ]
     },
     //-- FOOTBALL EVENTS

@@ -16,7 +16,15 @@ let pendingMadridImage = null;
 const viajeMadrid = {
   nombre: "Madrid",
   medios: [
-    /* La Vuelta España 2017 de Ciclismo pasando por mi calle */
+    /* 2015 */
+    { type: "image", src: "https://i.postimg.cc/PqWyBnPr/gfdsg.png"},
+    { type: "image", src: "https://i.postimg.cc/W4G8Qch0/gfdghtht.png"},
+    { type: "image", src: "https://i.postimg.cc/6QrcDxyV/grgerh.png"},
+    { type: "image", src: "https://i.postimg.cc/d026zcLJ/iuykiyk.png"},
+    { type: "image", src: "https://i.postimg.cc/1zGBL1fS/fdshfhs.png"},
+    /* 2016 */
+    { type: "image", src: "https://i.postimg.cc/hGLsHRfB/dfhhd.png"},
+    /* 2017 */
     { type: "video", src: "https://streamable.com/e/5f4ojb"},
     /* Enero de 2025 - Evento Binance */
     { type: "image", src: "https://i.postimg.cc/rFCMSTZY/binance01.jpg"},
@@ -218,6 +226,13 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/x1gb21Qy/Madriz-Madrid-Rock-Bar.png"},
     /* Por el monte de El Pardo (Madrid) - 11/08/2026 */
     { type: "video", src: "https://streamable.com/e/jybx0m"},
+    /* Eclipse solar 2026 */
+    { type: "image", src: "https://i.postimg.cc/kMjYy9rr/hgfjgvj.png"},
+    { type: "image", src: "https://i.postimg.cc/pXpGG7vs/IMG-20260812-203135489-HDR.jpg"},
+    { type: "image", src: "https://i.postimg.cc/GhH77NRM/etgerher.png"},
+    { type: "image", src: "https://i.postimg.cc/NGNCxt33/IMG-20260812-203157015-HDR.jpg"},
+    { type: "image", src: "https://i.postimg.cc/fTJ22Fs2/IMG-20260812-202852535-HDR.jpg"},
+    { type: "image", src: "https://i.postimg.cc/nVdS1xyW/IMG-20260812-WA0008-2.jpg"},
   ]
 };
 

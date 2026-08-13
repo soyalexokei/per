@@ -30,6 +30,7 @@ const sobreMi = [
         titulo: "Álbum",
         pagina: 0,
         pages: [
+            {img: "https://i.postimg.cc/2SGH9fJ4/IMG-20260813-144728149.png"},
             {img: "https://i.postimg.cc/dV7JKGTj/IMG-20260811-184121014-HDR.png"},
             {
                 text: `
