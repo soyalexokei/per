@@ -21,8 +21,14 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/W4G8Qch0/gfdghtht.png"},
     { type: "image", src: "https://i.postimg.cc/6QrcDxyV/grgerh.png"},
     { type: "image", src: "https://i.postimg.cc/d026zcLJ/iuykiyk.png"},
+    { type: "image", src: "https://i.postimg.cc/cJtYPmmy/dsgsgsg.png"},
     { type: "image", src: "https://i.postimg.cc/1zGBL1fS/fdshfhs.png"},
+    { type: "image", src: "https://i.postimg.cc/JhHJSqQN/sfgdghs.png"},
+    { type: "image", src: "https://i.postimg.cc/MpFVs41Y/htrhhtr.png"},
+    { type: "image", src: "https://i.postimg.cc/N02TZ4xr/dfgdfhfhf.png"},
+    { type: "image", src: "https://i.postimg.cc/pd583ZBz/dsfhgjejty.png"},
     /* 2016 */
+    { type: "image", src: "https://i.postimg.cc/VkVn7TXM/w3yuwrhr.png"},
     { type: "image", src: "https://i.postimg.cc/hGLsHRfB/dfhhd.png"},
     /* 2017 */
     { type: "video", src: "https://streamable.com/e/5f4ojb"},
