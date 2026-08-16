@@ -16,6 +16,14 @@ let pendingMadridImage = null;
 const viajeMadrid = {
   nombre: "Madrid",
   medios: [
+    /* Fin de Curso 2005 - 2º Primaria */
+    { type: "image", src: "https://i.postimg.cc/yNrtN4xS/IMG-KHHKKJFKDKSL.png"},
+    { type: "image", src: "https://i.postimg.cc/Ls0wsK5Y/P1000801.jpg"},
+    { type: "image", src: "https://i.postimg.cc/FKn8K5zk/P1000802.jpg"},
+    { type: "image", src: "https://i.postimg.cc/W4fC4LzD/P1000804.jpg"},
+    { type: "image", src: "https://i.postimg.cc/N0PS0qF6/P1000805.jpg"},
+    { type: "image", src: "https://i.postimg.cc/VNHpNQv9/P1000857.jpg"},
+    { type: "image", src: "https://i.postimg.cc/wBbZB8Mk/P1000858.jpg"},
     /* 2015 */
     { type: "image", src: "https://i.postimg.cc/PqWyBnPr/gfdsg.png"},
     { type: "image", src: "https://i.postimg.cc/W4G8Qch0/gfdghtht.png"},
@@ -23,13 +31,25 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/d026zcLJ/iuykiyk.png"},
     { type: "image", src: "https://i.postimg.cc/cJtYPmmy/dsgsgsg.png"},
     { type: "image", src: "https://i.postimg.cc/1zGBL1fS/fdshfhs.png"},
+    { type: "image", src: "https://i.postimg.cc/d1TpfH6c/IMG-KHHKKJFKDKSL.png"},
+    { type: "image", src: "https://i.postimg.cc/tTVwcSkQ/gklsdhgkdh.png"},
+    { type: "image", src: "https://i.postimg.cc/0QJF4WfF/fdgdfghdf.png"},
+    { type: "image", src: "https://i.postimg.cc/25tg2RQf/fgjgj.png"},
+    { type: "image", src: "https://i.postimg.cc/cH82z9hZ/20151016-221703.jpg"},
+    { type: "image", src: "https://i.postimg.cc/N0nZpq6Y/dfhdfs.png"},
+    { type: "image", src: "https://i.postimg.cc/KzgwWqfb/IMG-20151017-WA0000.jpg"},
+    { type: "image", src: "https://i.postimg.cc/26BMtcGp/IMG-20151017-WA0002.jpg"},
+    { type: "image", src: "https://i.postimg.cc/3RDVqS1T/IMG-20151017-WA0004.jpg"},
     { type: "image", src: "https://i.postimg.cc/JhHJSqQN/sfgdghs.png"},
     { type: "image", src: "https://i.postimg.cc/MpFVs41Y/htrhhtr.png"},
     { type: "image", src: "https://i.postimg.cc/N02TZ4xr/dfgdfhfhf.png"},
+    { type: "image", src: "https://i.postimg.cc/W4yxXLGV/giuyuouy.png"},
     { type: "image", src: "https://i.postimg.cc/pd583ZBz/dsfhgjejty.png"},
+    { type: "image", src: "https://i.postimg.cc/SKPHDF6h/fdgdfhdf.png"},
     /* 2016 */
     { type: "image", src: "https://i.postimg.cc/VkVn7TXM/w3yuwrhr.png"},
     { type: "image", src: "https://i.postimg.cc/hGLsHRfB/dfhhd.png"},
+    { type: "image", src: "https://i.postimg.cc/0QJF4WfF/fdgdfghdf.png"},
     /* 2017 */
     { type: "video", src: "https://streamable.com/e/5f4ojb"},
     /* Enero de 2025 - Evento Binance */
