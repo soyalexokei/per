@@ -989,6 +989,34 @@ const aficiones = [
             {img: "https://i.postimg.cc/L8gR2mrm/5.png"},
             {img: "https://i.postimg.cc/RZJ94vjC/6.png"},
         ]
+    },
+    //-- HARRY POTTER
+    {
+        titulo: "Harry Potter",
+        pagina: 0,
+        pages: [
+            {
+                text: `
+                    <h2>Test de Harry Potter: ¿Cuál es tu Casa de Hogwarts?</h2>
+                    <p>En base a una serie de preguntas que respondas, el sombrero seleccionador te asigna una Casa de Hogwarts</p>
+                    <p>Haz el test pinchando aquí: <a href="https://www.harrypotter.com/es/news/discover-your-hogwarts-house-on-wizarding-world" target="_blank">Web</a></p>
+                `,
+                img: "https://i.postimg.cc/xdNpm2VW/wizarding-world-portrait.png"
+            },
+            {
+                text: `<p>En mi caso, el sombrero seleccionador me ha asignado:</p>`,
+                img: "https://i.postimg.cc/cJtk3SGj/sadfdsafgsdga.png"
+            },
+            {img: "https://i.postimg.cc/LsgQPpFW/jskdhaksfsdklf.png"},
+            {
+                text: `<p>Mi Patronus es:</p>`,
+                img: "https://i.postimg.cc/cJtk3SGb/sfpsdnfjdsos.png"
+            },
+            {
+                text: `<p>Mi varita mágica es:</p>`,
+                img: "https://i.postimg.cc/rpRZ4k2Y/p-dfnfjafas.png"
+            }
+        ]
     }
 ];
 
