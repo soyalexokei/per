@@ -16,7 +16,19 @@ let pendingImageCroacia = null;
 const viajeCroacia = {
   nombre: "Croacia",
   medios: [
-    { type: "image", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdepVL1nGhT-cT49VFKi9bt4CC90Auqps19wO0_mXDbnZOegjVqxkLWfc&s=10"},
+    { type: "image", src: "https://i.postimg.cc/L8dSf6GL/IMG-20260829-182218-024.webp"},
+    { type: "image", src: "https://i.postimg.cc/8z8GWPxL/IMG-20260829-182657-297.webp"},
+    { type: "video", src: "https://streamable.com/e/nn3c0o"},
+    { type: "image", src: "https://i.postimg.cc/9FsmpBwm/IMG-20260829-183951-622.jpg"},
+    { type: "image", src: "https://i.postimg.cc/SR76rKDR/IMG-20260829-185044-371.jpg"},
+    { type: "video", src: "https://streamable.com/e/ypi6ve"},
+    { type: "image", src: "https://i.postimg.cc/2yFQw52V/IMG-20260829-193145-908.webp"},
+    { type: "image", src: "https://i.postimg.cc/L5BtTsNX/IMG-20260829-193336-191.webp"},
+    { type: "image", src: "https://i.postimg.cc/yYD9xvzW/IMG-20260829-193526-017.jpg"},/* fdskjg */
+    { type: "image", src: "https://i.postimg.cc/TYBd9c52/IMG-20260829-193748-831.webp"},
+    { type: "image", src: "https://i.postimg.cc/Xqcf8vQv/IMG-20260829-193919-542.webp"},
+    { type: "image", src: "https://i.postimg.cc/t40bPC86/IMG-20260829-194322-038.jpg"},
+    { type: "video", src: "https://streamable.com/e/u0y72g"},
   ]
 };
 
