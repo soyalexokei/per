@@ -700,23 +700,6 @@ footer p{margin:0;color:#a0bbb5}
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.planning_croatia{
-    width:70vw;
-    margin-top:30px;
-    margin-bottom:30px;
-    overflow-x:auto;
-    color: white;
-    font-style: bold;
-}
-
-.planning_croatia h2 {
-    margin: 10px;
-    padding-bottom: 20px;
-    letter-spacing: 5px;
-    text-align: center;
-    font-size: x-large;
-}
-
 .tabla_planning{
     width:100%;
     border-collapse:collapse;
@@ -987,10 +970,6 @@ footer p{margin:0;color:#a0bbb5}
 
     }
 
-    .planning_croatia{
-        width:75vw;
-    }
-
 
     .control_paises {
 
@@ -1044,12 +1023,6 @@ footer p{margin:0;color:#a0bbb5}
 
     }
 
-    .planning_croatia{
-        width:95vw;
-        margin-top:200px;
-        margin-bottom:90px;
-    }
-
     .tabla_planning{
         font-size:12px;
     }
@@ -1075,11 +1048,6 @@ footer p{margin:0;color:#a0bbb5}
     .tabla_planning td{
         min-height:45px;
         height:auto;
-    }
-
-    .planning_croatia h2{
-        font-size:20px;
-        letter-spacing:2px;
     }
 
 
