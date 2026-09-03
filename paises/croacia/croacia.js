@@ -134,7 +134,27 @@ const viajeCroacia = {
     { type: "image", src: "https://i.postimg.cc/v82MLtvK/IMG-20260903-190406-259.jpg"},
     { type: "image", src: "https://i.postimg.cc/qBD0XxGS/IMG-20260903-190445-041.webp"},
     { type: "video", src: "https://streamable.com/e/8uevmf"},
-    { type: "video", src: "https://streamable.com/e/ujpb93"}
+    { type: "video", src: "https://streamable.com/e/ujpb93"},
+    { type: "video", src: "https://streamable.com/e/3jofy7"},
+    { type: "image", src: "https://i.postimg.cc/qRPFYvMy/IMG-20260903-204000-329.webp"},
+    { type: "image", src: "https://i.postimg.cc/pXYSGxN9/IMG-20260903-204056-889.webp"},
+    { type: "image", src: "https://i.postimg.cc/28Ftcmpb/IMG-20260903-204400-095.webp"},
+    { type: "image", src: "https://i.postimg.cc/Wb6yWjRq/IMG-20260903-204902-024.webp"},
+    { type: "video", src: "https://streamable.com/e/duqueh"},
+    { type: "image", src: "https://i.postimg.cc/mrc8sWny/IMG-20260903-205715-266.webp"},
+    { type: "image", src: "https://i.postimg.cc/HLJBg1N4/IMG-20260903-205828-556.webp"},
+    { type: "image", src: "https://i.postimg.cc/R03XBxY1/IMG-20260903-210013-253.webp"},
+    { type: "video", src: "https://streamable.com/e/5xcpp2"},
+    { type: "image", src: "https://i.postimg.cc/tJ937KBm/IMG-20260903-210849-090.webp"},
+    { type: "video", src: "https://streamable.com/e/kchx8s"},
+    { type: "video", src: "https://streamable.com/e/f6bq0z"},
+    { type: "image", src: "https://i.postimg.cc/nL8QX8zN/IMG-20260903-211652-353.webp"},
+    { type: "image", src: "https://i.postimg.cc/CKyfRy1c/IMG-20260903-211728-371.webp"},
+    { type: "image", src: "https://i.postimg.cc/pdNnmNTZ/IMG-20260903-212118-952.jpg"},
+    { type: "image", src: "https://i.postimg.cc/BnPKZZqm/IMG-20260903-212324-863.webp"},
+    { type: "image", src: "https://i.postimg.cc/cLtn11sX/IMG-20260903-212407-890.webp"},
+    { type: "image", src: "https://i.postimg.cc/kgRbMMnj/IMG-20260903-212455-374.webp"},
+    { type: "image", src: "https://i.postimg.cc/4xH944J1/IMG-20260903-212542-373.webp"},
   ]
 };
 
