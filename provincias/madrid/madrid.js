@@ -259,6 +259,9 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/NGNCxt33/IMG-20260812-203157015-HDR.jpg"},
     { type: "image", src: "https://i.postimg.cc/fTJ22Fs2/IMG-20260812-202852535-HDR.jpg"},
     { type: "image", src: "https://i.postimg.cc/nVdS1xyW/IMG-20260812-WA0008-2.jpg"},
+    /* Día en Villamantilla - 31 AGO 2026 */
+    { type: "video", src: "https://streamable.com/e/2mv05s"},
+    { type: "image", src: "https://i.postimg.cc/k44SzytP/IMG-20260903-195457-386.webp"},
   ]
 };
 
