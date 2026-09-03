@@ -155,6 +155,23 @@ const viajeCroacia = {
     { type: "image", src: "https://i.postimg.cc/cLtn11sX/IMG-20260903-212407-890.webp"},
     { type: "image", src: "https://i.postimg.cc/kgRbMMnj/IMG-20260903-212455-374.webp"},
     { type: "image", src: "https://i.postimg.cc/4xH944J1/IMG-20260903-212542-373.webp"},
+    { type: "image", src: "https://i.postimg.cc/Vvpm68RH/IMG-20260903-224923-076.jpg"},
+    { type: "video", src: "https://streamable.com/e/lruwyu"},
+    { type: "video", src: "https://streamable.com/e/omvn0l"},
+    { type: "video", src: "https://streamable.com/e/8yvb75"},
+    { type: "video", src: "https://streamable.com/e/479ir3"},
+    { type: "video", src: "https://streamable.com/e/ww9bjv"},
+    { type: "video", src: "https://streamable.com/e/wwkgh8"},
+    { type: "image", src: "https://i.postimg.cc/ZKvJQWbg/IMG-20260903-225814-291.webp"},
+    { type: "video", src: "https://streamable.com/e/h7qtx3"},
+    { type: "video", src: "https://streamable.com/e/gd00in"},
+    { type: "image", src: "https://i.postimg.cc/NFHP69m2/IMG-20260903-220233-723.webp"},
+    { type: "image", src: "https://i.postimg.cc/6qv1r2n2/IMG-20260903-231059-842.webp"},
+    { type: "video", src: "https://streamable.com/e/ryi89b"},
+    { type: "image", src: "https://i.postimg.cc/nrDw4jBC/IMG-20260903-231858-985.webp"},
+    { type: "image", src: "https://i.postimg.cc/nrDw4jBs/IMG-20260903-231945-667.webp"},
+    { type: "image", src: "https://i.postimg.cc/L510tYLJ/IMG-20260903-232231-104.webp"},
+    { type: "image", src: "https://i.postimg.cc/L510tYLh/IMG-20260903-232638-458.webp"},
   ]
 };
 
