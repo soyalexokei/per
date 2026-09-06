@@ -587,7 +587,10 @@ const aficiones = [
             {img: "https://i.postimg.cc/y6Xd00Sy/7.jpg"},
             {img: "https://i.postimg.cc/9FLQnVb4/8.jpg"},
             {img: "https://i.postimg.cc/Mp4KzDhq/9.jpg"},
-            {img: "https://i.postimg.cc/bwdwXMVm/10.jpg"}
+            {img: "https://i.postimg.cc/bwdwXMVm/10.jpg"},
+            {img: "https://i.postimg.cc/prvFR3Ls/IMG-20260906-230432-432.webp"},
+            {img: "https://i.postimg.cc/L5S12G8W/IMG-20260906-230502-990.webp"},
+            {img: "https://i.postimg.cc/cCWn0PLb/IMG-20260906-230535-156.webp"},
         ]
     },
     //-- TENIS
