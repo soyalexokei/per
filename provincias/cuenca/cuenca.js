@@ -22,6 +22,17 @@ const viajeCuenca = {
     { type: "image", src: "https://i.postimg.cc/hGT0p2Rv/4.png"},
     { type: "image", src: "https://i.postimg.cc/tJSdYfWS/5.png"},
     { type: "image", src: "https://i.postimg.cc/XJWkh9n8/6.png"},
+    { type: "image", src: "https://i.postimg.cc/4d7YzSDW/IMG-20260918-000847-884.jpg"},
+    { type: "image", src: "https://i.postimg.cc/ZRBWrMGs/IMG-20260918-001018-216.webp"},
+    { type: "image", src: "https://i.postimg.cc/cHgvQbpD/IMG-20260918-001103-772.webp"},
+    { type: "image", src: "https://i.postimg.cc/C1BRjQ36/IMG-20260918-001608-162.webp"},
+    { type: "image", src: "https://i.postimg.cc/rmrpdt49/IMG-20260918-001203-709.jpg"},
+    { type: "image", src: "https://i.postimg.cc/mDHrcF9j/IMG-20260918-001831-078.jpg"},
+    { type: "image", src: "https://i.postimg.cc/SsMKXz9g/IMG-20260918-001944-036.webp"},
+    { type: "image", src: "https://i.postimg.cc/63vQ7GZj/IMG-20260918-002024-443.webp"},
+    { type: "video", src: "https://streamable.com/e/l1ivlr"},
+    { type: "image", src: "https://i.postimg.cc/HLfYCsNb/IMG-20260918-003314-069.jpg"},
+    { type: "image", src: "https://i.postimg.cc/7LpHyYR0/IMG-20260918-003622-536.jpg"},
   ]
 };
 
