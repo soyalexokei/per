@@ -262,6 +262,15 @@ const viajeMadrid = {
     /* Día en Villamantilla - 31 AGO 2026 */
     { type: "video", src: "https://streamable.com/e/2mv05s"},
     { type: "image", src: "https://i.postimg.cc/k44SzytP/IMG-20260903-195457-386.webp"},
+    /* Septiembre 2026 */
+    { type: "image", src: "https://i.postimg.cc/s2kBmYXg/IMG-20261004-184031-035.webp"},
+    { type: "video", src: "https://streamable.com/e/y56hh9"},
+    { type: "image", src: "https://i.postimg.cc/Pr7d1tJ4/IMG-20261004-190732-248.webp"},
+    { type: "image", src: "https://i.postimg.cc/qMFp2kqG/IMG-20261004-190842-963.webp"},
+    { type: "video", src: "https://streamable.com/e/ky48rg"},
+    { type: "video", src: "https://streamable.com/e/h016im"},
+    { type: "image", src: "https://i.postimg.cc/SsSBw5js/IMG-20261004-191145-949.jpg"},
+    { type: "image", src: "https://i.postimg.cc/1tmkLT44/IMG-20261004-191221-317.webp"},
   ]
 };
 

@@ -327,7 +327,12 @@ const aficiones = [
             {img: "https://i.postimg.cc/L689MW18/8.png"},
             {img: "https://i.postimg.cc/T1RR17NQ/9.png"},
             {img: "https://i.postimg.cc/xjRfhQqZ/10.png"},
-            {img: "https://i.postimg.cc/rsQqr1vT/11.png"}
+            {img: "https://i.postimg.cc/rsQqr1vT/11.png"},
+            {img: "https://i.postimg.cc/FHf3xsZg/IA-y-amigos.png"},
+            {img: "https://i.postimg.cc/28tB3Nfs/IMG-20261004-185848-845.webp"},
+            {img: "https://i.postimg.cc/MKLjXJSw/IMG-20261004-190054-756.webp"},
+            {img: "https://i.postimg.cc/BQz1tf0f/IMG-20261004-190448-378.webp"},
+            {img: "https://i.postimg.cc/vHK6Dwsd/IMG-20261004-190617-327.webp"},
         ]
     },
     //-- COCHES

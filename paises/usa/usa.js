@@ -428,9 +428,13 @@ const viajeUSA = {
     { type: "image", src: "https://i.postimg.cc/DztCHcHG/IMG-20251006-205139-015.webp" },
     /* Diciembre 2019 - En la Embajada de EE.UU (Madrid) */
     { type: "image", src: "https://i.postimg.cc/L5pcwX6f/168.jpg"},
-    { type: "image", src: "https://i.postimg.cc/NFk3cc5n/169.jpg"},
-    { type: "image", src: "https://i.postimg.cc/xjGDHKtP/170.jpg"},
-    { type: "image", src: "https://i.postimg.cc/8P18bjYg/171.jpg"}
+    { type: "image", src: "https://i.postimg.cc/h4NBjKjJ/IMG-20261004-195830-305.jpg"},
+    { type: "image", src: "https://i.postimg.cc/Qdsv9CrC/IMG-20261004-195633-980.webp"},
+    { type: "image", src: "https://i.postimg.cc/13PbnXZ3/IMG-20261004-195925-393.jpg"},
+    { type: "image", src: "https://i.postimg.cc/BnsRLbGq/IMG-20261004-200147-718.jpg"},
+    { type: "image", src: "https://i.postimg.cc/JzmSD0WR/IMG-20261004-200351-096.jpg"},
+    { type: "image", src: "https://i.postimg.cc/rwc70sLV/IMG-20261004-200544-444.webp"},
+    { type: "image", src: "https://i.postimg.cc/mgRKzkGZ/IMG-20261004-200622-399.webp"},
   ]
 };
 
