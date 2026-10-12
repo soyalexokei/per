@@ -24,6 +24,8 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/N0PS0qF6/P1000805.jpg"},
     { type: "image", src: "https://i.postimg.cc/VNHpNQv9/P1000857.jpg"},
     { type: "image", src: "https://i.postimg.cc/wBbZB8Mk/P1000858.jpg"},
+    /* Recuerdos de la Finca de Moraleja de Enmedio */
+    { type: "image", src: "https://i.postimg.cc/yYYn9YxB/IMG-20261012-172459-079.jpg"},
     /* 2015 */
     { type: "image", src: "https://i.postimg.cc/PqWyBnPr/gfdsg.png"},
     { type: "image", src: "https://i.postimg.cc/W4G8Qch0/gfdghtht.png"},
@@ -271,6 +273,9 @@ const viajeMadrid = {
     { type: "video", src: "https://streamable.com/e/h016im"},
     { type: "image", src: "https://i.postimg.cc/SsSBw5js/IMG-20261004-191145-949.jpg"},
     { type: "image", src: "https://i.postimg.cc/1tmkLT44/IMG-20261004-191221-317.webp"},
+    /* Octubre 2026 */
+    { type: "image", src: "https://i.postimg.cc/mDB7s816/IMG-20261012-172207-209.jpg" },
+    { type: "video", src: "https://streamable.com/e/nlpfdb" },
   ]
 };
 
