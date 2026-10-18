@@ -11,7 +11,7 @@ let currentMediaCuenca = 0;
 let pendingImageCuenca = null;
 
 /****************************************************/
-/* DATOS DEL VIAJE */
+/* DATOS DEL VIAJE { type: "image", src: "" }, */
 /****************************************************/
 const viajeCuenca = {
   nombre: "Cuenca",
@@ -82,6 +82,12 @@ const viajeCuenca = {
     { type: "image", src: "https://i.postimg.cc/cLsk9DNW/IMG-20261017-195016-190.webp" },
     { type: "image", src: "https://i.postimg.cc/X7KDkRtq/IMG-20261017-195051-931.webp" },
     { type: "image", src: "https://i.postimg.cc/9QWg8xjh/IMG-20261017-195156-892.webp" },
+    { type: "image", src: "https://i.postimg.cc/C5fgshpJ/IMG-20261017-200807-531.jpg" },
+    { type: "image", src: "https://i.postimg.cc/ZnySxbzc/IMG-20261017-200831-357.jpg" },
+    { type: "image", src: "https://i.postimg.cc/RhnBLSxd/IMG-20261017-200854-884.jpg" },
+    { type: "image", src: "https://i.postimg.cc/prnHJWM6/IMG-20261017-200920-408.webp" },
+    { type: "image", src: "https://i.postimg.cc/kGtmvJP1/IMG-20261017-200941-968.webp" },
+    { type: "image", src: "https://i.postimg.cc/nrQJGFf3/IMG-20261017-201004-005.webp" },
   ]
 };
 

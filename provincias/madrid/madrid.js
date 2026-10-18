@@ -11,7 +11,7 @@ let currentMediaMadrid = 0;
 let pendingMadridImage = null;
 
 /****************************************************/
-/* DATOS DEL VIAJE */
+/* DATOS DEL VIAJE { type: "image", src: "" }, */
 /****************************************************/
 const viajeMadrid = {
   nombre: "Madrid",
@@ -276,6 +276,18 @@ const viajeMadrid = {
     /* Octubre 2026 */
     { type: "image", src: "https://i.postimg.cc/mDB7s816/IMG-20261012-172207-209.jpg" },
     { type: "video", src: "https://streamable.com/e/nlpfdb" },
+    { type: "image", src: "https://i.postimg.cc/65KDbJR8/IMG-20261018-143713-390.jpg" },
+    { type: "image", src: "https://i.postimg.cc/HsmfvD5n/IMG-20261018-143742-420.jpg" },
+    { type: "image", src: "https://i.postimg.cc/44VD1NKt/IMG-20261018-143956-442.jpg" },
+    { type: "image", src: "https://i.postimg.cc/02vLXRmK/IMG-20261018-144028-237.webp" },
+    { type: "image", src: "https://i.postimg.cc/kMK0yXVx/IMG-20261018-144145-374.webp" },
+    { type: "video", src: "https://streamable.com/e/67n9dc" },
+    { type: "video", src: "https://streamable.com/e/bjrr2l" },
+    { type: "image", src: "https://i.postimg.cc/ryxB9FdV/IMG-20261018-144814-164.jpg" },
+    { type: "image", src: "https://i.postimg.cc/kMK0yXVt/IMG-20261018-144905-381.webp" },
+    { type: "image", src: "https://i.postimg.cc/ZYpGLK9B/IMG-20261018-144944-545.webp" },
+    { type: "image", src: "https://i.postimg.cc/DfL9cyW8/IMG-20261018-145400-969.webp" },
+    { type: "image", src: "https://i.postimg.cc/y6cMTYJ3/IMG-20261018-145513-936.webp" },
   ]
 };
 
