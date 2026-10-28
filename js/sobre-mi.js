@@ -198,7 +198,18 @@ const sobreMi = [
             {img: "https://i.postimg.cc/Wb7vZdgv/relacion7.png"},
             {img: "https://i.postimg.cc/NF7WRnyX/otras-Relaciones.png"},
         ]
-    }
+    },
+    //-- Salud Bucal
+    {
+        titulo: "Salud Bucal",
+        pagina: 0,
+        pages: [
+            {img: "https://i.postimg.cc/gjbzRsbD/1.png"},
+            {img: "https://i.postimg.cc/fyQzXCQB/2.png"},
+            {img: "https://i.postimg.cc/3NQ8p1Q9/3.png"},
+            {img: "https://i.postimg.cc/fyQzXCQC/4.png"},
+        ]
+    },
 ];
 
 /****************************************************/
