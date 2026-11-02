@@ -50,6 +50,7 @@ const viajeCuenca = {
     { type: "image", src: "https://i.postimg.cc/fbJXkZD8/IMG-20261016-234842-806.webp" },
     { type: "image", src: "https://i.postimg.cc/4x1rgJh7/IMG-20261015-221652-788.jpg"},
     { type: "image", src: "https://i.postimg.cc/DZKS9PVd/IMG-20261006-232531-247.webp"},
+    { type: "video", src: "https://streamable.com/e/zxserl" },
     { type: "image", src: "https://i.postimg.cc/QtrF2JLg/IMG-20261006-232648-047.webp"},
     { type: "video", src: "https://streamable.com/e/vxrcmn" },
     { type: "image", src: "https://i.postimg.cc/rpXcRNLR/IMG-20261016-232041-766.jpg" },

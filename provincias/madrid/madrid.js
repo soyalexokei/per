@@ -288,6 +288,7 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/ZYpGLK9B/IMG-20261018-144944-545.webp" },
     { type: "image", src: "https://i.postimg.cc/DfL9cyW8/IMG-20261018-145400-969.webp" },
     { type: "image", src: "https://i.postimg.cc/y6cMTYJ3/IMG-20261018-145513-936.webp" },
+    { type: "image", src: "https://i.postimg.cc/yNCDVNS9/IMG-20261102-170411-095.jpg" },
   ]
 };
 
