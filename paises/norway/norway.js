@@ -44,6 +44,16 @@ const viajeNoruega = {
     { type: "image", src: "https://i.postimg.cc/wB2G67GY/IMG-20261102-195907-927.webp"},
     { type: "image", src: "https://i.postimg.cc/hGs5Sf3k/IMG-20261102-195947-793.jpg"},
     { type: "image", src: "https://i.postimg.cc/QMmyXHyG/IMG-20261102-200022-810.jpg"},
+    { type: "video", src: "https://streamable.com/e/hplrgc"},
+    { type: "video", src: "https://streamable.com/e/hd231y"},
+    { type: "image", src: "https://i.postimg.cc/qvCnGSTn/IMG-20261102-214013-106.jpg"},
+    { type: "image", src: "https://i.postimg.cc/XYyFgmbw/IMG-20261102-214150-955.webp"},
+    { type: "image", src: "https://i.postimg.cc/FHJcx84b/IMG-20261102-214219-240.webp"},
+    { type: "video", src: "https://streamable.com/e/0m9z8z"},
+    { type: "video", src: "https://streamable.com/e/eowxvq"},
+    { type: "image", src: "https://i.postimg.cc/s2m2P4vf/IMG-20261102-215139-451.webp"},
+    { type: "image", src: "https://i.postimg.cc/6QcQVfy9/IMG-20261102-215623-613.jpg"},
+    { type: "image", src: "https://i.postimg.cc/R0d01LNv/IMG-20261102-215700-450.jpg"},
   ]
 };
 
