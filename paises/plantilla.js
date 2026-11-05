@@ -11,7 +11,7 @@ let currentMedia = 0;
 let pendingImage = null;
 
 /****************************************************/
-/* DATOS DEL VIAJE */
+/* DATOS DEL VIAJE -- */
 /****************************************************/
 const viaje = {
   nombre: "Hungria",
