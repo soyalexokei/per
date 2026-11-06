@@ -196,6 +196,16 @@ const aficiones = [
             {img: "https://i.postimg.cc/dtzFMJxb/MG-0797.jpg"},
             {img: "https://i.postimg.cc/ZK1mkJMX/MG-0798.jpg"},
             {video: "https://streamable.com/e/8vny5w"},
+            {
+                text: `
+                    <p>Nuevo gimnasio donde entreno: <b>Padel Indoor & Gym 2.0</b></p>
+                    <p><b>Web:</b> <a href="https://www.padeldospuntocero.es/" target="_blank">Acceso</a></p>
+                    <p><b>Contacto:</b> info@padeldospuntocero.com</p>
+                    <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/Fpop4GNYYkctaNMcA" target="_blank">C/ Pto. Navacerrada, 57, 28935 Móstoles, Madrid, España</a></p>
+                `,
+                img: "https://i.postimg.cc/wjXfvQbb/IMG-odsvndsklvndslk3242.png"
+            },
+            {img: "https://i.postimg.cc/rw1nmNYn/IMG-20261106-004237-162.webp"},
         ]
     },
     //-- VAN LIFE
