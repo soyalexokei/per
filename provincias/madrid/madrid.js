@@ -52,8 +52,16 @@ const viajeMadrid = {
     { type: "image", src: "https://i.postimg.cc/VkVn7TXM/w3yuwrhr.png"},
     { type: "image", src: "https://i.postimg.cc/hGLsHRfB/dfhhd.png"},
     { type: "image", src: "https://i.postimg.cc/0QJF4WfF/fdgdfghdf.png"},
-    /* 2017 */
+    /* Junio 2017 */
+    { type: "video", src: "https://streamable.com/e/qi5ymd"},
+    /* Agosto 2017 */
     { type: "video", src: "https://streamable.com/e/5f4ojb"},
+    /* Diciembre 2021 */
+    { type: "video", src: "https://streamable.com/e/hg1038" },
+    /* Octubre 2022 */
+    { type: "video", src: "https://streamable.com/e/lhzqto" },
+    /* Marzo 2023 */
+    { type: "video", src: "https://streamable.com/e/q2fwwj" },
     /* Enero de 2025 - Evento Binance */
     { type: "image", src: "https://i.postimg.cc/rFCMSTZY/binance01.jpg"},
     { type: "image", src: "https://i.postimg.cc/kgg3KbbB/binance02.webp"},
